@@ -9,96 +9,11 @@ const FooterHeader = () => {
     <>
       <div>
         {/* header-start */}
-        <header className="sticky top-10 ">
-          <nav className=" border-black-500 border-4 px-4  bg-slate-100  ">
-            {/* flex flex-wrap justify-evenly  gap-96 */}
-            <div className=" grid grid-cols-2    ">
-              <div className=" flex pl-10">
-                <a href="#" className="flex items-center ">
-                  <Image
-                    src="https://flowbite.com/docs/images/logo.svg"
-                    alt="Picture of the author"
-                    width={62}
-                    height={60}
-                  />
-                </a>
-                <div className=" px-4 pt-6">
-                  <span className=" self-center  text-2xl  font-bold  text-red-700  ">
-                    MABOLOTECH IT SOLUTION
-                  </span>
-                  <p className=" text-xs font-semibold whitespace-nowrap ">
-                    Crafting Software Solutions that drive business growth
-                  </p>
-                </div>
-              </div>
-
-              <div className="nav grid justify-center  ">
-                <ul className="flex  gap-8   items-center p-4  ml-20          ">
-                  <li>
-                    <a
-                      href="#"
-                      className=" text-xl  font-semibold block py-2 pl-3 pr-4    hover:text-red-700      "
-                      aria-current="page"
-                    >
-                      Home
-                    </a>
-                  </li>
-                  <li>
-                    <a
-                      href="#"
-                      className="text-xl font-semibold   block py-2 pl-3 pr-4     hover:text-red-700     "
-                    >
-                      About us
-                    </a>
-                  </li>
-                  <li>
-                    <a
-                      href="#"
-                      className="  text-xl font-semibold  block py-2 pl-3 pr-4  hover:text-red-700 "
-                    >
-                      Services
-                    </a>
-                  </li>
-                  <li>
-                    <a
-                      href="#"
-                      className=" text-xl  font-semibold  block py-2 pl-3 pr-4 hover:text-red-700"
-                    >
-                      Our Work
-                    </a>
-                  </li>
-                  <li>
-                    <button className=" text-xl font-semibold   hover:bg-red-700 text-black-700   py-2 px-8 border-2 border-red-700  rounded-full">
-                      Contact us
-                    </button>
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </nav>
-        </header>
-        sssssssssss
-        <div>
-          <div className=" pt-96">
-            <h1> ayuban </h1>
-          </div>
-        </div>
-        <div>
-          <div className=" pt-96">
-            <h1> ayuban </h1>
-          </div>
-        </div>
-        <div>
-          <div className=" pt-96">
-            <h1> ayuban </h1>
-          </div>
-        </div>
-        {/* header-end */}
         <header>
-          <nav class="md:border-green-500 border-2 px-16 py-6">
-            <div class="flex flex-wrap justify-between items-center">
-              <div class="flex items-center">
-                <a href="#" class="mr-4">
+          <nav className=" border-2 px-16 py-6">
+            <div className="flex flex-wrap justify-between items-center">
+              <div className="flex items-center">
+                <a href="#" className="mr-4">
                   <img
                     src="https://flowbite.com/docs/images/logo.svg"
                     alt="MABOLOTECH IT SOLUTION"
@@ -106,25 +21,25 @@ const FooterHeader = () => {
                   />
                 </a>
                 <div>
-                  <h1 class="text-2xl font-bold text-red-700">
+                  <h1 className="text-2xl font-bold text-red-700">
                     MABOLOTECH IT SOLUTION
                   </h1>
-                  <p class="text-sm font-semibold">
+                  <p className="text-sm font-semibold">
                     Crafting Software Solutions that drive business growth
                   </p>
                 </div>
               </div>
 
-              <button class="text-xl font-semibold hover:bg-red-700 text-black-700 py-2 px-6 border-2 border-red-700 rounded-full md:hidden">
+              <button className="text-xl font-semibold hover:bg-red-700 text-black-700 py-2 px-6 border-2 border-red-700 rounded-full md:hidden">
                 Contact us
               </button>
 
-              <div class="hidden md:block">
-                <ul class="flex gap-14 mx-8 items-center">
+              <div className="hidden md:block">
+                <ul className="flex gap-14 mx-8 items-center">
                   <li>
                     <a
                       href="#"
-                      class="text-xl font-semibold hover:text-red-700"
+                      className="text-xl font-semibold hover:text-red-700"
                     >
                       Home
                     </a>
@@ -132,7 +47,7 @@ const FooterHeader = () => {
                   <li>
                     <a
                       href="#"
-                      class="text-xl font-semibold hover:text-red-700"
+                      className="text-xl font-semibold hover:text-red-700"
                     >
                       About us
                     </a>
@@ -140,7 +55,7 @@ const FooterHeader = () => {
                   <li>
                     <a
                       href="#"
-                      class="text-xl font-semibold hover:text-red-700"
+                      className="text-xl font-semibold hover:text-red-700"
                     >
                       Services
                     </a>
@@ -148,13 +63,13 @@ const FooterHeader = () => {
                   <li>
                     <a
                       href="#"
-                      class="text-xl font-semibold hover:text-red-700"
+                      className="text-xl font-semibold hover:text-red-700"
                     >
                       Our Work
                     </a>
                   </li>
                   <li>
-                    <button class=" text-xl font-semibold hover:bg-red-700 text-black-700 py-2 px-8 border-2 border-red-700 rounded-full">
+                    <button className=" text-xl font-semibold hover:bg-red-700 text-black-700 py-2 px-8 border-2 border-red-700 rounded-full">
                       Contact us
                     </button>
                   </li>
@@ -163,61 +78,7 @@ const FooterHeader = () => {
             </div>
           </nav>
         </header>
-        <div>
-          <div className=" pt-96">
-            <h1> ayuban </h1>
-          </div>
-        </div>
-        <div>
-          <div className=" pt-96">
-            <h1> ayuban </h1>
-          </div>
-        </div>
-        <div>
-          <div className=" pt-96">
-            <h1> ayuban </h1>
-          </div>
-        </div>
-        <div>
-          <div className=" pt-96">
-            <h1> ayuban </h1>
-          </div>
-        </div>
-        <div>
-          <div className=" pt-96">
-            <h1> ayuban </h1>
-          </div>
-        </div>
-        <div>
-          <div className=" pt-96">
-            <h1> ayuban </h1>
-          </div>
-        </div>
-        <div>
-          <div className=" pt-96">
-            <h1> ayuban </h1>
-          </div>
-        </div>
-        <div>
-          <div className=" pt-96">
-            <h1> ayuban </h1>
-          </div>
-        </div>
-        <div>
-          <div className=" pt-96">
-            <h1> ayuban </h1>
-          </div>
-        </div>
-        <div>
-          <div className=" pt-96">
-            <h1> ayuban </h1>
-          </div>
-        </div>
-        <div>
-          <div className=" pt-96">
-            <h1> ayuban </h1>
-          </div>
-        </div>
+
         {/* footer-start */}
         <footer className="text-gray-600  ">
           <div className=" px-5 pt-10 pb-20  flex flex-row flex-wrap justify-center  ">
