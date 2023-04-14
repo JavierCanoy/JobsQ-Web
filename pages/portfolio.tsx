@@ -13,75 +13,73 @@ export default function Portfolio() {
   return (
     <>
       {/* header-start */}
-      <header>
-        <nav className="border-black-500 border-2 px-4 p-4  ">
-          {/* flex flex-wrap justify-evenly  gap-96 */}
-          <div className=" grid grid-cols-2    ">
-            <div className=" flex pl-10">
-              <a href="#" className="flex items-center ">
-                <Image
-                  src="https://flowbite.com/docs/images/logo.svg"
-                  alt="Picture of the author"
-                  width={62}
-                  height={60}
-                />
-              </a>
-              <div className=" px-4 pt-6">
-                <span className=" self-center  text-2xl  font-bold  text-red-700  ">
-                  MABOLOTECH IT SOLUTION
-                </span>
-                <p className=" text-xs font-semibold whitespace-nowrap ">
-                  Crafting Software Solutions that drive business growth
-                </p>
-              </div>
-            </div>
-
-            <div className="nav grid justify-center  ">
-              <ul className="flex  gap-8   items-center p-4  ml-20          ">
-                <li>
-                  <a
-                    href="#"
-                    className=" text-xl  font-semibold block py-2 pl-3 pr-4    hover:text-red-700      "
-                    aria-current="page"
-                  >
-                    Home
-                  </a>
-                </li>
-                <li>
-                  <a
-                    href="#"
-                    className="text-xl font-semibold   block py-2 pl-3 pr-4     hover:text-red-700     "
-                  >
-                    About us
-                  </a>
-                </li>
-                <li>
-                  <a
-                    href="#"
-                    className="  text-xl font-semibold  block py-2 pl-3 pr-4  hover:text-red-700 "
-                  >
-                    Services
-                  </a>
-                </li>
-                <li>
-                  <a
-                    href="#"
-                    className=" text-xl  font-semibold  block py-2 pl-3 pr-4 hover:text-red-700"
-                  >
-                    Our Work
-                  </a>
-                </li>
-                <li>
-                  <button className=" text-xl font-semibold   hover:bg-red-700 text-black-700   py-2 px-8 border-2 border-red-700  rounded-full">
-                    Contact us
-                  </button>
-                </li>
-              </ul>
+      <header className="sticky bg-white/90 w-full top-0 left-0 shadow-sm">
+        <div className="border-black-500 border px-4 p-4 grid grid-cols-2">
+          <div className="flex pl-10">
+            <a href="#" className="flex items-center">
+              <Image
+                src="https://flowbite.com/docs/images/logo.svg"
+                alt="Picture of the author"
+                width={62}
+                height={60}
+              />
+            </a>
+            <div className="px-4 pt-6">
+              <span className="self-center text-2xl font-bold text-red-700">
+                MABOLOTECH IT SOLUTION
+              </span>
+              <p className="text-xs font-semibold whitespace-nowrap">
+                Crafting Software Solutions that drive business growth
+              </p>
             </div>
           </div>
-        </nav>
+
+          <div className="grid justify-center">
+            <ul className="flex gap-8 items-center p-4 ml-20">
+              <li>
+                <a
+                  href="#"
+                  className="text-xl font-semibold block py-2 pl-3 pr-4 hover:text-red-700"
+                  aria-current="page"
+                >
+                  Home
+                </a>
+              </li>
+              <li>
+                <a
+                  href="#"
+                  className="text-xl font-semibold block py-2 pl-3 pr-4 hover:text-red-700"
+                >
+                  About us
+                </a>
+              </li>
+              <li>
+                <a
+                  href="#"
+                  className="text-xl font-semibold block py-2 pl-3 pr-4 hover:text-red-700"
+                >
+                  Services
+                </a>
+              </li>
+              <li>
+                <a
+                  href="#"
+                  className="text-xl font-semibold block py-2 pl-3 pr-4 hover:text-red-700"
+                >
+                  Our Work
+                </a>
+              </li>
+              <li>
+                <button className="text-xl font-semibold hover:bg-red-700 text-black-700 py-2 px-8 border-2 border-red-700 rounded-full">
+                  Contact us
+                </button>
+              </li>
+            </ul>
+          </div>
+        </div>
       </header>
       {/* header-end */}
+
       {/* start-Portfolio */}
       <div>
         <div className=" text-center py-40 ">
@@ -100,15 +98,9 @@ export default function Portfolio() {
             <button className="hover:text-red-700 ">UX/UI</button>
             <button className=" hover:text-red-700 ">Marketing </button>
           </div>
-          <div className=" ">
-            <button className=" ">
-              <Image
-                className=" mx-40  "
-                src={close1}
-                alt="Myimage"
-                height={39}
-                width={39}
-              />
+          <div className=" px-32 ">
+            <button>
+              <Image src={close1} alt="Myimage" height={39} width={39} />
             </button>
           </div>
 
@@ -131,38 +123,44 @@ export default function Portfolio() {
               </div>
             </button>
           </div>
-          {/* <p className="text-lg font-bold">Firefox Org</p>
-                  <span className=" text-base text-gray-400 ">Branding</span> */}
+
           <div className=" grid grid-cols-3  pb-28  px-40 pt-10 ">
-            <div className="  h-439 w-370 border-2 rounded-lg drop-shadow-lg">
-              <div>
-                <Image className=" " src={bag} alt="Myimage" />
-                <div className="flex justify-between">
-                  <div className=" px-2 pt-2">
-                    <p className="text-lg font-bold ">Firefox Org</p>
-                    <span className=" text-base text-gray-400 ">Branding</span>
-                  </div>
-                  <div>
-                    <button className="bg-gradient-to-t from-[#6362D7] to-[#FF8FE2] h-73  rounded-br-lg text-white   hover:bg-white hover:text-[#6362D7] ">
-                      <svg
-                        className="w-5 h-5 mx-5"
-                        fill="currentColor"
-                        viewBox="0 0 20 20"
-                        xmlns="http://www.w3.org/2000/svg"
-                      >
-                        <path
-                          fillRule="evenodd"
-                          d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
-                          clipRule="evenodd"
-                        ></path>
-                      </svg>
-                    </button>
-                  </div>
+            <div className="  h-439 w-370 border-2 rounded-lg hover:shadow-lg ">
+              <Image className=" " src={bag} alt="Myimage" />
+              <div className="flex justify-between">
+                <div className=" px-2 pt-2">
+                  <p className="text-lg font-bold ">Firefox Org</p>
+                  <span className=" text-base text-gray-400 ">Branding</span>
+                </div>
+                <div>
+                  <button className="bg-gradient-to-t from-[#6362D7] to-[#FF8FE2] h-73  rounded-br-lg text-white   hover:bg-white hover:text-[#6362D7] ">
+                    <svg
+                      className="w-5 h-5 mx-5"
+                      fill="currentColor"
+                      viewBox="0 0 20 20"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        fillRule="evenodd"
+                        d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
+                        clipRule="evenodd"
+                      ></path>
+                    </svg>
+                  </button>
                 </div>
               </div>
             </div>
 
-            <div className="  h-439 w-370 border rounded-lg drop-shadow-lg">
+            <div className="  h-439 w-370 border rounded-lg  hover:shadow-lg ">
+              <Image
+                className=" "
+                src={landing}
+                alt="Myimage"
+                width={370}
+                height={439}
+              />
+            </div>
+            <div className="  h-439 w-370 border rounded-lg hover:shadow-lg ">
               <div>
                 <Image
                   className=" "
@@ -173,7 +171,7 @@ export default function Portfolio() {
                 />
               </div>
             </div>
-            <div className="  h-439 w-370 border rounded-lg drop-shadow-lg">
+            <div className="  h-439 w-370 border rounded-lg  mt-10 hover:shadow-lg ">
               <div>
                 <Image
                   className=" "
@@ -184,7 +182,7 @@ export default function Portfolio() {
                 />
               </div>
             </div>
-            <div className="  h-439 w-370 border rounded-lg drop-shadow-lg mt-10">
+            <div className="  h-439 w-370 border rounded-lg  mt-10 hover:shadow-lg ">
               <div>
                 <Image
                   className=" "
@@ -195,7 +193,7 @@ export default function Portfolio() {
                 />
               </div>
             </div>
-            <div className="  h-439 w-370 border rounded-lg drop-shadow-lg mt-10">
+            <div className="  h-439 w-370 border rounded-lg  mt-10 hover:shadow-lg ">
               <div>
                 <Image
                   className=" "
@@ -206,7 +204,7 @@ export default function Portfolio() {
                 />
               </div>
             </div>
-            <div className="  h-439 w-370 border rounded-lg drop-shadow-lg mt-10">
+            <div className="  h-439 w-370 border rounded-lg  mt-10 hover:shadow-lg ">
               <div>
                 <Image
                   className=" "
@@ -217,7 +215,7 @@ export default function Portfolio() {
                 />
               </div>
             </div>
-            <div className="  h-439 w-370 border rounded-lg drop-shadow-lg mt-10">
+            <div className="  h-439 w-370 border rounded-lg  mt-10 hover:shadow-lg ">
               <div>
                 <Image
                   className=" "
@@ -228,18 +226,7 @@ export default function Portfolio() {
                 />
               </div>
             </div>
-            <div className="  h-439 w-370 border rounded-lg drop-shadow-lg mt-10">
-              <div>
-                <Image
-                  className=" "
-                  src={landing}
-                  alt="Myimage"
-                  width={370}
-                  height={439}
-                />
-              </div>
-            </div>
-            <div className="  h-439 w-370 border rounded-lg drop-shadow-lg mt-10">
+            <div className="  h-439 w-370 border rounded-lg  mt-10 hover:shadow-lg ">
               <div>
                 <Image
                   className=" "

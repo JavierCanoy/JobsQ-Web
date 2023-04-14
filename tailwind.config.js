@@ -26,6 +26,11 @@ module.exports = {
         259: "16.188rem",
         1013: "63.313rem",
         231: "14.438rem",
+        60.25: "3.766rem",
+        575: "35.938rem",
+        941: "58.813rem",
+        957: "59.813rem",
+        766: "47.875rem",
       },
       width: {
         401: "25.063rem",
@@ -43,12 +48,25 @@ module.exports = {
         468: "29.25rem",
         1800: "112.5rem",
         545: "34.063rem",
+        62.02: "3.876rem",
+        40: "2.5rem",
+        361: "22.563rem",
       },
-      fontSize: {
-        54: "3.375rem",
+
+      gap: {
+        19: "3.75rem",
       },
-      fontFamily: {
-        name: ["Poppins", "sans-serifs"],
+      borderRadius: {
+        mod: "0.625rem",
+      },
+      colors: {
+        costumeOrange: "#F35A43",
+        costumeRed: "#C1272D",
+        costumeRedBg: "#EB3449",
+        costumeBrnBg: "#F5B596",
+      },
+      spacing: {
+        399: "24.938rem",
       },
     },
   },
