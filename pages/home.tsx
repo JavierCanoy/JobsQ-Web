@@ -4,10 +4,7 @@ import facebook from "../public/iconfooter/facebook.svg";
 import instagram from "../public/iconfooter/instagram.svg";
 import linkedin from "../public/iconfooter/linkedin.svg";
 import skype from "../public/iconfooter/skype.svg";
-
-import pic from "../public/pic.png";
-import avatar from "../public/avatar.png";
-import team from "../public/team.png";
+import avatar from "../public/images/home1/avatar.png";
 
 import logo from "../public/images/logo/logo.png";
 
@@ -18,16 +15,17 @@ import one from "../public/images/home/one.png";
 import two from "../public/images/home/two.png";
 import tree from "../public/images/home/tree.png";
 import four from "../public/images/home/four.png";
+import profile from "../public/images/portfolionOne/profile.png";
 
 export default function Home() {
   return (
     <>
       {/* header*/}
-      <header className="sticky backdrop-blur-md  bg-white/90 w-full  top-0 left-0 shadow-sm ">
+      <header className="  sticky backdrop-blur-md z-50  w-full bg-white/90  top-0 left-0 shadow-sm ">
         <div className="border-black-500  border  px-4 p-7 grid grid-cols-2   ">
           {/* logo */}
           <div className=" flex  mx-12 ">
-            <a href="#" className="">
+            <a href="#">
               <Image
                 src={logo}
                 alt="Picture of the author"
@@ -36,7 +34,7 @@ export default function Home() {
               />
             </a>
             <div className=" px-4 grid content-end pb-1">
-              <span className=" self-center  text-2xl  font-bold  hover:text-costumeRed ">
+              <span className=" self-center  text-2xl  font-bold  text-costumeRed ">
                 MABOLOTECH IT SOLUTION
               </span>
               <p className=" text-xs font-semibold whitespace-nowrap ">
@@ -92,19 +90,16 @@ export default function Home() {
       {/* header-end */}
       {/* start-about-us */}
       <div className="about-us  ">
-        <div
-          className="relative  bg-cover bg-no-repeat"
-          style={{
-            backgroundPosition: "50%",
-            backgroundImage:
-              'url("https://tecdn.b-cdn.net/img/new/slides/146.webp")',
-            height: "579px",
-          }}
-        >
-          <div className="absolute top-0 right-0 bottom-0 left-0 h-full w-full overflow-hidden bg-fixed opacity-75 bg-gradient-to-r from-[#F35A43] to-[#C1272D]">
+        <div className="relative ">
+          <div className="image">
+            <Image src={profile} alt="Myimage" className=" h-579 w-full" />
+          </div>
+
+          <div className="absolute top-0 right-0 bottom-0 left-0 h-full w-full overflow-hidden bg-fixed opacity-75 bg-gradient-to-r from-costumeOrange to-costumeRed">
             <div className="flex h-full items-center justify-center">
               <div className="px-6 text-center text-white ">
                 <p className="text-xl font-light">ABOUT US</p>
+
                 <h1 className="mb-6 text-5xl font-bold pt-4">
                   LEADING THE BEST <br /> DIGITAL AGENCY IN TOWN
                 </h1>
@@ -169,7 +164,7 @@ export default function Home() {
             <br /> achieve your goals.
           </p>
         </div>
-        <div className="image flex justify-center gap-9 pt-10 pb-24 ">
+        <div className="image flex justify-center gap-9 pt-10 pb-20 ">
           <div className="">
             <Image
               src={group}
@@ -179,7 +174,7 @@ export default function Home() {
               width={726}
             />
           </div>
-          <div className="pt-28">
+          <div className="pt-40">
             <Image
               src={group1}
               alt="Myimage"
@@ -191,7 +186,7 @@ export default function Home() {
         </div>
       </div>
       {/* What clients value most */}
-      <div className="main p-24 bg-gradient-to-t from-[#F35A43] to-[#C1272D]">
+      <div className="main p-24 bg-gradient-to-t from-costumeOrange to-costumeRed">
         <h1 className=" text-center text-5xl font-bold text-white pb-6">
           What clients value most <br /> about us
         </h1>
@@ -200,8 +195,8 @@ export default function Home() {
           trust through communication,
           <br /> transparency, and results.
         </p>
-        <div className=" flex   gap-10 justify-center text-white pt-20 ">
-          <div className="bg-gradient-to-r from-[#F5B596] to-[#EB3449] p-4 rounded-lg">
+        <div className=" flex   gap-9 justify-center text-white pt-20 ">
+          <div className="bg-gradient-to-r from-costumeBrnBg to-costumeRedBg p-4 rounded-lg">
             <h1 className=" font-bold text-2xl">Transparency</h1>
             <p className=" text-base pt-4 pb-10">
               Lorem ipsum dolor amet, an ipsum dore <br /> dusino sinto. Ipsum
@@ -223,8 +218,8 @@ export default function Home() {
               </svg>
             </button>
           </div>
-          <div className="bg-gradient-to-r from-[#F5B596] to-[#EB3449] p-4 rounded-lg">
-            <h1 className=" font-bold text-2xl">Transparency</h1>
+          <div className="bg-gradient-to-r from-costumeBrnBg to-costumeRedBg p-4 rounded-lg">
+            <h1 className=" font-bold text-2xl">Experience Team</h1>
             <p className=" text-base pt-4 pb-10">
               Lorem ipsum dolor amet, an ipsum dore <br /> dusino sinto. Ipsum
               dolor amet lorem.
@@ -245,8 +240,8 @@ export default function Home() {
               </svg>
             </button>
           </div>
-          <div className="bg-gradient-to-r from-[#F5B596] to-[#EB3449] p-4 rounded-lg">
-            <h1 className=" font-bold text-2xl">Transparency</h1>
+          <div className="bg-gradient-to-r from-costumeBrnBg to-costumeRedBg p-4 rounded-lg">
+            <h1 className=" font-bold text-2xl">Result Guaranteed</h1>
             <p className=" text-base pt-4 pb-10">
               Lorem ipsum dolor amet, an ipsum dore <br /> dusino sinto. Ipsum
               dolor amet lorem.
@@ -284,7 +279,7 @@ export default function Home() {
             the universe.
           </p>
         </div>
-        <div className="flex justify-center gap-2 pt-20 pb-32 mx-4">
+        <div className="flex justify-center gap-2 pt-20 pb-32 mx-4 mt-8">
           <div>
             <Image src={one} alt="Myimage" height={432} width={550} />
             <div className=" pt-4">
@@ -317,8 +312,8 @@ export default function Home() {
       </div>
       {/*end meet-the-team */}
 
-      {/*  What do our clients   */}
-      <div className="flex  justify-center  p-28  bg-gradient-to-t from-[#F35A43] to-[#C1272D]">
+      {/*  What do our clients  say */}
+      <div className="flex  justify-center   p-28 mt-4 h-941 bg-gradient-to-t from-costumeOrange to-costumeRed">
         <div className=" text-center pt-10">
           <h1 className=" text-5xl font-bold text-white">
             What do our clients say <br /> about us?
@@ -345,7 +340,7 @@ export default function Home() {
         </div>
       </div>
       {/* Let’s start withyour dreamproject */}
-      <div className="main mt-10">
+      <div className="main mt-10 mb-28">
         <div className="flex justify-center ">
           <div className="grid content-center mr-20 px-10 pt-4">
             <h1 className="text-xl pb-10 text-gray-400">GET IN TOUCH</h1>
@@ -393,45 +388,55 @@ export default function Home() {
       {/*end Let’s start withyour dreamproject */}
 
       {/* subscribes-laters */}
-      <div className=" pt-32 pb-10  mt-24   bg-gradient-to-r from-[#F35A43] to-[#F35A43]">
-        <div className="flex justify-evenly    ">
-          <div className="px-96 ">
-            <h5 className=" text-center text-xl font-light text-white  px-96 mx-10  ">
+      <div className="  pt-36 pb-10 h-575 w-full   bg-costumeOrange">
+        <div className=" flex justify-center  pb-2 ">
+          <div className=" flex pl-10">
+            <h5 className=" text-center text-xl font-light text-white px-80  mx-96  ">
               NEWSLETTER
             </h5>
+
+            {/* recommend-to-removed by:sir-J */}
+            {/* <button className="   ">
+              <Image
+                src={cancelY}
+                alt="Picture of the author"
+                width={39}
+                height={39}
+              />
+            </button> */}
           </div>
-          <button className=" text-2xl bg-transparent text-white hover:bg-blue-500 text-black-700 font-semibold hover:text-white   pb-2  border-white hover:border-transparent rounded-full">
-            x
-          </button>
         </div>
+
         <h2 className=" text-center text-5xl font-bold text-white">
           Subscribe Company newsletter
         </h2>
         <form action="  ">
-          <div className="flex justify-center gap-14 p-28 ">
+          <div className="flex justify-center gap-16 p-36 pb-2">
             <input
-              className=" text-base w-80  text-white s leading-tight focus:outline-none border-b-2    bg-transparent placeholder-white "
+              className=" text-base w-399 text-white   leading-tight focus:outline-none border-b-2    bg-transparent placeholder-white "
               type="text"
               aria-label="Your-name"
               placeholder="Your name "
             />
             <input
-              className="py-4   text-base w-80 text-white  leading-tight focus:outline-none border-b-2  bg-transparent placeholder-white  "
+              className="py-4   text-base w-399 text-white  leading-tight focus:outline-none border-b-2  bg-transparent placeholder-white  "
               type="text"
               aria-label="Email"
               placeholder="Email"
             />
-            <button className="  text-xl font-semibold  bg-transparent text-white hover:bg-white   hover:text-red-500  px-10 border-2  border-white hover:border-red-500  rounded-full">
-              SUBMIT
-            </button>
+            <div className=" flex self-end  ">
+              <button className=" mx-6 text-sm text-white bg-transparent hover:border-costumeOrange hover:bg-white text-black-700 font-semibold hover:text-red-500 border-2 px-12 p-3 border-white hover:border-transparent rounded-full">
+                SUBMIT
+              </button>
+            </div>
           </div>
         </form>
       </div>
       {/* end-subscribes-laters */}
       {/* footer-start */}
       <footer className="text-gray-600  ">
-        <div className=" px-5 pt-8 pb-20  flex flex-row flex-wrap justify-center  ">
-          <div className="w-64  mr-24 ">
+        <div className=" pt-8 pb-20  flex flex-row flex-wrap justify-center  ">
+          <div className="  mr-24">
             <a href="#" className="flex items-center pb-2 px-4">
               <Image
                 src={logo}

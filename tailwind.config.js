@@ -31,6 +31,7 @@ module.exports = {
         941: "58.813rem",
         957: "59.813rem",
         766: "47.875rem",
+        579: "36.188rem",
       },
       width: {
         401: "25.063rem",
@@ -64,6 +65,8 @@ module.exports = {
         costumeRed: "#C1272D",
         costumeRedBg: "#EB3449",
         costumeBrnBg: "#F5B596",
+        costumeViolet: "#6362D7",
+        costumePink: "#FF8FE2",
       },
       spacing: {
         399: "24.938rem",

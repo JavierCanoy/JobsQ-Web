@@ -5,7 +5,7 @@ import instagram from "../public/iconfooter/instagram.svg";
 import linkedin from "../public/iconfooter/linkedin.svg";
 import skype from "../public/iconfooter/skype.svg";
 
-import avatar1 from "../public/images/home1/avatar1.png";
+import avatar from "../public/images/home1/avatar.png";
 import hero from "../public/images/home1/hero.png";
 import logo from "../public/images/logo/logo.png";
 
@@ -24,17 +24,15 @@ import Mask6 from "../public/images/home1/Mask6.png";
 import mom from "../public/images/home1/mom.png";
 import mom1 from "../public/images/home1/mom1.png";
 
-import cancelY from "../public/images/icon/cancelY.png";
-
 export default function HomePageOne() {
   return (
     <>
       {/* header-start */}
-      <header className="sticky backdrop-blur-md  bg-white/90 w-full  top-0 left-0 shadow-sm ">
+      <header className="  sticky backdrop-blur-md z-50  w-full bg-white/90  top-0 left-0 shadow-sm ">
         <div className="border-black-500  border  px-4 p-7 grid grid-cols-2   ">
           {/* logo */}
           <div className=" flex  mx-12 ">
-            <a href="#" className="">
+            <a href="#">
               <Image
                 src={logo}
                 alt="Picture of the author"
@@ -43,7 +41,7 @@ export default function HomePageOne() {
               />
             </a>
             <div className=" px-4 grid content-end pb-1">
-              <span className=" self-center  text-2xl  font-bold  hover:text-costumeRed ">
+              <span className=" self-center  text-2xl  font-bold  text-costumeRed ">
                 MABOLOTECH IT SOLUTION
               </span>
               <p className=" text-xs font-semibold whitespace-nowrap ">
@@ -99,7 +97,6 @@ export default function HomePageOne() {
       {/* header-end */}
 
       {/* our-goal */}
-
       <div className=" flex justify-end gap-32      ">
         <div className="ml-10 mx-20 px-2  ">
           <div className=" pt-64">
@@ -151,9 +148,16 @@ export default function HomePageOne() {
             </div>
           </div>
         </div>
-        <Image src={hero} alt="Myimage" height={957} width={788} />
+        <div className=" flex justify-end  overflow-hidden  h-957  w-788 ">
+          <Image
+            src={hero}
+            alt="Myimage"
+            className=" object-none object-bottom   "
+          />
+        </div>
       </div>
       {/* end */}
+
       {/* we-help-with */}
       <div className=" h-766 w-full  bg-gradient-to-t  from-costumeOrange to-costumeRed">
         {/* p-40  */}
@@ -184,7 +188,7 @@ export default function HomePageOne() {
             </button>
           </div>
           <div className=" grid grid-cols-2 gap-6">
-            <div className=" h-231 w-361 px-8 pt-8    rounded-lg  bg-costumeRedBg">
+            <div className=" h-231 w-361 px-8 pt-8 hover:bg-gradient-to-r from-costumeBrnBg to-costumeRedBg   rounded-lg  bg-costumeRedBg">
               <Image
                 src={first}
                 width={40}
@@ -198,7 +202,7 @@ export default function HomePageOne() {
                 dolor amet lorem.
               </p>
             </div>
-            <div className="  h-231 w-361 px-8 pt-8    rounded-lg  bg-costumeRedBg">
+            <div className="  h-231 w-361 px-8 pt-8     rounded-lg hover:bg-gradient-to-r from-costumeBrnBg to-costumeRedBg  bg-costumeRedBg">
               <Image
                 src={second}
                 width={40}
@@ -212,7 +216,7 @@ export default function HomePageOne() {
                 dolor amet lorem.
               </p>
             </div>
-            <div className="  p-6 rounded-lg   bg-gradient-to-r from-costumeBrnBg to-costumeRedBg ">
+            <div className="  p-6 rounded-lg  bg-gradient-to-r from-costumeBrnBg to-costumeRedBg  hover:from-costumeRedBg hover:to-costumeRedBg  ">
               <h3 className="font-bold text-xl ">Project management</h3>
               <p className=" text-base pt-2">
                 Lorem ipsum dolor amet, an ipsum dore <br /> dusino sinto. Ipsum
@@ -234,7 +238,7 @@ export default function HomePageOne() {
                 </svg>
               </button>
             </div>
-            <div className="  h-231 w-361 px-8 pt-8    rounded-lg  bg-costumeRedBg">
+            <div className="  h-231 w-361 px-8 pt-8    rounded-lg  hover:bg-gradient-to-r from-costumeBrnBg to-costumeRedBg bg-costumeRedBg">
               <Image
                 src={third}
                 width={40}
@@ -254,10 +258,10 @@ export default function HomePageOne() {
       {/* end-we-help-with */}
 
       {/* design */}
-      <div className="design">
-        <div className="flex mt-5 py-40 ">
+      <div className="design   ">
+        <div className="flex mt-5 py-40  ">
           <Image
-            className=" rounded-r-lg "
+            className=" rounded-r-lg shadow-lg"
             src={team1}
             alt="Myimage"
             height={730}
@@ -324,7 +328,7 @@ export default function HomePageOne() {
             </div>
           </div>
           <Image
-            className="rounded-l-lg"
+            className="rounded-l-lg shadow-lg"
             src={team}
             alt="Myimage"
             height={730}
@@ -349,26 +353,51 @@ export default function HomePageOne() {
       {/* images */}
       <div>
         <div className="flex justify-end gap-19  pt-28 pb-44 ">
-          <Image src={Mask3} alt="Myimage" height={128} width={401} />
+          <Image
+            src={Mask3}
+            alt="Myimage"
+            height={128}
+            width={401}
+            className="duration-200 hover:scale-95"
+          />
 
-          <Image src={Mask4} alt="Myimage" height={128} width={401} />
+          <Image
+            src={Mask4}
+            alt="Myimage"
+            height={128}
+            width={401}
+            className=" duration-200 hover:scale-95"
+          />
 
-          <Image src={Mask5} alt="Myimage" height={128} width={401} />
+          <Image
+            src={Mask5}
+            alt="Myimage"
+            height={128}
+            width={401}
+            className=" duration-200 hover:scale-95"
+          />
 
-          <Image src={Mask6} alt="Myimage" height={128} width={401} />
+          <Image
+            src={Mask6}
+            alt="Myimage"
+            height={128}
+            width={401}
+            className=" duration-200 hover:scale-95"
+          />
         </div>
       </div>
       {/*end- projects-we-love */}
+
       {/*  What do our clients   */}
-      <div className="flex  justify-center  p-28 mt-10 bg-gradient-to-t from-costumeOrange to-costumeRed">
+      <div className="flex  justify-center h-941   p-28 mt-10 bg-gradient-to-t from-costumeOrange to-costumeRed">
         <div className=" text-center pt-16">
           <h1 className=" text-5xl font-bold text-white">
             What do our clients say <br /> about us?
           </h1>
-          <div className="flex justify-center pt-24">
-            <Image src={avatar1} alt="Myimage" />
+          <div className="flex justify-center  ">
+            <Image src={avatar} width={200} height={200} alt="Myimage" />
           </div>
-          <p className="text-white text-2xl font-thin pt-4">
+          <p className="text-white text-2xl font-thin ">
             We help our clients make realize their most Important <br />
             business goals. We help our clients make realize their <br /> most
             Important business goals. business goals. We help <br />
@@ -386,6 +415,8 @@ export default function HomePageOne() {
           </div>
         </div>
       </div>
+      {/* end-What do our clients   */}
+
       {/* Let’s start withyour dreamproject */}
       <div className="main mt-24">
         <div className="flex justify-center ">
@@ -429,6 +460,7 @@ export default function HomePageOne() {
         </div>
       </div>
       {/*end Let’s start withyour dreamproject */}
+
       {/* read-what-team */}
       <div>
         <div className="flex justify-center pb-28 pt-60 mt-14">
@@ -438,14 +470,8 @@ export default function HomePageOne() {
         </div>
 
         <div className=" flex justify-center pt-14 gap-8 pb-48">
-          <div className=" w-370 h-395  border  rounded-mod shadow-lg">
-            <Image
-              className=" "
-              src={mom}
-              alt="Myimage"
-              height={266}
-              width={370}
-            />
+          <div className=" w-370 h-395  border  rounded-mod shadow-lg duration-200 hover:scale-95 ">
+            <Image src={mom} alt="Myimage" height={266} width={370} />
             <div className="flex justify-center ">
               <div>
                 <h2 className=" text-left pt-4 text-xl font-bold">
@@ -458,14 +484,9 @@ export default function HomePageOne() {
               </div>
             </div>
           </div>
-          <div className=" w-370 h-395  border rounded-mod shadow-lg">
-            <Image
-              className=" "
-              src={mom1}
-              alt="Myimage"
-              height={266}
-              width={370}
-            />
+
+          <div className=" w-370 h-395  border rounded-mod shadow-lg duration-200 hover:scale-95">
+            <Image src={mom1} alt="Myimage" height={266} width={370} />
             <div className="flex justify-center ">
               <div>
                 <h2 className=" text-left pt-4 text-xl font-bold">
@@ -478,14 +499,9 @@ export default function HomePageOne() {
               </div>
             </div>
           </div>
-          <div className=" w-370 h-395  border rounded-mod shadow-lg">
-            <Image
-              className=" "
-              src={mom}
-              alt="Myimage"
-              height={266}
-              width={370}
-            />
+
+          <div className=" w-370 h-395  border rounded-mod shadow-lg duration-200 hover:scale-95">
+            <Image src={mom} alt="Myimage" height={266} width={370} />
             <div className="flex justify-center ">
               <div>
                 <h2 className=" text-left pt-4 text-xl font-bold">
@@ -509,14 +525,16 @@ export default function HomePageOne() {
             <h5 className=" text-center text-xl font-light text-white px-80  mx-96  ">
               NEWSLETTER
             </h5>
-            <button className="   ">
+
+            {/* recommend-to-removed by:sir-J */}
+            {/* <button className="   ">
               <Image
                 src={cancelY}
                 alt="Picture of the author"
                 width={39}
                 height={39}
               />
-            </button>
+            </button> */}
           </div>
         </div>
 
@@ -526,7 +544,7 @@ export default function HomePageOne() {
         <form action="  ">
           <div className="flex justify-center gap-16 p-36 pb-2">
             <input
-              className=" text-base w-399 text-green  leading-tight focus:outline-none border-b-2    bg-transparent placeholder-white "
+              className=" text-base w-399 text-white   leading-tight focus:outline-none border-b-2    bg-transparent placeholder-white "
               type="text"
               aria-label="Your-name"
               placeholder="Your name "
@@ -545,10 +563,12 @@ export default function HomePageOne() {
           </div>
         </form>
       </div>
+      {/* end-subscribes-laters */}
+
       {/* footer-start */}
       <footer className="text-gray-600  ">
-        <div className=" px-5 pt-8 pb-20  flex flex-row flex-wrap justify-center  ">
-          <div className="w-64  mr-24 ">
+        <div className=" pt-8 pb-20  flex flex-row flex-wrap justify-center  ">
+          <div className="  mr-24">
             <a href="#" className="flex items-center pb-2 px-4">
               <Image
                 src={logo}

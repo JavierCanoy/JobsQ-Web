@@ -4,24 +4,32 @@ import facebook from "../public/iconfooter/facebook.svg";
 import instagram from "../public/iconfooter/instagram.svg";
 import linkedin from "../public/iconfooter/linkedin.svg";
 import skype from "../public/iconfooter/skype.svg";
-export default function PortfoliOne() {
+import logo from "../public/images/logo/logo.png";
+
+import united from "../public/images/portfolionOne/united.png";
+import best from "../public/images/portfolionOne/best-price.png";
+import team from "../public/images/portfolionOne/team.png";
+import shield from "../public/images/portfolionOne/shield.png";
+import profile from "../public/images/portfolionOne/profile.png";
+
+export default function PortfolioOne() {
   return (
     <>
       {/* header-start */}
-      <header className="sticky backdrop-blur-md  bg-white/90 w-full  top-0 left-0 shadow-sm">
-        <div className="border-black-500  border  px-4 p-4 grid grid-cols-2   ">
+      <header className="  sticky backdrop-blur-md z-50  w-full bg-white/90  top-0 left-0 shadow-sm ">
+        <div className="border-black-500  border  px-4 p-7 grid grid-cols-2   ">
           {/* logo */}
-          <div className=" flex pl-10 ">
-            <a href="#" className="flex items-center  ">
+          <div className=" flex  mx-12 ">
+            <a href="#">
               <Image
-                src="https://flowbite.com/docs/images/logo.svg"
+                src={logo}
                 alt="Picture of the author"
-                width={62}
-                height={60}
+                width={62.02}
+                height={60.25}
               />
             </a>
-            <div className=" px-4 pt-6">
-              <span className=" self-center  text-2xl  font-bold  text-red-700  ">
+            <div className=" px-4 grid content-end pb-1">
+              <span className=" self-center  text-2xl  font-bold  text-costumeRed ">
                 MABOLOTECH IT SOLUTION
               </span>
               <p className=" text-xs font-semibold whitespace-nowrap ">
@@ -31,11 +39,11 @@ export default function PortfoliOne() {
           </div>
           {/* menu */}
           <div className="grid justify-center  ">
-            <ul className="flex  gap-8   items-center p-4  ml-20">
+            <ul className="flex  gap-6   items-center   ml-28">
               <li>
                 <a
                   href="#"
-                  className=" text-xl  font-semibold block py-2 pl-3 pr-4    hover:text-red-700      "
+                  className=" text-xl  font-semibold block py-2 pl-3 pr-4    hover:text-costumeRed      "
                   aria-current="page"
                 >
                   Home
@@ -44,7 +52,7 @@ export default function PortfoliOne() {
               <li>
                 <a
                   href="#"
-                  className="text-xl font-semibold   block py-2 pl-3 pr-4     hover:text-red-700     "
+                  className="text-xl font-semibold   block py-2 pl-3 pr-4     hover:text-costumeRed     "
                 >
                   About us
                 </a>
@@ -52,7 +60,7 @@ export default function PortfoliOne() {
               <li>
                 <a
                   href="#"
-                  className="  text-xl font-semibold  block py-2 pl-3 pr-4  hover:text-red-700 "
+                  className="  text-xl font-semibold  block py-2 pl-3 pr-4  hover:text-costumeRed "
                 >
                   Services
                 </a>
@@ -60,13 +68,13 @@ export default function PortfoliOne() {
               <li>
                 <a
                   href="#"
-                  className=" text-xl  font-semibold  block py-2 pl-3 pr-4 hover:text-red-700"
+                  className=" text-xl  font-semibold  block py-2 pl-3 pr-4 hover:text-costumeRed"
                 >
                   Our Work
                 </a>
               </li>
               <li>
-                <button className=" text-xl font-semibold   hover:bg-red-700 text-black-700   py-2 px-8 border-2 border-red-700  rounded-full">
+                <button className="mx-3 text-xl font-semibold   hover:bg-costumeRed text-black-700 hover:text-white   px-12 p-3  border-2 border-red-700  rounded-full">
                   Contact us
                 </button>
               </li>
@@ -75,22 +83,18 @@ export default function PortfoliOne() {
         </div>
       </header>
       {/* header-end */}
-
       {/* about-us */}
       <div className="about-us  ">
-        <div
-          className="relative overflow-hidden bg-cover bg-no-repeat"
-          style={{
-            backgroundPosition: "50%",
-            backgroundImage:
-              'url("https://tecdn.b-cdn.net/img/new/slides/146.webp")',
-            height: "579px",
-          }}
-        >
-          <div className="absolute top-0 right-0 bottom-0 left-0 h-full w-full overflow-hidden bg-fixed opacity-75 bg-gradient-to-r from-[#F35A43] to-[#C1272D]">
+        <div className="relative ">
+          <div className="image">
+            <Image src={profile} alt="Myimage" className=" h-579 w-full" />
+          </div>
+
+          <div className="absolute top-0 right-0 bottom-0 left-0 h-full w-full overflow-hidden bg-fixed opacity-75 bg-gradient-to-r from-costumeOrange to-costumeRed">
             <div className="flex h-full items-center justify-center">
               <div className="px-6 text-center text-white ">
                 <p className="text-xl font-light">SERVICES</p>
+
                 <h1 className="mb-6 text-5xl font-bold pt-4">
                   Solution we provide
                 </h1>
@@ -154,8 +158,8 @@ export default function PortfoliOne() {
           What we offer:
         </h1>
         <div className="flex justify-center gap-8 pt-16">
-          <div className=" h-259 w-468 bg-gradient-to-r from-[#F35A43] to-[#C1272D] rounded-3xl px-10 text-white mb-10 pt-2">
-            <h1 className=" text-54 font-bold">01</h1>
+          <div className=" h-259 w-468 bg-gradient-to-r from-costumeRedBg to-costumeOrange rounded-3xl px-10 text-white mb-10 pt-2">
+            <h1 className=" text-5xl font-bold pt-1 pb-1">01</h1>
             <span className="text-xl font-semibold">
               Requirements <br /> Gathering and Analysis:
             </span>
@@ -165,8 +169,8 @@ export default function PortfoliOne() {
               project.
             </p>
           </div>
-          <div className=" h-259 w-468 bg-gradient-to-r from-[#F35A43] to-[#C1272D] rounded-3xl px-10 text-white pt-2">
-            <h1 className=" text-54 font-bold">02</h1>
+          <div className=" h-259 w-468 bg-gradient-to-r from-costumeRedBg to-costumeOrange rounded-3xl px-10 text-white pt-2">
+            <h1 className=" text-5xl font-bold pt-1 pb-1">02</h1>
             <span className="text-xl font-semibold">Design and UI/UX:</span>
             <p className="text-base pt-2">
               Our experienced designers will work with you to create a
@@ -174,10 +178,10 @@ export default function PortfoliOne() {
               architecture to support your software needs.
             </p>
           </div>
-          <div className=" h-259 w-468 bg-gradient-to-r from-[#F35A43] to-[#C1272D] rounded-3xl px-10 text-white pt-2">
-            <h1 className=" text-54 font-bold">03</h1>
+          <div className=" h-259 w-468 bg-gradient-to-r from-costumeRedBg to-costumeOrange rounded-3xl px-10 text-white pt-2">
+            <h1 className=" text-5xl font-bold pt-1 pb-1">03</h1>
             <span className="text-xl font-semibold">Implementation:</span>
-            <p className="text-base">
+            <p className="text-base pt-2">
               Our team of developers will use the latest technologies and
               programming languages to bring your software to life, ensuring it
               is fast, secure, and scalable.
@@ -185,8 +189,8 @@ export default function PortfoliOne() {
           </div>
         </div>
         <div className="flex justify-center gap-8 ">
-          <div className=" h-259 w-468 bg-gradient-to-r from-[#F35A43] to-[#C1272D] rounded-3xl px-10 text-white pt-2">
-            <h1 className=" text-54 font-bold">04</h1>
+          <div className=" h-259 w-468 bg-gradient-to-r from-costumeRedBg to-costumeOrange rounded-3xl px-10 text-white pt-2">
+            <h1 className=" text-5xl font-bold pt-1 pb-1">04</h1>
             <span className="text-xl font-semibold">Testing:</span>
             <p className="text-base pt-2">
               Thorough testing is integral to our software development process.
@@ -194,21 +198,21 @@ export default function PortfoliOne() {
               requirements and operates without errors or glitches.
             </p>
           </div>
-          <div className=" h-259 w-468 bg-gradient-to-r from-[#F35A43] to-[#C1272D] rounded-3xl px-10 text-white pt-2">
-            <h1 className=" text-54 font-bold">05</h1>
+          <div className=" h-259 w-468 bg-gradient-to-r from-costumeRedBg to-costumeOrange rounded-3xl px-10 text-white pt-2">
+            <h1 className=" text-5xl font-bold pt-1 pb-1">05</h1>
             <span className="text-xl font-semibold">
               Maintenance and Support:
             </span>
-            <p className="text-base pt-2">
+            <p className="text-base pt-7">
               After we launch your software, we will provide ongoing care and
               support, ensuring that your software meets your needs and performs
               optimally.
             </p>
           </div>
-          <div className=" h-259 w-468 bg-gradient-to-r from-[#F35A43] to-[#C1272D] rounded-3xl px-10 text-white pt-2">
-            <h1 className=" text-54 font-bold">06</h1>
-            <span className="text-xl font-semibold">Implementation:</span>
-            <p className="text-base">
+          <div className=" h-259 w-468 bg-gradient-to-r from-costumeRedBg to-costumeOrange rounded-3xl px-10 text-white pt-2">
+            <h1 className=" text-5xl font-bold pt-1 pb-1">06</h1>
+            <span className="text-xl font-semibold ">Implementation:</span>
+            <p className="text-base pt-2">
               Our team of developers will use the latest technologies and
               programming languages to bring your software to life, ensuring it
               is fast, secure, and scalable.
@@ -218,7 +222,7 @@ export default function PortfoliOne() {
       </div>
       {/*end-what-we-offer */}
       {/*why-clients-choose-us */}
-      <div className="bg-gradient-to-t from-[#F35A43] to-[#C1272D]  h-1013  pt-36 mt-32">
+      <div className="bg-gradient-to-t from-costumeOrange to-costumeRed  h-1013  pt-36 mt-32">
         <div className=" text-center">
           <h1 className="text-5xl text-white  font-bold">
             Why clients choose us
@@ -230,18 +234,29 @@ export default function PortfoliOne() {
           </p>
         </div>
         <div className=" flex mx-80 justify-center gap-5 pt-24 ">
-          <div className=" h-231 w-545 bg-gradient-to-r from-[#F5B596] to-[#EB3449] rounded-2xl px-10 grid content-center mb-8">
-            <h1 className=" text-white text-2xl font-bold">Experienced Team</h1>
-            <p className=" pt-2 text-white">
-              Our software developers and project managers have years of
-              <br />
-              experience delivering top-quality software solutions to clients
-              <br />
-              in various industries.
-            </p>
+          <div className=" h-231 w-545 bg-gradient-to-r from-costumeBrnBg to-costumeRedBg  rounded-2xl px-10  mb-8">
+            <div className=" flex justify-end  ">
+              <Image src={team} alt="Myimage" className="  absolute" />
+            </div>
+            <div>
+              <h1 className=" text-white text-2xl font-bold pt-14">
+                Experienced Team
+              </h1>
+
+              <p className=" pt-2 text-white ">
+                Our software developers and project managers have years of
+                <br />
+                experience delivering top-quality software solutions to clients
+                <br />
+                in various industries.
+              </p>
+            </div>
           </div>
-          <div className=" h-231 w-545 bg-gradient-to-r from-[#F5B596] to-[#EB3449] rounded-2xl px-10 grid content-center">
-            <h1 className=" text-white text-2xl font-bold">
+          <div className=" h-231 w-545 bg-gradient-to-r from-costumeBrnBg to-costumeRedBg  rounded-2xl px-10 ">
+            <div className=" flex justify-end  ">
+              <Image src={united} alt="Myimage" className="  absolute pt-2" />
+            </div>
+            <h1 className=" text-white text-2xl font-bold pt-14">
               Personalized Approach:
             </h1>
             <p className=" pt-2 text-white">
@@ -251,8 +266,11 @@ export default function PortfoliOne() {
           </div>
         </div>
         <div className=" flex mx-80 justify-center gap-5 pt-2">
-          <div className=" h-231 w-545 bg-gradient-to-r from-[#F5B596] to-[#EB3449] rounded-2xl px-10 grid content-center">
-            <h1 className=" text-white text-2xl font-bold">
+          <div className=" h-231 w-545 bg-gradient-to-r from-costumeBrnBg to-costumeRedBg  rounded-2xl px-10 ">
+            <div className=" flex justify-end  ">
+              <Image src={shield} alt="Myimage" className="  absolute pt-2" />
+            </div>
+            <h1 className=" text-white text-2xl font-bold pt-14">
               Quality Assurance:
             </h1>
             <p className=" pt-2 text-white">
@@ -262,8 +280,11 @@ export default function PortfoliOne() {
               meets the highest standards.
             </p>
           </div>
-          <div className=" h-231 w-545 bg-gradient-to-r from-[#F5B596] to-[#EB3449] rounded-2xl px-10 grid content-center">
-            <h1 className=" text-white text-2xl font-bold">
+          <div className=" h-231 w-545 bg-gradient-to-r from-costumeBrnBg to-costumeRedBg rounded-2xl px-10 ">
+            <div className=" flex justify-end  ">
+              <Image src={best} alt="Myimage" className="  absolute pt-2" />
+            </div>
+            <h1 className=" text-white text-2xl font-bold pt-14">
               Competitive Pricing:
             </h1>
             <p className=" pt-2 text-white">
@@ -309,13 +330,8 @@ export default function PortfoliOne() {
       </div>
       {/*end-contact-us-today */}
       {/* get-in-touch */}
-      <div className="bg-gradient-to-t from-[#F35A43] to-[#C1272D]">
-        <div className="flex justify-items-start px-40 pt-10">
-          <button className=" float pt-10 text-xl font-bold text-white ">
-            x
-          </button>
-        </div>
-        <div className=" flex justify-center gap-40 pt-40 pb-40 ">
+      <div className=" bg-gradient-to-t from-costumeOrange to-costumeRed py-6 mb-12">
+        <div className=" flex justify-center gap-40 pt-28 pb-40 ">
           <div className=" text-left text-white">
             <h1 className="text-xl font-thin ">GET IN TOUCH</h1>
             <p className="text-5xl font-bold pt-10">
@@ -337,18 +353,18 @@ export default function PortfoliOne() {
                   placeholder="Email "
                 />
                 <input
-                  className="py-4 text-base  leading-tight focus:outline-none border-b-2   pt-14 w-full bg-transparent text-white placeholder-gray-300"
+                  className="py-4 text-base  leading-tight focus:outline-none border-b-2   pt-16 w-full bg-transparent text-white placeholder-gray-300"
                   type="text"
                   aria-label="Full name"
                   placeholder="Full name"
                 />
                 <input
-                  className="py-20  text-base leading-tight focus:outline-none border-b-2 w-full pt-14 bg-transparent  text-white placeholder-gray-300"
+                  className="py-28  text-base leading-tight focus:outline-none border-b-2 w-full pt-16 bg-transparent  text-white placeholder-gray-300"
                   type="text"
                   aria-label="MEssage"
                   placeholder="Message"
                 />
-                <div className="pt-14 w-36 ">
+                <div className="pt-16 w-36 ">
                   <button className=" text-2xl text-white bg-transparent hover:bg-white text-black-700 font-semibold hover:text-red-500 py-2 px-8 border-2 border-white hover:border-transparent rounded-full">
                     SUBMIT
                   </button>
@@ -361,11 +377,11 @@ export default function PortfoliOne() {
       {/* end-get-in-touch */}
       {/* footer-start */}
       <footer className="text-gray-600  ">
-        <div className=" px-5 pt-10 pb-20  flex flex-row flex-wrap justify-center  ">
-          <div className="w-64  mr-24 ">
+        <div className=" pt-8 pb-20  flex flex-row flex-wrap justify-center  ">
+          <div className="  mr-24">
             <a href="#" className="flex items-center pb-2 px-4">
               <Image
-                src="https://flowbite.com/docs/images/logo.svg"
+                src={logo}
                 alt="Picture of the author"
                 width={62}
                 height={60}
@@ -386,19 +402,19 @@ export default function PortfoliOne() {
                 Services
               </h2>
               <nav className="list-none">
-                <li className="mb-2 mt-2">
+                <li className=" mt-3">
                   <a className="text-gray-400  ">Development</a>
                 </li>
-                <li className="mt-2">
+                <li className="mt-3">
                   <a className="text-gray-400 ">Design Sprint</a>
                 </li>
-                <li className="mt-2">
+                <li className="mt-3">
                   <a className="text-gray-400 ">UX Design</a>
                 </li>
-                <li className="mt-2">
+                <li className="mt-3">
                   <a className="text-gray-400 ">Online Marketing</a>
                 </li>
-                <li className="mt-2">
+                <li className="mt-3">
                   <a className="text-gray-400 ">Content</a>
                 </li>
               </nav>
@@ -408,19 +424,19 @@ export default function PortfoliOne() {
                 About us
               </h2>
               <nav className="list-none">
-                <li className="mb-2 mt-2 ">
+                <li className=" mt-3 ">
                   <a className="text-gray-400  ">About us</a>
                 </li>
-                <li className="mt-2">
+                <li className="mt-3">
                   <a className="text-gray-400 ">Team</a>
                 </li>
-                <li className="mt-2">
+                <li className="mt-3">
                   <a className="text-gray-400 ">Portfolio</a>
                 </li>
-                <li className="mt-2">
+                <li className="mt-3">
                   <a className="text-gray-400 ">News & Article</a>
                 </li>
-                <li className="mt-2">
+                <li className="mt-3">
                   <a className="text-gray-400 ">Career</a>
                 </li>
               </nav>
@@ -429,13 +445,13 @@ export default function PortfoliOne() {
               <h2 className="title-font font-bold text-2xl text-red-700   pb-2">
                 Get in touch
               </h2>
-              <nav className="list-none">
-                <li className="mb-2 mt-2 ">
+              <div className="list-none">
+                <li className=" mt-2 ">
                   <a className="  text-gray-400 ">
                     99 Wall Street <br /> New York, NY 10005
                   </a>
                 </li>
-                <ul className="mt-4 flex text-gray-400 gap-2">
+                <ul className="mt-8 flex text-gray-400 gap-2">
                   <li>
                     <a href="#" target="_blank" title="">
                       <Image src={facebook} alt="Myimage" />
@@ -460,12 +476,12 @@ export default function PortfoliOne() {
                     </a>
                   </li>
                 </ul>
-              </nav>
+              </div>
             </div>
           </div>
         </div>
 
-        <p className=" text-center text-base pb-44 text-gray-400">
+        <p className=" text-center text-base pt-3 pb-48 text-gray-400">
           Copyrighted © 2023 Mabolotech IT Solution
         </p>
       </footer>
