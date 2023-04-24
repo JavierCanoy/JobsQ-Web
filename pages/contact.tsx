@@ -1,17 +1,5 @@
 import Image from "next/image";
 
-// icon-footer
-import facebook from "../public/iconfooter/facebook.svg";
-import instagram from "../public/iconfooter/instagram.svg";
-import linkedin from "../public/iconfooter/linkedin.svg";
-import skype from "../public/iconfooter/skype.svg";
-import logo from "../public/images/logo/logo.png";
-
-import mapMini from "../public/images/contact/mapMini.png";
-import note1 from "../public/images/contact/note1.svg";
-import signs from "../public/images/contact/signs.svg";
-import social from "../public/images/contact/social.svg";
-
 export default function Contact() {
   return (
     <>
@@ -21,8 +9,14 @@ export default function Contact() {
           {/* logo */}
           <div className=" flex  mx-12 ">
             <a href="#">
-              <Image
+              {/* <Image
                 src={logo}
+                alt="Picture of the author"
+                width={62.02}
+                height={60.25}
+              /> */}
+              <Image
+                src="/images/logo/logo.png"
                 alt="Picture of the author"
                 width={62.02}
                 height={60.25}
@@ -83,6 +77,7 @@ export default function Contact() {
         </div>
       </header>
       {/* header-end */}
+
       {/* Let’s build your dream */}
       <div className="pt-10">
         <p className="   text-center pt-56 pb-56  font-bold  lg:text-5xl sm:px-16 xl:px-48 dark:text-gray-400">
@@ -91,7 +86,12 @@ export default function Contact() {
         <div className=" flex justify-center gap-96 ">
           <div>
             <div className="flex justify-center items-center   bg-red-100  h-[145px] w-[145px] rounded-full">
-              <Image src={signs} alt="Myimage" />
+              <Image
+                src="/images/contact/signs.svg"
+                alt="Myimage"
+                width={60}
+                height={59.55}
+              />
             </div>
             <div>
               <span className="text-2xl font-bold pt-5">Our Location</span>
@@ -103,7 +103,12 @@ export default function Contact() {
 
           <div>
             <div className="flex justify-center items-center  bg-red-100  h-[145px] w-[145px] rounded-full">
-              <Image src={note1} alt="Myimage" />
+              <Image
+                src="/images/contact/note1.svg"
+                alt="Myimage"
+                width={60}
+                height={59.55}
+              />
             </div>
             <div>
               <span className="text-2xl font-bold pt-5">E-mail & Phone</span>
@@ -115,15 +120,40 @@ export default function Contact() {
 
           <div>
             <div className="flex justify-center items-center  bg-red-100  h-[145px] w-[145px] rounded-full">
-              <Image src={social} alt="Myimage" />
+              <Image
+                src="/images/contact/social.svg"
+                alt="Myimage"
+                width={60}
+                height={59.55}
+              />
             </div>
             <div>
               <span className="text-2xl font-bold pt-5">Get in touch</span>
               <div className="grid justify-items-center grid-cols-4 gap-4 pt-7">
-                <Image src={facebook} alt="Myimage" />
-                <Image src={skype} alt="Myimage" />
-                <Image src={linkedin} alt="Myimage" />
-                <Image src={instagram} alt="Myimage" />
+                <Image
+                  src="/iconfooter/facebook.svg"
+                  alt="Myimage"
+                  width={7.92}
+                  height={17}
+                />
+                <Image
+                  src="/iconfooter/skype.svg"
+                  alt="Myimage"
+                  width={16}
+                  height={15.29}
+                />
+                <Image
+                  src="/iconfooter/linkedin.svg"
+                  alt="Myimage"
+                  width={17}
+                  height={17}
+                />
+                <Image
+                  src="/iconfooter/instagram.svg"
+                  alt="Myimage"
+                  width={17}
+                  height={17}
+                />
               </div>
             </div>
           </div>
@@ -134,7 +164,13 @@ export default function Contact() {
       {/* minimap */}
       <div className="grid  grid-cols-2 pt-40 pb-36 ">
         <div className=" ">
-          <Image src={mapMini} alt="Myimage" className=" h-902 w-900" />
+          <Image
+            src="/images/contact/mapMini.png"
+            alt="Myimage"
+            className=" h-902 "
+            width={900}
+            height={902}
+          />
         </div>
 
         <form className=" ">
@@ -169,16 +205,17 @@ export default function Contact() {
         </form>
       </div>
       {/* end-Let’s build your dream */}
+
       {/* footer-start */}
       <footer className="text-gray-600  ">
         <div className=" pt-8 pb-20  flex flex-row flex-wrap justify-center  ">
           <div className="  mr-24">
             <a href="#" className="flex items-center pb-2 px-4">
               <Image
-                src={logo}
+                src="/images/logo/logo.png"
                 alt="Picture of the author"
-                width={62}
-                height={60}
+                width={62.02}
+                height={60.25}
               />
             </a>
             <span className="font-bold text-base  text-red-700 ">
@@ -245,28 +282,49 @@ export default function Contact() {
                     99 Wall Street <br /> New York, NY 10005
                   </a>
                 </li>
+
                 <ul className="mt-8 flex text-gray-400 gap-2">
                   <li>
                     <a href="#" target="_blank" title="">
-                      <Image src={facebook} alt="Myimage" />
+                      <Image
+                        src="/iconfooter/facebook.svg"
+                        alt="Myimage"
+                        width={7.92}
+                        height={17}
+                      />
                     </a>
                   </li>
 
                   <li className="ml-6">
                     <a href="#" target="_blank" title="">
-                      <Image src={skype} alt="Myimage" />
+                      <Image
+                        src="/iconfooter/skype.svg"
+                        alt="Myimage"
+                        width={16}
+                        height={15.29}
+                      />
                     </a>
                   </li>
 
                   <li className="ml-6">
                     <a href="#" target="_blank" title="">
-                      <Image src={linkedin} alt="Myimage" />
+                      <Image
+                        src="/iconfooter/linkedin.svg"
+                        alt="Myimage"
+                        width={17}
+                        height={17}
+                      />
                     </a>
                   </li>
 
                   <li className="ml-6">
                     <a href="#" target="_blank" title="">
-                      <Image src={instagram} alt="Myimage" />
+                      <Image
+                        src="/iconfooter/instagram.svg"
+                        alt="Myimage"
+                        width={17}
+                        height={17}
+                      />
                     </a>
                   </li>
                 </ul>

@@ -1,19 +1,4 @@
 import Image from "next/image";
-// icon-footer
-import facebook from "../public/iconfooter/facebook.svg";
-import instagram from "../public/iconfooter/instagram.svg";
-import linkedin from "../public/iconfooter/linkedin.svg";
-import skype from "../public/iconfooter/skype.svg";
-
-import bag from "../public/images/portfolio/bag.png";
-import pic1 from "../public/images/portfolio/pic1.png";
-import pic2 from "../public/images/portfolio/pic2.png";
-import pic3 from "../public/images/portfolio/pic3.png";
-import pic4 from "../public/images/portfolio/pic4.png";
-import pic5 from "../public/images/portfolio/pic5.png";
-import pic6 from "../public/images/portfolio/pic6.png";
-import pic7 from "../public/images/portfolio/pic7.png";
-import pic8 from "../public/images/portfolio/pic8.png";
 
 import logo from "../public/images/logo/logo.png";
 
@@ -27,7 +12,7 @@ export default function Portfolio() {
           <div className=" flex  mx-12 ">
             <a href="#">
               <Image
-                src={logo}
+                src="/images/logo/logo.png"
                 alt="Picture of the author"
                 width={62.02}
                 height={60.25}
@@ -136,7 +121,13 @@ export default function Portfolio() {
 
           <div className=" grid grid-cols-3  pb-36   px-64 pt-10 ">
             <div className="  h-439 w-370 border-2 rounded-lg hover:shadow-lg  duration-200 hover:scale-95">
-              <Image className=" " src={bag} alt="bag" />
+              <Image
+                className=" "
+                src="/images/portfolio/bag.png"
+                alt="bag"
+                width={370}
+                height={366}
+              />
               <div className="flex justify-between">
                 <div className=" px-2 pt-2">
                   <p className="text-lg font-bold ">Firefox Org</p>
@@ -162,42 +153,76 @@ export default function Portfolio() {
             </div>
             {/* images */}
             <div className="  h-439 w-370 border rounded-lg  hover:shadow-lg duration-200 hover:scale-95 ">
-              <Image className=" " src={pic1} alt="Myimage" />
+              <Image
+                className=" "
+                src="/images/portfolio/pic1.png"
+                alt="Myimage"
+                width={370}
+                height={439}
+              />
             </div>
-            <div className="  h-439 w-370 border rounded-lg hover:shadow-lg  duration-200 hover:scale-95 ">
-              <div>
-                <Image className=" " src={pic2} alt="Myimage" />
-              </div>
+            <div className="  h-439 w-370 border rounded-lg  hover:shadow-lg duration-200 hover:scale-95 ">
+              <Image
+                className=" "
+                src="/images/portfolio/pic2.png"
+                alt="Myimage"
+                width={370}
+                height={439}
+              />
             </div>
-            <div className="  h-439 w-370 border rounded-lg  mt-10 hover:shadow-lg  duration-200 hover:scale-95">
-              <div>
-                <Image className=" " src={pic3} alt="Myimage" />
-              </div>
+            <div className="  h-439 w-370 border rounded-lg  hover:shadow-lg duration-200 hover:scale-95 ">
+              <Image
+                className=" "
+                src="/images/portfolio/pic3.png"
+                alt="Myimage"
+                width={370}
+                height={439}
+              />
             </div>
-            <div className="  h-439 w-370 border rounded-lg  mt-10 hover:shadow-lg  duration-200 hover:scale-95">
-              <div>
-                <Image className=" " src={pic4} alt="Myimage" />
-              </div>
+            <div className="  h-439 w-370 border rounded-lg  hover:shadow-lg duration-200 hover:scale-95 ">
+              <Image
+                className=" "
+                src="/images/portfolio/pic4.png"
+                alt="Myimage"
+                width={370}
+                height={439}
+              />
             </div>
-            <div className="  h-439 w-370 border rounded-lg  mt-10 hover:shadow-lg   duration-200 hover:scale-95">
-              <div>
-                <Image className=" " src={pic5} alt="Myimage" />
-              </div>
+            <div className="  h-439 w-370 border rounded-lg  hover:shadow-lg duration-200 hover:scale-95 ">
+              <Image
+                className=" "
+                src="/images/portfolio/pic5.png"
+                alt="Myimage"
+                width={370}
+                height={439}
+              />
             </div>
-            <div className="  h-439 w-370 border rounded-lg  mt-10 hover:shadow-lg  duration-200 hover:scale-95">
-              <div>
-                <Image className=" " src={pic6} alt="Myimage" />
-              </div>
+            <div className="  h-439 w-370 border rounded-lg  hover:shadow-lg duration-200 hover:scale-95 ">
+              <Image
+                className=" "
+                src="/images/portfolio/pic6.png"
+                alt="Myimage"
+                width={370}
+                height={439}
+              />
             </div>
-            <div className="  h-439 w-370 border rounded-lg  mt-10 hover:shadow-lg  duration-200 hover:scale-95">
-              <div>
-                <Image className=" " src={pic7} alt="Myimage" />
-              </div>
+            <div className="  h-439 w-370 border rounded-lg  hover:shadow-lg duration-200 hover:scale-95 ">
+              <Image
+                className=" "
+                src="/images/portfolio/pic7.png"
+                alt="Myimage"
+                width={370}
+                height={439}
+              />
             </div>
-            <div className="  h-439 w-370 border rounded-lg  mt-10 hover:shadow-lg  duration-200 hover:scale-95">
-              <div>
-                <Image className=" " src={pic8} alt="Myimage" />
-              </div>
+            <div className="  h-439 w-370 border rounded-lg  hover:shadow-lg duration-200 hover:scale-95 ">
+              <Image
+                className=" "
+                src="/images/portfolio/pic8.png"
+                alt="Myimage"
+                width={370}
+                height={439}
+              />
             </div>
           </div>
         </div>
@@ -249,16 +274,17 @@ export default function Portfolio() {
         </div>
       </div>
       {/* end-get-in-touch */}
+
       {/* footer-start */}
       <footer className="text-gray-600  ">
         <div className=" pt-8 pb-20  flex flex-row flex-wrap justify-center  ">
           <div className="  mr-24">
             <a href="#" className="flex items-center pb-2 px-4">
               <Image
-                src={logo}
+                src="/images/logo/logo.png"
                 alt="Picture of the author"
-                width={62}
-                height={60}
+                width={62.02}
+                height={60.25}
               />
             </a>
             <span className="font-bold text-base  text-red-700 ">
@@ -325,28 +351,49 @@ export default function Portfolio() {
                     99 Wall Street <br /> New York, NY 10005
                   </a>
                 </li>
+
                 <ul className="mt-8 flex text-gray-400 gap-2">
                   <li>
                     <a href="#" target="_blank" title="">
-                      <Image src={facebook} alt="Myimage" />
+                      <Image
+                        src="/iconfooter/facebook.svg"
+                        alt="Myimage"
+                        width={7.92}
+                        height={17}
+                      />
                     </a>
                   </li>
 
                   <li className="ml-6">
                     <a href="#" target="_blank" title="">
-                      <Image src={skype} alt="Myimage" />
+                      <Image
+                        src="/iconfooter/skype.svg"
+                        alt="Myimage"
+                        width={16}
+                        height={15.29}
+                      />
                     </a>
                   </li>
 
                   <li className="ml-6">
                     <a href="#" target="_blank" title="">
-                      <Image src={linkedin} alt="Myimage" />
+                      <Image
+                        src="/iconfooter/linkedin.svg"
+                        alt="Myimage"
+                        width={17}
+                        height={17}
+                      />
                     </a>
                   </li>
 
                   <li className="ml-6">
                     <a href="#" target="_blank" title="">
-                      <Image src={instagram} alt="Myimage" />
+                      <Image
+                        src="/iconfooter/instagram.svg"
+                        alt="Myimage"
+                        width={17}
+                        height={17}
+                      />
                     </a>
                   </li>
                 </ul>

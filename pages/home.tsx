@@ -1,33 +1,16 @@
 import Image from "next/image";
-//footer-image
-import facebook from "../public/iconfooter/facebook.svg";
-import instagram from "../public/iconfooter/instagram.svg";
-import linkedin from "../public/iconfooter/linkedin.svg";
-import skype from "../public/iconfooter/skype.svg";
-import avatar from "../public/images/home1/avatar.png";
-
-import logo from "../public/images/logo/logo.png";
-
-import group from "../public/images/home/group.png";
-import group1 from "../public/images/home/group1.png";
-
-import one from "../public/images/home/one.png";
-import two from "../public/images/home/two.png";
-import tree from "../public/images/home/tree.png";
-import four from "../public/images/home/four.png";
-import profile from "../public/images/portfolionOne/profile.png";
 
 export default function Home() {
   return (
     <>
-      {/* header*/}
+      {/* header-start */}
       <header className="  sticky backdrop-blur-md z-50  w-full bg-white/90  top-0 left-0 shadow-sm ">
         <div className="border-black-500  border  px-4 p-7 grid grid-cols-2   ">
           {/* logo */}
           <div className=" flex  mx-12 ">
             <a href="#">
               <Image
-                src={logo}
+                src="/images/logo/logo.png"
                 alt="Picture of the author"
                 width={62.02}
                 height={60.25}
@@ -88,11 +71,18 @@ export default function Home() {
         </div>
       </header>
       {/* header-end */}
+
       {/* start-about-us */}
       <div className="about-us  ">
         <div className="relative ">
           <div className="image">
-            <Image src={profile} alt="Myimage" className=" h-579 w-full" />
+            <Image
+              src="/images/portfolionOne/profile.png"
+              alt="Myimage"
+              className=" w-full"
+              width={1800}
+              height={579}
+            />
           </div>
 
           <div className="absolute top-0 right-0 bottom-0 left-0 h-full w-full overflow-hidden bg-fixed opacity-75 bg-gradient-to-r from-costumeOrange to-costumeRed">
@@ -167,7 +157,7 @@ export default function Home() {
         <div className="image flex justify-center gap-9 pt-10 pb-20 ">
           <div className="">
             <Image
-              src={group}
+              src="/images/home/group.png"
               alt="Myimage"
               className=" rounded-lg"
               height={589}
@@ -176,7 +166,7 @@ export default function Home() {
           </div>
           <div className="pt-40">
             <Image
-              src={group1}
+              src="/images/home/group1.png"
               alt="Myimage"
               className=" rounded-lg"
               height={589}
@@ -279,30 +269,51 @@ export default function Home() {
             the universe.
           </p>
         </div>
+
         <div className="flex justify-center gap-2 pt-20 pb-32 mx-4 mt-8">
           <div>
-            <Image src={one} alt="Myimage" height={432} width={550} />
+            <Image
+              src="/images/home/one.png"
+              alt="Myimage"
+              height={432}
+              width={550}
+            />
             <div className=" pt-4">
               <strong className="text-3xl ">John S. Doe</strong>
               <p className="text-lg text-red-500 font-semibold">CoFounder</p>
             </div>
           </div>
           <div>
-            <Image src={two} alt="Myimage" height={432} width={550} />
+            <Image
+              src="/images/home/two.png"
+              alt="Myimage"
+              height={432}
+              width={550}
+            />
             <div className=" pt-4">
               <strong className="text-3xl ">John S. Doe</strong>
               <p className="text-lg text-red-500 font-semibold">CoFounder</p>
             </div>
           </div>
           <div>
-            <Image src={tree} alt="Myimage" height={432} width={550} />
+            <Image
+              src="/images/home/tree.png"
+              alt="Myimage"
+              height={432}
+              width={550}
+            />
             <div className=" pt-4">
               <strong className="text-3xl ">John S. Doe</strong>
               <p className="text-lg text-red-500 font-semibold">CoFounder</p>
             </div>
           </div>
           <div>
-            <Image src={four} alt="Myimage" height={432} width={550} />
+            <Image
+              src="/images/home/four.png"
+              alt="Myimage"
+              height={432}
+              width={550}
+            />
             <div className=" pt-4">
               <strong className="text-3xl ">John S. Doe</strong>
               <p className="text-lg text-red-500 font-semibold">CoFounder</p>
@@ -319,7 +330,12 @@ export default function Home() {
             What do our clients say <br /> about us?
           </h1>
           <div className="flex justify-center pt-4">
-            <Image src={avatar} alt="Myimage" />
+            <Image
+              src="/images/home1/avatar.png"
+              width={200}
+              height={200}
+              alt="Myimage"
+            />
           </div>
           <p className="text-white text-2xl font-thin ">
             We help our clients make realize their most Important <br />
@@ -433,16 +449,17 @@ export default function Home() {
         </form>
       </div>
       {/* end-subscribes-laters */}
+
       {/* footer-start */}
       <footer className="text-gray-600  ">
         <div className=" pt-8 pb-20  flex flex-row flex-wrap justify-center  ">
           <div className="  mr-24">
             <a href="#" className="flex items-center pb-2 px-4">
               <Image
-                src={logo}
+                src="/images/logo/logo.png"
                 alt="Picture of the author"
-                width={62}
-                height={60}
+                width={62.02}
+                height={60.25}
               />
             </a>
             <span className="font-bold text-base  text-red-700 ">
@@ -509,28 +526,49 @@ export default function Home() {
                     99 Wall Street <br /> New York, NY 10005
                   </a>
                 </li>
+
                 <ul className="mt-8 flex text-gray-400 gap-2">
                   <li>
                     <a href="#" target="_blank" title="">
-                      <Image src={facebook} alt="Myimage" />
+                      <Image
+                        src="/iconfooter/facebook.svg"
+                        alt="Myimage"
+                        width={7.92}
+                        height={17}
+                      />
                     </a>
                   </li>
 
                   <li className="ml-6">
                     <a href="#" target="_blank" title="">
-                      <Image src={skype} alt="Myimage" />
+                      <Image
+                        src="/iconfooter/skype.svg"
+                        alt="Myimage"
+                        width={16}
+                        height={15.29}
+                      />
                     </a>
                   </li>
 
                   <li className="ml-6">
                     <a href="#" target="_blank" title="">
-                      <Image src={linkedin} alt="Myimage" />
+                      <Image
+                        src="/iconfooter/linkedin.svg"
+                        alt="Myimage"
+                        width={17}
+                        height={17}
+                      />
                     </a>
                   </li>
 
                   <li className="ml-6">
                     <a href="#" target="_blank" title="">
-                      <Image src={instagram} alt="Myimage" />
+                      <Image
+                        src="/iconfooter/instagram.svg"
+                        alt="Myimage"
+                        width={17}
+                        height={17}
+                      />
                     </a>
                   </li>
                 </ul>

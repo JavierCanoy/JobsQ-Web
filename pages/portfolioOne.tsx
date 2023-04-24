@@ -1,17 +1,5 @@
 import Image from "next/image";
 
-import facebook from "../public/iconfooter/facebook.svg";
-import instagram from "../public/iconfooter/instagram.svg";
-import linkedin from "../public/iconfooter/linkedin.svg";
-import skype from "../public/iconfooter/skype.svg";
-import logo from "../public/images/logo/logo.png";
-
-import united from "../public/images/portfolionOne/united.png";
-import best from "../public/images/portfolionOne/best-price.png";
-import team from "../public/images/portfolionOne/team.png";
-import shield from "../public/images/portfolionOne/shield.png";
-import profile from "../public/images/portfolionOne/profile.png";
-
 export default function PortfolioOne() {
   return (
     <>
@@ -22,7 +10,7 @@ export default function PortfolioOne() {
           <div className=" flex  mx-12 ">
             <a href="#">
               <Image
-                src={logo}
+                src="/images/logo/logo.png"
                 alt="Picture of the author"
                 width={62.02}
                 height={60.25}
@@ -83,11 +71,18 @@ export default function PortfolioOne() {
         </div>
       </header>
       {/* header-end */}
+
       {/* about-us */}
       <div className="about-us  ">
         <div className="relative ">
           <div className="image">
-            <Image src={profile} alt="Myimage" className=" h-579 w-full" />
+            <Image
+              src="/images/portfolionOne/profile.png"
+              alt="Myimage"
+              className=" w-full"
+              width={1800}
+              height={579}
+            />
           </div>
 
           <div className="absolute top-0 right-0 bottom-0 left-0 h-full w-full overflow-hidden bg-fixed opacity-75 bg-gradient-to-r from-costumeOrange to-costumeRed">
@@ -110,6 +105,7 @@ export default function PortfolioOne() {
         </div>
       </div>
       {/* end-about-us */}
+
       {/* full-software */}
       <div>
         <div className="flex flex-wrap justify-around mx-32 px-4 pt-14">
@@ -152,6 +148,7 @@ export default function PortfolioOne() {
         </div>
       </div>
       {/*end-full-software */}
+
       {/*what-we-offer */}
       <div className=" pt-40 ">
         <h1 className="text-5xl font-bold text-center text-red-600">
@@ -221,6 +218,7 @@ export default function PortfolioOne() {
         </div>
       </div>
       {/*end-what-we-offer */}
+
       {/*why-clients-choose-us */}
       <div className="bg-gradient-to-t from-costumeOrange to-costumeRed  h-1013  pt-36 mt-32">
         <div className=" text-center">
@@ -236,7 +234,13 @@ export default function PortfolioOne() {
         <div className=" flex mx-80 justify-center gap-5 pt-24 ">
           <div className=" h-231 w-545 bg-gradient-to-r from-costumeBrnBg to-costumeRedBg  rounded-2xl px-10  mb-8">
             <div className=" flex justify-end  ">
-              <Image src={team} alt="Myimage" className="  absolute" />
+              <Image
+                src="/images/portfolionOne/team.png"
+                alt="Myimage"
+                width={267}
+                height={267}
+                className="  absolute"
+              />
             </div>
             <div>
               <h1 className=" text-white text-2xl font-bold pt-14">
@@ -254,7 +258,13 @@ export default function PortfolioOne() {
           </div>
           <div className=" h-231 w-545 bg-gradient-to-r from-costumeBrnBg to-costumeRedBg  rounded-2xl px-10 ">
             <div className=" flex justify-end  ">
-              <Image src={united} alt="Myimage" className="  absolute pt-2" />
+              <Image
+                src="/images/portfolionOne/united.png"
+                alt="Myimage"
+                width={221}
+                height={221}
+                className="  absolute pt-2"
+              />
             </div>
             <h1 className=" text-white text-2xl font-bold pt-14">
               Personalized Approach:
@@ -268,7 +278,13 @@ export default function PortfolioOne() {
         <div className=" flex mx-80 justify-center gap-5 pt-2">
           <div className=" h-231 w-545 bg-gradient-to-r from-costumeBrnBg to-costumeRedBg  rounded-2xl px-10 ">
             <div className=" flex justify-end  ">
-              <Image src={shield} alt="Myimage" className="  absolute pt-2" />
+              <Image
+                src="/images/portfolionOne/shield.png"
+                alt="Myimage"
+                width={205}
+                height={205}
+                className="  absolute pt-2"
+              />
             </div>
             <h1 className=" text-white text-2xl font-bold pt-14">
               Quality Assurance:
@@ -282,7 +298,13 @@ export default function PortfolioOne() {
           </div>
           <div className=" h-231 w-545 bg-gradient-to-r from-costumeBrnBg to-costumeRedBg rounded-2xl px-10 ">
             <div className=" flex justify-end  ">
-              <Image src={best} alt="Myimage" className="  absolute pt-2" />
+              <Image
+                src="/images/portfolionOne/best-price.png"
+                alt="Myimage"
+                width={216}
+                height={216}
+                className="  absolute pt-2"
+              />
             </div>
             <h1 className=" text-white text-2xl font-bold pt-14">
               Competitive Pricing:
@@ -296,6 +318,7 @@ export default function PortfolioOne() {
         </div>
       </div>
       {/*end-why-clients-choose-us */}
+
       {/*contact-us-today */}
       <div className="py-32 ">
         <div className="  mx-80 px-2  ">
@@ -329,6 +352,7 @@ export default function PortfolioOne() {
         </div>
       </div>
       {/*end-contact-us-today */}
+
       {/* get-in-touch */}
       <div className=" bg-gradient-to-t from-costumeOrange to-costumeRed py-6 mb-12">
         <div className=" flex justify-center gap-40 pt-28 pb-40 ">
@@ -375,16 +399,17 @@ export default function PortfolioOne() {
         </div>
       </div>
       {/* end-get-in-touch */}
+
       {/* footer-start */}
       <footer className="text-gray-600  ">
         <div className=" pt-8 pb-20  flex flex-row flex-wrap justify-center  ">
           <div className="  mr-24">
             <a href="#" className="flex items-center pb-2 px-4">
               <Image
-                src={logo}
+                src="/images/logo/logo.png"
                 alt="Picture of the author"
-                width={62}
-                height={60}
+                width={62.02}
+                height={60.25}
               />
             </a>
             <span className="font-bold text-base  text-red-700 ">
@@ -451,28 +476,49 @@ export default function PortfolioOne() {
                     99 Wall Street <br /> New York, NY 10005
                   </a>
                 </li>
+
                 <ul className="mt-8 flex text-gray-400 gap-2">
                   <li>
                     <a href="#" target="_blank" title="">
-                      <Image src={facebook} alt="Myimage" />
+                      <Image
+                        src="/iconfooter/facebook.svg"
+                        alt="Myimage"
+                        width={7.92}
+                        height={17}
+                      />
                     </a>
                   </li>
 
                   <li className="ml-6">
                     <a href="#" target="_blank" title="">
-                      <Image src={skype} alt="Myimage" />
+                      <Image
+                        src="/iconfooter/skype.svg"
+                        alt="Myimage"
+                        width={16}
+                        height={15.29}
+                      />
                     </a>
                   </li>
 
                   <li className="ml-6">
                     <a href="#" target="_blank" title="">
-                      <Image src={linkedin} alt="Myimage" />
+                      <Image
+                        src="/iconfooter/linkedin.svg"
+                        alt="Myimage"
+                        width={17}
+                        height={17}
+                      />
                     </a>
                   </li>
 
                   <li className="ml-6">
                     <a href="#" target="_blank" title="">
-                      <Image src={instagram} alt="Myimage" />
+                      <Image
+                        src="/iconfooter/instagram.svg"
+                        alt="Myimage"
+                        width={17}
+                        height={17}
+                      />
                     </a>
                   </li>
                 </ul>

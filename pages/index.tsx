@@ -1,29 +1,5 @@
 import Image from "next/image";
 
-import facebook from "../public/iconfooter/facebook.svg";
-import instagram from "../public/iconfooter/instagram.svg";
-import linkedin from "../public/iconfooter/linkedin.svg";
-import skype from "../public/iconfooter/skype.svg";
-
-import avatar from "../public/images/home1/avatar.png";
-import hero from "../public/images/home1/hero.png";
-import logo from "../public/images/logo/logo.png";
-
-import first from "../public/images/icon/first.png";
-import second from "../public/images/icon/second.png";
-import third from "../public/images/icon/third.png";
-
-import team from "../public/images/home1/team.png";
-import team1 from "../public/images/home1/team1.png";
-
-import Mask3 from "../public/images/home1/Mask3.png";
-import Mask4 from "../public/images/home1/Mask4.png";
-import Mask5 from "../public/images/home1/Mask5.png";
-import Mask6 from "../public/images/home1/Mask6.png";
-
-import mom from "../public/images/home1/mom.png";
-import mom1 from "../public/images/home1/mom1.png";
-
 export default function HomePageOne() {
   return (
     <>
@@ -33,8 +9,14 @@ export default function HomePageOne() {
           {/* logo */}
           <div className=" flex  mx-12 ">
             <a href="#">
-              <Image
+              {/* <Image
                 src={logo}
+                alt="Picture of the author"
+                width={62.02}
+                height={60.25}
+              /> */}
+              <Image
+                src="/images/logo/logo.png"
                 alt="Picture of the author"
                 width={62.02}
                 height={60.25}
@@ -149,10 +131,17 @@ export default function HomePageOne() {
           </div>
         </div>
         <div className=" flex justify-end  overflow-hidden  h-957  w-788 ">
-          <Image
+          {/* <Image
             src={hero}
             alt="Myimage"
             className=" object-none object-bottom   "
+          /> */}
+          <Image
+            src="/images/home1/hero.png"
+            alt="Myimage"
+            className=" object-none object-bottom   "
+            width={788}
+            height={957}
           />
         </div>
       </div>
@@ -190,7 +179,7 @@ export default function HomePageOne() {
           <div className=" grid grid-cols-2 gap-6">
             <div className=" h-231 w-361 px-8 pt-8 hover:bg-gradient-to-r from-costumeBrnBg to-costumeRedBg   rounded-lg  bg-costumeRedBg">
               <Image
-                src={first}
+                src="/images/icon/first.png"
                 width={40}
                 height={60.25}
                 alt="Myimage"
@@ -204,7 +193,7 @@ export default function HomePageOne() {
             </div>
             <div className="  h-231 w-361 px-8 pt-8     rounded-lg hover:bg-gradient-to-r from-costumeBrnBg to-costumeRedBg  bg-costumeRedBg">
               <Image
-                src={second}
+                src="/images/icon/second.png"
                 width={40}
                 height={60.25}
                 alt="Myimage"
@@ -240,7 +229,7 @@ export default function HomePageOne() {
             </div>
             <div className="  h-231 w-361 px-8 pt-8    rounded-lg  hover:bg-gradient-to-r from-costumeBrnBg to-costumeRedBg bg-costumeRedBg">
               <Image
-                src={third}
+                src="/images/icon/third.png"
                 width={40}
                 height={60.25}
                 alt="Myimage"
@@ -262,7 +251,7 @@ export default function HomePageOne() {
         <div className="flex mt-5 py-40  ">
           <Image
             className=" rounded-r-lg shadow-lg"
-            src={team1}
+            src="/images/home1/team1.png"
             alt="Myimage"
             height={730}
             width={800}
@@ -329,7 +318,7 @@ export default function HomePageOne() {
           </div>
           <Image
             className="rounded-l-lg shadow-lg"
-            src={team}
+            src="/images/home1/team.png"
             alt="Myimage"
             height={730}
             width={800}
@@ -354,7 +343,7 @@ export default function HomePageOne() {
       <div>
         <div className="flex justify-end gap-19  pt-28 pb-44 ">
           <Image
-            src={Mask3}
+            src="/images/home1/Mask3.png"
             alt="Myimage"
             height={128}
             width={401}
@@ -362,7 +351,7 @@ export default function HomePageOne() {
           />
 
           <Image
-            src={Mask4}
+            src="/images/home1/Mask4.png"
             alt="Myimage"
             height={128}
             width={401}
@@ -370,7 +359,7 @@ export default function HomePageOne() {
           />
 
           <Image
-            src={Mask5}
+            src="/images/home1/Mask5.png"
             alt="Myimage"
             height={128}
             width={401}
@@ -378,7 +367,7 @@ export default function HomePageOne() {
           />
 
           <Image
-            src={Mask6}
+            src="/images/home1/Mask6.png"
             alt="Myimage"
             height={128}
             width={401}
@@ -395,7 +384,12 @@ export default function HomePageOne() {
             What do our clients say <br /> about us?
           </h1>
           <div className="flex justify-center  ">
-            <Image src={avatar} width={200} height={200} alt="Myimage" />
+            <Image
+              src="/images/home1/avatar.png"
+              width={200}
+              height={200}
+              alt="Myimage"
+            />
           </div>
           <p className="text-white text-2xl font-thin ">
             We help our clients make realize their most Important <br />
@@ -471,7 +465,12 @@ export default function HomePageOne() {
 
         <div className=" flex justify-center pt-14 gap-8 pb-48">
           <div className=" w-370 h-395  border  rounded-mod shadow-lg duration-200 hover:scale-95 ">
-            <Image src={mom} alt="Myimage" height={266} width={370} />
+            <Image
+              src="/images/home1/mom.png"
+              alt="Myimage"
+              height={266}
+              width={370}
+            />
             <div className="flex justify-center ">
               <div>
                 <h2 className=" text-left pt-4 text-xl font-bold">
@@ -486,7 +485,12 @@ export default function HomePageOne() {
           </div>
 
           <div className=" w-370 h-395  border rounded-mod shadow-lg duration-200 hover:scale-95">
-            <Image src={mom1} alt="Myimage" height={266} width={370} />
+            <Image
+              src="/images/home1/mom1.png"
+              alt="Myimage"
+              height={266}
+              width={370}
+            />
             <div className="flex justify-center ">
               <div>
                 <h2 className=" text-left pt-4 text-xl font-bold">
@@ -501,7 +505,12 @@ export default function HomePageOne() {
           </div>
 
           <div className=" w-370 h-395  border rounded-mod shadow-lg duration-200 hover:scale-95">
-            <Image src={mom} alt="Myimage" height={266} width={370} />
+            <Image
+              src="/images/home1/mom.png"
+              alt="Myimage"
+              height={266}
+              width={370}
+            />
             <div className="flex justify-center ">
               <div>
                 <h2 className=" text-left pt-4 text-xl font-bold">
@@ -571,10 +580,10 @@ export default function HomePageOne() {
           <div className="  mr-24">
             <a href="#" className="flex items-center pb-2 px-4">
               <Image
-                src={logo}
+                src="/images/logo/logo.png"
                 alt="Picture of the author"
-                width={62}
-                height={60}
+                width={62.02}
+                height={60.25}
               />
             </a>
             <span className="font-bold text-base  text-red-700 ">
@@ -641,28 +650,49 @@ export default function HomePageOne() {
                     99 Wall Street <br /> New York, NY 10005
                   </a>
                 </li>
+
                 <ul className="mt-8 flex text-gray-400 gap-2">
                   <li>
                     <a href="#" target="_blank" title="">
-                      <Image src={facebook} alt="Myimage" />
+                      <Image
+                        src="/iconfooter/facebook.svg"
+                        alt="Myimage"
+                        width={7.92}
+                        height={17}
+                      />
                     </a>
                   </li>
 
                   <li className="ml-6">
                     <a href="#" target="_blank" title="">
-                      <Image src={skype} alt="Myimage" />
+                      <Image
+                        src="/iconfooter/skype.svg"
+                        alt="Myimage"
+                        width={16}
+                        height={15.29}
+                      />
                     </a>
                   </li>
 
                   <li className="ml-6">
                     <a href="#" target="_blank" title="">
-                      <Image src={linkedin} alt="Myimage" />
+                      <Image
+                        src="/iconfooter/linkedin.svg"
+                        alt="Myimage"
+                        width={17}
+                        height={17}
+                      />
                     </a>
                   </li>
 
                   <li className="ml-6">
                     <a href="#" target="_blank" title="">
-                      <Image src={instagram} alt="Myimage" />
+                      <Image
+                        src="/iconfooter/instagram.svg"
+                        alt="Myimage"
+                        width={17}
+                        height={17}
+                      />
                     </a>
                   </li>
                 </ul>
