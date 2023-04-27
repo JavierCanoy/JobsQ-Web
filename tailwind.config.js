@@ -41,8 +41,10 @@ module.exports = {
         205: "12.813rem",
         216: "13.5rem",
         59.55: "3.722rem",
+        480: "30rem",
       },
       width: {
+        379: "23.688rem",
         216: "13.5rem",
         221: "13.813rem",
         205: "12.813rem",
@@ -87,6 +89,11 @@ module.exports = {
       },
       spacing: {
         399: "24.938rem",
+      },
+      fontFamily: {
+        Poppins: ["Poppins", "sans-serif"],
+        OpenSans: ["Open Sans", "sans-serif"],
+        SegoeUI: ["Roboto", "sans-serif"],
       },
     },
   },

@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 
 import logo from "../public/images/logo/logo.png";
 
@@ -10,14 +11,14 @@ export default function Portfolio() {
         <div className="border-black-500  border  px-4 p-7 grid grid-cols-2   ">
           {/* logo */}
           <div className=" flex  mx-12 ">
-            <a href="#">
+            <Link href="#">
               <Image
                 src="/images/logo/logo.png"
                 alt="Picture of the author"
                 width={62.02}
                 height={60.25}
               />
-            </a>
+            </Link>
             <div className=" px-4 grid content-end pb-1">
               <span className=" self-center  text-2xl  font-bold  text-costumeRed ">
                 MABOLOTECH IT SOLUTION
@@ -31,42 +32,44 @@ export default function Portfolio() {
           <div className="grid justify-center  ">
             <ul className="flex  gap-6   items-center   ml-28">
               <li>
-                <a
+                <Link
                   href="#"
                   className=" text-xl  font-semibold block py-2 pl-3 pr-4    hover:text-costumeRed      "
                   aria-current="page"
                 >
                   Home
-                </a>
+                </Link>
               </li>
               <li>
-                <a
+                <Link
                   href="#"
                   className="text-xl font-semibold   block py-2 pl-3 pr-4     hover:text-costumeRed     "
                 >
                   About us
-                </a>
+                </Link>
               </li>
               <li>
-                <a
+                <Link
                   href="#"
                   className="  text-xl font-semibold  block py-2 pl-3 pr-4  hover:text-costumeRed "
                 >
                   Services
-                </a>
+                </Link>
               </li>
               <li>
-                <a
+                <Link
                   href="#"
                   className=" text-xl  font-semibold  block py-2 pl-3 pr-4 hover:text-costumeRed"
                 >
                   Our Work
-                </a>
+                </Link>
               </li>
               <li>
-                <button className="mx-3 text-xl font-semibold   hover:bg-costumeRed text-black-700 hover:text-white   px-12 p-3  border-2 border-red-700  rounded-full">
-                  Contact us
-                </button>
+                <Link href="/">
+                  <button className="mx-3 text-xl font-semibold   hover:bg-costumeRed text-black-700 hover:text-white   px-12 p-3  border-2 border-red-700  rounded-full">
+                    Contact us
+                  </button>
+                </Link>
               </li>
             </ul>
           </div>
@@ -77,46 +80,52 @@ export default function Portfolio() {
       {/* start-Portfolio */}
       <div>
         <div className=" text-center py-40 ">
-          <span className="text-xl text-gray-400 font-light ">PORTFOLIO</span>
-          <p className="text-5xl font-bold pt-10">
+          <span className="text-xl text-gray-400 font-OpenSans font-light ">
+            PORTFOLIO
+          </span>
+          <p className="text-5xl font-Poppins font-bold pt-10">
             People don’t buy what you do, <br /> they buy why you do it.
           </p>
         </div>
         <div className="">
           <div
-            className=" flex justify-center gap-20 text-2xl font-semibold
+            className=" flex justify-center gap-24 text-2xl font-OpenSans pb-20
             "
           >
-            <button className=" hover:text-red-700 ">All</button>
-            <button className="hover:text-red-700 ">Branding</button>
-            <button className="hover:text-red-700 ">UX/UI</button>
-            <button className=" hover:text-red-700 ">Marketing </button>
-          </div>
-          {/* recommend-to-removed by:sir-J */}
-          {/* <div className=" px-32 ">
-            <button>
-              <Image src={close1} alt="Myimage" height={39} width={39} />
-            </button>
-          </div> */}
+            <Link href="#">
+              <button className=" hover:text-red-700 ">All</button>
+            </Link>
+            <Link href="#">
+              <button className="hover:text-red-700 ">Branding</button>
+            </Link>
 
+            <Link href="#">
+              <button className="hover:text-red-700 ">UX/UI</button>
+            </Link>
+            <Link href="#">
+              <button className=" hover:text-red-700 ">Marketing </button>
+            </Link>
+          </div>
           <div className="pt-96 float-left ">
-            <button className=" flex items-center text-white   hover:text-red-700 text-xl bg-red-500  py-4 rounded-r-full hover:bg-white hover:border-red-500 border-2   ">
-              <span className="text-base font-semibold">KNOW MORE</span>
-              <div className="px-8">
-                <svg
-                  className="w-5 h-5  "
-                  fill="currentColor"
-                  viewBox="0 0 20 20"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    fill-rule="evenodd"
-                    d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
-                    clip-rule="evenodd"
-                  ></path>
-                </svg>
-              </div>
-            </button>
+            <Link href="#">
+              <button className=" flex items-center text-white   hover:text-red-700 text-xl bg-red-500  py-4 rounded-r-full hover:bg-white hover:border-red-500 border-2   ">
+                <span className="text-base font-semibold">KNOW MORE</span>
+                <div className="px-8">
+                  <svg
+                    className="w-5 h-5  "
+                    fill="currentColor"
+                    viewBox="0 0 20 20"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
+                      clip-rule="evenodd"
+                    ></path>
+                  </svg>
+                </div>
+              </button>
+            </Link>
           </div>
 
           <div className=" grid grid-cols-3  pb-36   px-64 pt-10 ">
@@ -130,8 +139,12 @@ export default function Portfolio() {
               />
               <div className="flex justify-between">
                 <div className=" px-2 pt-2">
-                  <p className="text-lg font-bold ">Firefox Org</p>
-                  <span className=" text-base text-gray-400 ">Branding</span>
+                  <p className="text-lg font-OpenSans font-bold ">
+                    Firefox Org
+                  </p>
+                  <span className=" text-base font-OpenSans text-gray-400 ">
+                    Branding
+                  </span>
                 </div>
                 <div>
                   <button className="bg-gradient-to-t from-costumeViolet to-costumePink h-73  rounded-br-lg text-white   hover:bg-white hover:text-costumeViolet ">
@@ -152,7 +165,7 @@ export default function Portfolio() {
               </div>
             </div>
             {/* images */}
-            <div className="  h-439 w-370 border rounded-lg  hover:shadow-lg duration-200 hover:scale-95 ">
+            <div className="  h-439 w-370 border rounded-lg  hover:shadow-lg duration-200 hover:scale-95 mb-8 ">
               <Image
                 className=" "
                 src="/images/portfolio/pic1.png"
@@ -170,7 +183,7 @@ export default function Portfolio() {
                 height={439}
               />
             </div>
-            <div className="  h-439 w-370 border rounded-lg  hover:shadow-lg duration-200 hover:scale-95 ">
+            <div className="  h-439 w-370 border rounded-lg  hover:shadow-lg duration-200 hover:scale-95  mb-8 ">
               <Image
                 className=" "
                 src="/images/portfolio/pic3.png"
@@ -232,15 +245,17 @@ export default function Portfolio() {
       <div className=" bg-gradient-to-t from-costumeOrange to-costumeRed py-6">
         <div className=" flex justify-center gap-40 pt-28 pb-40 ">
           <div className=" text-left text-white">
-            <h1 className="text-xl font-thin ">GET IN TOUCH</h1>
-            <p className="text-5xl font-bold pt-10">
+            <h1 className="text-xl font-OpenSans font-light">GET IN TOUCH</h1>
+            <p className="text-5xl font-Poppins font-bold pt-10">
               Let’s start with <br /> your dream <br />
               project
             </p>
-            <p className="text-2xl pt-10">
+            <p className="text-2xl pt-10 pb-2 font-OpenSans">
               We help our clients make realize their most
             </p>
-            <span className="text-2xl font-bold">+1 123 456 7890</span>
+            <span className="text-2xl font-OpenSans font-bold">
+              +1 123 456 7890
+            </span>
           </div>
           <div className="grid content-center ">
             <form action="">
@@ -279,18 +294,20 @@ export default function Portfolio() {
       <footer className="text-gray-600  ">
         <div className=" pt-8 pb-20  flex flex-row flex-wrap justify-center  ">
           <div className="  mr-24">
-            <a href="#" className="flex items-center pb-2 px-4">
-              <Image
-                src="/images/logo/logo.png"
-                alt="Picture of the author"
-                width={62.02}
-                height={60.25}
-              />
-            </a>
-            <span className="font-bold text-base  text-red-700 ">
+            <div className="flex items-center pb-2 px-4">
+              <Link href="#">
+                <Image
+                  src="/images/logo/logo.png"
+                  alt="Picture of the author"
+                  width={62.02}
+                  height={60.25}
+                />
+              </Link>
+            </div>
+            <span className="font-Poppins font-bold   text-red-700 ">
               MABOLOTECH IT SOLUTION
             </span>
-            <p className="text-sm text-gray-400">
+            <p className="text-sm text-gray-400 font-OpenSans">
               Lorem ipsum dolor is simply dummy <br />
               text of printing.
             </p>
@@ -298,10 +315,10 @@ export default function Portfolio() {
 
           <div className="flex flex-wrap  mx-8 gap-40 mt-8 ">
             <div className="grid content-end mb-2">
-              <h2 className="title-font font-bold text-2xl text-red-700   pb-2">
+              <h2 className="font-Poppins font-bold text-2xl text-red-700   pb-2">
                 Services
               </h2>
-              <nav className="list-none">
+              <nav className="list-none font-OpenSans">
                 <li className=" mt-3">
                   <a className="text-gray-400  ">Development</a>
                 </li>
@@ -320,10 +337,10 @@ export default function Portfolio() {
               </nav>
             </div>
             <div className="grid content-end mb-2">
-              <h2 className="title-font font-bold text-2xl text-red-700   pb-2">
+              <h2 className="font-Poppins font-bold text-2xl text-red-700   pb-2">
                 About us
               </h2>
-              <nav className="list-none">
+              <nav className="list-none font-OpenSans">
                 <li className=" mt-3 ">
                   <a className="text-gray-400  ">About us</a>
                 </li>
@@ -342,59 +359,59 @@ export default function Portfolio() {
               </nav>
             </div>
             <div className="  grid   content-end mb-20">
-              <h2 className="title-font font-bold text-2xl text-red-700   pb-2">
+              <h2 className="tfont-Poppins  font-bold text-2xl text-red-700   pb-2">
                 Get in touch
               </h2>
               <div className="list-none">
                 <li className=" mt-2 ">
-                  <a className="  text-gray-400 ">
+                  <a className="  text-gray-400 font-OpenSans">
                     99 Wall Street <br /> New York, NY 10005
                   </a>
                 </li>
 
                 <ul className="mt-8 flex text-gray-400 gap-2">
                   <li>
-                    <a href="#" target="_blank" title="">
+                    <Link href="#" target="_blank" title="facebook">
                       <Image
                         src="/iconfooter/facebook.svg"
                         alt="Myimage"
                         width={7.92}
                         height={17}
                       />
-                    </a>
+                    </Link>
                   </li>
 
                   <li className="ml-6">
-                    <a href="#" target="_blank" title="">
+                    <Link href="#" target="_blank" title="skypef">
                       <Image
                         src="/iconfooter/skype.svg"
                         alt="Myimage"
                         width={16}
                         height={15.29}
                       />
-                    </a>
+                    </Link>
                   </li>
 
                   <li className="ml-6">
-                    <a href="#" target="_blank" title="">
+                    <Link href="#" target="_blank" title="linkedin">
                       <Image
                         src="/iconfooter/linkedin.svg"
                         alt="Myimage"
                         width={17}
                         height={17}
                       />
-                    </a>
+                    </Link>
                   </li>
 
                   <li className="ml-6">
-                    <a href="#" target="_blank" title="">
+                    <Link href="#" target="_blank" title="insta">
                       <Image
                         src="/iconfooter/instagram.svg"
                         alt="Myimage"
                         width={17}
                         height={17}
                       />
-                    </a>
+                    </Link>
                   </li>
                 </ul>
               </div>
@@ -402,7 +419,7 @@ export default function Portfolio() {
           </div>
         </div>
 
-        <p className=" text-center text-base pt-3 pb-48 text-gray-400">
+        <p className=" text-center font-OpenSans text-base pt-3 pb-48 text-gray-400">
           Copyrighted © 2023 Mabolotech IT Solution
         </p>
       </footer>

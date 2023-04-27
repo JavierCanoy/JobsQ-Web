@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 
 export default function Contact() {
   return (
@@ -8,69 +9,65 @@ export default function Contact() {
         <div className="border-black-500  border  px-4 p-7 grid grid-cols-2   ">
           {/* logo */}
           <div className=" flex  mx-12 ">
-            <a href="#">
-              {/* <Image
-                src={logo}
-                alt="Picture of the author"
-                width={62.02}
-                height={60.25}
-              /> */}
+            <Link href="#">
               <Image
                 src="/images/logo/logo.png"
                 alt="Picture of the author"
                 width={62.02}
                 height={60.25}
               />
-            </a>
+            </Link>
             <div className=" px-4 grid content-end pb-1">
-              <span className=" self-center  text-2xl  font-bold  text-costumeRed ">
+              <span className=" self-center  text-2xl  font-Poppins font-bold  text-costumeRed ">
                 MABOLOTECH IT SOLUTION
               </span>
-              <p className=" text-xs font-semibold whitespace-nowrap ">
+              <p className=" text-xs font-OpenSans  whitespace-nowrap ">
                 Crafting Software Solutions that drive business growth
               </p>
             </div>
           </div>
           {/* menu */}
           <div className="grid justify-center  ">
-            <ul className="flex  gap-6   items-center   ml-28">
+            <ul className="flex   gap-6   items-center   ml-28">
               <li>
-                <a
+                <Link
                   href="#"
-                  className=" text-xl  font-semibold block py-2 pl-3 pr-4    hover:text-costumeRed      "
+                  className=" text-xl font-semibold block py-2 pl-3 pr-4    hover:text-costumeRed      "
                   aria-current="page"
                 >
                   Home
-                </a>
+                </Link>
               </li>
               <li>
-                <a
+                <Link
                   href="#"
                   className="text-xl font-semibold   block py-2 pl-3 pr-4     hover:text-costumeRed     "
                 >
                   About us
-                </a>
+                </Link>
               </li>
               <li>
-                <a
+                <Link
                   href="#"
                   className="  text-xl font-semibold  block py-2 pl-3 pr-4  hover:text-costumeRed "
                 >
                   Services
-                </a>
+                </Link>
               </li>
               <li>
-                <a
+                <Link
                   href="#"
                   className=" text-xl  font-semibold  block py-2 pl-3 pr-4 hover:text-costumeRed"
                 >
                   Our Work
-                </a>
+                </Link>
               </li>
               <li>
-                <button className="mx-3 text-xl font-semibold   hover:bg-costumeRed text-black-700 hover:text-white   px-12 p-3  border-2 border-red-700  rounded-full">
-                  Contact us
-                </button>
+                <Link href="/">
+                  <button className="mx-3 text-xl font-semibold   hover:bg-costumeRed text-black-700 hover:text-white   px-12 p-3  border-2 border-red-700  rounded-full">
+                    Contact us
+                  </button>
+                </Link>
               </li>
             </ul>
           </div>
@@ -80,7 +77,7 @@ export default function Contact() {
 
       {/* Let’s build your dream */}
       <div className="pt-10">
-        <p className="   text-center pt-56 pb-56  font-bold  lg:text-5xl sm:px-16 xl:px-48 dark:text-gray-400">
+        <p className="   text-center pt-56 pb-56 font-Poppins  font-bold  lg:text-5xl sm:px-16 xl:px-48 dark:text-gray-400">
           Let’s build your dream <br /> product together
         </p>
         <div className=" flex justify-center gap-96 ">
@@ -94,8 +91,10 @@ export default function Contact() {
               />
             </div>
             <div>
-              <span className="text-2xl font-bold pt-5">Our Location</span>
-              <p className="text-base  pt-5 text-gray-300 text-center">
+              <span className="text-2xl font-Poppins font-bold pt-5">
+                Our Location
+              </span>
+              <p className="text-base font-OpenSans  pt-5 text-gray-300 text-center">
                 99 Wall Street <br /> New York, NY 10005
               </p>
             </div>
@@ -111,8 +110,10 @@ export default function Contact() {
               />
             </div>
             <div>
-              <span className="text-2xl font-bold pt-5">E-mail & Phone</span>
-              <p className="text-base  pt-5 text-gray-300 text-center">
+              <span className="text-2xl font-Poppins  font-bold pt-5">
+                E-mail & Phone
+              </span>
+              <p className="text-base font-OpenSans  pt-5 text-gray-300 text-center">
                 hello@mabolotech.com <br /> +1 123 456 7890
               </p>
             </div>
@@ -128,7 +129,9 @@ export default function Contact() {
               />
             </div>
             <div>
-              <span className="text-2xl font-bold pt-5">Get in touch</span>
+              <span className="text-2xl font-Poppins  font-bold pt-5">
+                Get in touch
+              </span>
               <div className="grid justify-items-center grid-cols-4 gap-4 pt-7">
                 <Image
                   src="/iconfooter/facebook.svg"
@@ -174,7 +177,7 @@ export default function Contact() {
         </div>
 
         <form className=" ">
-          <p className=" text-2xl text-center text-gray-500 pt-10 mt-20">
+          <p className=" text-2xl text-center font-SegoeUI text-gray-500 pt-10 mt-20">
             look forward to hearing from you,
           </p>
           <div className="grid justify-items-center  pt-2 ">
@@ -198,9 +201,11 @@ export default function Contact() {
             />
           </div>
           <div className=" pt-14">
-            <button className="ml-48 text-sm font-semibold bg-transparent hover:bg-red-700 text-black-700  hover:text-white py-4 px-10 border-2 border-red-700 hover:border-transparent rounded-full">
-              SUBMIT
-            </button>
+            <Link href="#">
+              <button className="ml-48 text-sm font-semibold bg-transparent hover:bg-red-700 text-black-700  hover:text-white py-4 px-10 border-2 border-red-700 hover:border-transparent rounded-full">
+                SUBMIT
+              </button>
+            </Link>
           </div>
         </form>
       </div>
@@ -210,18 +215,20 @@ export default function Contact() {
       <footer className="text-gray-600  ">
         <div className=" pt-8 pb-20  flex flex-row flex-wrap justify-center  ">
           <div className="  mr-24">
-            <a href="#" className="flex items-center pb-2 px-4">
-              <Image
-                src="/images/logo/logo.png"
-                alt="Picture of the author"
-                width={62.02}
-                height={60.25}
-              />
-            </a>
-            <span className="font-bold text-base  text-red-700 ">
+            <div className="flex items-center pb-2 px-4">
+              <Link href="#">
+                <Image
+                  src="/images/logo/logo.png"
+                  alt="Picture of the author"
+                  width={62.02}
+                  height={60.25}
+                />
+              </Link>
+            </div>
+            <span className="font-Poppins font-bold   text-red-700 ">
               MABOLOTECH IT SOLUTION
             </span>
-            <p className="text-sm text-gray-400">
+            <p className="text-sm text-gray-400 font-OpenSans">
               Lorem ipsum dolor is simply dummy <br />
               text of printing.
             </p>
@@ -229,10 +236,10 @@ export default function Contact() {
 
           <div className="flex flex-wrap  mx-8 gap-40 mt-8 ">
             <div className="grid content-end mb-2">
-              <h2 className="title-font font-bold text-2xl text-red-700   pb-2">
+              <h2 className="font-Poppins font-bold text-2xl text-red-700   pb-2">
                 Services
               </h2>
-              <nav className="list-none">
+              <nav className="list-none font-OpenSans">
                 <li className=" mt-3">
                   <a className="text-gray-400  ">Development</a>
                 </li>
@@ -251,10 +258,10 @@ export default function Contact() {
               </nav>
             </div>
             <div className="grid content-end mb-2">
-              <h2 className="title-font font-bold text-2xl text-red-700   pb-2">
+              <h2 className="font-Poppins font-bold text-2xl text-red-700   pb-2">
                 About us
               </h2>
-              <nav className="list-none">
+              <nav className="list-none font-OpenSans">
                 <li className=" mt-3 ">
                   <a className="text-gray-400  ">About us</a>
                 </li>
@@ -273,59 +280,59 @@ export default function Contact() {
               </nav>
             </div>
             <div className="  grid   content-end mb-20">
-              <h2 className="title-font font-bold text-2xl text-red-700   pb-2">
+              <h2 className="tfont-Poppins  font-bold text-2xl text-red-700   pb-2">
                 Get in touch
               </h2>
               <div className="list-none">
                 <li className=" mt-2 ">
-                  <a className="  text-gray-400 ">
+                  <a className="  text-gray-400 font-OpenSans">
                     99 Wall Street <br /> New York, NY 10005
                   </a>
                 </li>
 
                 <ul className="mt-8 flex text-gray-400 gap-2">
                   <li>
-                    <a href="#" target="_blank" title="">
+                    <Link href="#" target="_blank" title="facebook">
                       <Image
                         src="/iconfooter/facebook.svg"
                         alt="Myimage"
                         width={7.92}
                         height={17}
                       />
-                    </a>
+                    </Link>
                   </li>
 
                   <li className="ml-6">
-                    <a href="#" target="_blank" title="">
+                    <Link href="#" target="_blank" title="skypef">
                       <Image
                         src="/iconfooter/skype.svg"
                         alt="Myimage"
                         width={16}
                         height={15.29}
                       />
-                    </a>
+                    </Link>
                   </li>
 
                   <li className="ml-6">
-                    <a href="#" target="_blank" title="">
+                    <Link href="#" target="_blank" title="linkedin">
                       <Image
                         src="/iconfooter/linkedin.svg"
                         alt="Myimage"
                         width={17}
                         height={17}
                       />
-                    </a>
+                    </Link>
                   </li>
 
                   <li className="ml-6">
-                    <a href="#" target="_blank" title="">
+                    <Link href="#" target="_blank" title="insta">
                       <Image
                         src="/iconfooter/instagram.svg"
                         alt="Myimage"
                         width={17}
                         height={17}
                       />
-                    </a>
+                    </Link>
                   </li>
                 </ul>
               </div>
@@ -333,7 +340,7 @@ export default function Contact() {
           </div>
         </div>
 
-        <p className=" text-center text-base pt-3 pb-48 text-gray-400">
+        <p className=" text-center font-OpenSans text-base pt-3 pb-48 text-gray-400">
           Copyrighted © 2023 Mabolotech IT Solution
         </p>
       </footer>

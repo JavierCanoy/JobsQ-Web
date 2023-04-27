@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 
 export default function PortfolioOne() {
   return (
@@ -8,14 +9,14 @@ export default function PortfolioOne() {
         <div className="border-black-500  border  px-4 p-7 grid grid-cols-2   ">
           {/* logo */}
           <div className=" flex  mx-12 ">
-            <a href="#">
+            <Link href="#">
               <Image
                 src="/images/logo/logo.png"
                 alt="Picture of the author"
                 width={62.02}
                 height={60.25}
               />
-            </a>
+            </Link>
             <div className=" px-4 grid content-end pb-1">
               <span className=" self-center  text-2xl  font-bold  text-costumeRed ">
                 MABOLOTECH IT SOLUTION
@@ -29,42 +30,44 @@ export default function PortfolioOne() {
           <div className="grid justify-center  ">
             <ul className="flex  gap-6   items-center   ml-28">
               <li>
-                <a
+                <Link
                   href="#"
                   className=" text-xl  font-semibold block py-2 pl-3 pr-4    hover:text-costumeRed      "
                   aria-current="page"
                 >
                   Home
-                </a>
+                </Link>
               </li>
               <li>
-                <a
+                <Link
                   href="#"
                   className="text-xl font-semibold   block py-2 pl-3 pr-4     hover:text-costumeRed     "
                 >
                   About us
-                </a>
+                </Link>
               </li>
               <li>
-                <a
+                <Link
                   href="#"
                   className="  text-xl font-semibold  block py-2 pl-3 pr-4  hover:text-costumeRed "
                 >
                   Services
-                </a>
+                </Link>
               </li>
               <li>
-                <a
+                <Link
                   href="#"
                   className=" text-xl  font-semibold  block py-2 pl-3 pr-4 hover:text-costumeRed"
                 >
                   Our Work
-                </a>
+                </Link>
               </li>
               <li>
-                <button className="mx-3 text-xl font-semibold   hover:bg-costumeRed text-black-700 hover:text-white   px-12 p-3  border-2 border-red-700  rounded-full">
-                  Contact us
-                </button>
+                <Link href="/">
+                  <button className="mx-3 text-xl font-semibold   hover:bg-costumeRed text-black-700 hover:text-white   px-12 p-3  border-2 border-red-700  rounded-full">
+                    Contact us
+                  </button>
+                </Link>
               </li>
             </ul>
           </div>
@@ -88,12 +91,12 @@ export default function PortfolioOne() {
           <div className="absolute top-0 right-0 bottom-0 left-0 h-full w-full overflow-hidden bg-fixed opacity-75 bg-gradient-to-r from-costumeOrange to-costumeRed">
             <div className="flex h-full items-center justify-center">
               <div className="px-6 text-center text-white ">
-                <p className="text-xl font-light">SERVICES</p>
+                <p className="text-xl font-OpenSans font-light">SERVICES</p>
 
-                <h1 className="mb-6 text-5xl font-bold pt-4">
+                <h1 className="mb-6 text-5xl font-Poppins font-bold pt-4">
                   Solution we provide
                 </h1>
-                <p className="text-xl font-light">
+                <p className="text-xl font-OpenSans font-light">
                   With every single one of our clients we bring forth a deep
                   passion for creative problem <br /> solving innovations
                   forward thinking brands boundaries
@@ -110,32 +113,36 @@ export default function PortfolioOne() {
       <div>
         <div className="flex flex-wrap justify-around mx-32 px-4 pt-14">
           <div className="  ">
-            <button className="h-67 w-311 bg-gradient-to-t from-[#F35A43] to-[#C1272D] rounded-lg text-white font-bold hover:from-white hover:to-white hover:text-red-700 hover:border-red-700 border-2 px-6 py-3">
-              Full Software Development
-            </button>
+            <Link href="#">
+              <button className="h-67 w-311 bg-gradient-to-t from-[#F35A43] to-[#C1272D] rounded-lg text-white font-Poppins font-bold hover:from-white hover:to-white hover:text-red-700 hover:border-red-700 border-2 px-6 py-3">
+                Full Software Development
+              </button>
+            </Link>
           </div>
           <div className="flex items-center">
-            <span className="text-base font-bold">Mobile App Development</span>
+            <span className="text-base font-Poppins font-bold">
+              Mobile App Development
+            </span>
           </div>
           <div className="flex items-center">
-            <span className="text-base font-bold">
+            <span className="text-base font-Poppins font-bold">
               Search Engine Optimization (SEO)
             </span>
           </div>
           <div className="flex items-center">
-            <span className="text-base font-bold">
+            <span className="text-base font-Poppins font-bold">
               Software Development Outsourcing
             </span>
           </div>
         </div>
         <div className=" grid grid-cols-2 pt-16">
           <div className=" mx-44 px-10">
-            <h1 className=" text-5xl font-bold">
-              Full Software <br /> Development Service:
+            <h1 className=" text-5xl font-Poppins font-bold">
+              Full Software Development Service:
             </h1>
           </div>
           <div>
-            <p className="text-xl">
+            <p className="text-xl font-OpenSans">
               Welcome to our Full Software Development service, where we
               specialize in <br />
               delivering high-quality software solutions to meet our client's
@@ -151,34 +158,38 @@ export default function PortfolioOne() {
 
       {/*what-we-offer */}
       <div className=" pt-40 ">
-        <h1 className="text-5xl font-bold text-center text-red-600">
+        <h1 className="text-5xl font-Poppins font-bold text-center text-red-600">
           What we offer:
         </h1>
         <div className="flex justify-center gap-8 pt-16">
           <div className=" h-259 w-468 bg-gradient-to-r from-costumeRedBg to-costumeOrange rounded-3xl px-10 text-white mb-10 pt-2">
-            <h1 className=" text-5xl font-bold pt-1 pb-1">01</h1>
-            <span className="text-xl font-semibold">
+            <h1 className=" text-5xl font-Poppins font-bold  pt-1 pb-1">01</h1>
+            <span className="text-xl font-Poppins font-semibold">
               Requirements <br /> Gathering and Analysis:
             </span>
-            <p className="text-base pt-2">
+            <p className="text-base font-OpenSans pt-2">
               Our first step is to fully understand and analyze your business
               requirements to create a clear and concise plan for your software
               project.
             </p>
           </div>
           <div className=" h-259 w-468 bg-gradient-to-r from-costumeRedBg to-costumeOrange rounded-3xl px-10 text-white pt-2">
-            <h1 className=" text-5xl font-bold pt-1 pb-1">02</h1>
-            <span className="text-xl font-semibold">Design and UI/UX:</span>
-            <p className="text-base pt-2">
+            <h1 className=" text-5xl font-Poppins font-bold  pt-1 pb-1">02</h1>
+            <span className="text-xl  font-Poppins font-semibold">
+              Design and UI/UX:
+            </span>
+            <p className="text-base font-OpenSans  pt-2">
               Our experienced designers will work with you to create a
               user-friendly and visually appealing interface and the underlying
               architecture to support your software needs.
             </p>
           </div>
           <div className=" h-259 w-468 bg-gradient-to-r from-costumeRedBg to-costumeOrange rounded-3xl px-10 text-white pt-2">
-            <h1 className=" text-5xl font-bold pt-1 pb-1">03</h1>
-            <span className="text-xl font-semibold">Implementation:</span>
-            <p className="text-base pt-2">
+            <h1 className=" text-5xl font-Poppins font-bold pt-1 pb-1">03</h1>
+            <span className="text-xl font-Poppins font-semibold">
+              Implementation:
+            </span>
+            <p className="text-base font-OpenSans  pt-2">
               Our team of developers will use the latest technologies and
               programming languages to bring your software to life, ensuring it
               is fast, secure, and scalable.
@@ -187,29 +198,31 @@ export default function PortfolioOne() {
         </div>
         <div className="flex justify-center gap-8 ">
           <div className=" h-259 w-468 bg-gradient-to-r from-costumeRedBg to-costumeOrange rounded-3xl px-10 text-white pt-2">
-            <h1 className=" text-5xl font-bold pt-1 pb-1">04</h1>
-            <span className="text-xl font-semibold">Testing:</span>
-            <p className="text-base pt-2">
+            <h1 className=" text-5xl font-Poppins font-bold  pt-1 pb-1">04</h1>
+            <span className="text-xl font-Poppins font-semibold">Testing:</span>
+            <p className="text-base font-OpenSans  pt-2">
               Thorough testing is integral to our software development process.
               We will rigorously test your software to ensure it meets your
               requirements and operates without errors or glitches.
             </p>
           </div>
           <div className=" h-259 w-468 bg-gradient-to-r from-costumeRedBg to-costumeOrange rounded-3xl px-10 text-white pt-2">
-            <h1 className=" text-5xl font-bold pt-1 pb-1">05</h1>
-            <span className="text-xl font-semibold">
+            <h1 className=" text-5xl font-Poppins font-bold pt-1 pb-1">05</h1>
+            <span className="text-xl font-Poppins font-semibold">
               Maintenance and Support:
             </span>
-            <p className="text-base pt-7">
+            <p className="text-base font-OpenSans  pt-7">
               After we launch your software, we will provide ongoing care and
               support, ensuring that your software meets your needs and performs
               optimally.
             </p>
           </div>
           <div className=" h-259 w-468 bg-gradient-to-r from-costumeRedBg to-costumeOrange rounded-3xl px-10 text-white pt-2">
-            <h1 className=" text-5xl font-bold pt-1 pb-1">06</h1>
-            <span className="text-xl font-semibold ">Implementation:</span>
-            <p className="text-base pt-2">
+            <h1 className=" text-5xl font-Poppins font-bold  pt-1 pb-1">06</h1>
+            <span className="text-xl font-Poppins font-semibold ">
+              Implementation:
+            </span>
+            <p className="text-base font-OpenSans  pt-2">
               Our team of developers will use the latest technologies and
               programming languages to bring your software to life, ensuring it
               is fast, secure, and scalable.
@@ -222,10 +235,10 @@ export default function PortfolioOne() {
       {/*why-clients-choose-us */}
       <div className="bg-gradient-to-t from-costumeOrange to-costumeRed  h-1013  pt-36 mt-32">
         <div className=" text-center">
-          <h1 className="text-5xl text-white  font-bold">
+          <h1 className="text-5xl text-white font-Poppins  font-bold">
             Why clients choose us
           </h1>
-          <p className="pt-8 text-xl font-light text-white">
+          <p className="pt-8 text-xl font-OpenSans font-light text-white">
             Find a team of digital solutions you can rely on. Every day, we
             build trust through communication,
             <br /> transparency, and results.
@@ -243,11 +256,11 @@ export default function PortfolioOne() {
               />
             </div>
             <div>
-              <h1 className=" text-white text-2xl font-bold pt-14">
+              <h1 className=" text-white text-2xl font-Poppins font-bold pt-14">
                 Experienced Team
               </h1>
 
-              <p className=" pt-2 text-white ">
+              <p className=" pt-2 text-white font-OpenSans ">
                 Our software developers and project managers have years of
                 <br />
                 experience delivering top-quality software solutions to clients
@@ -266,10 +279,10 @@ export default function PortfolioOne() {
                 className="  absolute pt-2"
               />
             </div>
-            <h1 className=" text-white text-2xl font-bold pt-14">
+            <h1 className=" text-white text-2xl font-Poppins font-bold pt-14">
               Personalized Approach:
             </h1>
-            <p className=" pt-2 text-white">
+            <p className=" pt-2 text-white font-OpenSans">
               We customize each project, working closely with you to <br />
               understand your specific needs and requirements.
             </p>
@@ -286,10 +299,10 @@ export default function PortfolioOne() {
                 className="  absolute pt-2"
               />
             </div>
-            <h1 className=" text-white text-2xl font-bold pt-14">
+            <h1 className=" text-white text-2xl font-Poppins font-bold pt-14">
               Quality Assurance:
             </h1>
-            <p className=" pt-2 text-white">
+            <p className=" pt-2 text-white font-OpenSans">
               Quality is of the utmost importance to us. We have strict quality
               <br />
               assurance processes to ensure that every project we deliver <br />
@@ -306,10 +319,10 @@ export default function PortfolioOne() {
                 className="  absolute pt-2"
               />
             </div>
-            <h1 className=" text-white text-2xl font-bold pt-14">
+            <h1 className=" text-white text-2xl font-Poppins font-bold pt-14">
               Competitive Pricing:
             </h1>
-            <p className=" pt-2 text-white">
+            <p className=" pt-2 text-white font-OpenSans">
               We offer competitive pricing for our Full Software <br />
               Development services, ensuring you receive the best value
               <br /> for your investment.
@@ -322,32 +335,34 @@ export default function PortfolioOne() {
       {/*contact-us-today */}
       <div className="py-32 ">
         <div className="  mx-80 px-2  ">
-          <h1 className="text-5xl font-bold">Contact us today</h1>
+          <h1 className="text-5xl font-Poppins font-bold">Contact us today</h1>
         </div>
         <div className=" flex  justify-evenly pt-8">
-          <div className="">
-            <p className=" text-gray-400 text-xl pl-20">
+          <div className="mx-10">
+            <p className=" text-gray-400 text-xl font-OpenSans pl-20 ">
               To learn more about our SEO services and how we can help improve
               your online visibility, <br /> reach more customers, and grow your
               business through search engines.
             </p>
           </div>
           <div className=" pr-20">
-            <button className="flex text-lg uppercase   items-center   text-red-500 hover:bg-gradient-to-t from-[#F35A43] to-[#C1272D]  hover:text-white   border-2 p-4  border-red-500  rounded-full">
-              <p className="px-10 text-sm"> KNOW MORE</p>
-              <svg
-                className="w-5 h-5  "
-                fill="currentColor"
-                viewBox="0 0 20 20"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  fill-rule="evenodd"
-                  d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
-                  clip-rule="evenodd"
-                ></path>
-              </svg>
-            </button>
+            <Link href="#">
+              <button className="flex text-lg uppercase   items-center   text-red-500 hover:bg-gradient-to-t from-[#F35A43] to-[#C1272D]  hover:text-white   border-2 p-4  border-red-500  rounded-full">
+                <p className="px-10 text-sm"> KNOW MORE</p>
+                <svg
+                  className="w-5 h-5  "
+                  fill="currentColor"
+                  viewBox="0 0 20 20"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
+                    clip-rule="evenodd"
+                  ></path>
+                </svg>
+              </button>
+            </Link>
           </div>
         </div>
       </div>
@@ -357,15 +372,17 @@ export default function PortfolioOne() {
       <div className=" bg-gradient-to-t from-costumeOrange to-costumeRed py-6 mb-12">
         <div className=" flex justify-center gap-40 pt-28 pb-40 ">
           <div className=" text-left text-white">
-            <h1 className="text-xl font-thin ">GET IN TOUCH</h1>
-            <p className="text-5xl font-bold pt-10">
+            <h1 className="text-xl font-OpenSans font-light">GET IN TOUCH</h1>
+            <p className="text-5xl font-Poppins font-bold pt-10">
               Let’s start with <br /> your dream <br />
               project
             </p>
-            <p className="text-2xl pt-10">
+            <p className="text-2xl pt-10 pb-2 font-OpenSans">
               We help our clients make realize their most
             </p>
-            <span className="text-2xl font-bold">+1 123 456 7890</span>
+            <span className="text-2xl font-OpenSans font-bold">
+              +1 123 456 7890
+            </span>
           </div>
           <div className="grid content-center ">
             <form action="">
@@ -389,9 +406,11 @@ export default function PortfolioOne() {
                   placeholder="Message"
                 />
                 <div className="pt-16 w-36 ">
-                  <button className=" text-2xl text-white bg-transparent hover:bg-white text-black-700 font-semibold hover:text-red-500 py-2 px-8 border-2 border-white hover:border-transparent rounded-full">
-                    SUBMIT
-                  </button>
+                  <Link href="#">
+                    <button className=" text-2xl text-white bg-transparent hover:bg-white text-black-700 font-semibold hover:text-red-500 py-2 px-8 border-2 border-white hover:border-transparent rounded-full">
+                      SUBMIT
+                    </button>
+                  </Link>
                 </div>
               </div>
             </form>
@@ -404,18 +423,20 @@ export default function PortfolioOne() {
       <footer className="text-gray-600  ">
         <div className=" pt-8 pb-20  flex flex-row flex-wrap justify-center  ">
           <div className="  mr-24">
-            <a href="#" className="flex items-center pb-2 px-4">
-              <Image
-                src="/images/logo/logo.png"
-                alt="Picture of the author"
-                width={62.02}
-                height={60.25}
-              />
-            </a>
-            <span className="font-bold text-base  text-red-700 ">
+            <div className="flex items-center pb-2 px-4">
+              <Link href="#">
+                <Image
+                  src="/images/logo/logo.png"
+                  alt="Picture of the author"
+                  width={62.02}
+                  height={60.25}
+                />
+              </Link>
+            </div>
+            <span className="font-Poppins font-bold   text-red-700 ">
               MABOLOTECH IT SOLUTION
             </span>
-            <p className="text-sm text-gray-400">
+            <p className="text-sm text-gray-400 font-OpenSans">
               Lorem ipsum dolor is simply dummy <br />
               text of printing.
             </p>
@@ -423,10 +444,10 @@ export default function PortfolioOne() {
 
           <div className="flex flex-wrap  mx-8 gap-40 mt-8 ">
             <div className="grid content-end mb-2">
-              <h2 className="title-font font-bold text-2xl text-red-700   pb-2">
+              <h2 className="font-Poppins font-bold text-2xl text-red-700   pb-2">
                 Services
               </h2>
-              <nav className="list-none">
+              <nav className="list-none font-OpenSans">
                 <li className=" mt-3">
                   <a className="text-gray-400  ">Development</a>
                 </li>
@@ -445,10 +466,10 @@ export default function PortfolioOne() {
               </nav>
             </div>
             <div className="grid content-end mb-2">
-              <h2 className="title-font font-bold text-2xl text-red-700   pb-2">
+              <h2 className="font-Poppins font-bold text-2xl text-red-700   pb-2">
                 About us
               </h2>
-              <nav className="list-none">
+              <nav className="list-none font-OpenSans">
                 <li className=" mt-3 ">
                   <a className="text-gray-400  ">About us</a>
                 </li>
@@ -467,59 +488,59 @@ export default function PortfolioOne() {
               </nav>
             </div>
             <div className="  grid   content-end mb-20">
-              <h2 className="title-font font-bold text-2xl text-red-700   pb-2">
+              <h2 className="tfont-Poppins  font-bold text-2xl text-red-700   pb-2">
                 Get in touch
               </h2>
               <div className="list-none">
                 <li className=" mt-2 ">
-                  <a className="  text-gray-400 ">
+                  <a className="  text-gray-400 font-OpenSans">
                     99 Wall Street <br /> New York, NY 10005
                   </a>
                 </li>
 
                 <ul className="mt-8 flex text-gray-400 gap-2">
                   <li>
-                    <a href="#" target="_blank" title="">
+                    <Link href="#" target="_blank" title="facebook">
                       <Image
                         src="/iconfooter/facebook.svg"
                         alt="Myimage"
                         width={7.92}
                         height={17}
                       />
-                    </a>
+                    </Link>
                   </li>
 
                   <li className="ml-6">
-                    <a href="#" target="_blank" title="">
+                    <Link href="#" target="_blank" title="skypef">
                       <Image
                         src="/iconfooter/skype.svg"
                         alt="Myimage"
                         width={16}
                         height={15.29}
                       />
-                    </a>
+                    </Link>
                   </li>
 
                   <li className="ml-6">
-                    <a href="#" target="_blank" title="">
+                    <Link href="#" target="_blank" title="linkedin">
                       <Image
                         src="/iconfooter/linkedin.svg"
                         alt="Myimage"
                         width={17}
                         height={17}
                       />
-                    </a>
+                    </Link>
                   </li>
 
                   <li className="ml-6">
-                    <a href="#" target="_blank" title="">
+                    <Link href="#" target="_blank" title="insta">
                       <Image
                         src="/iconfooter/instagram.svg"
                         alt="Myimage"
                         width={17}
                         height={17}
                       />
-                    </a>
+                    </Link>
                   </li>
                 </ul>
               </div>
@@ -527,7 +548,7 @@ export default function PortfolioOne() {
           </div>
         </div>
 
-        <p className=" text-center text-base pt-3 pb-48 text-gray-400">
+        <p className=" text-center font-OpenSans text-base pt-3 pb-48 text-gray-400">
           Copyrighted © 2023 Mabolotech IT Solution
         </p>
       </footer>
