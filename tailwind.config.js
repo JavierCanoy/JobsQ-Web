@@ -95,6 +95,9 @@ module.exports = {
         OpenSans: ["Open Sans", "sans-serif"],
         SegoeUI: ["Roboto", "sans-serif"],
       },
+      borderRadius: {
+        costumeRaduis: "0.625rem",
+      },
     },
   },
   plugins: [],
