@@ -17,7 +17,7 @@ export default function Contact() {
         </p>
         <div className=" flex justify-center gap-96 ">
           <div>
-            <div className="flex justify-center items-center   bg-red-100  h-[145px] w-[145px] rounded-full">
+            <div className="flex justify-center items-center   bg-red-100  h-[145px] w-[145px] rounded-full mx-auto">
               <Image
                 src="/images/contact/signs.svg"
                 alt="Myimage"
@@ -36,7 +36,7 @@ export default function Contact() {
           </div>
 
           <div>
-            <div className="flex justify-center items-center  bg-red-100  h-[145px] w-[145px] rounded-full">
+            <div className="flex justify-center items-center  bg-red-100  h-[145px] w-[145px] rounded-full mx-auto">
               <Image
                 src="/images/contact/note1.svg"
                 alt="Myimage"
