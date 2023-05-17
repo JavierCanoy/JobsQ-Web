@@ -5,7 +5,7 @@ export default function Footer() {
   return (
     <>
       {/* footer-start */}
-      <footer className="text-gray-600  ">
+      <div className="text-gray-600  ">
         <div className="pb-20  flex flex-row flex-wrap justify-center  ">
           <div className="  mr-24">
             <div className="flex items-center pb-2 px-4">
@@ -136,7 +136,7 @@ export default function Footer() {
         <p className=" text-center font-OpenSans text-base pt-3 pb-48 text-gray-400">
           Copyrighted © 2023 Mabolotech IT Solution
         </p>
-      </footer>
+      </div>
       {/* footer-end */}
     </>
   );
