@@ -12,7 +12,7 @@ export default function Footer() {
               <Link href="#">
                 <Image
                   src="/images/logo/logo.png"
-                  alt="Picture of the author"
+                  alt="logo"
                   width={62.02}
                   height={60.25}
                 />
@@ -88,7 +88,7 @@ export default function Footer() {
                     <Link href="#" target="_blank" title="facebook">
                       <Image
                         src="/iconfooter/facebook.svg"
-                        alt="Myimage"
+                        alt="Facebook"
                         width={7.92}
                         height={17}
                       />
@@ -99,7 +99,7 @@ export default function Footer() {
                     <Link href="#" target="_blank" title="skypef">
                       <Image
                         src="/iconfooter/skype.svg"
-                        alt="Myimage"
+                        alt="Skype"
                         width={16}
                         height={15.29}
                       />
@@ -110,7 +110,7 @@ export default function Footer() {
                     <Link href="#" target="_blank" title="linkedin">
                       <Image
                         src="/iconfooter/linkedin.svg"
-                        alt="Myimage"
+                        alt="Linkedin"
                         width={17}
                         height={17}
                       />
@@ -121,7 +121,7 @@ export default function Footer() {
                     <Link href="#" target="_blank" title="insta">
                       <Image
                         src="/iconfooter/instagram.svg"
-                        alt="Myimage"
+                        alt="Instagram"
                         width={17}
                         height={17}
                       />

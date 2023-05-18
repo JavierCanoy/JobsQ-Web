@@ -12,7 +12,7 @@ export default function Header() {
             <Link href="#">
               <Image
                 src="/images/logo/logo.png"
-                alt="Picture of the author"
+                alt="Logo"
                 width={62.02}
                 height={60.25}
               />

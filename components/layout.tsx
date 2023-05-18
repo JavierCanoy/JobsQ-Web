@@ -8,10 +8,14 @@ interface LayoutProps {
 
 export default function Layout({ children }: LayoutProps) {
   return (
-    <>
+    <div className="layout-main">
+      {/* header */}
       <Header />
+
       <main>{children}</main>
+
+      {/* footer */}
       <Footer />
-    </>
+    </div>
   );
 }
