@@ -1,19 +1,21 @@
+import Layout from "./one";
+import Link from "next/link";
 export default function Try() {
-  const handleClick = () => {
-    console.log("javier! ");
-  };
   return (
-    <>
+    <Layout>
       <div>
-        <div className=" p-0 m-0  flex justify-center pt-10">
-          <button
-            onClick={handleClick}
-            className=" bg-red-300 rounded-lg px-4 border-2 border-black"
-          >
-            click me !
-          </button>
-        </div>
+        <nav>
+          <Link href="/contact" className=" px-2">
+            contact
+          </Link>
+          <Link href="/homepageone" className=" px-2">
+            home
+          </Link>
+          <Link href="/contact" className=" px-2">
+            Services
+          </Link>
+        </nav>
       </div>
-    </>
+    </Layout>
   );
 }

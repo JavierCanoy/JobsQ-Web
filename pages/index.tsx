@@ -72,7 +72,7 @@ export default function Home() {
         <div className=" flex justify-end    h-957  w-788 ">
           <Image
             src="/images/home1/hero.png"
-            alt="Myimage"
+            alt="hero"
             className=" object-cover   "
             width={788}
             height={957}
@@ -190,7 +190,7 @@ export default function Home() {
           <Image
             className=" rounded-r-lg shadow-lg"
             src="/images/home1/team1.png"
-            alt="Myimage"
+            alt="team1"
             height={730}
             width={800}
           />
@@ -261,7 +261,7 @@ export default function Home() {
           <Image
             className="rounded-l-lg shadow-lg"
             src="/images/home1/team.png"
-            alt="Myimage"
+            alt="team"
             height={730}
             width={800}
           />
@@ -279,22 +279,28 @@ export default function Home() {
             Projects we love
           </h1>
         </div>
-        <div className="flex  self-end text-lg font-semibold">
-          <Link href="/">
-            <button className="pr-20  text-red-500 font-OpenSans  font-semibold hover:text-gray-300">
-              PREV
-            </button>
-          </Link>
-          <Link href="/">
-            <button className="px-2  text-gray-300 font-OpenSans  font-semibold hover:text-red-500">
-              NEXT
-            </button>
-          </Link>
-          <Link href="/">
-            <button className="pl-20 text-red-500 font-OpenSans  font-semibold">
-              View all
-            </button>
-          </Link>
+        <div className="flex  self-end text-lg font-semibold ">
+          <div className="prev-button pr-20">
+            <Link href="/">
+              <button className=" text-red-500 font-OpenSans  font-semibold hover:text-gray-300">
+                PREV
+              </button>
+            </Link>
+          </div>
+          <div className=" button-next">
+            <Link href="/">
+              <button className=" text-gray-300 font-OpenSans  font-semibold hover:text-red-500">
+                NEXT
+              </button>
+            </Link>
+          </div>
+          <div className=" button-viewAll ml-20">
+            <Link href="/">
+              <button className=" text-red-500 font-OpenSans  font-semibold">
+                View all
+              </button>
+            </Link>
+          </div>
         </div>
       </div>
       {/* images */}

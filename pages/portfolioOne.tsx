@@ -1,8 +1,18 @@
 import Image from "next/image";
 import Link from "next/link";
 import Head from "next/head";
-
+import React, { useState } from "react";
 export default function PortfolioOne() {
+  // const [activeButton, setActiveButton] = useState<any | null>(null);
+
+  // const handleButtonClick = (button: any) => {
+  //   setActiveButton(button);
+  // };
+  const [selectedButton, setSelectedButton] = useState("1");
+
+  const handleButtonClick = (button: any) => {
+    setSelectedButton(button);
+  };
   return (
     <div className="main">
       <Head>
@@ -44,32 +54,43 @@ export default function PortfolioOne() {
       {/* end-about-us */}
 
       {/* full-software */}
+
       <div>
-        <div className="flex flex-wrap justify-around mx-32 px-4 pt-14">
-          <div className="  ">
-            <Link href="#">
-              <button className="h-67 w-311 bg-gradient-to-t from-[#F35A43] to-[#C1272D] rounded-lg text-white font-Poppins font-bold hover:from-white hover:to-white hover:text-red-700 hover:border-red-700 border-2 px-6 py-3">
-                Full Software Development
-              </button>
-            </Link>
-          </div>
+        <div className="flex flex-wrap justify-around mx-32 px-10 pt-14">
+          <button
+            onClick={() => handleButtonClick("1")}
+            className="h-67 w-311  focus:outline-none focus:bg focus:bg-gradient-to-t from-costumeOrange to-costumeRed focus:text-white text-red-700  font-Poppins font-bold hover:bg-gradient-to-t border-red-400 hover:text-white border-2  px-6 py-3 rounded-lg"
+          >
+            Full Software Development
+          </button>
           <div className="flex items-center">
-            <span className="text-base font-Poppins font-bold">
+            <button
+              onClick={() => handleButtonClick("2")}
+              className="h-67 w-311  active:border-blue-700 focus:outline-none focus:bg focus:bg-gradient-to-t from-costumeOrange to-costumeRed  focus:text-white text-red-700  font-Poppins font-bold hover:bg-gradient-to-t border-red-400 hover:text-white border-2  px-6 py-3 rounded-lg"
+            >
               Mobile App Development
-            </span>
+            </button>
           </div>
           <div className="flex items-center">
-            <span className="text-base font-Poppins font-bold">
+            <button
+              onClick={() => handleButtonClick("3")}
+              className="h-67 w-311  focus:outline-none focus:bg focus:bg-gradient-to-t from-costumeOrange to-costumeRed  focus:text-white text-red-700  font-Poppins font-bold hover:bg-gradient-to-t border-red-400 hover:text-white border-2  px-6 py-3 rounded-lg"
+            >
               Search Engine Optimization (SEO)
-            </span>
+            </button>
           </div>
           <div className="flex items-center">
-            <span className="text-base font-Poppins font-bold">
-              Software Development Outsourcing
-            </span>
+            <div>
+              <button
+                onClick={() => handleButtonClick("4")}
+                className="h-67 w-311  focus:outline-none focus:bg focus:bg-gradient-to-t from-costumeOrange to-costumeRed focus:text-white text-red-700  font-Poppins font-bold hover:bg-gradient-to-t border-red-400 hover:text-white border-2  px-6 py-3 rounded-lg"
+              >
+                Software Development Outsourcing
+              </button>
+            </div>
           </div>
         </div>
-        <div className=" grid grid-cols-2 pt-16">
+        {/* <div className=" grid grid-cols-2 pt-16">
           <div className=" mx-44 px-10">
             <h1 className=" text-5xl font-Poppins font-bold">
               Full Software Development Service:
@@ -86,6 +107,109 @@ export default function PortfolioOne() {
               start to finish.
             </p>
           </div>
+        </div> */}
+
+        <div className="content">
+          {selectedButton === "1" && (
+            <div className=" grid grid-cols-2 pt-16">
+              <div className=" mx-44 px-10">
+                <h1 className=" text-5xl font-Poppins font-bold">
+                  Full Software Development Service:
+                </h1>
+              </div>
+              <div>
+                <p className="text-xl font-OpenSans">
+                  Welcome to our Full Software Development service, where we
+                  specialize in <br />
+                  delivering high-quality software solutions to meet our
+                  client's unique needs <br /> and requirements. Our experienced
+                  software developers and project <br /> managers dedicate
+                  themselves to providing a seamless software <br /> development
+                  experience from start to finish.
+                </p>
+              </div>
+            </div>
+          )}
+          {selectedButton === "2" && (
+            <div className=" grid grid-cols-2 pt-16">
+              <div className=" mx-44 px-10">
+                <h1 className=" text-5xl font-Poppins font-bold">
+                  Mobile App Development:
+                </h1>
+              </div>
+              <div>
+                <p className="text-xl font-OpenSans">
+                  Welcome1 to our Full Software Development service, where we
+                  specialize in <br />
+                  delivering high-quality software solutions to meet our
+                  client's unique needs <br /> and requirements. Our experienced
+                  software developers and project <br /> managers dedicate
+                  themselves to providing a seamless software <br /> development
+                  experience from start to finish.
+                </p>
+              </div>
+            </div>
+          )}
+          {selectedButton === "3" && (
+            <div className=" grid grid-cols-2 pt-16">
+              <div className=" mx-44 px-10">
+                <h1 className=" text-5xl font-Poppins font-bold">
+                  Search Engine Optimization (SEO)
+                </h1>
+              </div>
+              <div>
+                <p className="text-xl font-OpenSans">
+                  Welcome2 to our Full Software Development service, where we
+                  specialize in <br />
+                  delivering high-quality software solutions to meet our
+                  client's unique needs <br /> and requirements. Our experienced
+                  software developers and project <br /> managers dedicate
+                  themselves to providing a seamless software <br /> development
+                  experience from start to finish.
+                </p>
+              </div>
+            </div>
+          )}
+          {selectedButton === "4" && (
+            <div className=" grid grid-cols-2 pt-16">
+              <div className=" mx-44 px-10">
+                <h1 className=" text-5xl font-Poppins font-bold">
+                  Software Development Outsourcing
+                </h1>
+              </div>
+              <div>
+                <p className="text-xl font-OpenSans">
+                  Welcome3 to our Full Software Development service, where we
+                  specialize in <br />
+                  delivering high-quality software solutions to meet our
+                  client's unique needs <br /> and requirements. Our experienced
+                  software developers and project <br /> managers dedicate
+                  themselves to providing a seamless software <br /> development
+                  experience from start to finish.
+                </p>
+              </div>
+            </div>
+          )}
+          {/* OPTIONAL */}
+          {/* {selectedButton === "" && (
+            <div className=" grid grid-cols-2 pt-16">
+              <div className=" mx-44 px-10">
+                <h1 className=" text-5xl font-Poppins font-bold">
+                  Default <br /> Content ! !
+                </h1>
+              </div>
+              <div>
+                <p className="text-xl font-OpenSans">
+                  Welcome to Default Page ! , where we specialize in <br />
+                  delivering high-quality software solutions to meet our
+                  client's unique needs <br /> and requirements. Our experienced
+                  software developers and project <br /> managers dedicate
+                  themselves to providing a seamless software <br /> development
+                  experience from start to finish.
+                </p>
+              </div>
+            </div>
+          )} */}
         </div>
       </div>
       {/*end-full-software */}

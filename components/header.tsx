@@ -5,7 +5,7 @@ export default function Header() {
   return (
     <>
       {/* header-start */}
-      <div className="  sticky backdrop-blur-md z-50  w-full bg-white/90  top-0 left-0 shadow-sm ">
+      <header className="  sticky backdrop-blur-md z-50  w-full bg-white/90  top-0 left-0 shadow-sm ">
         <div className="border-black-500  border  px-4 p-7 grid grid-cols-2   ">
           {/* logo */}
           <div className=" flex  mx-12 ">
@@ -71,8 +71,7 @@ export default function Header() {
             </ul>
           </div>
         </div>
-      </div>
-      {/* header-end */}
+      </header>
     </>
   );
 }
