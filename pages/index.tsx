@@ -1,6 +1,9 @@
 import Image from "next/image";
 import Link from "next/link";
 import Head from "next/head";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
+import Portfolio from "./components/projectwelove";
 
 export default function Home() {
   return (
@@ -270,86 +273,11 @@ export default function Home() {
       {/*end-design */}
 
       {/* projects-we-love */}
-      <div className="flex justify-around pt-40 mt-40 ">
-        <div className="">
-          <span className=" font-OpenSans font-light text-xl  text-gray-500">
-            PORTFOLIO
-          </span>
-          <h1 className=" text-5xl font-Poppins font-bold pt-7">
-            Projects we love
-          </h1>
-        </div>
-        <div className="flex  self-end text-lg font-semibold ">
-          <div className="prev-button pr-20">
-            <Link href="/">
-              <button className=" text-red-500 font-OpenSans  font-semibold hover:text-gray-300">
-                PREV
-              </button>
-            </Link>
-          </div>
-          <div className=" button-next">
-            <Link href="/">
-              <button className=" text-gray-300 font-OpenSans  font-semibold hover:text-red-500">
-                NEXT
-              </button>
-            </Link>
-          </div>
-          <div className=" button-viewAll ml-20">
-            <Link href="/">
-              <button className=" text-red-500 font-OpenSans  font-semibold">
-                View all
-              </button>
-            </Link>
-          </div>
-        </div>
-      </div>
-      {/* images */}
-      <div>
-        <div className="flex justify-end gap-19  pt-28 pb-44 ">
-          <Link href="/">
-            <Image
-              src="/images/home1/Mask3.png"
-              alt="Myimage"
-              height={128}
-              width={401}
-              className="duration-200 hover:scale-95 "
-            />
-          </Link>
-
-          <Link href="/">
-            <Image
-              src="/images/home1/Mask4.png"
-              alt="Myimage"
-              height={128}
-              width={401}
-              className=" duration-200 hover:scale-95"
-            />
-          </Link>
-          <Link href="/">
-            <Image
-              src="/images/home1/Mask5.png"
-              alt="Myimage"
-              height={480}
-              width={401}
-              className=" duration-200 hover:scale-95"
-            />
-          </Link>
-
-          <Link href="/">
-            <Image
-              src="/images/home1/Mask4.png"
-              alt="Myimage"
-              height={480}
-              width={401}
-              className=" duration-200 hover:scale-95"
-            />
-          </Link>
-        </div>
-      </div>
+      <Portfolio />
       {/*end- projects-we-love */}
 
       {/*  What do our clients   */}
-      <div className="flex  justify-center h-941   p-28 mt-10 bg-gradient-to-t from-costumeOrange to-costumeRed">
+      <div className=" justify-center h-941   p-28 mt-10 bg-gradient-to-t from-costumeOrange to-costumeRed">
         <div className=" text-center pt-16">
           <h1 className=" text-5xl font-Poppins font-bold text-white">
             What do our clients say <br /> about us?

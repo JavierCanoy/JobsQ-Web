@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
+import { projects } from "../data/projects";
 
 export default function Header() {
   return (
