@@ -1,8 +1,8 @@
 import React, { useState } from "react";
-import ContentServices from "../data/content";
-
-export default function Services() {
-  const [selectedButton, setSelectedButton] = useState("1");
+import { servicescontent } from "../pages/data/servicescontent";
+export default function ServicesComp() {
+  const [selectedButton, setSelectedButton] = useState(0);
+  const pagenumber: number = selectedButton;
 
   const handleButtonClick = (button: any) => {
     setSelectedButton(button);
@@ -12,9 +12,9 @@ export default function Services() {
       <div className="flex flex-wrap justify-around mx-32 px-16 pt-14">
         <div className="flex items-center">
           <button
-            onClick={() => handleButtonClick("1")}
+            onClick={() => handleButtonClick(0)}
             className={` py-6 px-10 rounded font-bold ${
-              selectedButton === "1"
+              selectedButton === 0
                 ? "text-white bg-gradient-to-t from-costumeOrange to-costumeRed "
                 : "text-black"
             }`}
@@ -25,9 +25,9 @@ export default function Services() {
 
         <div className="flex items-center">
           <button
-            onClick={() => handleButtonClick("2")}
+            onClick={() => handleButtonClick(1)}
             className={`py-6 px-10 rounded font-bold ${
-              selectedButton === "2"
+              selectedButton === 1
                 ? "text-white bg-gradient-to-t from-costumeOrange to-costumeRed "
                 : "text-black"
             }`}
@@ -37,9 +37,9 @@ export default function Services() {
         </div>
         <div className="flex items-center">
           <button
-            onClick={() => handleButtonClick("3")}
+            onClick={() => handleButtonClick(2)}
             className={`py-6 px-10 rounded font-bold ${
-              selectedButton === "3"
+              selectedButton === 2
                 ? "text-white bg-gradient-to-t from-costumeOrange to-costumeRed"
                 : "text-black"
             }`}
@@ -50,9 +50,9 @@ export default function Services() {
         <div className="flex items-center">
           <div>
             <button
-              onClick={() => handleButtonClick("4")}
+              onClick={() => handleButtonClick(3)}
               className={`py-6 px-10 rounded font-bold  ${
-                selectedButton === "4"
+                selectedButton === 3
                   ? "text-white bg-gradient-to-t from-costumeOrange to-costumeRed"
                   : "text-black"
               }`}
@@ -63,7 +63,29 @@ export default function Services() {
         </div>
       </div>
       {/* Content-servecis */}
-      <ContentServices selectedButton={selectedButton} />
+      {servicescontent.map((servicescontent) => {
+        if (servicescontent.id === pagenumber) {
+          return (
+            <div
+              key={servicescontent.id}
+              className="flex justify-center gap-52 pt-16  "
+            >
+              <div className="w-[562px]">
+                <p className="text-5xl font-Poppins font-bold">
+                  {servicescontent.services}
+                </p>
+              </div>
+              <div className=" w-[702px]">
+                <p className="text-xl font-OpenSans">
+                  {servicescontent.content}
+                </p>
+              </div>
+            </div>
+          );
+        } else {
+          return null;
+        }
+      })}
     </div>
   );
 }

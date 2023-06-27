@@ -1,17 +1,10 @@
 import Image from "next/image";
 import Link from "next/link";
-import Head from "next/head";
 
 export default function Contact() {
   return (
-    <div className="main">
-      <Head>
-        <title>Contact</title>
-        <meta name="disciption" content="jobsQ" />
-      </Head>
-
-      {/* Let’s build your dream */}
-      <div className="pt-10">
+    <div className="main-contact">
+      <div id="contact" className=" pt-10">
         <p className="   text-center pt-56 pb-56 font-Poppins  font-bold  lg:text-5xl sm:px-16 xl:px-48 dark:text-gray-400">
           Let’s build your dream <br /> product together
         </p>
@@ -97,7 +90,7 @@ export default function Contact() {
           </div>
         </div>
       </div>
-      {/*end- Let’s build your dream */}
+      {/* end- Let’s build your dream  */}
 
       {/* minimap */}
       <div className="grid  grid-cols-2 pt-40 pb-32 mb-10 ">
@@ -149,7 +142,6 @@ export default function Contact() {
           </div>
         </form>
       </div>
-      {/* end-Let’s build your dream */}
     </div>
   );
 }

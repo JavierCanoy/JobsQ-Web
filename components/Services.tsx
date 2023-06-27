@@ -1,22 +1,12 @@
 import Image from "next/image";
 import Link from "next/link";
-import Head from "next/head";
-import React, { useState } from "react";
-import Services from "./components/services";
-export default function PortfolioOne() {
-  const [selectedButton, setSelectedButton] = useState("1");
+import React from "react";
+import ServicesComp from "./ServicesComp";
 
-  const handleButtonClick = (button: any) => {
-    setSelectedButton(button);
-  };
+export default function Services() {
   return (
-    <div className="main">
-      <Head>
-        <title>PortfolioOne</title>
-        <meta name="disciption" content="jobsQ" />
-      </Head>
-      {/* about-us */}
-      <div className="about-us  ">
+    <div className="main-services ">
+      <div id="services" className="  pt-[7.7rem]  ">
         <div className="relative ">
           <div className="image">
             <Image
@@ -49,10 +39,9 @@ export default function PortfolioOne() {
       </div>
       {/* end-about-us */}
 
-      {/* full-software */}
-
-      <Services />
-      {/*end-full-software */}
+      {/* Services */}
+      <ServicesComp />
+      {/*end-Services */}
 
       {/*what-we-offer */}
       <div className=" pt-40 ">
@@ -267,7 +256,7 @@ export default function PortfolioOne() {
       {/*end-contact-us-today */}
 
       {/* get-in-touch */}
-      <div className=" bg-gradient-to-t from-costumeOrange to-costumeRed py-6 mb-7">
+      <div className=" bg-gradient-to-t from-costumeOrange to-costumeRed py-6 ">
         <div className=" flex justify-center gap-40 pt-28 pb-40 ">
           <div className=" text-left text-white">
             <h1 className="text-xl font-OpenSans font-light">GET IN TOUCH</h1>

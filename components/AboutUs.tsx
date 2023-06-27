@@ -1,16 +1,11 @@
 import Image from "next/image";
 import Link from "next/link";
-import Head from "next/head";
+import Clients from "./Clients";
 
-export default function HomePageOne() {
+export default function AboutUs() {
   return (
-    <div className="main">
-      <Head>
-        <title>HomePageOne</title>
-        <meta name="disciption" content="jobsQ" />
-      </Head>
-      {/* start-about-us */}
-      <div className="about-us  ">
+    <div id="about-us" className="main-about ">
+      <div className=" pt-[7.7rem]  w-full ">
         <div className="relative ">
           <div className="image">
             <Image
@@ -21,7 +16,6 @@ export default function HomePageOne() {
               height={579}
             />
           </div>
-
           <div className="absolute top-0 right-0 bottom-0 left-0 h-full w-full overflow-hidden bg-fixed opacity-75 bg-gradient-to-r from-costumeOrange to-costumeRed">
             <div className="flex h-full items-center justify-center">
               <div className="px-6 text-center text-white ">
@@ -59,10 +53,10 @@ export default function HomePageOne() {
           <br />
           At MaboloTech IT Solutions, every project is unique and requires a
           personalized <br />
-          approach. That's why we work closely with our clients to understand
-          their specific <br />
+          approach. That{"'"}s why we work closely with our clients to
+          understand their specific <br />
           needs and goals and to create tailored solutions that meet those
-          needs. Whether it's
+          needs. Whether it{"'"}s
           <br /> developing a new website or improving the efficiency of your
           existing systems, we
           <br /> have the expertise and experience to deliver results that
@@ -85,7 +79,7 @@ export default function HomePageOne() {
             are confident that you will be impressed with the results.
             <br /> At MaboloTech IT Solutions, we are more than just a
             technology company - we are a partner in your success. So, look no
-            <br /> further if you're looking for a reliable and affordable
+            <br /> further if you{"'"}re looking for a reliable and affordable
             solution for your IT needs. Contact us today to see how we can help
             you
             <br /> achieve your goals.
@@ -290,48 +284,10 @@ export default function HomePageOne() {
       </div>
       {/*end meet-the-team */}
 
-      {/*  What do our clients  say */}
-      <div className="flex  justify-center   p-28 mt-4 h-941 bg-gradient-to-t from-costumeOrange to-costumeRed">
-        <div className=" text-center pt-10">
-          <h1 className=" text-5xl font-Poppins font-bold text-white">
-            What do our clients say <br /> about us?
-          </h1>
-          <div className="flex justify-center pt-4">
-            <Image
-              src="/images/home1/avatar.png"
-              width={200}
-              height={200}
-              alt="Myimage"
-            />
-          </div>
-          <p className="text-white text-2xl font-OpenSans">
-            We help our clients make realize their most Important <br />
-            business goals. We help our clients make realize their <br /> most
-            Important business goals. business goals. We help <br />
-            our clients make realize their most Important business.
-          </p>
-          <h1 className="text-white pt-10 font-OpenSans font-bold text-lg">
-            JOHN DOE
-          </h1>
-          <span className="text-white pb-10 text-sm  font-OpenSans">
-            CEO, Boogle Inc.
-          </span>
-          <div className=" flex justify-center pt-20 ">
-            <div className="flex  self-end text-lg font-semibold gap-32">
-              <Link href="#">
-                <button className="  text-gray-300 font-OpenSans font-semibold hover:text-white">
-                  PREV
-                </button>
-              </Link>
-              <Link href="#">
-                <button className=" text-gray-300 font-OpenSans font-semibold hover:text-white">
-                  NEXT
-                </button>
-              </Link>
-            </div>
-          </div>
-        </div>
-      </div>
+      {/*  What do our clients   */}
+      <Clients />
+      {/* end What do our clients   */}
+
       {/* Let’s start withyour dreamproject */}
       <div className="main mt-10 mb-28">
         <div className="flex justify-center ">
@@ -387,7 +343,7 @@ export default function HomePageOne() {
       {/*end Let’s start withyour dreamproject */}
 
       {/* subscribes-laters */}
-      <div className=" mb-7  pt-36  h-575 w-full   bg-costumeOrange">
+      <div className="  pt-36  h-575 w-full   bg-costumeOrange">
         <div className=" flex justify-center  pb-2 ">
           <div className=" flex pl-10">
             <h5 className=" text-center text-xl font-OpenSans font-light text-white px-80  mx-96  ">
@@ -395,7 +351,6 @@ export default function HomePageOne() {
             </h5>
           </div>
         </div>
-
         <h2 className=" text-center text-5xl font-Poppins font-bold text-white">
           Subscribe Company newsletter
         </h2>
@@ -423,7 +378,6 @@ export default function HomePageOne() {
           </div>
         </form>
       </div>
-      {/* end-subscribes-laters */}
     </div>
   );
 }

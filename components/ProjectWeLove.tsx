@@ -6,26 +6,24 @@ import "slick-carousel/slick/slick-theme.css";
 import React, { useState, useRef } from "react";
 import { projects } from "@/pages/data/projects";
 
-export default function Portfolio() {
-  const [marginLeft, setMarginLeft] = useState("mr-10");
-  const [nextFontColor, setNextFontColor] = useState("text-gray-700");
-  const [prevFontColor, setPrevFontColor] = useState("text-red-700");
+export default function ProjectWeLove() {
+  const [isNextClicked, setIsNextClicked] = useState(false);
+  const [isPrevClicked, setIsPrevClicked] = useState(true);
 
   const sliderRef = useRef(null);
 
-  const next = () => {
+  const nextButton = () => {
     if (sliderRef.current) {
-      setMarginLeft("mr-10");
-      setNextFontColor("text-gray-700");
-      setPrevFontColor("text-red-700");
+      setIsNextClicked(true);
+      setIsPrevClicked(false);
       (sliderRef.current as any).slickNext();
     }
   };
-  const previous = () => {
+
+  const previousButton = () => {
     if (sliderRef.current) {
-      setMarginLeft("ml-10");
-      setNextFontColor("text-red-700");
-      setPrevFontColor("text-gray-700");
+      setIsNextClicked(false);
+      setIsPrevClicked(true);
       (sliderRef.current as any).slickPrev();
     }
   };
@@ -38,8 +36,9 @@ export default function Portfolio() {
     slidesToScroll: 1,
     arrows: false,
   };
+
   return (
-    <div>
+    <div id="projectwelove">
       <div className="flex justify-around pt-40 mt-40   mb-20">
         <div className="">
           <span className=" font-OpenSans font-light text-xl  text-gray-500">
@@ -50,11 +49,16 @@ export default function Portfolio() {
             Projects we love
           </h1>
         </div>
+
         <div className="flex  self-end  font-semibold ">
           <div className="prev-button  ">
             <button
-              className={`button text-lg  font-OpenSans  font-semibold  ${prevFontColor} `}
-              onClick={previous}
+              className={
+                isPrevClicked
+                  ? " mx-10 text-lg  font-OpenSans  font-semibold   text-gray-700 "
+                  : " mx-10  text-lg  font-OpenSans  font-semibold    text-red-700"
+              }
+              onClick={previousButton}
             >
               PREV
             </button>
@@ -64,20 +68,28 @@ export default function Portfolio() {
               className={`relative justify-centerrelative bg-gray-700 w-20 rounded-full`}
             >
               <div
-                className={` bg-red-700 rounded-full p-1 w-10 ${marginLeft}`}
+                className={
+                  isPrevClicked
+                    ? " bg-red-700 rounded-full p-1 w-10  ml-10 "
+                    : " bg-red-700 rounded-full p-1 w-10 mr-10"
+                }
               ></div>
             </div>
           </div>
           <div className=" button-next">
             <button
-              className={`button text-lg font-OpenSans  font-semibold  ${nextFontColor} `}
-              onClick={next}
+              className={
+                isNextClicked
+                  ? " text-lg  font-OpenSans  font-semibold  mx-10 text-gray-700 "
+                  : "   text-lg  font-OpenSans  font-semibold  mx-10  text-red-700"
+              }
+              onClick={nextButton}
             >
               NEXT
             </button>
           </div>
           <div className=" button-viewAll ml-20">
-            <Link href="/components/viewall">
+            <Link href="/viewall">
               <button className=" text-red-500  font-OpenSans  font-semibold">
                 View all
               </button>

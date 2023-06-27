@@ -1,17 +1,11 @@
 import Image from "next/image";
 import Link from "next/link";
-import Head from "next/head";
 
-export default function Portfolio() {
+export default function OurWork() {
   return (
-    <div className="main">
-      <Head>
-        <title>Portfolio</title>
-        <meta name="disciption" content="jobsQ" />
-      </Head>
-      {/* start-Portfolio */}
-      <div className="porttolfio">
-        <div className=" text-center py-40 ">
+    <div className="main ">
+      <div id="ourwork" className="porttolfio">
+        <div className=" text-center py-40  ">
           <span className="text-xl text-gray-400 font-OpenSans font-light ">
             PORTFOLIO
           </span>
@@ -97,84 +91,102 @@ export default function Portfolio() {
               </div>
             </div>
             {/* images */}
+
             <div className="  h-439 w-370 border rounded-costumeRaduis  hover:shadow-lg duration-200 hover:scale-95 mb-8 ">
-              <Image
-                className=" "
-                src="/images/portfolio/pic1.png"
-                alt="Myimage"
-                width={370}
-                height={439}
-              />
+              <Link href="#">
+                <Image
+                  className=" "
+                  src="/images/portfolio/pic1.png"
+                  alt="Myimage"
+                  width={370}
+                  height={439}
+                />
+              </Link>
             </div>
+
             <div className="  h-439 w-370 border rounded-costumeRaduis  hover:shadow-lg duration-200 hover:scale-95 ">
-              <Image
-                className=" "
-                src="/images/portfolio/pic2.png"
-                alt="Myimage"
-                width={370}
-                height={439}
-              />
+              <Link href="#">
+                <Image
+                  className=" "
+                  src="/images/portfolio/pic2.png"
+                  alt="Myimage"
+                  width={370}
+                  height={439}
+                />
+              </Link>
             </div>
             <div className="  h-439 w-370 border rounded-costumeRaduis  hover:shadow-lg duration-200 hover:scale-95  mb-8 ">
-              <Image
-                className=" "
-                src="/images/portfolio/pic3.png"
-                alt="Myimage"
-                width={370}
-                height={439}
-              />
+              <Link href="#">
+                <Image
+                  className=" "
+                  src="/images/portfolio/pic3.png"
+                  alt="Myimage"
+                  width={370}
+                  height={439}
+                />
+              </Link>
             </div>
             <div className="  h-439 w-370 border rounded-costumeRaduis  hover:shadow-lg duration-200 hover:scale-95 ">
-              <Image
-                className=" "
-                src="/images/portfolio/pic4.png"
-                alt="Myimage"
-                width={370}
-                height={439}
-              />
+              <Link href="#">
+                <Image
+                  className=" "
+                  src="/images/portfolio/pic4.png"
+                  alt="Myimage"
+                  width={370}
+                  height={439}
+                />
+              </Link>
             </div>
             <div className="  h-439 w-370 border rounded-costumeRaduis  hover:shadow-lg duration-200 hover:scale-95 ">
-              <Image
-                className=" "
-                src="/images/portfolio/pic5.png"
-                alt="Myimage"
-                width={370}
-                height={439}
-              />
+              <Link href="#">
+                <Image
+                  className=" "
+                  src="/images/portfolio/pic5.png"
+                  alt="Myimage"
+                  width={370}
+                  height={439}
+                />
+              </Link>
             </div>
             <div className="  h-439 w-370 border rounded-costumeRaduis   hover:shadow-lg duration-200 hover:scale-95 ">
-              <Image
-                className=" "
-                src="/images/portfolio/pic6.png"
-                alt="Myimage"
-                width={370}
-                height={439}
-              />
+              <Link href="#">
+                <Image
+                  className=" "
+                  src="/images/portfolio/pic6.png"
+                  alt="Myimage"
+                  width={370}
+                  height={439}
+                />
+              </Link>
             </div>
             <div className="  h-439 w-370 border rounded-costumeRaduis   hover:shadow-lg duration-200 hover:scale-95 ">
-              <Image
-                className=" "
-                src="/images/portfolio/pic7.png"
-                alt="Myimage"
-                width={370}
-                height={439}
-              />
+              <Link href="#">
+                <Image
+                  className=" "
+                  src="/images/portfolio/pic7.png"
+                  alt="Myimage"
+                  width={370}
+                  height={439}
+                />
+              </Link>
             </div>
             <div className="  h-439 w-370 border rounded-costumeRaduis   hover:shadow-lg duration-200 hover:scale-95 ">
-              <Image
-                className=" "
-                src="/images/portfolio/pic8.png"
-                alt="Myimage"
-                width={370}
-                height={439}
-              />
+              <Link href="#">
+                <Image
+                  className=" "
+                  src="/images/portfolio/pic8.png"
+                  alt="Myimage"
+                  width={370}
+                  height={439}
+                />
+              </Link>
             </div>
           </div>
         </div>
       </div>
       {/* end-Portfolio */}
       {/* get-in-touch */}
-      <div className=" bg-gradient-to-t from-costumeOrange to-costumeRed py-6 mb-20">
+      <div className=" bg-gradient-to-t from-costumeOrange to-costumeRed py-6 ">
         <div className=" flex justify-center gap-40 pt-28 pb-40 ">
           <div className=" text-left text-white">
             <h1 className="text-xl font-OpenSans font-light">GET IN TOUCH</h1>
@@ -220,7 +232,6 @@ export default function Portfolio() {
           </div>
         </div>
       </div>
-      {/* end-get-in-touch */}
     </div>
   );
 }
