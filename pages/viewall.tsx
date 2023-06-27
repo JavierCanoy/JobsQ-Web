@@ -2,7 +2,7 @@ import React from "react";
 import Image from "next/image";
 import Link from "next/link";
 import Head from "next/head";
-import { projects } from "@/pages/data/projects";
+import { projects } from "@/data/projects";
 
 export default function viewall() {
   return (
@@ -24,7 +24,7 @@ export default function viewall() {
         </div>
       </div>
       <div className="grid grid-cols-4 grid-rows-2  gap-4">
-        {projects.map((project) => (
+        {projects.map((project: any) => (
           <div key={project.id} className="  mx-10 pt-2 mb-10 ">
             <Link href="/">
               <Image

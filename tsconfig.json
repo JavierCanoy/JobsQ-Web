@@ -23,7 +23,10 @@
     "**/*.ts",
     "**/*.tsx",
     "pages/test.tsx",
-    "pages/data/canmoy"
+    "data/canmoy",
+    "data/clientdata.tsx",
+    "data/servicescontent.jsx",
+    "data/projects.jsx"
   ],
   "exclude": ["node_modules"]
 }

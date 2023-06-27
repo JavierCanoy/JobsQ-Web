@@ -4,7 +4,7 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import React, { useState, useRef } from "react";
-import { clientdata } from "../pages/data/clientdata";
+import { clientdata } from "../data/clientdata";
 
 export default function Clients() {
   const sliderRef = useRef(null);
@@ -40,7 +40,7 @@ export default function Clients() {
     <div className="main-clients">
       <div className=" justify-center p-28 mt-10 bg-gradient-to-t from-costumeOrange to-costumeRed">
         <Slider ref={sliderRef} {...settings} className=" mb-20  ">
-          {clientdata.map((clientdata) => (
+          {clientdata.map((clientdata: any) => (
             <div key={clientdata.id} className="pt-16 ">
               <h1 className=" text-center text-5xl font-Poppins font-bold text-white ">
                 {clientdata.say}

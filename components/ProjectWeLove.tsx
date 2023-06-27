@@ -4,7 +4,7 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import React, { useState, useRef } from "react";
-import { projects } from "@/pages/data/projects";
+import { projects } from "@/data/projects";
 
 export default function ProjectWeLove() {
   const [isNextClicked, setIsNextClicked] = useState(false);

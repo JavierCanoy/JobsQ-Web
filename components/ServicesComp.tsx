@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { servicescontent } from "../pages/data/servicescontent";
+import { servicescontent } from "../data/servicescontent";
 export default function ServicesComp() {
   const [selectedButton, setSelectedButton] = useState(0);
   const pagenumber: number = selectedButton;
