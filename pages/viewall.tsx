@@ -3,7 +3,6 @@ import Image from "next/image";
 import Link from "next/link";
 import Head from "next/head";
 import { projects } from "@/data/projects";
-
 export default function viewall() {
   return (
     <div>
@@ -14,16 +13,16 @@ export default function viewall() {
       </Head>
       <div className="flex justify-start mx-10  pt-40  mb-20">
         <div className="">
-          <span className=" font-OpenSans font-light text-xl  text-gray-500">
+          <p className=" font-OpenSans font-light text-xl  text-gray-500">
             PORTFOLIO
-          </span>
+          </p>
 
           <h1 className=" text-5xl font-Poppins font-bold pt-7">
             Projects we love
           </h1>
         </div>
       </div>
-      <div className="grid grid-cols-4 grid-rows-2  gap-4">
+      <div className=" grid grid-cols-2 lg:grid-cols-4">
         {projects.map((project: any) => (
           <div key={project.id} className="  mx-10 pt-2 mb-10 ">
             <Link href="/">

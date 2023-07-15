@@ -7,23 +7,27 @@ import ProjectWeLove from "./ProjectWeLove";
 
 export default function Main() {
   return (
-    <div className="main mb-10">
-      <div id="home" className="   flex justify-end gap-32  pt-[7.7rem]     ">
-        <div className="  ml-10 mx-20 px-2  ">
-          <div className=" pt-64">
-            <span className="text-xl uppercase pl-10 text-gray-400 font-OpenSans font-light">
+    // pt-[7.7rem]
+
+    <div
+      id="home"
+      className="main  pt-[9rem] md:pt-[16.8rem] lg:pt-[10.5rem] xl:pt-[9rem]  "
+    >
+      <div className="  grid grid-cols-12 h-screen      ">
+        <div className="xl:grid xl:justify-items-end   col-span-12 mx-2 my-auto  md:col-span-6  ">
+          <div className=" px-4 md:w-2/3 xl:mx-20 ">
+            <p className="text-xl uppercase py-2 text-gray-400 font-OpenSans font-light">
               Our Goal
-            </span>
-            <h1 className="text-7xl font-Poppins font-bold pl-10">
-              Better products <br /> for your users
+            </p>
+            <h1 className="text-5xl lg:text-7xl font-Poppins font-bold ">
+              Better products for your users
             </h1>
-            <p className=" pt-7 text-xl font-OpenSans pl-10 text-gray-400">
-              We help our clients realize their most important <br /> business
-              goals.
+            <p className="text-xl font-OpenSans  text-gray-400 py-4">
+              We help our clients realize their most important business goals.
             </p>
           </div>
-          <div className=" flex justify-center gap-16 pt-16 mt-1 ">
-            <div className=" px-2">
+          <div className="gap-16 xl:flex xl:w-full xl:justify-center  py-2       ">
+            <div className=" flex justify-center py-2">
               <Link href="#">
                 <button
                   type="button"
@@ -34,9 +38,9 @@ export default function Main() {
               </Link>
             </div>
             <div>
-              <div className=" flex ">
+              <div className=" flex  justify-center py-2 ">
                 <div className=" flex">
-                  <strong className="  pr-4  self-center font-OpenSans font-semibold">
+                  <strong className="  px-2 self-center font-OpenSans font-semibold">
                     WATCH VIDEO
                   </strong>
                 </div>
@@ -67,11 +71,11 @@ export default function Main() {
             </div>
           </div>
         </div>
-        <div className=" flex justify-end    h-957  w-788 ">
+        <div className="  col-span-12 md:col-span-6 overflow-y-hidden  ">
           <Image
             src="/images/home1/hero.png"
             alt="hero"
-            className=" object-cover   "
+            className="object-cover w-full h-full"
             width={788}
             height={957}
           />
@@ -80,21 +84,78 @@ export default function Main() {
       {/* end */}
 
       {/* we-help-with */}
-      <div className=" h-766 w-full  bg-gradient-to-t  from-costumeOrange to-costumeRed">
-        <div className="flex  justify-around py-36  text-white mx-72 px-2">
-          <div className="pt-4 pr-14 ">
-            <span className="text-2xl font-OpenSans font-light ">
-              WE HELP WITH <br />
-            </span>
-            <p className="text-5xl font-Poppins font-bold pb-10 pt-2">
-              Building <br /> better
-              <br /> solutions
+      <div className=" md:flex xl:h-screen   justify-center  w-full  bg-gradient-to-t  from-costumeOrange to-costumeRed text-white ">
+        <div className="first xl:my-auto 2xl:mx-40    p-4 ">
+          <span className="text-2xl font-OpenSans font-light ">
+            WE HELP WITH <br />
+          </span>
+          <p className="md:text-7xl  text-5xl font-Poppins font-bold pb-10 pt-2">
+            Building <br /> better
+            <br /> solutions
+          </p>
+          <Link href="/">
+            <button className=" flex text-base font-semibold uppercase  p-3  items-center  bg-transparent text-white hover:text-red-500 hover:bg-white text-black-700    border-2   border-white hover:border-transparent rounded-full">
+              <span className="px-5"> Our Services </span>
+              <svg
+                className="w-5 h-5 ml-6 mx-2  "
+                fill="currentColor"
+                viewBox="0 0 20 20"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  fillRule="evenodd"
+                  d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
+                  clipRule="evenodd"
+                ></path>
+              </svg>
+            </button>
+          </Link>
+        </div>
+
+        <div className="second content-center grid    xl:grid xl:grid-cols-2  ">
+          <div className="  my-5 mx-4  p-8 h-[231px] md:w-[361px] hover:bg-gradient-to-r from-costumeBrnBg to-costumeRedBg   rounded-lg  bg-costumeRedBg">
+            <Image
+              src="/images/icon/first.png"
+              width={40}
+              height={60.25}
+              alt="Myimage"
+              className=" pb-3"
+            />
+            <h3 className=" font-Poppins font-bold text-xl">1Design</h3>
+            <p className=" text-base pt-3">
+              Lorem ipsum dolor amet, an ipsum dore <br /> dusino sinto. Ipsum
+              dolor amet lorem.
+            </p>
+          </div>
+
+          <div className=" my-5 mx-4  p-8  h-[231px] md:w-[361px]   rounded-lg hover:bg-gradient-to-r from-costumeBrnBg to-costumeRedBg  bg-costumeRedBg">
+            <Image
+              src="/images/icon/second.png"
+              width={40}
+              height={60.25}
+              alt="Myimage"
+              className=" pb-2"
+            />
+            <h3 className="font-Poppins font-bold text-xl">Development</h3>
+            <p className=" text-base pt-2">
+              Lorem ipsum dolor amet, an ipsum dore <br /> dusino sinto. Ipsum
+              dolor amet lorem.
+            </p>
+          </div>
+
+          <div className="  order-4 xl:order-none  my-5  mx-4 p-8 h-[231px] md:w-[361px] rounded-lg  bg-gradient-to-r from-costumeBrnBg to-costumeRedBg  hover:from-costumeRedBg hover:to-costumeRedBg  ">
+            <h3 className=" font-Poppins font-bold text-xl ">
+              Project management
+            </h3>
+            <p className=" text-base pt-2 pb-5 md:pb-10">
+              Lorem ipsum dolor amet, an ipsum dore <br /> dusino sinto. Ipsum
+              dolor amet lorem.
             </p>
             <Link href="/">
-              <button className=" flex text-base font-semibold uppercase  p-3  items-center  bg-transparent text-white hover:text-red-500 hover:bg-white text-black-700    border-2   border-white hover:border-transparent rounded-full">
-                <span className="px-5"> Our Services </span>
+              <button className="flex  items-center    font-semibold  gap-10 hover:text-red-700">
+                Know more
                 <svg
-                  className="w-5 h-5 ml-6 mx-2  "
+                  className="w-5 h-5  "
                   fill="currentColor"
                   viewBox="0 0 20 20"
                   xmlns="http://www.w3.org/2000/svg"
@@ -108,161 +169,116 @@ export default function Main() {
               </button>
             </Link>
           </div>
-          <div className=" grid grid-cols-2 gap-6">
-            <div className=" h-231 w-361 px-8 pt-8 hover:bg-gradient-to-r from-costumeBrnBg to-costumeRedBg   rounded-lg  bg-costumeRedBg">
-              <Image
-                src="/images/icon/first.png"
-                width={40}
-                height={60.25}
-                alt="Myimage"
-                className=" pb-3"
-              />
-              <h3 className=" font-Poppins font-bold text-xl">Design</h3>
-              <p className=" text-base pt-3">
-                Lorem ipsum dolor amet, an ipsum dore <br /> dusino sinto. Ipsum
-                dolor amet lorem.
-              </p>
-            </div>
-            <div className="  h-231 w-361 px-8 pt-8     rounded-lg hover:bg-gradient-to-r from-costumeBrnBg to-costumeRedBg  bg-costumeRedBg">
-              <Image
-                src="/images/icon/second.png"
-                width={40}
-                height={60.25}
-                alt="Myimage"
-                className=" pb-2"
-              />
-              <h3 className="font-Poppins font-bold text-xl">Development</h3>
-              <p className=" text-base pt-2">
-                Lorem ipsum dolor amet, an ipsum dore <br /> dusino sinto. Ipsum
-                dolor amet lorem.
-              </p>
-            </div>
-            <div className="  p-6 rounded-lg  bg-gradient-to-r from-costumeBrnBg to-costumeRedBg  hover:from-costumeRedBg hover:to-costumeRedBg  ">
-              <h3 className=" font-Poppins font-bold text-xl ">
-                Project management
-              </h3>
-              <p className=" text-base pt-2 pb-20">
-                Lorem ipsum dolor amet, an ipsum dore <br /> dusino sinto. Ipsum
-                dolor amet lorem.
-              </p>
-              <Link href="/">
-                <button className="flex  items-center    font-semibold  gap-10 hover:text-red-700">
-                  Know more
-                  <svg
-                    className="w-5 h-5  "
-                    fill="currentColor"
-                    viewBox="0 0 20 20"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      fillRule="evenodd"
-                      d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
-                      clipRule="evenodd"
-                    ></path>
-                  </svg>
-                </button>
-              </Link>
-            </div>
-            <div className="  h-231 w-361 px-8 pt-8    rounded-lg  hover:bg-gradient-to-r from-costumeBrnBg to-costumeRedBg bg-costumeRedBg">
-              <Image
-                src="/images/icon/third.png"
-                width={40}
-                height={60.25}
-                alt="Myimage"
-                className=" pb-2"
-              />
-              <h3 className="font-Poppins font-bold text-xl">Testing & QA</h3>
-              <p className=" text-base pt-2">
-                Lorem ipsum dolor amet, an ipsum dore <br /> dusino sinto. Ipsum
-                dolor amet lorem.
-              </p>
-            </div>
+
+          <div className="my-5 mx-4   p-8  h-[231px] md:w-[361px]  rounded-lg  hover:bg-gradient-to-r from-costumeBrnBg to-costumeRedBg bg-costumeRedBg">
+            <Image
+              src="/images/icon/third.png"
+              width={40}
+              height={60.25}
+              alt="Myimage"
+              className=" pb-2"
+            />
+            <h3 className="font-Poppins font-bold text-xl">Testing & QA</h3>
+            <p className=" text-base pt-2">
+              Lorem ipsum dolor amet, an ipsum dore <br /> dusino sinto. Ipsum
+              dolor amet lorem.
+            </p>
           </div>
         </div>
       </div>
       {/* end-we-help-with */}
 
-      {/* design */}
-      <div className="design   ">
-        <div className="flex mt-5 py-40  ">
-          <Image
-            className=" rounded-r-lg shadow-lg"
-            src="/images/home1/team1.png"
-            alt="team1"
-            height={730}
-            width={800}
-          />
-          <div className="grid content-center  mx-32">
-            <h2 className="text-5xl font-Poppins font-bold">
-              Design solutions <br /> to improve products
-            </h2>
-            <p className=" font-OpenSans text-2xl pt-10 pb-7 text-gray-400 ">
-              We help our clients make realize their most Important <br />
-              business goals. We help our clients make realize their
-              <br />
-              most Important business goals. business goals. We help <br />
-              our clients make realize their most Important business.
-            </p>
-            <div>
-              <Link href="/">
-                <button className="flex text-lg  p-3 uppercase items-center text-white bg-gradient-to-r from-costumeOrange to-costumeRed hover:from-white hover:to-white hover:text-red-600 border-2  border-costumeOrange hover:border-costume rounded-full">
-                  <span className="px-5">KNOW MORE</span>
-                  <svg
-                    className="w-5 h-5 ml-6 mx-2 "
-                    fill="currentColor"
-                    viewBox="0 0 20 20"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      fillRule="evenodd"
-                      d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
-                      clipRule="evenodd"
-                    ></path>
-                  </svg>
-                </button>
-              </Link>
-            </div>
+      {/* design1  */}
+      <div className="design  grid grid-cols-12 lg:h-screen lg:content-center    ">
+        <div className="first-image col-span-12 lg:col-span-6 ">
+          <div>
+            <Image
+              className=" rounded-r-lg shadow-lg object-cover "
+              src="/images/home1/team1.png"
+              alt="team1"
+              height={730}
+              width={800}
+            />
           </div>
         </div>
-        <div className="flex justify-end ">
-          <div className="grid content-center mx-40 ">
-            <h2 className="text-5xl font-Poppins font-bold text-left">
-              Develop powerful <br /> apps for your business
+        <div className="first-content m-4 col-span-12 lg:col-span-6  xl:my-auto 2xl:w-4/6 2xl:mx-28 ">
+          <div className="  ">
+            <h2 className="text-5xl font-Poppins font-bold">
+              Design solutions to improve products
             </h2>
-            <p className=" font-OpenSans text-2xl pt-10 pb-7 text-gray-400  text-left">
-              We help our clients make realize their most Important <br />
-              business goals. We help our clients make realize their
-              <br />
-              most Important business goals. business goals. We help <br />
-              our clients make realize their most Important business.
+            <p className=" font-OpenSans text-2xl pt-10 pb-7 text-gray-400 ">
+              We help our clients make realize their most Important business
+              goals. We help our clients make realize their most Important
+              business goals. business goals. We help our clients make realize
+              their most Important business.
             </p>
-            <div>
-              <Link href="/">
-                <button className="flex text-lg uppercase   p-3   items-center   text-red-500 hover:bg-gradient-to-r from-costumeOrange to-costumeRed  hover:text-white   border-2   border-costumeOrange  rounded-full">
-                  <span className="px-4"> KNOW MORE</span>
-                  <svg
-                    className="w-5 h-5 ml-6 mx-2 "
-                    fill="currentColor"
-                    viewBox="0 0 20 20"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      fillRule="evenodd"
-                      d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
-                      clipRule="evenodd"
-                    ></path>
-                  </svg>
-                </button>
-              </Link>
-            </div>
           </div>
-          <Image
-            className="rounded-l-lg shadow-lg"
-            src="/images/home1/team.png"
-            alt="team"
-            height={730}
-            width={800}
-          />
+          <div className=" flex justify-center md:justify-start">
+            <Link href="/">
+              <button className="flex text-lg  p-3 uppercase items-center text-white bg-gradient-to-r from-costumeOrange to-costumeRed hover:from-white hover:to-white hover:text-red-600 border-2  border-costumeOrange hover:border-costume rounded-full">
+                <p className="px-5">KNOW MORE</p>
+                <svg
+                  className="w-5 h-5 ml-6 mx-2 "
+                  fill="currentColor"
+                  viewBox="0 0 20 20"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    fillRule="evenodd"
+                    d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
+                    clipRule="evenodd"
+                  ></path>
+                </svg>
+              </button>
+            </Link>
+          </div>
+        </div>
+      </div>
+      {/*end-design */}
+      {/* design2  */}
+      <div className="design  grid grid-cols-12 lg:h-screen lg:content-center    ">
+        <div className="first-image col-span-12 lg:col-span-6  lg:order-2">
+          <div className=" flex justify-end">
+            <Image
+              className=" rounded-r-lg shadow-lg object-cover "
+              src="/images/home1/team1.png"
+              alt="team1"
+              height={730}
+              width={800}
+            />
+          </div>
+        </div>
+        <div className="first-content m-4 col-span-12 lg:col-span-6  xl:my-auto 2xl:w-4/6 2xl:mx-52 ">
+          <div className="  ">
+            <h2 className="text-5xl font-Poppins font-bold">
+              Design solutions to improve products
+            </h2>
+            <p className=" font-OpenSans text-2xl pt-10 pb-7 text-gray-400 ">
+              We help our clients make realize their most Important business
+              goals. We help our clients make realize their most Important
+              business goals. business goals. We help our clients make realize
+              their most Important business.
+            </p>
+          </div>
+          <div className=" flex justify-center md:justify-start">
+            <Link href="/">
+              <button className="flex text-lg  p-3 uppercase items-center text-white bg-gradient-to-r from-costumeOrange to-costumeRed hover:from-white hover:to-white hover:text-red-600 border-2  border-costumeOrange hover:border-costume rounded-full">
+                <p className="px-5">KNOW MORE</p>
+                <svg
+                  className="w-5 h-5 ml-6 mx-2 "
+                  fill="currentColor"
+                  viewBox="0 0 20 20"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    fillRule="evenodd"
+                    d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
+                    clipRule="evenodd"
+                  ></path>
+                </svg>
+              </button>
+            </Link>
+          </div>
         </div>
       </div>
       {/*end-design */}
@@ -277,128 +293,130 @@ export default function Main() {
       {/* end-What do our clients   */}
 
       {/* Let’s start withyour dreamproject */}
-      <div className="main mt-24">
-        <div className="flex justify-center ">
-          <div className="grid content-center mr-20 px-10 pt-4">
-            <h1 className="text-xl pb-10 text-gray-400 font-OpenSans font-light">
-              GET IN TOUCH
-            </h1>
-            <span className="text-5xl font-Poppins font-bold  ">
-              Let’s start with
-              <br /> your dream <br />
-              project
-            </span>
-            <p className=" pt-10 text-xl font-OpenSans	">
-              We help our clients make realize their most
-            </p>
-            <strong className="text-xl font-bold font-OpenSans pt-2">
-              +1 123 456 7890
-            </strong>
-          </div>
-          <form>
-            <input
-              className="py-4  text-base leading-tight focus:outline-none border-b-2 pt-20  w-full "
-              type="text"
-              aria-label="Email"
-              placeholder="Email "
-            />
-            <input
-              className="py-6 text-base  leading-tight focus:outline-none border-b-2   pt-14 w-full  "
-              type="text"
-              aria-label="Full name"
-              placeholder="Full name"
-            />
-            <input
-              className="py-20  text-base leading-tight focus:outline-none border-b-2 w-full  "
-              type="text"
-              aria-label="Message"
-              placeholder="Message"
-            />
-            <div className="pt-14 ">
-              <Link href="/">
-                <button className=" text-sm text-red-500 bg-transparent hover:bg-red-500 text-black-700 font-semibold hover:text-white border-2 px-12 p-3 border-red-500 hover:border-transparent rounded-full">
-                  SUBMIT
-                </button>
-              </Link>
-            </div>
-          </form>
+      <div className="main grid grid-cols-12 md:h-screen  md:content-center ">
+        <div className="first col-span-12 w-full p-4 md:col-span-6  md:my-auto xl:mx-auto xl:max-w-lg  ">
+          <h1 className="text-xl  text-gray-400 font-OpenSans font-light">
+            GET IN TOUCH
+          </h1>
+          <p className="text-5xl font-Poppins font-bold py-4 ">
+            Let’s start with
+            <br /> your dream <br />
+            project
+          </p>
+          <p className="  text-xl font-OpenSans py-2	">
+            We help our clients make realize their most
+          </p>
+          <p className="text-xl font-bold font-OpenSans  py-2">
+            +1 123 456 7890
+          </p>
         </div>
+        <form className="second col-span-12 px-4 w-full xl:max-w-lg md:col-span-6">
+          <input
+            className="py-4  text-base leading-tight focus:outline-none border-b-2 pt-10  w-full "
+            type="text"
+            aria-label="Email"
+            placeholder="Email "
+          />
+          <input
+            className="py-6 text-base  leading-tight focus:outline-none border-b-2   pt-14 w-full  "
+            type="text"
+            aria-label="Full name"
+            placeholder="Full name"
+          />
+          <input
+            className="py-10  text-base leading-tight focus:outline-none border-b-2 w-full  "
+            type="text"
+            aria-label="Message"
+            placeholder="Message"
+          />
+          <div className="pt-4 ">
+            <Link href="/">
+              <button className=" text-sm text-red-500 bg-transparent hover:bg-red-500 text-black-700 font-semibold hover:text-white border-2 px-12 p-3 border-red-500 hover:border-transparent rounded-full">
+                SUBMIT
+              </button>
+            </Link>
+          </div>
+        </form>
       </div>
       {/*end Let’s start withyour dreamproject */}
 
       {/* read-what-team */}
-      <div>
-        <div className="flex justify-center pb-28 pt-60 mt-14">
-          <h1 className="text-5xl font-Poppins font-bold text-center">
-            Read what our team has <br /> published on the internet
+      <div className=" lg:h-screen w-full grid grid-cols-12">
+        <div className=" col-span-12 p-4 md:p-8 md:flex md:justify-center md:text-center md:items-center">
+          <h1 className="text-5xl font-Poppins font-bold ">
+            Read what our team has published on the internet
           </h1>
         </div>
 
-        <div className=" flex justify-center pt-14 gap-8 pb-48">
-          <div className=" w-370 h-395  border  rounded-lg shadow-lg duration-200 hover:scale-95 ">
-            <Link href="/">
-              <Image
-                src="/images/home1/mom.png"
-                alt="Myimage"
-                height={266}
-                width={370}
-              />
-            </Link>
+        <div className=" col-span-12 lg:columns-3 lg:max-w-5xl lg:mx-auto  ">
+          <div className="1  flex mx-4 ">
+            <div className=" w-370 h-395 mb-4 border mx-auto   rounded-lg shadow-lg duration-200 hover:scale-95 ">
+              <Link href="/">
+                <Image
+                  src="/images/home1/mom.png"
+                  alt="Myimage"
+                  height={266}
+                  width={370}
+                />
+              </Link>
+              <div className="flex justify-center ">
+                <div>
+                  <h2 className=" text-left pt-4 mx-2 text-xl font-Poppins font-bold">
+                    Good newspaper Is a Nation talking to itself.
+                  </h2>
+                  <p className="text-sm pt-4 font-OpenSans mx-2 ">
+                    27 feb, 2023
+                    <span className=" text-red-500  pl-2   ">by John Doe</span>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div className="2 flex mx-4 ">
+            <div className=" w-370 h-395   mb-4 mx-auto   border rounded-lg shadow-lg duration-200 hover:scale-95">
+              <Link href="/">
+                <Image
+                  src="/images/home1/mom1.png"
+                  alt="Myimage"
+                  height={266}
+                  width={370}
+                />
+              </Link>
 
-            <div className="flex justify-center ">
-              <div>
-                <h2 className=" text-left pt-4 text-xl font-Poppins font-bold">
-                  Good newspaper Is a Nation <br /> talking to itself.
-                </h2>
-                <p className="text-sm pt-4 font-OpenSans ">
-                  27 feb, 2023
-                  <span className=" text-red-500  pl-2 ">by John Doe</span>
-                </p>
+              <div className="flex justify-center ">
+                <div>
+                  <h2 className=" text-left pt-4 text-xl mx-2 font-Poppins font-bold">
+                    Good newspaper Is a Nation talking to itself.
+                  </h2>
+                  <p className="text-sm pt-4 font-OpenSans mx-2 ">
+                    27 feb, 2023
+                    <span className=" text-red-500 pl-2">by John Doe</span>
+                  </p>
+                </div>
               </div>
             </div>
           </div>
 
-          <div className=" w-370 h-395  border rounded-lg shadow-lg duration-200 hover:scale-95">
-            <Link href="/">
-              <Image
-                src="/images/home1/mom1.png"
-                alt="Myimage"
-                height={266}
-                width={370}
-              />
-            </Link>
-
-            <div className="flex justify-center ">
-              <div>
-                <h2 className=" text-left pt-4 text-xl font-Poppins font-bold">
-                  Good newspaper Is a Nation <br /> talking to itself.
-                </h2>
-                <p className="text-sm pt-4 font-OpenSans  ">
-                  27 feb, 2023
-                  <span className=" text-red-500 pl-2">by John Doe</span>
-                </p>
-              </div>
-            </div>
-          </div>
-
-          <div className=" w-370 h-395  border rounded-lg shadow-lg duration-200 hover:scale-95">
-            <Link href="/">
-              <Image
-                src="/images/home1/mom.png"
-                alt="Myimage"
-                height={266}
-                width={370}
-              />
-            </Link>
-            <div className="flex justify-center ">
-              <div>
-                <h2 className=" text-left pt-4 text-xl font-Poppins font-bold">
-                  Good newspaper Is a Nation <br /> talking to itself.
-                </h2>
-                <p className="text-sm pt-4 font-OpenSans  ">
-                  27 feb, 2023
-                  <span className=" text-red-500  pl-2">by John Doe</span>
-                </p>
+          <div className="3  flex mx-4">
+            <div className=" w-370 h-395   mb-4  mx-auto  border rounded-lg shadow-lg duration-200 hover:scale-95">
+              <Link href="/">
+                <Image
+                  src="/images/home1/mom.png"
+                  alt="Myimage"
+                  height={266}
+                  width={370}
+                />
+              </Link>
+              <div className="flex justify-center ">
+                <div>
+                  <h2 className=" text-left pt-4 mx-2 text-xl font-Poppins font-bold">
+                    Good newspaper Is a Nation <br /> talking to itself.
+                  </h2>
+                  <p className="text-sm pt-4 font-OpenSans mx-2 ">
+                    27 feb, 2023
+                    <span className=" text-red-500  pl-2">by John Doe</span>
+                  </p>
+                </div>
               </div>
             </div>
           </div>
@@ -407,41 +425,38 @@ export default function Main() {
       {/*end read-what-team */}
 
       {/* subscribes-laters */}
-      <div className="     pt-36  h-575 w-full    bg-costumeOrange">
-        <div className=" flex justify-center  pb-2 ">
-          <div className=" flex pl-10">
-            <h5 className=" text-center text-xl font-OpenSans font-light text-white px-80  mx-96  ">
+      <div className=" h-screen   px-6  w-full    bg-costumeOrange">
+        <div className=" pt-60">
+          <div className="">
+            <h5 className=" py-5 text-center text-xl font-OpenSans font-light text-white     ">
               NEWSLETTER
             </h5>
+            <h2 className="md:pb-10 text-center text-5xl font-Poppins font-bold text-white">
+              Subscribe Company newsletter
+            </h2>
           </div>
-        </div>
-
-        <h2 className=" text-center text-5xl font-Poppins font-bold text-white">
-          Subscribe Company newsletter
-        </h2>
-        <form action="  ">
-          <div className="flex justify-center gap-16 p-36 pb-2">
+          <form className=" py-10 md:max-w-md md:mx-auto xl:flex xl:max-w-4xl xl:gap-5">
             <input
-              className=" text-base w-399 text-white   leading-tight focus:outline-none border-b-2    bg-transparent placeholder-white "
+              className=" py-4 text-base w-full lg:py-8 text-white   leading-tight focus:outline-none border-b-2    bg-transparent placeholder-white "
               type="text"
               aria-label="Your-name"
               placeholder="Your name "
             />
             <input
-              className="py-4   text-base w-399 text-white  leading-tight focus:outline-none border-b-2  bg-transparent placeholder-white  "
+              className="py-4 w-full  lg:py-8  text-base  text-white  leading-tight focus:outline-none border-b-2  bg-transparent placeholder-white  "
               type="text"
               aria-label="Email"
               placeholder="Email"
             />
-            <div className=" flex self-end  ">
+            <div className="py-10 xl:flex xl:items-end  xl:py-0  ">
               <Link href="/">
-                <button className=" mx-6 text-sm text-white bg-transparent hover:border-costumeOrange hover:bg-white text-black-700 font-semibold hover:text-red-500 border-2 px-12 p-3 border-white hover:border-transparent rounded-full">
+                <button className="  text-sm text-white bg-transparent hover:border-costumeOrange hover:bg-white text-black-700 font-semibold hover:text-red-500 border-2 px-12 p-3 border-white hover:border-transparent rounded-full">
                   SUBMIT
                 </button>
               </Link>
             </div>
-          </div>
-        </form>
+          </form>
+        </div>
       </div>
     </div>
   );

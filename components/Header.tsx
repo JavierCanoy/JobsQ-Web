@@ -25,7 +25,7 @@ export default function Header() {
           </div>
 
           <div className="nav">
-            <ul className=" hidden xl:flex items-center    gap-12 text-xl font-semibold     ">
+            <ul className=" flex items-center    gap-12 text-xl font-semibold     ">
               <li className="hover:text-costumeRed ">
                 <Link href="/#home">Home</Link>
               </li>
@@ -42,17 +42,6 @@ export default function Header() {
                 <Link href="/#contact">Contact us</Link>
               </li>
             </ul>
-            <div className=" xl:hidden  ">
-              <Link href="/">
-                <Image
-                  className=" cursor-pointer"
-                  src="/images/logo/menu.png"
-                  alt="Logo"
-                  width={70}
-                  height={70}
-                />
-              </Link>
-            </div>
           </div>
         </div>
       </div>

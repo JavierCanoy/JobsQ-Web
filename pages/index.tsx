@@ -6,6 +6,10 @@ import Contact from "../components/Contact";
 import AboutUs from "../components/AboutUs";
 import Services from "../components/Services";
 import Main from "../components/Main";
+import Header from "@/components/Header";
+import NavBar from "@/components/NavBar";
+// import Header from "@/components/Header";
+import Footer from "@/components/Footer";
 export default function Home() {
   return (
     <div className="homage-page">
@@ -13,11 +17,14 @@ export default function Home() {
         <title>Mabolotecth-Solution</title>
         <meta name="disciption" content="jobsQ" />
       </Head>
+      {/* <Header /> */}
+      {/* <NavBar /> */}
       <Main />
       <AboutUs />
       <Services />
       <OurWork />
       <Contact />
+      {/* <Footer /> */}
     </div>
   );
 }

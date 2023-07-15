@@ -4,16 +4,16 @@ export default function ServicesComp() {
   const [selectedButton, setSelectedButton] = useState(0);
   const pagenumber: number = selectedButton;
 
-  const handleButtonClick = (button: any) => {
+  const handleButtonClick = (button: number) => {
     setSelectedButton(button);
   };
   return (
     <div className="content-services">
-      <div className="flex flex-wrap justify-around mx-32 px-16 pt-14">
-        <div className="flex items-center">
+      <div className="  mx-4 my-10 lg:grid lg:grid-cols-12 lg:mx-10">
+        <div className=" lg:col-span-3 flex justify-center">
           <button
             onClick={() => handleButtonClick(0)}
-            className={` py-6 px-10 rounded font-bold ${
+            className={` py-4 px-10 rounded font-bold ${
               selectedButton === 0
                 ? "text-white bg-gradient-to-t from-costumeOrange to-costumeRed "
                 : "text-black"
@@ -23,7 +23,7 @@ export default function ServicesComp() {
           </button>
         </div>
 
-        <div className="flex items-center">
+        <div className=" lg:col-span-3 flex justify-center">
           <button
             onClick={() => handleButtonClick(1)}
             className={`py-6 px-10 rounded font-bold ${
@@ -35,7 +35,7 @@ export default function ServicesComp() {
             Mobile App Development
           </button>
         </div>
-        <div className="flex items-center">
+        <div className=" lg:col-span-3 flex justify-center">
           <button
             onClick={() => handleButtonClick(2)}
             className={`py-6 px-10 rounded font-bold ${
@@ -47,11 +47,11 @@ export default function ServicesComp() {
             Search Engine Optimization (SEO)
           </button>
         </div>
-        <div className="flex items-center">
+        <div className=" lg:col-span-3 flex justify-center">
           <div>
             <button
               onClick={() => handleButtonClick(3)}
-              className={`py-6 px-10 rounded font-bold  ${
+              className={`py-6 px-14 rounded font-bold  ${
                 selectedButton === 3
                   ? "text-white bg-gradient-to-t from-costumeOrange to-costumeRed"
                   : "text-black"
@@ -68,15 +68,15 @@ export default function ServicesComp() {
           return (
             <div
               key={servicescontent.id}
-              className="flex justify-center gap-52 pt-16  "
+              className=" gap-52 my-10 lg:grid lg:grid-cols-2 mx-auto  xl:max-w-8xl  xl:mx-20  "
             >
-              <div className="w-[562px]">
-                <p className="text-5xl font-Poppins font-bold">
+              <div className=" mx-4 ">
+                <p className=" text-3xl md:text-5xl md:text-center md:mb-10 lg:mx-10  font-Poppins font-bold">
                   {servicescontent.services}
                 </p>
               </div>
-              <div className=" w-[702px]">
-                <p className="text-xl font-OpenSans">
+              <div className=" mx-4 my-4   ">
+                <p className=" text-base md:text-xl md:text-center lg:text-left  font-OpenSans">
                   {servicescontent.content}
                 </p>
               </div>

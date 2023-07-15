@@ -34,19 +34,20 @@ export default function Clients() {
     speed: 500,
     arrows: false,
     slidesToShow: 1,
-    centerMode: true,
   };
   return (
-    <div className="main-clients">
-      <div className=" justify-center p-28 mt-10 bg-gradient-to-t from-costumeOrange to-costumeRed">
-        <Slider ref={sliderRef} {...settings} className=" mb-20  ">
+    <div className="    bg-gradient-to-t from-costumeOrange to-costumeRed  h-screen w-screen ">
+      <div className="">
+        <Slider ref={sliderRef} {...settings} className="  ">
           {clientdata.map((clientdata: any) => (
-            <div key={clientdata.id} className="pt-16 ">
-              <h1 className=" text-center text-5xl font-Poppins font-bold text-white ">
-                {clientdata.say}
-              </h1>
-              <div className=" flex justify-center">
-                <Link href="/" className=" flex justify-center mt-10">
+            <div key={clientdata.id} className=" md:mt-28 ">
+              <div className=" w-screen p-2 pt-10 md:pt-2 md:px-4 text-center">
+                <h1 className="  text-3xl  md:text-5xl   font-Poppins font-bold text-white ">
+                  {clientdata.say}
+                </h1>
+              </div>
+              <div className="flex justify-center ">
+                <Link href="/" className="  ">
                   <Image
                     src={clientdata.linkImg}
                     alt={`Image ${clientdata.id}`}
@@ -56,31 +57,27 @@ export default function Clients() {
                   />
                 </Link>
               </div>
-              <div className=" flex flex-col justify-center text-center  ">
-                <div className=" ">
-                  <p className="   w-[550px] mx-auto text-center text-white text-2xl font-OpenSans ">
-                    {clientdata.message}
-                  </p>
-                  <p className="text-white pt-12 font-bold text-lg font-OpenSans ">
-                    {clientdata.name}
-                  </p>
-                  <p className="text-white  text-sm font-OpenSans">
-                    {clientdata.possition}
-                  </p>
-                </div>
-              </div>
+              <p className="    px-2 md:px-10 md:max-w-xl md:m-auto  text-center text-white text-base md:text-2xl font-OpenSans ">
+                {clientdata.message}
+              </p>
+              <p className="text-white text-center pt-10 font-bold text-lg font-OpenSans ">
+                {clientdata.name}
+              </p>
+              <p className="text-white text-center text-sm font-OpenSans">
+                {clientdata.possition}
+              </p>
             </div>
           ))}
         </Slider>
 
         {/* buttons */}
-        <div className="flex   justify-center font-semibold ">
+        <div className="flex p-4 lg:py-10  justify-center font-semibold ">
           <div className="prev-button  ">
             <button
               className={
                 isPrevClicked
-                  ? " mx-10 text-lg  font-OpenSans  font-semibold   text-gray-700 "
-                  : " mx-10  text-lg  font-OpenSans  font-semibold    text-red-700"
+                  ? " text-lg  font-OpenSans  font-semibold   text-gray-700 "
+                  : " text-lg  font-OpenSans  font-semibold    text-red-700"
               }
               onClick={previousButton}
             >
@@ -88,15 +85,15 @@ export default function Clients() {
             </button>
           </div>
 
-          <div className=" mx-10 my-3 ">
+          <div className="identificator my-2 mx-2  ">
             <div
               className={`relative justify-centerrelative bg-gray-700 w-20 rounded-full`}
             >
               <div
                 className={
                   isPrevClicked
-                    ? " bg-red-700 rounded-full p-1 w-10  ml-10 "
-                    : " bg-red-700 rounded-full p-1 w-10 mr-10"
+                    ? " bg-red-700 rounded-full p-1 w-10  "
+                    : " bg-red-700 rounded-full p-1 w-10 "
                 }
               ></div>
             </div>
@@ -106,8 +103,8 @@ export default function Clients() {
             <button
               className={
                 isNextClicked
-                  ? " text-lg  font-OpenSans  font-semibold  mx-10 text-gray-700 "
-                  : "   text-lg  font-OpenSans  font-semibold  mx-10  text-red-700"
+                  ? " text-lg  font-OpenSans  font-semibold   text-gray-700 "
+                  : "   text-lg  font-OpenSans  font-semibold   text-red-700"
               }
               onClick={nextButton}
             >
