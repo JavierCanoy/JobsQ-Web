@@ -8,10 +8,10 @@ export default function NavBar() {
   return (
     <div className="nav">
       <nav className="  w-full fixed   z-50  shadow-md  backdrop-blur-lg   bg-white/90    ">
-        <div className="     mx-auto   justify-between py-4 px-4    md:items-center md:px-8    md:flex-col lg:flex lg:flex-row lg:mx-auto lg:justify-between 2xl:mx-24">
-          <div className=" flex items-center justify-between md:flex md:justify-center py-3 md:py-5    ">
-            <div className=" flex ">
-              <div className=" flex items-center">
+        <div className="     mx-auto   justify-between  px-4     lg:flex lg:flex-row lg:mx-auto lg:justify-between 2xl:mx-24">
+          <div className=" flex items-center justify-between md:flex md:justify-center md:gap-44  py-3 md:py-5    ">
+            <div className=" flex  ">
+              <div className=" flex items-center ">
                 <Image
                   className=" "
                   src="/images/logo/logo.png"
@@ -20,16 +20,16 @@ export default function NavBar() {
                   height={72}
                 />
               </div>
-              <div className=" flex-row my-auto mx-5 ">
-                <p className=" text-base md:text-2xl  font-Poppins font-bold text-red-700">
+              <div className=" flex-row my-auto mx-2 md:mx-5 ">
+                <p className=" text-sm md:text-2xl  font-Poppins font-bold text-red-700">
                   MABOLOTECH IT SOLUTION
                 </p>
-                <p className="text-xs  break-words hidden md:block ">
+                <p className="text-xs  break-words  ">
                   Crafting Software Solutions that drive business growth
                 </p>
               </div>
             </div>
-            <div className="close flex items-center md:hidden ">
+            <div className="close flex items-center lg:hidden ">
               <button onClick={() => setNavbar(!navbar)}>
                 {navbar ? (
                   <div className=" flex items-center justify-center">
@@ -55,11 +55,11 @@ export default function NavBar() {
           </div>
           <div className="menu">
             <div
-              className={`flex-1 justify-self-center pb-3 md:block md:pb-0 md:mt-0 ${
+              className={`flex-1 md:h-96   justify-self-center pb-3 lg:block md:pb-0 md:mt-0 ${
                 navbar ? "p-10 md:p-0 block" : "hidden"
               }`}
             >
-              <ul className=" flex-wrap    text-center   md:h-auto grid  items-center justify-center gap-10 md:flex md:px-10 text-xl font-semibold  ">
+              <ul className=" flex-wrap    text-center   md:h-auto grid  items-center justify-end lg:my-4 gap-10  md:flex md:px-10 md:flex-col md:py-10  text-xl font-semibold  ">
                 <li className="  hover:text-red-700">
                   <Link href="/#home" onClick={() => setNavbar(!navbar)}>
                     Home
