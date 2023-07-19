@@ -57,11 +57,11 @@ export default function NavBar() {
 
           <div className="menu xl:col-span-8  md:col-span-12  2xl:mx-20 col-span-12">
             <div
-              className={`flex-1  md:h-96 lg:h-min-screen xl:block    justify-self-center pb-3   ${
+              className={`flex-1   xl:block    justify-self-center   ${
                 navbar ? "p-10 md:p-0 block " : "hidden"
               }`}
             >
-              <ul className="    text-center xl:col-span-6 mt-5 md:mt-10 xl:grid xl:grid-flow-col xl:py-2    grid     items-center justify-center  gap-10    md:py-10  text-xl font-semibold  ">
+              <ul className="    text-center xl:col-span-6 mt-5 md:mt-10 xl:mt-0 xl:grid xl:grid-flow-col xl:py-2    grid     items-center justify-center  gap-10    md:py-10  text-xl font-semibold  ">
                 <li className="  hover:text-red-700">
                   <Link href="/#home" onClick={() => setNavbar(!navbar)}>
                     Home
