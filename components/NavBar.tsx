@@ -31,7 +31,7 @@ export default function NavBar() {
             </div>
           </div>
 
-          <div className="close  items-center xl:hidden  grid content-center  col-span-2    ">
+          <div className="close-open  items-center xl:hidden  grid content-center  col-span-2    ">
             <button onClick={() => setNavbar(!navbar)}>
               {navbar ? (
                 <div className=" flex items-center justify-center">
@@ -55,7 +55,7 @@ export default function NavBar() {
             </button>
           </div>
 
-          <div className="menu xl:col-span-8  md:col-span-12  2xl:mx-20 col-span-12">
+          <div className="menu-bar xl:col-span-8  md:col-span-12  2xl:mx-20 col-span-12">
             <div
               className={`flex-1   xl:block    justify-self-center   ${
                 navbar ? "p-10 md:p-0 block " : "hidden"

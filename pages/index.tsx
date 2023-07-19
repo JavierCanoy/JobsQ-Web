@@ -18,7 +18,6 @@ export default function Home() {
       <Services />
       <OurWork />
       <Contact />
-      {/* <Ban /> */}
     </div>
   );
 }

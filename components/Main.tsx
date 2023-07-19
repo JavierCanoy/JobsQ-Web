@@ -7,8 +7,6 @@ import ProjectWeLove from "./ProjectWeLove";
 
 export default function Main() {
   return (
-    // pt-[7.7rem]
-
     <div id="home" className="main  pt-[9rem] md:pt-[7rem]     ">
       <div className="  grid grid-cols-12 h-screen      ">
         <div className="xl:grid xl:justify-items-end   col-span-12 mx-2 my-auto  md:col-span-6  ">
@@ -81,8 +79,8 @@ export default function Main() {
       {/* end */}
 
       {/* we-help-with */}
-      <div className=" md:flex xl:h-screen   justify-center  w-full  bg-gradient-to-t  from-costumeOrange to-costumeRed text-white ">
-        <div className="first xl:my-auto 2xl:mx-40    p-4 ">
+      <div className="  2xl:h-screen  grid grid-cols-12   justify-center  w-full  bg-gradient-to-t  from-costumeOrange to-costumeRed text-white ">
+        <div className="first xl:my-auto 2xl:mx-40     p-4 col-span-12 md:mx-auto 2xl:col-span-6 ">
           <span className="text-2xl font-OpenSans font-light ">
             WE HELP WITH <br />
           </span>
@@ -109,7 +107,7 @@ export default function Main() {
           </Link>
         </div>
 
-        <div className="second content-center grid    xl:grid xl:grid-cols-2  ">
+        <div className="second content-center grid  col-span-12 md:mx-auto   xl:grid xl:grid-cols-2  2xl:col-span-6  ">
           <div className="  my-5 mx-4  p-8 h-[231px] md:w-[361px] hover:bg-gradient-to-r from-costumeBrnBg to-costumeRedBg   rounded-lg  bg-costumeRedBg">
             <Image
               src="/images/icon/first.png"
@@ -232,6 +230,7 @@ export default function Main() {
         </div>
       </div>
       {/*end-design */}
+
       {/* design2  */}
       <div className="design  grid grid-cols-12 lg:h-screen lg:content-center    ">
         <div className="first-image col-span-12 lg:col-span-6  lg:order-2">
@@ -286,12 +285,11 @@ export default function Main() {
 
       {/*  What do our clients   */}
       <Clients />
-
       {/* end-What do our clients   */}
 
       {/* Let’s start withyour dreamproject */}
-      <div className="main grid grid-cols-12 md:h-screen  md:content-center ">
-        <div className="first col-span-12 w-full p-4 md:col-span-6  md:my-auto xl:mx-auto xl:max-w-lg  ">
+      <div className="main grid grid-cols-12 md:h-screen  md:content-center md:mx-4">
+        <div className="first col-span-12 w-full p-4 md:col-span-6  md:my-auto  xl:mx-auto xl:max-w-lg  ">
           <h1 className="text-xl  text-gray-400 font-OpenSans font-light">
             GET IN TOUCH
           </h1>
@@ -422,8 +420,8 @@ export default function Main() {
       {/*end read-what-team */}
 
       {/* subscribes-laters */}
-      <div className=" h-screen   px-6  w-full    bg-costumeOrange">
-        <div className=" pt-60">
+      <div className=" h-screen  grid grid-cols-12   px-6 w-full   bg-costumeOrange">
+        <div className="   m-auto col-span-12 ">
           <div className="">
             <h5 className=" py-5 text-center text-xl font-OpenSans font-light text-white     ">
               NEWSLETTER
@@ -455,6 +453,7 @@ export default function Main() {
           </form>
         </div>
       </div>
+      {/* end-subscribes-laters */}
     </div>
   );
 }

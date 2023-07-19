@@ -5,10 +5,7 @@ import ServicesComp from "./ServicesComp";
 
 export default function Services() {
   return (
-    <div
-      id="services"
-      className="main-services pt-[7rem] md:pt-[16.8rem] lg:pt-[10.5rem] xl:pt-[9rem] "
-    >
+    <div id="services" className="main-services pt-[5rem] md:pt-[7.5rem] ">
       <div className="  w-full ">
         <div className="relative ">
           <div className="image">
@@ -40,7 +37,7 @@ export default function Services() {
       {/*what-we-offer */}
       <div className=" mx-4 xl:h-screen grid  ">
         <div className=" flex justify-center ">
-          <h1 className=" py-4 text-4xl md:text-5xl font-Poppins font-bold text-red-600">
+          <h1 className=" my-auto py-4 text-4xl md:text-5xl font-Poppins font-bold text-red-600">
             What we offer:
           </h1>
         </div>

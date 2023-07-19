@@ -3,13 +3,10 @@ import Link from "next/link";
 
 export default function Contact() {
   return (
-    <div
-      id="contact"
-      className="main-contact   pt-[9rem] md:pt-[16.8rem] xl:pt-[9rem] "
-    >
+    <div id="contact" className="main-contact   pt-[7.5rem] ">
       <div className="  m-4">
         <div className="py-4 w-full ">
-          <p className="   text-center  font-Poppins lg:max-w-xl lg:mx-auto  font-bold text-4xl   md:text-5xl  dark:text-gray-400">
+          <p className=" md:pt-20  text-center  font-Poppins lg:max-w-xl lg:mx-auto  font-bold text-4xl   md:text-5xl  dark:text-gray-400">
             Let’s build your dream product together
           </p>
         </div>

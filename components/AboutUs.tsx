@@ -4,10 +4,7 @@ import Clients from "./Clients";
 
 export default function AboutUs() {
   return (
-    <div
-      id="about-us"
-      className="main-about   pt-[7rem] md:pt-[16.8rem] lg:pt-[10.5rem] xl:pt-[9rem]"
-    >
+    <div id="about-us" className="main-about   pt-[7rem]  ">
       <div className="  w-full ">
         <div className="relative ">
           <div className="image">
@@ -101,98 +98,102 @@ export default function AboutUs() {
         </div>
       </div>
       {/* What clients value most */}
-      <div className="main lg:h-screen grid grid-cols-12 bg-gradient-to-t from-costumeOrange to-costumeRed">
-        <div className=" px-4 py-4 lg:py-0 flex justify-center items-center  col-span-12">
-          <div>
-            <h1 className=" pt-4 text-center text-4xl md:text-5xl font-Poppins font-bold  text-white ">
-              What clients value most about us
-            </h1>
-            <p className=" py-4 text-center text-xl text-white tracking-wide font-OpenSans font-light">
-              Find a team of digital solutions you can rely on. Every day, we
-              build trust through communication, transparency, and results.
-            </p>
+      <div className="main lg:h-screen  grid grid-cols-12 bg-gradient-to-t from-costumeOrange to-costumeRed">
+        <div className=" col-span-12 m-auto">
+          <div className=" py-10   px-4  lg:py-0 flex justify-center items-center  ">
+            <div>
+              <h1 className="text-center text-4xl md:text-5xl font-Poppins font-bold  text-white ">
+                What clients value most about us
+              </h1>
+              <p className=" py-4 text-center text-xl text-white tracking-wide font-OpenSans font-light">
+                Find a team of digital solutions you can rely on. Every day, we
+                build trust through communication, transparency, and results.
+              </p>
+            </div>
           </div>
-        </div>
-        <div className=" text-white md:max-w-sm md:mx-auto xl:max-w-5xl py-4 mx-4 col-span-12 lg:grid lg:max-w-4xl lg:gap-5 lg:grid-cols-3">
-          <div className="1 lg:max-h-56  my-4 bg-gradient-to-r from-costumeBrnBg to-costumeRedBg p-4 rounded-lg">
-            <h1 className="font-Poppins font-bold text-2xl">Transparency</h1>
-            <p className=" text-base pt-4 pb-10 font-OpenSans">
-              Lorem ipsum dolor amet, an ipsum dore dusino sinto. Ipsum dolor
-              amet lorem.
-            </p>
-            <Link href="#">
-              <button className=" flex items-center hover:text-costumeRed ">
-                <span className="pr-8 text-base font-OpenSans font-semibold ">
-                  Know more
-                </span>
-                <svg
-                  className="w-5 h-5 "
-                  fill="currentColor"
-                  viewBox="0 0 20 20"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    fillRule="evenodd"
-                    d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
-                    clipRule="evenodd"
-                  ></path>
-                </svg>
-              </button>
-            </Link>
-          </div>
-          <div className="2 lg:max-h-56 my-4  bg-gradient-to-r from-costumeBrnBg to-costumeRedBg p-4 rounded-lg">
-            <h1 className=" font-Poppins font-bold text-2xl">
-              Experience Team
-            </h1>
-            <p className=" text-base pt-4 pb-10 font-OpenSans">
-              Lorem ipsum dolor amet, an ipsum dore dusino sinto. Ipsum dolor
-              amet lorem.
-            </p>
-            <Link href="#">
-              <button className=" flex items-center  hover:text-costumeRed">
-                <span className="pr-8 text-base font-semibold">Know more </span>
-                <svg
-                  className="w-5 h-5 "
-                  fill="currentColor"
-                  viewBox="0 0 20 20"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    fillRule="evenodd"
-                    d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
-                    clipRule="evenodd"
-                  ></path>
-                </svg>
-              </button>
-            </Link>
-          </div>
-          <div className="3 lg:max-h-56    my-4  bg-gradient-to-r from-costumeBrnBg to-costumeRedBg p-4 rounded-lg">
-            <h1 className=" font-Poppins font-bold text-2xl">
-              Result Guaranteed
-            </h1>
-            <p className=" text-base pt-4 pb-10 font-OpenSans">
-              Lorem ipsum dolor amet, an ipsum dore dusino sinto. Ipsum dolor
-              amet lorem.
-            </p>
-            <Link href="#">
-              <button className=" flex items-center hover:text-costumeRed">
-                <span className="pr-8 text-base font-OpenSans font-semibold">
-                  Know more{" "}
-                </span>
-                <svg
-                  className="w-5 h-5 "
-                  fill="currentColor"
-                  viewBox="0 0 20 20"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    fillRule="evenodd"
-                    d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
-                    clipRule="evenodd"
-                  ></path>
-                </svg>
-              </button>
-            </Link>
+          <div className=" text-white md:max-w-sm md:mx-auto xl:max-w-5xl py-4 mx-4  lg:grid lg:max-w-4xl lg:gap-5 lg:grid-cols-3">
+            <div className="1 lg:max-h-56  my-4 bg-gradient-to-r from-costumeBrnBg to-costumeRedBg p-4 rounded-lg">
+              <h1 className="font-Poppins font-bold text-2xl">Transparency</h1>
+              <p className=" text-base pt-4 pb-10 font-OpenSans">
+                Lorem ipsum dolor amet, an ipsum dore dusino sinto. Ipsum dolor
+                amet lorem.
+              </p>
+              <Link href="#">
+                <button className=" flex items-center hover:text-costumeRed ">
+                  <span className="pr-8 text-base font-OpenSans font-semibold ">
+                    Know more
+                  </span>
+                  <svg
+                    className="w-5 h-5 "
+                    fill="currentColor"
+                    viewBox="0 0 20 20"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      fillRule="evenodd"
+                      d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
+                      clipRule="evenodd"
+                    ></path>
+                  </svg>
+                </button>
+              </Link>
+            </div>
+            <div className="2 lg:max-h-56 my-4  bg-gradient-to-r from-costumeBrnBg to-costumeRedBg p-4 rounded-lg">
+              <h1 className=" font-Poppins font-bold text-2xl">
+                Experience Team
+              </h1>
+              <p className=" text-base pt-4 pb-10 font-OpenSans">
+                Lorem ipsum dolor amet, an ipsum dore dusino sinto. Ipsum dolor
+                amet lorem.
+              </p>
+              <Link href="#">
+                <button className=" flex items-center  hover:text-costumeRed">
+                  <span className="pr-8 text-base font-semibold">
+                    Know more{" "}
+                  </span>
+                  <svg
+                    className="w-5 h-5 "
+                    fill="currentColor"
+                    viewBox="0 0 20 20"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      fillRule="evenodd"
+                      d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
+                      clipRule="evenodd"
+                    ></path>
+                  </svg>
+                </button>
+              </Link>
+            </div>
+            <div className="3 lg:max-h-56    my-4  bg-gradient-to-r from-costumeBrnBg to-costumeRedBg p-4 rounded-lg">
+              <h1 className=" font-Poppins font-bold text-2xl">
+                Result Guaranteed
+              </h1>
+              <p className=" text-base pt-4 pb-10 font-OpenSans">
+                Lorem ipsum dolor amet, an ipsum dore dusino sinto. Ipsum dolor
+                amet lorem.
+              </p>
+              <Link href="#">
+                <button className=" flex items-center hover:text-costumeRed">
+                  <span className="pr-8 text-base font-OpenSans font-semibold">
+                    Know more{" "}
+                  </span>
+                  <svg
+                    className="w-5 h-5 "
+                    fill="currentColor"
+                    viewBox="0 0 20 20"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      fillRule="evenodd"
+                      d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
+                      clipRule="evenodd"
+                    ></path>
+                  </svg>
+                </button>
+              </Link>
+            </div>
           </div>
         </div>
       </div>
@@ -286,8 +287,8 @@ export default function AboutUs() {
       {/* end What do our clients   */}
 
       {/* Let’s start withyour dreamproject */}
-      <div className="main grid grid-cols-12 md:h-screen  md:content-center ">
-        <div className="first col-span-12 w-full p-4 md:col-span-6  md:my-auto xl:mx-auto xl:max-w-lg  ">
+      <div className="main grid grid-cols-12 md:h-screen  md:content-center md:mx-4">
+        <div className="first col-span-12 w-full p-4 md:col-span-6  md:my-auto  xl:mx-auto xl:max-w-lg  ">
           <h1 className="text-xl  text-gray-400 font-OpenSans font-light">
             GET IN TOUCH
           </h1>
@@ -334,8 +335,8 @@ export default function AboutUs() {
       {/*end Let’s start withyour dreamproject */}
 
       {/* subscribes-laters */}
-      <div className=" h-screen mt-10 md:mt-0   px-6  w-full    bg-costumeOrange">
-        <div className=" pt-60">
+      <div className=" h-screen  grid grid-cols-12   px-6 w-full   bg-costumeOrange">
+        <div className="   m-auto col-span-12 ">
           <div className="">
             <h5 className=" py-5 text-center text-xl font-OpenSans font-light text-white     ">
               NEWSLETTER
@@ -367,6 +368,7 @@ export default function AboutUs() {
           </form>
         </div>
       </div>
+      {/* end-subscribes-laters */}
     </div>
   );
 }

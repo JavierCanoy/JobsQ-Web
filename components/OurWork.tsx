@@ -3,7 +3,7 @@ import Link from "next/link";
 
 export default function OurWork() {
   return (
-    <div id="ourwork" className="main pt-[9rem] md:pt-[16.8rem] xl:pt-[9rem] ">
+    <div id="ourwork" className="main pt-[7.5rem] ">
       <div className="porttolfio">
         <div className="first text-center  m-4 md:py-8 lg:max-w-2xl lg:mx-auto ">
           <h1 className="text-xl text-gray-400 font-OpenSans font-light py-4 ">

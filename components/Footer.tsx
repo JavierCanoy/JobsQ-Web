@@ -109,7 +109,7 @@ export default function Footer() {
             </ul>
           </div>
         </div>
-        <div className=" mt-20">
+        <div className=" mt-20 mx-2">
           <p className=" text-center  text-gray-400 text-base">
             Copyrighted © 2023 Mabolotech IT Solution
           </p>

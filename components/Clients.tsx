@@ -36,8 +36,8 @@ export default function Clients() {
     slidesToShow: 1,
   };
   return (
-    <div className="    bg-gradient-to-t from-costumeOrange to-costumeRed  h-screen w-screen ">
-      <div className="">
+    <div className=" grid grid-cols-12   bg-gradient-to-t from-costumeOrange to-costumeRed  h-screen w-screen ">
+      <div className="content col-span-12 my-auto ">
         <Slider ref={sliderRef} {...settings} className="  ">
           {clientdata.map((clientdata: any) => (
             <div key={clientdata.id} className=" md:mt-28 ">
@@ -60,7 +60,7 @@ export default function Clients() {
               <p className="    px-2 md:px-10 md:max-w-xl md:m-auto  text-center text-white text-base md:text-2xl font-OpenSans ">
                 {clientdata.message}
               </p>
-              <p className="text-white text-center pt-10 font-bold text-lg font-OpenSans ">
+              <p className="text-white text-center pt-5 font-bold text-lg font-OpenSans ">
                 {clientdata.name}
               </p>
               <p className="text-white text-center text-sm font-OpenSans">
