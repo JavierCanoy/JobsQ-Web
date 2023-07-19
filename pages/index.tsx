@@ -6,7 +6,6 @@ import Contact from "../components/Contact";
 import AboutUs from "../components/AboutUs";
 import Services from "../components/Services";
 import Main from "../components/Main";
-import Ban from "@/components/ban";
 export default function Home() {
   return (
     <div className="homage-page">

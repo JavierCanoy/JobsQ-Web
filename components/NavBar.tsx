@@ -2,7 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { useState } from "react";
 
-export default function Ban() {
+export default function NavBar() {
   const [navbar, setNavbar] = useState(false);
   // backdrop-blur-lg   bg-white/90
   return (
