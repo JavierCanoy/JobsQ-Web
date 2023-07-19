@@ -71,7 +71,7 @@ export default function ServicesComp() {
               className=" gap-52 my-10 lg:grid lg:grid-cols-2 mx-auto  xl:max-w-8xl  xl:mx-20  "
             >
               <div className=" mx-4 ">
-                <p className=" text-3xl md:text-5xl md:text-center md:mb-10 lg:mx-10  font-Poppins font-bold">
+                <p className=" text-3xl md:text-5xl md:text-center lg:text-left md:mb-10 lg:mx-10  font-Poppins font-bold">
                   {servicescontent.services}
                 </p>
               </div>
