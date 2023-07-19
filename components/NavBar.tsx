@@ -2,14 +2,14 @@ import Image from "next/image";
 import Link from "next/link";
 import { useState } from "react";
 
-export default function NavBar() {
+export default function Ban() {
   const [navbar, setNavbar] = useState(false);
   // backdrop-blur-lg   bg-white/90
   return (
     <div className="nav">
       <nav className="  w-full fixed   z-50  shadow-md  backdrop-blur-lg   bg-white/90    ">
-        <div className="     mx-auto   justify-between  px-4     lg:flex lg:flex-row lg:mx-auto lg:justify-between 2xl:mx-24">
-          <div className=" flex items-center justify-between md:flex md:justify-center md:gap-44  py-3 md:py-5    ">
+        <div className="grid grid-cols-12 m-2 my-4 md:my-6 justify-items-center   2xl:ml-10   ">
+          <div className=" col-span-10 xl:col-span-4 ">
             <div className=" flex  ">
               <div className=" flex items-center ">
                 <Image
@@ -29,37 +29,39 @@ export default function NavBar() {
                 </p>
               </div>
             </div>
-            <div className="close flex items-center lg:hidden ">
-              <button onClick={() => setNavbar(!navbar)}>
-                {navbar ? (
-                  <div className=" flex items-center justify-center">
-                    <Image
-                      src="/images/nav/close.svg"
-                      width={40}
-                      height={40}
-                      alt="logo"
-                    />
-                  </div>
-                ) : (
-                  <div className=" flex items-center justify-center">
-                    <Image
-                      src="/images/nav/menu.svg"
-                      width={40}
-                      height={40}
-                      alt="logo"
-                    />
-                  </div>
-                )}
-              </button>
-            </div>
           </div>
-          <div className="menu">
+
+          <div className="close  items-center xl:hidden  grid content-center  col-span-2    ">
+            <button onClick={() => setNavbar(!navbar)}>
+              {navbar ? (
+                <div className=" flex items-center justify-center">
+                  <Image
+                    src="/images/nav/close.svg"
+                    width={35}
+                    height={35}
+                    alt="logo"
+                  />
+                </div>
+              ) : (
+                <div className=" flex items-center justify-center">
+                  <Image
+                    src="/images/nav/menu.svg"
+                    width={35}
+                    height={35}
+                    alt="logo"
+                  />
+                </div>
+              )}
+            </button>
+          </div>
+
+          <div className="menu xl:col-span-8  md:col-span-12  2xl:mx-20 col-span-12">
             <div
-              className={`flex-1 md:h-96   justify-self-center pb-3 lg:block md:pb-0 md:mt-0 ${
-                navbar ? "p-10 md:p-0 block" : "hidden"
+              className={`flex-1  md:h-96 lg:h-min-screen xl:block    justify-self-center pb-3   ${
+                navbar ? "p-10 md:p-0 block " : "hidden"
               }`}
             >
-              <ul className=" flex-wrap    text-center   md:h-auto grid  items-center justify-end lg:my-4 gap-10  md:flex md:px-10 md:flex-col md:py-10  text-xl font-semibold  ">
+              <ul className="    text-center xl:col-span-6 mt-5 md:mt-10 xl:grid xl:grid-flow-col xl:py-2    grid     items-center justify-center  gap-10    md:py-10  text-xl font-semibold  ">
                 <li className="  hover:text-red-700">
                   <Link href="/#home" onClick={() => setNavbar(!navbar)}>
                     Home

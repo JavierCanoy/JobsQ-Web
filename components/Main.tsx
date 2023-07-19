@@ -9,10 +9,7 @@ export default function Main() {
   return (
     // pt-[7.7rem]
 
-    <div
-      id="home"
-      className="main  pt-[9rem] md:pt-[16.8rem] lg:pt-[10.5rem] xl:pt-[9rem]  "
-    >
+    <div id="home" className="main  pt-[9rem] md:pt-[7rem]     ">
       <div className="  grid grid-cols-12 h-screen      ">
         <div className="xl:grid xl:justify-items-end   col-span-12 mx-2 my-auto  md:col-span-6  ">
           <div className=" px-4 md:w-2/3 xl:mx-20 ">
