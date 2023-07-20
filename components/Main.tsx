@@ -7,9 +7,9 @@ import ProjectWeLove from "./ProjectWeLove";
 
 export default function Main() {
   return (
-    <div id="home" className="main  pt-[9rem] md:pt-[7rem]     ">
-      <div className="  grid grid-cols-12 h-screen      ">
-        <div className="xl:grid xl:justify-items-end   col-span-12 mx-2 my-auto  md:col-span-6  ">
+    <div id="home" className="main  pt-[9rem] md:pt-[7.5rem]     ">
+      <div className="  grid grid-cols-12 lg:h-screen      ">
+        <div className="   col-span-12 mx-2 my-auto  md:col-span-6  xl:grid xl:justify-items-end ">
           <div className=" px-4 md:w-2/3 xl:mx-20 ">
             <p className="text-xl uppercase py-2 text-gray-400 font-OpenSans font-light">
               Our Goal
@@ -66,7 +66,7 @@ export default function Main() {
             </div>
           </div>
         </div>
-        <div className="  col-span-12 md:col-span-6 overflow-y-hidden  ">
+        <div className=" h-screen  col-span-12  overflow-y-hidden md:col-span-6  ">
           <Image
             src="/images/home1/hero.png"
             alt="hero"

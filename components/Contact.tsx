@@ -6,11 +6,11 @@ export default function Contact() {
     <div id="contact" className="main-contact   pt-[7.5rem] ">
       <div className="  m-4">
         <div className="py-4 w-full ">
-          <p className=" md:pt-20  text-center  font-Poppins lg:max-w-xl lg:mx-auto  font-bold text-4xl   md:text-5xl  dark:text-gray-400">
+          <p className="  text-center  font-Poppins font-bold text-4xl md:text-5xl  md:pt-20  lg:max-w-xl lg:mx-auto      dark:text-gray-400">
             Let’s build your dream product together
           </p>
         </div>
-        <div className="images md:my-32 m-4 md:grid md:grid-cols-12 lg:max-w-5xl mx-auto  ">
+        <div className="images  mx-auto md:my-32 m-4 md:grid md:grid-cols-12 lg:max-w-5xl   ">
           <div className=" md:col-span-4">
             <div className="flex justify-center items-center   bg-red-100  h-[145px] w-[145px] rounded-full mx-auto">
               <Image
@@ -95,14 +95,14 @@ export default function Contact() {
       {/* end- Let’s build your dream  */}
 
       {/* minimap */}
-      <div className=" md:h-screen  grid grid-cols-12 justify-items-center content-center md:justify-items-start   ">
+      <div className="  grid grid-cols-12 justify-items-center content-center md:h-screen  md:justify-items-start   ">
         <div className=" col-span-12 md:col-span-6 ">
           <object
             className="  px-4  md:px-0 w-[320px]  md:w-[350px]  xl:w-[600px] lg:w-[450px] 2xl:w-[700px] h-full"
             data="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3102.7887109309127!2d-77.44196278417968!3d38.95165507956235!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMzjCsDU3JzA2LjAiTiA3N8KwMjYnMjMuMiJX!5e0!3m2!1sen!2sbd!4v1545420879707"
           ></object>
         </div>
-        <form className="second col-span-12 px-4 w-full xl:max-w-lg md:col-span-6">
+        <form className="second col-span-12 px-4 w-full md:col-span-6 xl:max-w-lg ">
           <p className=" text-center text-base text-gray-400 py-10">
             look forward from you,
           </p>

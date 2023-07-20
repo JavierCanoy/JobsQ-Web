@@ -23,7 +23,7 @@ export default function ServicesComp() {
           </button>
         </div>
 
-        <div className=" lg:col-span-3 flex justify-center">
+        <div className="  flex justify-center lg:col-span-3">
           <button
             onClick={() => handleButtonClick(1)}
             className={`py-6 px-10 rounded font-bold ${
@@ -35,7 +35,7 @@ export default function ServicesComp() {
             Mobile App Development
           </button>
         </div>
-        <div className=" lg:col-span-3 flex justify-center">
+        <div className=" flex justify-center lg:col-span-3">
           <button
             onClick={() => handleButtonClick(2)}
             className={`py-6 px-10 rounded font-bold ${
@@ -47,7 +47,7 @@ export default function ServicesComp() {
             Search Engine Optimization (SEO)
           </button>
         </div>
-        <div className=" lg:col-span-3 flex justify-center">
+        <div className="  flex justify-center lg:col-span-3">
           <div>
             <button
               onClick={() => handleButtonClick(3)}
@@ -68,7 +68,7 @@ export default function ServicesComp() {
           return (
             <div
               key={servicescontent.id}
-              className=" gap-52 my-10 lg:grid lg:grid-cols-2 mx-auto  xl:max-w-8xl  xl:mx-20  "
+              className=" gap-52 my-10  mx-auto  lg:grid lg:grid-cols-2  xl:max-w-8xl  xl:mx-20  "
             >
               <div className=" mx-4 ">
                 <p className=" text-3xl md:text-5xl md:text-center lg:text-left md:mb-10 lg:mx-10  font-Poppins font-bold">

@@ -22,7 +22,7 @@ export default function AboutUs() {
                 <p className="pt-5 text-basemd:text-xl font-OpenSans font-light">
                   ABOUT US
                 </p>
-                <h1 className="mb-6 text-base md:text-5xl font-Poppins font-bold pt-4">
+                <h1 className="mb-6 text-base font-Poppins font-bold pt-4 md:text-5xl ">
                   LEADING THE BEST DIGITAL AGENCY IN TOWN
                 </h1>
               </div>
@@ -34,10 +34,10 @@ export default function AboutUs() {
       {/* we do great things together */}
       <div className=" p-4  md:p-8 xl:max-w-2xl xl:mx-80  ">
         <div>
-          <h1 className="  xl:py-10 text-4xl md:text-5xl font-Poppins font-bold  ">
+          <h1 className="  font-Poppins font-bold   text-4xl md:text-5xl xl:py-10  ">
             We do great things together
           </h1>
-          <p className=" py-4 xl:py-10  xl:leading-8 text-xl font-OpenSans  text-gray-400">
+          <p className="  font-OpenSans  py-4 xl:py-10  xl:leading-8 text-xl text-gray-400">
             MaboloTech IT Solutions was established in 2020 amidst the COVID-19
             pandemic, aiming to help friends and former colleagues affected by
             job loss. We understand the difficulties of navigating uncertain
@@ -98,11 +98,11 @@ export default function AboutUs() {
         </div>
       </div>
       {/* What clients value most */}
-      <div className="main lg:h-screen  grid grid-cols-12 bg-gradient-to-t from-costumeOrange to-costumeRed">
+      <div className="main  grid grid-cols-12 lg:h-screen  bg-gradient-to-t from-costumeOrange to-costumeRed">
         <div className=" col-span-12 m-auto">
-          <div className=" py-10   px-4  lg:py-0 flex justify-center items-center  ">
+          <div className=" py-10   px-4   flex justify-center items-center lg:py-0  ">
             <div>
-              <h1 className="text-center text-4xl md:text-5xl font-Poppins font-bold  text-white ">
+              <h1 className="text-center text-4xl  font-Poppins font-bold  text-white md:text-5xl ">
                 What clients value most about us
               </h1>
               <p className=" py-4 text-center text-xl text-white tracking-wide font-OpenSans font-light">
@@ -111,7 +111,7 @@ export default function AboutUs() {
               </p>
             </div>
           </div>
-          <div className=" text-white md:max-w-sm md:mx-auto xl:max-w-5xl py-4 mx-4  lg:grid lg:max-w-4xl lg:gap-5 lg:grid-cols-3">
+          <div className=" py-4 mx-4 text-white md:max-w-sm md:mx-auto    lg:grid lg:max-w-4xl lg:gap-5 lg:grid-cols-3 xl:max-w-5xl">
             <div className="1 lg:max-h-56  my-4 bg-gradient-to-r from-costumeBrnBg to-costumeRedBg p-4 rounded-lg">
               <h1 className="font-Poppins font-bold text-2xl">Transparency</h1>
               <p className=" text-base pt-4 pb-10 font-OpenSans">
@@ -199,7 +199,7 @@ export default function AboutUs() {
       </div>
       {/* end What clients value most */}
       {/* meet-the-team */}
-      <div className="meet-the-team px-4 pt-4 md:px-8 grid  grid-cols-12 lg:h-screen">
+      <div className="meet-the-team grid-cols-12 px-4 pt-4 md:px-8 grid   lg:h-screen">
         <div className="  col-span-12   lg:flex lg:justify-center lg:items-center ">
           <div>
             <h1 className=" text-center text-5xl font-Poppins font-bold">

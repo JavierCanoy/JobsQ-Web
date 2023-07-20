@@ -27,6 +27,7 @@ export default function Footer() {
               </li>
             </ul>
           </div>
+
           {/* services */}
           <div className=" pt-10">
             <h1 className="font-Poppins font-bold text-xl text-red-700  ">
@@ -40,6 +41,8 @@ export default function Footer() {
               <li className="mt-3">Content</li>
             </ul>
           </div>
+          {/* end-services */}
+
           {/* about */}
           <div className=" pt-10">
             <h1 className="font-Poppins font-bold text-xl text-red-700">
@@ -53,6 +56,8 @@ export default function Footer() {
               <li className="mt-3">Career</li>
             </ul>
           </div>
+          {/* end-about */}
+
           {/* get-intouch */}
           <div className=" pt-10">
             <h1 className="font-Poppins font-bold text-xl text-red-700">
@@ -108,7 +113,10 @@ export default function Footer() {
               </div>
             </ul>
           </div>
+          {/* get-intouch */}
         </div>
+
+        {/* Copyrighted  */}
         <div className=" mt-20 mx-2">
           <p className=" text-center  text-gray-400 text-base">
             Copyrighted © 2023 Mabolotech IT Solution

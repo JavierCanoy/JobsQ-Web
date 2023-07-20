@@ -8,7 +8,7 @@ export default function NavBar() {
   return (
     <div className="nav">
       <nav className="  w-full fixed   z-50  shadow-md  backdrop-blur-lg   bg-white/90    ">
-        <div className="grid grid-cols-12 m-2 my-4 md:my-6 justify-items-center   2xl:ml-10   ">
+        <div className="grid grid-cols-12  justify-items-center m-2 my-4 md:my-6 2xl:ml-10      ">
           <div className=" col-span-10 xl:col-span-4 ">
             <div className=" flex  ">
               <div className=" flex items-center ">
@@ -31,7 +31,7 @@ export default function NavBar() {
             </div>
           </div>
 
-          <div className="close-open  items-center xl:hidden  grid content-center  col-span-2    ">
+          <div className="close-open   grid items-center content-center  col-span-2  xl:hidden     ">
             <button onClick={() => setNavbar(!navbar)}>
               {navbar ? (
                 <div className=" flex items-center justify-center">
@@ -55,13 +55,13 @@ export default function NavBar() {
             </button>
           </div>
 
-          <div className="menu-bar xl:col-span-8  md:col-span-12  2xl:mx-20 col-span-12">
+          <div className="menu-bar col-span-12  md:col-span-12 lg:my-auto  xl:col-span-8   2xl:mx-20  ">
             <div
               className={`flex-1   xl:block    justify-self-center   ${
                 navbar ? "p-10 md:p-0 block " : "hidden"
               }`}
             >
-              <ul className="    text-center xl:col-span-6 mt-5 md:mt-10 xl:mt-0 xl:grid xl:grid-flow-col xl:py-2    grid     items-center justify-center  gap-10    md:py-10  text-xl font-semibold  ">
+              <ul className="    text-center  grid  items-center justify-center mt-5  gap-10 text-xl font-semibold  md:py-10  md:mt-10   xl:col-span-6 xl:mt-0 xl:grid xl:grid-flow-col xl:py-2        ">
                 <li className="  hover:text-red-700">
                   <Link href="/#home" onClick={() => setNavbar(!navbar)}>
                     Home
@@ -82,9 +82,11 @@ export default function NavBar() {
                     Our Work
                   </Link>
                 </li>
-                <li className=" hover:text-red-700 px-10 p-3  border-2 border-red-700  rounded-full">
+                <li>
                   <Link href="/#contact" onClick={() => setNavbar(!navbar)}>
-                    Contact us
+                    <button className="  hover:text-red-700 px-10 p-3  border-2 border-red-700  rounded-full">
+                      Contact us
+                    </button>
                   </Link>
                 </li>
               </ul>

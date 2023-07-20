@@ -11,6 +11,7 @@ export default function Home() {
     <div className="homage-page">
       <Head>
         <title>Mabolotecth-Solution</title>
+        <link rel="icon" href="/logo-web.png" />
         <meta name="disciption" content="jobsQ" />
       </Head>
       <Main />

@@ -6,6 +6,7 @@ import ServicesComp from "./ServicesComp";
 export default function Services() {
   return (
     <div id="services" className="main-services pt-[5rem] md:pt-[7.5rem] ">
+      
       <div className="  w-full ">
         <div className="relative ">
           <div className="image">
@@ -42,7 +43,7 @@ export default function Services() {
             What we offer:
           </h1>
         </div>
-        <div className=" grid 2xl:max-w-6xl   grid-cols-12 w-full md:mx-auto   ">
+        <div className=" grid   grid-cols-12 w-full md:mx-auto  2xl:max-w-6xl   ">
           <div className=" my-4 md:mx-2 xl:col-span-4 xl:mx-2 xl:w-auto   md:col-span-6 col-span-12 lg:h-259 lg:w-468 bg-gradient-to-r from-costumeRedBg to-costumeOrange rounded-3xl px-10 text-white  pt-2">
             <h1 className=" pt-2 text-5xl font-Poppins font-bold   pb-1">01</h1>
             <p className="text-xl font-Poppins font-semibold">
@@ -112,6 +113,7 @@ export default function Services() {
         </div>
       </div>
       {/*end-what-we-offer */}
+
       {/*why-clients-choose-us */}
       <div className="bg-gradient-to-t from-costumeOrange to-costumeRed py-10    ">
         <div className=" text-center p-4">
@@ -210,6 +212,7 @@ export default function Services() {
         </div>
       </div>
       {/*end-why-clients-choose-us */}
+
       {/*contact-us-today */}
       <div className=" ">
         <div className=" p-5 md:p-10 lg:grid lg:grid-cols-12 lg:max-w-5xl lg:mx-auto lg:my-10">
@@ -245,6 +248,7 @@ export default function Services() {
         </div>
       </div>
       {/*end-contact-us-today */}
+
       {/* get-in-touch */}
       <div className="main py-4 grid grid-cols-12 md:h-screen  md:content-center  bg-gradient-to-t from-costumeOrange to-costumeRed">
         <div className="first col-span-12 w-full p-4 md:col-span-6  md:my-auto xl:mx-auto xl:max-w-lg  ">

@@ -63,7 +63,7 @@ export default function ProjectWeLove() {
   };
 
   return (
-    <div id="projectwelove h-screen   ">
+    <div id="projectwelove">
       <div className="md:flex md:my-4 lg:justify-between lg:mx-2 2xl:mx-10 ">
         <div className="mx-4 ">
           <p className=" font-OpenSans font-light text-xl my-2  text-gray-500">
@@ -75,7 +75,7 @@ export default function ProjectWeLove() {
           </h1>
         </div>
 
-        <div className="flex mx-4 gap-5 justify-center my-5 md:mb-0 md: items-end  font-semibold ">
+        <div className="flex mx-4 gap-5 font-semibold  justify-center my-5 md:mb-0 md: items-end  lg:mx-10   ">
           <div className="prev-button  ">
             <button
               className={
@@ -113,7 +113,7 @@ export default function ProjectWeLove() {
               NEXT
             </button>
           </div>
-          <div className=" button-viewAll hidden md:block ">
+          <div className=" button-viewAll hidden md:block lg:mx-4 ">
             <Link href="/viewall">
               <button className=" text-red-500  font-OpenSans  text-sm sm:text-base font-semibold">
                 View all

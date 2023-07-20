@@ -8,7 +8,6 @@ import { clientdata } from "../data/clientdata";
 
 export default function Clients() {
   const sliderRef = useRef(null);
-
   const [isNextClicked, setIsNextClicked] = useState(false);
   const [isPrevClicked, setIsPrevClicked] = useState(true);
 
@@ -36,12 +35,12 @@ export default function Clients() {
     slidesToShow: 1,
   };
   return (
-    <div className=" grid grid-cols-12   bg-gradient-to-t from-costumeOrange to-costumeRed  h-screen w-screen ">
-      <div className="content col-span-12 my-auto ">
+    <div className=" grid grid-cols-12   bg-gradient-to-t from-costumeOrange to-costumeRed h-auto w-screen ">
+      <div className="content col-span-12 my-auto  ">
         <Slider ref={sliderRef} {...settings} className="  ">
           {clientdata.map((clientdata: any) => (
             <div key={clientdata.id} className=" md:mt-28 ">
-              <div className=" w-screen p-2 pt-10 md:pt-2 md:px-4 text-center">
+              <div className=" w-screen p-2 pt-10 md:pt-2 text-center md:px-4 ">
                 <h1 className="  text-3xl  md:text-5xl   font-Poppins font-bold text-white ">
                   {clientdata.say}
                 </h1>
@@ -57,7 +56,7 @@ export default function Clients() {
                   />
                 </Link>
               </div>
-              <p className="    px-2 md:px-10 md:max-w-xl md:m-auto  text-center text-white text-base md:text-2xl font-OpenSans ">
+              <p className=" px-2 text-white text-base   text-center md:px-10 md:max-w-xl md:m-auto  md:text-2xl font-OpenSans ">
                 {clientdata.message}
               </p>
               <p className="text-white text-center pt-5 font-bold text-lg font-OpenSans ">
@@ -71,7 +70,7 @@ export default function Clients() {
         </Slider>
 
         {/* buttons */}
-        <div className="flex p-4 lg:py-10  justify-center font-semibold ">
+        <div className="flex p-4   justify-center font-semibold lg:py-10 ">
           <div className="prev-button  ">
             <button
               className={

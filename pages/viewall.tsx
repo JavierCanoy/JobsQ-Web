@@ -9,7 +9,7 @@ export default function viewall() {
       <Head>
         <title>Projects we love</title>
         <meta name="description" content="jobs" />
-        <link rel="icon" href="/public/" />
+        <link rel="icon" href="/logo-web.png" />
       </Head>
       <div className="flex justify-start mx-10  pt-40  mb-20">
         <div className="">
