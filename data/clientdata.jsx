@@ -1,6 +1,6 @@
 export const clientdata = [
   {
-    id: 0,
+    id: 1,
     say: "1What do our clients sayabout us?",
     linkImg: "/images/home1/avatar.png",
     message:
@@ -9,7 +9,7 @@ export const clientdata = [
     possition: "CEO, Boogle Inc.",
   },
   {
-    id: 1,
+    id: 2,
     say: "1What do our clients sayabout us?",
     linkImg: "/images/home1/avatar.png",
     message:
@@ -18,7 +18,7 @@ export const clientdata = [
     possition: "CEO, Boogle Inc.",
   },
   {
-    id: 2,
+    id: 3,
     say: "2What do our clients sayabout us?",
     linkImg: "/images/home1/avatar.png",
     message:
@@ -27,7 +27,7 @@ export const clientdata = [
     possition: "CEO, Boogle Inc.",
   },
   {
-    id: 3,
+    id: 4,
     say: "3What do our clients sayabout us?",
     linkImg: "/images/home1/avatar.png",
     message:

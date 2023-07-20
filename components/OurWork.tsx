@@ -1,7 +1,22 @@
 import Image from "next/image";
 import Link from "next/link";
+import { works } from "@/data/ourworks";
+import { useState } from "react";
 
 export default function OurWork() {
+  const [search, setSearch] = useState("");
+
+  const value = (type: any) => {
+    if (type === "branding") {
+      setSearch("branding");
+    } else if (type === "ui-ux") {
+      setSearch("ui-ux");
+    } else if (type === "marketing") {
+      setSearch("marketing");
+    } else if (type === "all") {
+      setSearch("");
+    }
+  };
   return (
     <div id="ourwork" className="main pt-[7.5rem] ">
       <div className="porttolfio">
@@ -15,19 +30,31 @@ export default function OurWork() {
         </div>
         <div className="menu py-4">
           <div className="  flex gap-3 md:gap-10 xl:gap-12 justify-center text-base md:text-2xl font-OpenSans">
-            <Link href="#">
-              <button className=" hover:text-red-700 ">All</button>
-            </Link>
-            <Link href="#">
-              <button className="hover:text-red-700 ">Branding</button>
-            </Link>
+            <button
+              className=" hover:text-red-700"
+              onClick={() => value("all")}
+            >
+              All
+            </button>
+            <button
+              className="  hover:text-red-700"
+              onClick={() => value("branding")}
+            >
+              Branding
+            </button>
 
-            <Link href="#">
-              <button className="hover:text-red-700 ">UX/UI</button>
-            </Link>
-            <Link href="#">
-              <button className=" hover:text-red-700 ">Marketing </button>
-            </Link>
+            <button
+              className=" hover:text-red-700"
+              onClick={() => value("ui-ux")}
+            >
+              UI/UX
+            </button>
+            <button
+              className=" hover:text-red-700"
+              onClick={() => value("marketing")}
+            >
+              Marketing
+            </button>
           </div>
           <div className="pt-10 2xl:pt-80 float-left  ">
             <Link href="#">
@@ -51,9 +78,28 @@ export default function OurWork() {
             </Link>
           </div>
 
-          <div className="  pb-36  w-full lg:max-w-5xl xl:max-w-7xl py-10 mx-auto  grid grid-cols-12    ">
+          <div className="   pb-36  w-full lg:max-w-5xl xl:max-w-7xl py-10 mx-auto  grid grid-cols-12    ">
             {/* images */}
-            <div className="xl:mx-auto xl:col-span-4    m-4  col-span-12 md:m-2     lg:mx-auto  md:col-span-6    md:h-439 md:w-370  border rounded-costumeRaduis  hover:shadow-lg duration-200 hover:scale-95">
+            {works
+              .filter((work) => {
+                return search === "" ? work : work.type.includes(search);
+              })
+              .map((work) => (
+                <div className=" grid justify-items-center  col-span-12 mx-2 md:mx-0 lg:col-span-6 xl:col-span-4 my-5  ">
+                  <div className="">
+                    <Link href="#">
+                      <Image
+                        src={work.linkImg}
+                        alt={`Image ${work.id}`}
+                        height={480}
+                        width={401}
+                        className="duration-300 hover:scale-95 object-fill  "
+                      />
+                    </Link>
+                  </div>
+                </div>
+              ))}
+            {/* <div className="xl:mx-auto xl:col-span-4    m-4  col-span-12 md:m-2     lg:mx-auto  md:col-span-6    md:h-439 md:w-370  border rounded-costumeRaduis  hover:shadow-lg duration-200 hover:scale-95">
               <Image
                 className=" "
                 src="/images/portfolio/bag.png"
@@ -177,7 +223,7 @@ export default function OurWork() {
                   height={439}
                 />
               </Link>
-            </div>
+            </div> */}
           </div>
         </div>
       </div>

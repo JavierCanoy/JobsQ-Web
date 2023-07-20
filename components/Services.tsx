@@ -34,6 +34,7 @@ export default function Services() {
       {/* end-about-us */}
       <ServicesComp />
       {/*end-Services */}
+
       {/*what-we-offer */}
       <div className=" mx-4 xl:h-screen grid  ">
         <div className=" flex justify-center ">

@@ -1,23 +1,23 @@
 export const projects = [
   {
-    id: 0,
+    id: 1,
     linkImg: "/images/home1/Mask3.png",
   },
   {
-    id: 1,
+    id: 2,
     linkImg: "/images/home1/Mask4.png",
   },
   {
-    id: 2,
+    id: 3,
     linkImg: "/images/home1/Mask5.png",
   },
 
   {
-    id: 3,
+    id: 4,
     linkImg: "/images/home1/Mask4.png",
   },
   {
-    id: 4,
+    id: 5,
     linkImg: "/images/home1/Mask5.png",
   },
 ];

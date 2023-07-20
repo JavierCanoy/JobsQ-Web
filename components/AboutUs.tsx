@@ -4,7 +4,7 @@ import Clients from "./Clients";
 
 export default function AboutUs() {
   return (
-    <div id="about-us" className="main-about   pt-[7rem]  ">
+    <div id="about-us" className="main-about   pt-[7.5rem]  ">
       <div className="  w-full ">
         <div className="relative ">
           <div className="image">

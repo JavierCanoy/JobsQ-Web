@@ -18,6 +18,7 @@ export default function Home() {
       <Services />
       <OurWork />
       <Contact />
+      <OurWork />
     </div>
   );
 }
