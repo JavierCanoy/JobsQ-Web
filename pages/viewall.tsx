@@ -8,8 +8,9 @@ export default function viewall() {
     <div>
       <Head>
         <title>Projects we love</title>
-        <meta name="description" content="jobs" />
         <link rel="icon" href="/logo-web.png" />
+        <link rel="manifest" href="/manifest.json"></link>
+        <meta name="IT-Solution" content="jobsQ" />
       </Head>
       <div className="flex justify-start mx-10  pt-40  mb-20">
         <div className="">
