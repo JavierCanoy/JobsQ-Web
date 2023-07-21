@@ -10,6 +10,9 @@ module.exports = {
   ],
   theme: {
     extend: {
+      spacing: {
+        120: "7.5rem",
+      },
       height: {
         480: "30rem",
         266: "16.625rem",

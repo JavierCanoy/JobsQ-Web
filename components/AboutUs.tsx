@@ -4,7 +4,7 @@ import Clients from "./Clients";
 
 export default function AboutUs() {
   return (
-    <div id="about-us" className="main-about   pt-[7.5rem]  ">
+    <div id="about-us" className="main-about   pt-120  ">
       <div className="  w-full ">
         <div className="relative ">
           <div className="image">
@@ -119,10 +119,13 @@ export default function AboutUs() {
                 amet lorem.
               </p>
               <Link href="#">
-                <button className=" flex items-center hover:text-costumeRed ">
-                  <span className="pr-8 text-base font-OpenSans font-semibold ">
+                <button
+                  aria-label="Know more"
+                  className=" flex items-center hover:text-costumeRed "
+                >
+                  <p className="pr-8 text-base font-OpenSans font-semibold ">
                     Know more
-                  </span>
+                  </p>
                   <svg
                     className="w-5 h-5 "
                     fill="currentColor"
@@ -147,10 +150,11 @@ export default function AboutUs() {
                 amet lorem.
               </p>
               <Link href="#">
-                <button className=" flex items-center  hover:text-costumeRed">
-                  <span className="pr-8 text-base font-semibold">
-                    Know more{" "}
-                  </span>
+                <button
+                  aria-label="Know more"
+                  className=" flex items-center  hover:text-costumeRed"
+                >
+                  <p className="pr-8 text-base font-semibold">Know more</p>
                   <svg
                     className="w-5 h-5 "
                     fill="currentColor"
@@ -175,10 +179,13 @@ export default function AboutUs() {
                 amet lorem.
               </p>
               <Link href="#">
-                <button className=" flex items-center hover:text-costumeRed">
-                  <span className="pr-8 text-base font-OpenSans font-semibold">
-                    Know more{" "}
-                  </span>
+                <button
+                  aria-label="Know more"
+                  className=" flex items-center hover:text-costumeRed"
+                >
+                  <p className="pr-8 text-base font-OpenSans font-semibold">
+                    Know more
+                  </p>
                   <svg
                     className="w-5 h-5 "
                     fill="currentColor"
@@ -325,7 +332,10 @@ export default function AboutUs() {
           />
           <div className="pt-4 ">
             <Link href="/">
-              <button className=" text-sm text-red-500 bg-transparent hover:bg-red-500 text-black-700 font-semibold hover:text-white border-2 px-12 p-3 border-red-500 hover:border-transparent rounded-full">
+              <button
+                aria-label="Submit Button"
+                className=" text-sm text-red-500 bg-transparent hover:bg-red-500 text-black-700 font-semibold hover:text-white border-2 px-12 p-3 border-red-500 hover:border-transparent rounded-full"
+              >
                 SUBMIT
               </button>
             </Link>
@@ -360,7 +370,10 @@ export default function AboutUs() {
             />
             <div className="py-10 xl:flex xl:items-end  xl:py-0  ">
               <Link href="/">
-                <button className="  text-sm text-white bg-transparent hover:border-costumeOrange hover:bg-white text-black-700 font-semibold hover:text-red-500 border-2 px-12 p-3 border-white hover:border-transparent rounded-full">
+                <button
+                  aria-label="submit"
+                  className="  text-sm text-white bg-transparent hover:border-costumeOrange hover:bg-white text-black-700 font-semibold hover:text-red-500 border-2 px-12 p-3 border-white hover:border-transparent rounded-full"
+                >
                   SUBMIT
                 </button>
               </Link>

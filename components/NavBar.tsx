@@ -32,7 +32,7 @@ export default function NavBar() {
           </div>
 
           <div className="close-open   grid items-center content-center  col-span-2  xl:hidden     ">
-            <button onClick={() => setNavbar(!navbar)}>
+            <button aria-label="close-open" onClick={() => setNavbar(!navbar)}>
               {navbar ? (
                 <div className=" flex items-center justify-center">
                   <Image
@@ -84,7 +84,10 @@ export default function NavBar() {
                 </li>
                 <li>
                   <Link href="/#contact" onClick={() => setNavbar(!navbar)}>
-                    <button className="  hover:text-red-700 px-10 p-3  border-2 border-red-700  rounded-full">
+                    <button
+                      aria-label="Contactus"
+                      className="  hover:text-red-700 px-10 p-3  border-2 border-red-700  rounded-full"
+                    >
                       Contact us
                     </button>
                   </Link>

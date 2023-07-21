@@ -7,7 +7,7 @@ import ProjectWeLove from "./ProjectWeLove";
 
 export default function Main() {
   return (
-    <div id="home" className="main  pt-[9rem] md:pt-[7.5rem]     ">
+    <div id="home" className="main  pt-[9rem] md:pt-120     ">
       <div className="  grid grid-cols-12 lg:h-screen      ">
         <div className="   col-span-12 mx-2 my-auto  md:col-span-6  xl:grid xl:justify-items-end ">
           <div className=" px-4 md:w-2/3 xl:mx-20 ">
@@ -25,6 +25,7 @@ export default function Main() {
             <div className=" flex justify-center py-2">
               <Link href="#">
                 <button
+                  aria-label="GETINTOUCH"
                   type="button"
                   className="place-self-center px-11 p-3  text-white bg-gradient-to-t from-costumeOrange to-costumeRed hover:from-white hover:to-white hover:text-red-700 hover:border-red-700 border-2 text-xl rounded-full font-semibold text-center   "
                 >
@@ -42,6 +43,7 @@ export default function Main() {
                 <div>
                   <Link href="">
                     <button
+                      aria-label="icon"
                       type="button"
                       className=" text-white  bg-red-700  border-2 hover:bg-white hover:text-red-700 hover:border-red-700  rounded-full text-sm px-3 py-3 "
                     >
@@ -89,7 +91,10 @@ export default function Main() {
             <br /> solutions
           </p>
           <Link href="/">
-            <button className=" flex text-base font-semibold uppercase  p-3  items-center  bg-transparent text-white hover:text-red-500 hover:bg-white text-black-700    border-2   border-white hover:border-transparent rounded-full">
+            <button
+              aria-label="OurServices"
+              className=" flex text-base font-semibold uppercase  p-3  items-center  bg-transparent text-white hover:text-red-500 hover:bg-white text-black-700    border-2   border-white hover:border-transparent rounded-full"
+            >
               <span className="px-5"> Our Services </span>
               <svg
                 className="w-5 h-5 ml-6 mx-2  "
@@ -147,7 +152,10 @@ export default function Main() {
               dolor amet lorem.
             </p>
             <Link href="/">
-              <button className="flex  items-center    font-semibold  gap-10 hover:text-red-700">
+              <button
+                aria-label="Knowmore"
+                className="flex  items-center    font-semibold  gap-10 hover:text-red-700"
+              >
                 Know more
                 <svg
                   className="w-5 h-5  "
@@ -210,7 +218,10 @@ export default function Main() {
           </div>
           <div className=" flex justify-center md:justify-start">
             <Link href="/">
-              <button className="flex text-lg  p-3 uppercase items-center text-white bg-gradient-to-r from-costumeOrange to-costumeRed hover:from-white hover:to-white hover:text-red-600 border-2  border-costumeOrange hover:border-costume rounded-full">
+              <button
+                aria-label="Knowmore"
+                className="flex text-lg  p-3 uppercase items-center text-white bg-gradient-to-r from-costumeOrange to-costumeRed hover:from-white hover:to-white hover:text-red-600 border-2  border-costumeOrange hover:border-costume rounded-full"
+              >
                 <p className="px-5">KNOW MORE</p>
                 <svg
                   className="w-5 h-5 ml-6 mx-2 "
@@ -258,7 +269,10 @@ export default function Main() {
           </div>
           <div className=" flex justify-center md:justify-start">
             <Link href="/">
-              <button className="flex text-lg  p-3 uppercase items-center text-white bg-gradient-to-r from-costumeOrange to-costumeRed hover:from-white hover:to-white hover:text-red-600 border-2  border-costumeOrange hover:border-costume rounded-full">
+              <button
+                aria-label="Knowmore"
+                className="flex text-lg  p-3 uppercase items-center text-white bg-gradient-to-r from-costumeOrange to-costumeRed hover:from-white hover:to-white hover:text-red-600 border-2  border-costumeOrange hover:border-costume rounded-full"
+              >
                 <p className="px-5">KNOW MORE</p>
                 <svg
                   className="w-5 h-5 ml-6 mx-2 "
@@ -326,7 +340,10 @@ export default function Main() {
           />
           <div className="pt-4 ">
             <Link href="/">
-              <button className=" text-sm text-red-500 bg-transparent hover:bg-red-500 text-black-700 font-semibold hover:text-white border-2 px-12 p-3 border-red-500 hover:border-transparent rounded-full">
+              <button
+                aria-label="submit"
+                className=" text-sm text-red-500 bg-transparent hover:bg-red-500 text-black-700 font-semibold hover:text-white border-2 px-12 p-3 border-red-500 hover:border-transparent rounded-full"
+              >
                 SUBMIT
               </button>
             </Link>
@@ -445,7 +462,10 @@ export default function Main() {
             />
             <div className="py-10 xl:flex xl:items-end  xl:py-0  ">
               <Link href="/">
-                <button className="  text-sm text-white bg-transparent hover:border-costumeOrange hover:bg-white text-black-700 font-semibold hover:text-red-500 border-2 px-12 p-3 border-white hover:border-transparent rounded-full">
+                <button
+                  aria-label="submit"
+                  className="  text-sm text-white bg-transparent hover:border-costumeOrange hover:bg-white text-black-700 font-semibold hover:text-red-500 border-2 px-12 p-3 border-white hover:border-transparent rounded-full"
+                >
                   SUBMIT
                 </button>
               </Link>

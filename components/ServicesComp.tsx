@@ -13,6 +13,7 @@ export default function ServicesComp() {
       <div className="  mx-4 my-10 lg:grid lg:grid-cols-12 lg:mx-10">
         <div className=" lg:col-span-3 flex justify-center">
           <button
+            aria-label="selectButton"
             onClick={() => handleButtonClick(1)}
             className={` py-4 px-10 rounded font-bold ${
               selectedButton === 1
@@ -26,6 +27,7 @@ export default function ServicesComp() {
 
         <div className="  flex justify-center lg:col-span-3">
           <button
+            aria-label="selectButton"
             onClick={() => handleButtonClick(2)}
             className={`py-6 px-10 rounded font-bold ${
               selectedButton === 2
@@ -38,6 +40,7 @@ export default function ServicesComp() {
         </div>
         <div className=" flex justify-center lg:col-span-3">
           <button
+            aria-label="selectButton"
             onClick={() => handleButtonClick(3)}
             className={`py-6 px-10 rounded font-bold ${
               selectedButton === 3
@@ -51,6 +54,7 @@ export default function ServicesComp() {
         <div className="  flex justify-center lg:col-span-3">
           <div>
             <button
+              aria-label="selectButton"
               onClick={() => handleButtonClick(4)}
               className={`py-6 px-14 rounded font-bold  ${
                 selectedButton === 4

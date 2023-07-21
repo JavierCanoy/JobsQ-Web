@@ -131,7 +131,10 @@ export default function Contact() {
             />
             <div className="pt-4 ">
               <Link href="/">
-                <button className=" text-sm text-red-500 bg-transparent hover:bg-red-500 text-black-700 font-semibold hover:text-white border-2 px-12 p-3 border-red-500 hover:border-transparent rounded-full">
+                <button
+                  aria-label="submit-button"
+                  className=" text-sm text-red-500 bg-transparent hover:bg-red-500 text-black-700 font-semibold hover:text-white border-2 px-12 p-3 border-red-500 hover:border-transparent rounded-full"
+                >
                   SUBMIT
                 </button>
               </Link>

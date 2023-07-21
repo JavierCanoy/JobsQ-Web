@@ -18,7 +18,7 @@ export default function OurWork() {
     }
   };
   return (
-    <div id="ourwork" className="main pt-[7.5rem] ">
+    <div id="ourwork" className="main pt-120 ">
       <div className="porttolfio">
         <div className="first text-center  m-4 md:py-8 lg:max-w-2xl lg:mx-auto ">
           <h1 className="text-xl text-gray-400 font-OpenSans font-light py-4 ">
@@ -31,12 +31,14 @@ export default function OurWork() {
         <div className="menu py-4">
           <div className="  flex justify-center text-base  gap-3 md:text-2xl md:gap-10 xl:gap-12  font-OpenSans">
             <button
+              aria-label="all"
               className=" hover:text-red-700"
               onClick={() => value("all")}
             >
               All
             </button>
             <button
+              aria-label="branding"
               className="  hover:text-red-700"
               onClick={() => value("Branding")}
             >
@@ -44,12 +46,14 @@ export default function OurWork() {
             </button>
 
             <button
+              aria-label="ui-ux"
               className=" hover:text-red-700"
               onClick={() => value("UI-UX")}
             >
               UI/UX
             </button>
             <button
+              aria-label="marketing"
               className=" hover:text-red-700"
               onClick={() => value("Marketing")}
             >
@@ -58,8 +62,11 @@ export default function OurWork() {
           </div>
           <div className=" pt-10 2xl:pt-80 float-left  ">
             <Link href="#">
-              <button className=" flex items-center text-white   hover:text-red-700 text-xl bg-red-500  py-4 rounded-r-full hover:bg-white hover:border-red-500 border-2   ">
-                <span className="text-base font-semibold">KNOW MORE</span>
+              <button
+                aria-label="kwowmore"
+                className=" flex items-center text-white   hover:text-red-700 text-xl bg-red-500  py-4 rounded-r-full hover:bg-white hover:border-red-500 border-2   "
+              >
+                <p className="text-base font-semibold">KNOW MORE</p>
                 <div className="px-8">
                   <svg
                     className="w-5 h-5  "
@@ -169,7 +176,9 @@ export default function OurWork() {
           />
           <div className="pt-4 ">
             <Link href="/">
-              <button className=" text-sm text-white bg-transparent hover:bg-red-500 text-black-700 font-semibold hover:text-white border-2 px-12 p-3 border-white hover:border-transparent rounded-full">
+              <button 
+              aria-label="submit"
+              className=" text-sm text-white bg-transparent hover:bg-red-500 text-black-700 font-semibold hover:text-white border-2 px-12 p-3 border-white hover:border-transparent rounded-full">
                 SUBMIT
               </button>
             </Link>

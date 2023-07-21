@@ -78,6 +78,7 @@ export default function ProjectWeLove() {
         <div className="flex mx-4 gap-5 font-semibold  justify-center my-5 md:mb-0 md: items-end  lg:mx-10   ">
           <div className="prev-button  ">
             <button
+              aria-label="prev"
               className={
                 isPrevClicked
                   ? "  text-lg  font-OpenSans  font-semibold   text-gray-700 "
@@ -103,6 +104,7 @@ export default function ProjectWeLove() {
           </div>
           <div className="nex-button">
             <button
+              aria-label="next"
               className={
                 isNextClicked
                   ? "text-lg  font-OpenSans  font-semibold   text-gray-700 "
@@ -115,7 +117,10 @@ export default function ProjectWeLove() {
           </div>
           <div className=" button-viewAll hidden md:block lg:mx-4 ">
             <Link href="/viewall">
-              <button className=" text-red-500  font-OpenSans  text-sm sm:text-base font-semibold">
+              <button
+                aria-label="viewl-all"
+                className=" text-red-500  font-OpenSans  text-sm sm:text-base font-semibold"
+              >
                 View all
               </button>
             </Link>
@@ -132,7 +137,7 @@ export default function ProjectWeLove() {
                   alt={`Image ${project.id}`}
                   height={480}
                   width={401}
-                  className="duration-300 hover:scale-95 object-fill  "
+                  className=" object-fill  "
                 />
               </Link>
             </div>

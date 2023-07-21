@@ -52,7 +52,6 @@ export default function Clients() {
                     alt={`Image ${clientdata.id}`}
                     width={200}
                     height={200}
-                    className="duration-300 hover:scale-95  "
                   />
                 </Link>
               </div>
@@ -73,6 +72,7 @@ export default function Clients() {
         <div className="flex p-4   justify-center font-semibold lg:py-10 ">
           <div className="prev-button  ">
             <button
+              aria-label="prev"
               className={
                 isPrevClicked
                   ? " text-lg  font-OpenSans  font-semibold   text-gray-700 "
@@ -100,6 +100,7 @@ export default function Clients() {
 
           <div className=" button-next">
             <button
+              aria-label="next"
               className={
                 isNextClicked
                   ? " text-lg  font-OpenSans  font-semibold   text-gray-700 "

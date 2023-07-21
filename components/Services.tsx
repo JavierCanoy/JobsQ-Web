@@ -227,7 +227,10 @@ export default function Services() {
           </div>
           <div className="2nd-button col-span-6 py-10 flex justify-center self-center ">
             <Link href="#">
-              <button className="flex text-lg uppercase   items-center   text-red-500 hover:bg-gradient-to-t from-[#F35A43] to-[#C1272D]  hover:text-white   border-2 p-4  border-red-500  rounded-full">
+              <button
+                aria-label="contact-us"
+                className="flex text-lg uppercase   items-center   text-red-500 hover:bg-gradient-to-t from-[#F35A43] to-[#C1272D]  hover:text-white   border-2 p-4  border-red-500  rounded-full"
+              >
                 <p className="px-10 text-sm font-semibold"> Contact US</p>
                 <svg
                   className="w-5 h-5  "
@@ -285,7 +288,10 @@ export default function Services() {
           />
           <div className="pt-4 ">
             <Link href="/">
-              <button className=" text-sm text-white bg-transparent hover:bg-red-500 text-black-700 font-semibold hover:text-white border-2 px-12 p-3 border-white hover:border-transparent rounded-full">
+              <button
+                aria-label="submit"
+                className=" text-sm text-white bg-transparent hover:bg-red-500 text-black-700 font-semibold hover:text-white border-2 px-12 p-3 border-white hover:border-transparent rounded-full"
+              >
                 SUBMIT
               </button>
             </Link>
