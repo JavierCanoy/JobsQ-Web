@@ -102,7 +102,10 @@ export default function OurWork() {
                       </div>
                     </div>
                     <div className="flex items-center">
-                      <button className=" bg-violet-400 p-6 text-white rounded-br-lg">
+                      <Link
+                        href="#"
+                        className=" bg-violet-400 p-6 text-white rounded-br-lg"
+                      >
                         <svg
                           className="w-5 h-5  "
                           fill="currentColor"
@@ -115,7 +118,7 @@ export default function OurWork() {
                             clipRule="evenodd"
                           ></path>
                         </svg>
-                      </button>
+                      </Link>
                     </div>
                   </div>
                 </div>

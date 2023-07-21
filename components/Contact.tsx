@@ -99,7 +99,7 @@ export default function Contact() {
         <div className=" col-span-12 md:col-span-6 ">
           <object
             className="  px-4  md:px-0 w-[320px]  md:w-[350px]  xl:w-[600px] lg:w-[450px] 2xl:w-[700px] h-full"
-            data="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3102.7887109309127!2d-77.44196278417968!3d38.95165507956235!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMzjCsDU3JzA2LjAiTiA3N8KwMjYnMjMuMiJX!5e0!3m2!1sen!2sbd!4v1545420879707"
+            data="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3102.7887109309127!2d-77.446278417968!3d38.95165507956235!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMzjCsDU3JzA2LjAiTiA3N8KwMjYnMjMuMiJX!5e0!3m2!1sen!2sbd!4v1545420879707"
           ></object>
         </div>
         <form className="second col-span-12 px-4 w-full md:col-span-6 xl:max-w-lg ">
