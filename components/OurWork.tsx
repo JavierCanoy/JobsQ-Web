@@ -21,7 +21,7 @@ export default function OurWork() {
     <div id="ourwork" className="main pt-120 ">
       <div className="porttolfio">
         <div className="first text-center  m-4 md:py-8 lg:max-w-2xl lg:mx-auto ">
-          <h1 className="text-xl text-gray-400 font-OpenSans font-light py-4 ">
+          <h1 className="text-xl text-gray-600 font-OpenSans font-light py-4 ">
             PORTFOLIO
           </h1>
           <p className=" text-3xl md:text-5xl font-Poppins font-bold ">
@@ -61,7 +61,7 @@ export default function OurWork() {
             </button>
           </div>
           <div className=" pt-10 2xl:pt-80 float-left  ">
-            <Link href="#">
+            <Link href="# " aria-label="kwowmore">
               <button
                 aria-label="kwowmore"
                 className=" flex items-center text-white   hover:text-red-700 text-xl bg-red-500  py-4 rounded-r-full hover:bg-white hover:border-red-500 border-2   "
@@ -109,7 +109,7 @@ export default function OurWork() {
                       <div className=" flex items-center">
                         <div className="mx-5 ">
                           <p className=" font-bold text-lg ">{work.version}</p>
-                          <p className=" text-base text-gray-400 ">
+                          <p className=" text-base text-gray-600 ">
                             {work.type}
                           </p>
                         </div>
@@ -117,6 +117,7 @@ export default function OurWork() {
                       <div className="flex items-center">
                         <Link
                           href="#"
+                          aria-label="icon"
                           className=" bg-violet-400 p-6 text-white rounded-br-lg"
                         >
                           <svg
@@ -178,7 +179,7 @@ export default function OurWork() {
             placeholder="Message"
           />
           <div className="pt-4 ">
-            <Link href="/">
+            <Link href="/" aria-label="submit">
               <button
                 aria-label="submit"
                 className=" text-sm text-white bg-transparent hover:bg-red-500 text-black-700 font-semibold hover:text-white border-2 px-12 p-3 border-white hover:border-transparent rounded-full"

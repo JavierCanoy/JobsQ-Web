@@ -6,7 +6,7 @@ export default function Contact() {
     <div id="contact" className="main-contact   pt-[7.5rem]  ">
       <div className="  m-4">
         <div className="py-4 w-full ">
-          <p className="  text-center  font-Poppins font-bold text-4xl md:text-5xl  md:pt-20  lg:max-w-xl lg:mx-auto      dark:text-gray-400">
+          <p className="  text-center  font-Poppins font-bold text-4xl md:text-5xl  md:pt-20  lg:max-w-xl lg:mx-auto      dark:text-gray-600">
             Let’s build your dream product together
           </p>
         </div>
@@ -108,7 +108,7 @@ export default function Contact() {
 
         <div className="second my-auto col-span-12 px-4 w-full md:col-span-6 xl:max-w-lg">
           <form className="  ">
-            <p className=" text-center text-base text-gray-400 py-10">
+            <p className=" text-center text-base text-gray-600 py-10">
               look forward from you,
             </p>
             <input
@@ -130,7 +130,7 @@ export default function Contact() {
               placeholder="Message"
             />
             <div className="pt-4 ">
-              <Link href="/">
+              <Link href="/" aria-label="submit-button">
                 <button
                   aria-label="submit-button"
                   className=" text-sm text-red-500 bg-transparent hover:bg-red-500 text-black-700 font-semibold hover:text-white border-2 px-12 p-3 border-red-500 hover:border-transparent rounded-full"

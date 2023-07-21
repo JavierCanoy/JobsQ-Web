@@ -219,14 +219,14 @@ export default function Services() {
             <h1 className=" text-4xl md:text-5xl font-Poppins font-bold">
               Contact us today
             </h1>
-            <p className=" py-3 text-gray-400 text-xl font-OpenSans  ">
+            <p className=" py-3 text-gray-600 text-xl font-OpenSans  ">
               To learn more about our SEO services and how we can help improve
               your online visibility, reach more customers, and grow your
               business through search engines.
             </p>
           </div>
           <div className="2nd-button col-span-6 py-10 flex justify-center self-center ">
-            <Link href="#">
+            <Link href="#" aria-label="contact-us">
               <button
                 aria-label="contact-us"
                 className="flex text-lg uppercase   items-center   text-red-500 hover:bg-gradient-to-t from-[#F35A43] to-[#C1272D]  hover:text-white   border-2 p-4  border-red-500  rounded-full"
@@ -287,7 +287,7 @@ export default function Services() {
             placeholder="Message"
           />
           <div className="pt-4 ">
-            <Link href="/">
+            <Link href="/" aria-label="contact-us">
               <button
                 aria-label="submit"
                 className=" text-sm text-white bg-transparent hover:bg-red-500 text-black-700 font-semibold hover:text-white border-2 px-12 p-3 border-white hover:border-transparent rounded-full"

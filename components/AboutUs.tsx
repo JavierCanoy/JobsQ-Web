@@ -37,7 +37,7 @@ export default function AboutUs() {
           <h1 className="  font-Poppins font-bold   text-4xl md:text-5xl xl:py-10  ">
             We do great things together
           </h1>
-          <p className="  font-OpenSans  py-4 xl:py-10  xl:leading-8 text-xl text-gray-400">
+          <p className="  font-OpenSans  py-4 xl:py-10  xl:leading-8 text-xl text-gray-600">
             MaboloTech IT Solutions was established in 2020 amidst the COVID-19
             pandemic, aiming to help friends and former colleagues affected by
             job loss. We understand the difficulties of navigating uncertain
@@ -64,7 +64,7 @@ export default function AboutUs() {
           Founded on trust. Focused on relationships with client.
         </h1>
         <div className=" py-4 lg:py-8">
-          <p className=" leading-relaxed font-OpenSans text-xl text-gray-400 xl:max-w-5xl xl:mx-auto">
+          <p className=" leading-relaxed font-OpenSans text-xl text-gray-600 xl:max-w-5xl xl:mx-auto">
             We proudly offer various services, including software development,
             IT consulting, and support, to help our clients reach their full
             potential. Our commitment to excellence and customer satisfaction is
@@ -118,7 +118,7 @@ export default function AboutUs() {
                 Lorem ipsum dolor amet, an ipsum dore dusino sinto. Ipsum dolor
                 amet lorem.
               </p>
-              <Link href="#">
+              <Link href="#" aria-label="Know more">
                 <button
                   aria-label="Know more"
                   className=" flex items-center hover:text-costumeRed "
@@ -149,7 +149,7 @@ export default function AboutUs() {
                 Lorem ipsum dolor amet, an ipsum dore dusino sinto. Ipsum dolor
                 amet lorem.
               </p>
-              <Link href="#">
+              <Link href="#" aria-label="Know more">
                 <button
                   aria-label="Know more"
                   className=" flex items-center  hover:text-costumeRed"
@@ -178,7 +178,7 @@ export default function AboutUs() {
                 Lorem ipsum dolor amet, an ipsum dore dusino sinto. Ipsum dolor
                 amet lorem.
               </p>
-              <Link href="#">
+              <Link href="#" aria-label="Know more">
                 <button
                   aria-label="Know more"
                   className=" flex items-center hover:text-costumeRed"
@@ -212,7 +212,7 @@ export default function AboutUs() {
             <h1 className=" text-center text-5xl font-Poppins font-bold">
               Meet the team
             </h1>
-            <p className="text-xl py-4  text-gray-400 pb-4 font-OpenSans lg:pt-10">
+            <p className="text-xl py-4  text-gray-600 pb-4 font-OpenSans lg:pt-10">
               We’re a diverse team that works as fancies attention to details,
               enjoys beers on Friday nights and aspires to design the dent in
               the universe.
@@ -229,9 +229,7 @@ export default function AboutUs() {
               width={550}
             />
             <div className=" pt-4">
-              <strong className="text-3xl font-Poppins font-bold">
-                John S. Doe
-              </strong>
+              <p className="text-3xl font-Poppins font-bold">John S. Doe</p>
               <p className="text-lg text-red-500 font-OpenSans font-semibold">
                 CoFounder
               </p>
@@ -245,9 +243,7 @@ export default function AboutUs() {
               width={550}
             />
             <div className=" pt-4">
-              <strong className="text-3xl font-Poppins font-bold ">
-                Lisa S. Shawn
-              </strong>
+              <p className="text-3xl font-Poppins font-bold ">Lisa S. Shawn</p>
               <p className="text-lg text-red-500 font-OpenSans font-semibold">
                 Writer
               </p>
@@ -261,9 +257,7 @@ export default function AboutUs() {
               width={550}
             />
             <div className=" pt-4">
-              <strong className="text-3xl font-Poppins font-bold ">
-                Johny P. Sin
-              </strong>
+              <p className="text-3xl font-Poppins font-bold ">Johny P. Sin</p>
               <p className="text-lg text-red-500 font-OpenSans font-semibold">
                 Software Engineer
               </p>
@@ -277,9 +271,7 @@ export default function AboutUs() {
               width={550}
             />
             <div className=" pt-4">
-              <strong className="text-3xl  font-Poppins font-bold">
-                Sofia L. Hour
-              </strong>
+              <p className="text-3xl  font-Poppins font-bold">Sofia L. Hour</p>
               <p className="text-lg text-red-500  font-OpenSans font-semibold">
                 Creative Designer
               </p>
@@ -296,7 +288,7 @@ export default function AboutUs() {
       {/* Let’s start withyour dreamproject */}
       <div className="main grid grid-cols-12 md:h-screen  md:content-center md:mx-4">
         <div className="first col-span-12 w-full p-4 md:col-span-6  md:my-auto  xl:mx-auto xl:max-w-lg  ">
-          <h1 className="text-xl  text-gray-400 font-OpenSans font-light">
+          <h1 className="text-xl  text-gray-600 font-OpenSans font-light">
             GET IN TOUCH
           </h1>
           <p className="text-5xl font-Poppins font-bold py-4 ">
@@ -331,7 +323,7 @@ export default function AboutUs() {
             placeholder="Message"
           />
           <div className="pt-4 ">
-            <Link href="/">
+            <Link href="/" aria-label="Submit Button">
               <button
                 aria-label="Submit Button"
                 className=" text-sm text-red-500 bg-transparent hover:bg-red-500 text-black-700 font-semibold hover:text-white border-2 px-12 p-3 border-red-500 hover:border-transparent rounded-full"
@@ -369,7 +361,7 @@ export default function AboutUs() {
               placeholder="Email"
             />
             <div className="py-10 xl:flex xl:items-end  xl:py-0  ">
-              <Link href="/">
+              <Link href="/" aria-label="submit">
                 <button
                   aria-label="submit"
                   className="  text-sm text-white bg-transparent hover:border-costumeOrange hover:bg-white text-black-700 font-semibold hover:text-red-500 border-2 px-12 p-3 border-white hover:border-transparent rounded-full"

@@ -11,19 +11,19 @@ export default function Main() {
       <div className="  grid grid-cols-12 lg:h-screen      ">
         <div className="   col-span-12 mx-2 my-auto  md:col-span-6  xl:grid xl:justify-items-end ">
           <div className=" px-4 md:w-2/3 xl:mx-20 ">
-            <p className="text-xl uppercase py-2 text-gray-400 font-OpenSans font-light">
+            <p className="text-xl uppercase py-2 text-gray-600 font-OpenSans font-light">
               Our Goal
             </p>
             <h1 className="text-5xl lg:text-7xl font-Poppins font-bold ">
               Better products for your users
             </h1>
-            <p className="text-xl font-OpenSans  text-gray-400 py-4">
+            <p className="text-xl font-OpenSans  text-gray-600 py-4">
               We help our clients realize their most important business goals.
             </p>
           </div>
           <div className="gap-16 xl:flex xl:w-full xl:justify-center  py-2       ">
             <div className=" flex justify-center py-2">
-              <Link href="#">
+              <Link href="#" aria-label="GETINTOUCH">
                 <button
                   aria-label="GETINTOUCH"
                   type="button"
@@ -36,12 +36,12 @@ export default function Main() {
             <div>
               <div className=" flex  justify-center py-2 ">
                 <div className=" flex">
-                  <strong className="  px-2 self-center font-OpenSans font-semibold">
+                  <p className="  px-2 self-center font-OpenSans font-semibold">
                     WATCH VIDEO
-                  </strong>
+                  </p>
                 </div>
                 <div>
-                  <Link href="">
+                  <Link href="#" aria-label="icon">
                     <button
                       aria-label="icon"
                       type="button"
@@ -83,19 +83,17 @@ export default function Main() {
       {/* we-help-with */}
       <div className="  2xl:h-screen  grid grid-cols-12   justify-center  w-full  bg-gradient-to-t  from-costumeOrange to-costumeRed text-white ">
         <div className="first xl:my-auto 2xl:mx-40     p-4 col-span-12 md:mx-auto 2xl:col-span-6 ">
-          <span className="text-2xl font-OpenSans font-light ">
-            WE HELP WITH <br />
-          </span>
+          <h1 className="text-2xl font-OpenSans font-light ">WE HELP WITH</h1>
           <p className="md:text-7xl  text-5xl font-Poppins font-bold pb-10 pt-2">
             Building <br /> better
             <br /> solutions
           </p>
-          <Link href="/">
+          <Link href="/" aria-label="OurServices">
             <button
               aria-label="OurServices"
               className=" flex text-base font-semibold uppercase  p-3  items-center  bg-transparent text-white hover:text-red-500 hover:bg-white text-black-700    border-2   border-white hover:border-transparent rounded-full"
             >
-              <span className="px-5"> Our Services </span>
+              <p className="px-5"> Our Services </p>
               <svg
                 className="w-5 h-5 ml-6 mx-2  "
                 fill="currentColor"
@@ -113,7 +111,7 @@ export default function Main() {
         </div>
 
         <div className="second content-center grid  col-span-12 md:mx-auto   xl:grid xl:grid-cols-2  2xl:col-span-6  ">
-          <div className="  my-5 mx-4  p-8 h-[231px] md:w-[361px] hover:bg-gradient-to-r from-costumeBrnBg to-costumeRedBg   rounded-lg  bg-costumeRedBg">
+          <div className="  my-5 mx-4  p-8 h-231 md:w-361 hover:bg-gradient-to-r from-costumeBrnBg to-costumeRedBg   rounded-lg  bg-costumeRedBg">
             <Image
               src="/images/icon/first.png"
               width={40}
@@ -121,14 +119,14 @@ export default function Main() {
               alt="Myimage"
               className=" pb-3"
             />
-            <h3 className=" font-Poppins font-bold text-xl">1Design</h3>
+            <h3 className=" font-Poppins font-bold text-xl">Design</h3>
             <p className=" text-base pt-3">
               Lorem ipsum dolor amet, an ipsum dore <br /> dusino sinto. Ipsum
               dolor amet lorem.
             </p>
           </div>
 
-          <div className=" my-5 mx-4  p-8  h-[231px] md:w-[361px]   rounded-lg hover:bg-gradient-to-r from-costumeBrnBg to-costumeRedBg  bg-costumeRedBg">
+          <div className=" my-5 mx-4  p-8  h-231 md:w-361   rounded-lg hover:bg-gradient-to-r from-costumeBrnBg to-costumeRedBg  bg-costumeRedBg">
             <Image
               src="/images/icon/second.png"
               width={40}
@@ -143,7 +141,7 @@ export default function Main() {
             </p>
           </div>
 
-          <div className="  order-4 xl:order-none  my-5  mx-4 p-8 h-[231px] md:w-[361px] rounded-lg  bg-gradient-to-r from-costumeBrnBg to-costumeRedBg  hover:from-costumeRedBg hover:to-costumeRedBg  ">
+          <div className="  order-4 xl:order-none  my-5  mx-4 p-8 h-231 md:w-361 rounded-lg  bg-gradient-to-r from-costumeBrnBg to-costumeRedBg  hover:from-costumeRedBg hover:to-costumeRedBg  ">
             <h3 className=" font-Poppins font-bold text-xl ">
               Project management
             </h3>
@@ -151,7 +149,7 @@ export default function Main() {
               Lorem ipsum dolor amet, an ipsum dore <br /> dusino sinto. Ipsum
               dolor amet lorem.
             </p>
-            <Link href="/">
+            <Link href="/" aria-label="Knowmore">
               <button
                 aria-label="Knowmore"
                 className="flex  items-center    font-semibold  gap-10 hover:text-red-700"
@@ -173,7 +171,7 @@ export default function Main() {
             </Link>
           </div>
 
-          <div className="my-5 mx-4   p-8  h-[231px] md:w-[361px]  rounded-lg  hover:bg-gradient-to-r from-costumeBrnBg to-costumeRedBg bg-costumeRedBg">
+          <div className="my-5 mx-4   p-8  h-231 md:w-[361px]  rounded-lg  hover:bg-gradient-to-r from-costumeBrnBg to-costumeRedBg bg-costumeRedBg">
             <Image
               src="/images/icon/third.png"
               width={40}
@@ -209,7 +207,7 @@ export default function Main() {
             <h2 className="text-5xl font-Poppins font-bold">
               Design solutions to improve products
             </h2>
-            <p className=" font-OpenSans text-2xl pt-10 pb-7 text-gray-400 ">
+            <p className=" font-OpenSans text-2xl pt-10 pb-7 text-gray-600 ">
               We help our clients make realize their most Important business
               goals. We help our clients make realize their most Important
               business goals. business goals. We help our clients make realize
@@ -217,7 +215,7 @@ export default function Main() {
             </p>
           </div>
           <div className=" flex justify-center md:justify-start">
-            <Link href="/">
+            <Link href="/" aria-label="Knowmore">
               <button
                 aria-label="Knowmore"
                 className="flex text-lg  p-3 uppercase items-center text-white bg-gradient-to-r from-costumeOrange to-costumeRed hover:from-white hover:to-white hover:text-red-600 border-2  border-costumeOrange hover:border-costume rounded-full"
@@ -260,7 +258,7 @@ export default function Main() {
             <h2 className="text-5xl font-Poppins font-bold">
               Design solutions to improve products
             </h2>
-            <p className=" font-OpenSans text-2xl pt-10 pb-7 text-gray-400 ">
+            <p className=" font-OpenSans text-2xl pt-10 pb-7 text-gray-600 ">
               We help our clients make realize their most Important business
               goals. We help our clients make realize their most Important
               business goals. business goals. We help our clients make realize
@@ -268,7 +266,7 @@ export default function Main() {
             </p>
           </div>
           <div className=" flex justify-center md:justify-start">
-            <Link href="/">
+            <Link href="/" aria-label="Knowmore">
               <button
                 aria-label="Knowmore"
                 className="flex text-lg  p-3 uppercase items-center text-white bg-gradient-to-r from-costumeOrange to-costumeRed hover:from-white hover:to-white hover:text-red-600 border-2  border-costumeOrange hover:border-costume rounded-full"
@@ -304,7 +302,7 @@ export default function Main() {
       {/* Let’s start withyour dreamproject */}
       <div className="main grid grid-cols-12 md:h-screen  md:content-center md:mx-4">
         <div className="first col-span-12 w-full p-4 md:col-span-6  md:my-auto  xl:mx-auto xl:max-w-lg  ">
-          <h1 className="text-xl  text-gray-400 font-OpenSans font-light">
+          <h1 className="text-xl  text-gray-600 font-OpenSans font-light">
             GET IN TOUCH
           </h1>
           <p className="text-5xl font-Poppins font-bold py-4 ">
@@ -339,7 +337,7 @@ export default function Main() {
             placeholder="Message"
           />
           <div className="pt-4 ">
-            <Link href="/">
+            <Link href="/" aria-label="Knowmore">
               <button
                 aria-label="submit"
                 className=" text-sm text-red-500 bg-transparent hover:bg-red-500 text-black-700 font-semibold hover:text-white border-2 px-12 p-3 border-red-500 hover:border-transparent rounded-full"
@@ -363,7 +361,7 @@ export default function Main() {
         <div className=" col-span-12 lg:columns-3 lg:max-w-5xl lg:mx-auto  ">
           <div className="1  flex mx-4 md:mx-0 ">
             <div className=" w-370 h-395 mb-4 border mx-auto   rounded-lg shadow-lg duration-200 hover:scale-95 ">
-              <Link href="/">
+              <Link href="/" aria-label="images">
                 <Image
                   src="/images/home1/mom.png"
                   alt="Myimage"
@@ -386,7 +384,7 @@ export default function Main() {
           </div>
           <div className="2 flex mx-4 md:mx-0  ">
             <div className=" w-370 h-395   mb-4 mx-auto   border rounded-lg shadow-lg duration-200 hover:scale-95">
-              <Link href="/">
+              <Link href="/ " aria-label="images">
                 <Image
                   src="/images/home1/mom1.png"
                   alt="Myimage"
@@ -411,7 +409,7 @@ export default function Main() {
 
           <div className="3  flex mx-4 md:mx-0 ">
             <div className=" w-370 h-395   mb-4  mx-auto  border rounded-lg shadow-lg duration-200 hover:scale-95">
-              <Link href="/">
+              <Link href="/" aria-label="images">
                 <Image
                   src="/images/home1/mom.png"
                   alt="Myimage"
@@ -461,7 +459,7 @@ export default function Main() {
               placeholder="Email"
             />
             <div className="py-10 xl:flex xl:items-end  xl:py-0  ">
-              <Link href="/">
+              <Link href="/"    aria-label="submit">
                 <button
                   aria-label="submit"
                   className="  text-sm text-white bg-transparent hover:border-costumeOrange hover:bg-white text-black-700 font-semibold hover:text-red-500 border-2 px-12 p-3 border-white hover:border-transparent rounded-full"

@@ -46,7 +46,7 @@ export default function Clients() {
                 </h1>
               </div>
               <div className="flex justify-center ">
-                <Link href="/" className="  ">
+                <Link href="/" aria-label="images">
                   <Image
                     src={clientdata.linkImg}
                     alt={`Image ${clientdata.id}`}

@@ -116,7 +116,7 @@ export default function ProjectWeLove() {
             </button>
           </div>
           <div className=" button-viewAll hidden md:block lg:mx-4 ">
-            <Link href="/viewall">
+            <Link href="/viewall" aria-label="viewl-all">
               <button
                 aria-label="viewl-all"
                 className=" text-red-500  font-OpenSans  text-sm sm:text-base font-semibold"
@@ -131,7 +131,7 @@ export default function ProjectWeLove() {
         <Slider ref={sliderRef} {...settings} className="  ">
           {projects.map((project) => (
             <div key={project.id} className="px-2   ">
-              <Link href="/">
+              <Link href="/" aria-label="projects">
                 <Image
                   src={project.linkImg}
                   alt={`Image ${project.id}`}

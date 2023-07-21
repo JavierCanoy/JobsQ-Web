@@ -63,27 +63,47 @@ export default function NavBar() {
             >
               <ul className="    text-center  grid  items-center justify-center mt-5  gap-10 text-xl font-semibold  md:py-10  md:mt-10   xl:col-span-6 xl:mt-0 xl:grid xl:grid-flow-col xl:py-2        ">
                 <li className="  hover:text-red-700">
-                  <Link href="/#home" onClick={() => setNavbar(!navbar)}>
+                  <Link
+                    href="/#home"
+                    aria-label="home"
+                    onClick={() => setNavbar(!navbar)}
+                  >
                     Home
                   </Link>
                 </li>
                 <li className=" hover:text-red-700">
-                  <Link href="/#about-us" onClick={() => setNavbar(!navbar)}>
+                  <Link
+                    href="/#about-us"
+                    aria-label="about-us"
+                    onClick={() => setNavbar(!navbar)}
+                  >
                     About us
                   </Link>
                 </li>
                 <li className=" hover:text-red-700">
-                  <Link href="/#services" onClick={() => setNavbar(!navbar)}>
+                  <Link
+                    href="/#services"
+                    aria-label="services"
+                    onClick={() => setNavbar(!navbar)}
+                  >
                     Services
                   </Link>
                 </li>
                 <li className=" hover:text-red-700">
-                  <Link href="/#ourwork" onClick={() => setNavbar(!navbar)}>
+                  <Link
+                    href="/#ourwork"
+                    aria-label="our-work"
+                    onClick={() => setNavbar(!navbar)}
+                  >
                     Our Work
                   </Link>
                 </li>
                 <li>
-                  <Link href="/#contact" onClick={() => setNavbar(!navbar)}>
+                  <Link
+                    href="/#contact"
+                    aria-label="contact"
+                    onClick={() => setNavbar(!navbar)}
+                  >
                     <button
                       aria-label="Contactus"
                       className="  hover:text-red-700 px-10 p-3  border-2 border-red-700  rounded-full"

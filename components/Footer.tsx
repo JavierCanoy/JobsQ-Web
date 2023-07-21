@@ -10,7 +10,7 @@ export default function Footer() {
         <div className=" flex flex-wrap  justify-center gap-10 mx-10">
           <div>
             <ul>
-              <Link href="#">
+              <Link href="#" aria-label="images-logo">
                 <Image
                   className="ml-3"
                   src="/images/logo/logo.png"
@@ -22,7 +22,7 @@ export default function Footer() {
               <li className=" pt-3 font-Poppins font-bold    text-red-700 ">
                 Mabolotech IT Solution
               </li>
-              <li className="text-base text-gray-400">
+              <li className="text-base text-gray-600">
                 Lorem Ipsum is simply dummy <br /> text of the printing.
               </li>
             </ul>
@@ -33,7 +33,7 @@ export default function Footer() {
             <h1 className="font-Poppins font-bold text-xl text-red-700  ">
               Services
             </h1>
-            <ul className="text-base text-gray-400">
+            <ul className="text-base text-gray-600">
               <li className="mt-4">Development</li>
               <li className="mt-3">Design Sprint</li>
               <li className="mt-3">UX Design</li>
@@ -48,7 +48,7 @@ export default function Footer() {
             <h1 className="font-Poppins font-bold text-xl text-red-700">
               About us
             </h1>
-            <ul className="text-base text-gray-400">
+            <ul className="text-base text-gray-600">
               <li className="mt-3"> About us</li>
               <li className="mt-3">Team</li>
               <li className="mt-3">Portfolio</li>
@@ -63,14 +63,19 @@ export default function Footer() {
             <h1 className="font-Poppins font-bold text-xl text-red-700">
               Get in touch
             </h1>
-            <ul className="text-base text-gray-400">
+            <ul className="text-base text-gray-600">
               <li className="mt-3">
                 99 Wall Street <br /> New York, NY 10005
               </li>
               <div>
                 <ul className="flex justify-between">
                   <li>
-                    <Link href="#" target="_blank" title="facebook">
+                    <Link
+                      href="#"
+                      aria-label="facebook-logo"
+                      target="_blank"
+                      title="facebook"
+                    >
                       <Image
                         src="/iconfooter/facebook.svg"
                         alt="Facebook"
@@ -80,7 +85,12 @@ export default function Footer() {
                     </Link>
                   </li>
                   <li>
-                    <Link href="#" target="_blank" title="skypef">
+                    <Link
+                      href="#"
+                      aria-label="skype-logo"
+                      target="_blank"
+                      title="skypef"
+                    >
                       <Image
                         src="/iconfooter/skype.svg"
                         alt="Skype"
@@ -90,7 +100,12 @@ export default function Footer() {
                     </Link>
                   </li>
                   <li>
-                    <Link href="#" target="_blank" title="linkedin">
+                    <Link
+                      href="#"
+                      aria-label="linkedin-logo"
+                      target="_blank"
+                      title="linkedin"
+                    >
                       <Image
                         src="/iconfooter/linkedin.svg"
                         alt="Linkedin"
@@ -100,7 +115,7 @@ export default function Footer() {
                     </Link>
                   </li>
                   <li>
-                    <Link href="#" target="_blank" title="insta">
+                    <Link href="#"   aria-label="insta-logo" target="_blank" title="insta">
                       <Image
                         src="/iconfooter/instagram.svg"
                         alt="Instagram"
@@ -118,7 +133,7 @@ export default function Footer() {
 
         {/* Copyrighted  */}
         <div className=" mt-20 mx-2">
-          <p className=" text-center  text-gray-400 text-base">
+          <p className=" text-center  text-gray-600 text-base">
             Copyrighted © 2023 Mabolotech IT Solution
           </p>
         </div>
