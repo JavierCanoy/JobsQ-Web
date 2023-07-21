@@ -344,7 +344,7 @@ export default function Main() {
         </div>
 
         <div className=" col-span-12 lg:columns-3 lg:max-w-5xl lg:mx-auto  ">
-          <div className="1  flex mx-4 ">
+          <div className="1  flex mx-4 md:mx-0 ">
             <div className=" w-370 h-395 mb-4 border mx-auto   rounded-lg shadow-lg duration-200 hover:scale-95 ">
               <Link href="/">
                 <Image
@@ -367,7 +367,7 @@ export default function Main() {
               </div>
             </div>
           </div>
-          <div className="2 flex mx-4 ">
+          <div className="2 flex mx-4 md:mx-0  ">
             <div className=" w-370 h-395   mb-4 mx-auto   border rounded-lg shadow-lg duration-200 hover:scale-95">
               <Link href="/">
                 <Image
@@ -392,7 +392,7 @@ export default function Main() {
             </div>
           </div>
 
-          <div className="3  flex mx-4">
+          <div className="3  flex mx-4 md:mx-0 ">
             <div className=" w-370 h-395   mb-4  mx-auto  border rounded-lg shadow-lg duration-200 hover:scale-95">
               <Link href="/">
                 <Image

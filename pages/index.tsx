@@ -18,8 +18,8 @@ export default function Home() {
       <AboutUs />
       <Services />
       <OurWork />
-      <Contact />
       <OurWork />
+      <Contact />
     </div>
   );
 }

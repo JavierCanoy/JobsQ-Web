@@ -56,7 +56,7 @@ export default function OurWork() {
               Marketing
             </button>
           </div>
-          <div className="pt-10 2xl:pt-80 float-left  ">
+          <div className=" pt-10 2xl:pt-80 float-left  ">
             <Link href="#">
               <button className=" flex items-center text-white   hover:text-red-700 text-xl bg-red-500  py-4 rounded-r-full hover:bg-white hover:border-red-500 border-2   ">
                 <span className="text-base font-semibold">KNOW MORE</span>
@@ -78,51 +78,55 @@ export default function OurWork() {
             </Link>
           </div>
 
-          <div className="  pb-36  py-10 mx-auto gap-10  grid grid-cols-12   lg:max-w-5xl xl:max-w-7xl   ">
-            {works
-              .filter((work) => {
-                return search === "" ? work : work.type.includes(search);
-              })
-              .map((work) => (
-                <div className=" relative  hover:drop-shadow-xl   group  grid justify-items-center  col-span-12   md:mx-0 lg:col-span-6 xl:col-span-4 my-5  ">
-                  <div className="  ">
-                    <Image
-                      src={work.linkImg}
-                      alt={`Image ${work.id}`}
-                      height={480}
-                      width={401}
-                      className=" object-cover  "
-                    />
-                  </div>
-                  <div className=" absolute  flex justify-between bg-white  inset-x-0 bottom-0 rounded-b-lg    opacity-0 transition-opacity group-hover:opacity-100  ">
-                    <div className=" flex items-center">
-                      <div className="mx-5 ">
-                        <p className=" font-bold text-lg ">{work.version}</p>
-                        <p className=" text-base text-gray-400 ">{work.type}</p>
+          <div className=" mt-28 mx-2 flex  md:grid md:justify-items-center justify-center ">
+            <div className=" grid grid-cols-12  ">
+              {works
+                .filter((work) => {
+                  return search === "" ? work : work.type.includes(search);
+                })
+                .map((work) => (
+                  <div className=" relative  cursor-pointer col-span-12 lg:col-span-6 lg:mx-5 2xl:col-span-4    hover:drop-shadow-xl   group     my-4 md:my-6  ">
+                    <div className="  ">
+                      <Image
+                        src={work.linkImg}
+                        alt={`Image ${work.id}`}
+                        height={480}
+                        width={401}
+                        className=" object-cover "
+                      />
+                    </div>
+                    <div className=" absolute  flex justify-between bg-white  inset-x-0 bottom-0 rounded-b-lg    opacity-0 transition-opacity group-hover:opacity-100  ">
+                      <div className=" flex items-center">
+                        <div className="mx-5 ">
+                          <p className=" font-bold text-lg ">{work.version}</p>
+                          <p className=" text-base text-gray-400 ">
+                            {work.type}
+                          </p>
+                        </div>
+                      </div>
+                      <div className="flex items-center">
+                        <Link
+                          href="#"
+                          className=" bg-violet-400 p-6 text-white rounded-br-lg"
+                        >
+                          <svg
+                            className="w-5 h-5  "
+                            fill="currentColor"
+                            viewBox="0 0 20 20"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <path
+                              fillRule="evenodd"
+                              d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
+                              clipRule="evenodd"
+                            ></path>
+                          </svg>
+                        </Link>
                       </div>
                     </div>
-                    <div className="flex items-center">
-                      <Link
-                        href="#"
-                        className=" bg-violet-400 p-6 text-white rounded-br-lg"
-                      >
-                        <svg
-                          className="w-5 h-5  "
-                          fill="currentColor"
-                          viewBox="0 0 20 20"
-                          xmlns="http://www.w3.org/2000/svg"
-                        >
-                          <path
-                            fillRule="evenodd"
-                            d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
-                            clipRule="evenodd"
-                          ></path>
-                        </svg>
-                      </Link>
-                    </div>
                   </div>
-                </div>
-              ))}
+                ))}
+            </div>
           </div>
         </div>
       </div>
