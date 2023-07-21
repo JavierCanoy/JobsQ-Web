@@ -6,7 +6,6 @@ import ServicesComp from "./ServicesComp";
 export default function Services() {
   return (
     <div id="services" className="main-services pt-[5rem] md:pt-[7.5rem] ">
-      
       <div className="  w-full ">
         <div className="relative ">
           <div className="image">

@@ -91,8 +91,8 @@ export default function Clients() {
               <div
                 className={
                   isPrevClicked
-                    ? " bg-red-700 rounded-full p-1 w-10  "
-                    : " bg-red-700 rounded-full p-1 w-10 "
+                    ? " bg-red-700 rounded-full p-1 w-10   ml-10 "
+                    : " bg-red-700 rounded-full p-1 w-10   mr-10"
                 }
               ></div>
             </div>

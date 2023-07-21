@@ -1,7 +1,8 @@
 import React, { useState } from "react";
 import { servicescontent } from "../data/servicescontent";
+
 export default function ServicesComp() {
-  const [selectedButton, setSelectedButton] = useState(0);
+  const [selectedButton, setSelectedButton] = useState(1);
   const pagenumber: number = selectedButton;
 
   const handleButtonClick = (button: number) => {
@@ -12,9 +13,9 @@ export default function ServicesComp() {
       <div className="  mx-4 my-10 lg:grid lg:grid-cols-12 lg:mx-10">
         <div className=" lg:col-span-3 flex justify-center">
           <button
-            onClick={() => handleButtonClick(0)}
+            onClick={() => handleButtonClick(1)}
             className={` py-4 px-10 rounded font-bold ${
-              selectedButton === 0
+              selectedButton === 1
                 ? "text-white bg-gradient-to-t from-costumeOrange to-costumeRed "
                 : "text-black"
             }`}
@@ -25,9 +26,9 @@ export default function ServicesComp() {
 
         <div className="  flex justify-center lg:col-span-3">
           <button
-            onClick={() => handleButtonClick(1)}
+            onClick={() => handleButtonClick(2)}
             className={`py-6 px-10 rounded font-bold ${
-              selectedButton === 1
+              selectedButton === 2
                 ? "text-white bg-gradient-to-t from-costumeOrange to-costumeRed "
                 : "text-black"
             }`}
@@ -37,9 +38,9 @@ export default function ServicesComp() {
         </div>
         <div className=" flex justify-center lg:col-span-3">
           <button
-            onClick={() => handleButtonClick(2)}
+            onClick={() => handleButtonClick(3)}
             className={`py-6 px-10 rounded font-bold ${
-              selectedButton === 2
+              selectedButton === 3
                 ? "text-white bg-gradient-to-t from-costumeOrange to-costumeRed"
                 : "text-black"
             }`}
@@ -50,9 +51,9 @@ export default function ServicesComp() {
         <div className="  flex justify-center lg:col-span-3">
           <div>
             <button
-              onClick={() => handleButtonClick(3)}
+              onClick={() => handleButtonClick(4)}
               className={`py-6 px-14 rounded font-bold  ${
-                selectedButton === 3
+                selectedButton === 4
                   ? "text-white bg-gradient-to-t from-costumeOrange to-costumeRed"
                   : "text-black"
               }`}
