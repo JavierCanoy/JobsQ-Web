@@ -184,11 +184,11 @@ export default function Main() {
       {/* end-we-help-with */}
 
       {/* design1  */}
-      <div className="design  grid grid-cols-12 lg:h-screen lg:content-center    ">
+      <div className="design  grid grid-cols-12 lg:h-screen  lg:content-center xl:mt-10    ">
         <div className="first-image col-span-12 lg:col-span-6 ">
           <div>
             <Image
-              className=" rounded-r-lg shadow-lg object-cover "
+              className=" rounded-r-lg shadow-lg object-cover xl:h-screen "
               src="/images/home1/team1.png"
               alt="team1"
               height={730}
