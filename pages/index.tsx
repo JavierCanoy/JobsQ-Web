@@ -12,8 +12,6 @@ export default function Home() {
       <Head>
         <title>Mabolotecth-Solution</title>
         <link rel="icon" href="/logo-web.png" />
-        <link rel="manifest" href="/manifest.json"></link>
-        <meta name="IT-Solution" content="jobsQ" />
       </Head>
       <Main />
       <AboutUs />
