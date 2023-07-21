@@ -92,7 +92,10 @@ export default function OurWork() {
                   return search === "" ? work : work.type.includes(search);
                 })
                 .map((work) => (
-                  <div className=" relative  cursor-pointer col-span-12 lg:col-span-6 lg:mx-5 2xl:col-span-4    hover:drop-shadow-xl   group     my-4 md:my-6  ">
+                  <div
+                    key={work.id}
+                    className=" relative  cursor-pointer col-span-12 lg:col-span-6 lg:mx-5 2xl:col-span-4    hover:drop-shadow-xl   group     my-4 md:my-6  "
+                  >
                     <div className="  ">
                       <Image
                         src={work.linkImg}
@@ -176,9 +179,10 @@ export default function OurWork() {
           />
           <div className="pt-4 ">
             <Link href="/">
-              <button 
-              aria-label="submit"
-              className=" text-sm text-white bg-transparent hover:bg-red-500 text-black-700 font-semibold hover:text-white border-2 px-12 p-3 border-white hover:border-transparent rounded-full">
+              <button
+                aria-label="submit"
+                className=" text-sm text-white bg-transparent hover:bg-red-500 text-black-700 font-semibold hover:text-white border-2 px-12 p-3 border-white hover:border-transparent rounded-full"
+              >
                 SUBMIT
               </button>
             </Link>
