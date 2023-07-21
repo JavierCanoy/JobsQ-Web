@@ -7,12 +7,12 @@ export default function OurWork() {
   const [search, setSearch] = useState("");
 
   const value = (type: String) => {
-    if (type === "branding") {
-      setSearch("branding");
-    } else if (type === "ui-ux") {
-      setSearch("ui-ux");
-    } else if (type === "marketing") {
-      setSearch("marketing");
+    if (type === "Branding") {
+      setSearch("Branding");
+    } else if (type === "UI-UX") {
+      setSearch("UI-UX");
+    } else if (type === "Marketing") {
+      setSearch("Marketing");
     } else if (type === "all") {
       setSearch("");
     }
@@ -38,20 +38,20 @@ export default function OurWork() {
             </button>
             <button
               className="  hover:text-red-700"
-              onClick={() => value("branding")}
+              onClick={() => value("Branding")}
             >
               Branding
             </button>
 
             <button
               className=" hover:text-red-700"
-              onClick={() => value("ui-ux")}
+              onClick={() => value("UI-UX")}
             >
               UI/UX
             </button>
             <button
               className=" hover:text-red-700"
-              onClick={() => value("marketing")}
+              onClick={() => value("Marketing")}
             >
               Marketing
             </button>
@@ -78,24 +78,45 @@ export default function OurWork() {
             </Link>
           </div>
 
-          <div className="   pb-36  py-10 mx-auto  grid grid-cols-12  w-full lg:max-w-5xl xl:max-w-7xl    ">
-            {/* images */}
+          <div className="  pb-36  py-10 mx-auto gap-10  grid grid-cols-12   lg:max-w-5xl xl:max-w-7xl   ">
             {works
               .filter((work) => {
                 return search === "" ? work : work.type.includes(search);
               })
               .map((work) => (
-                <div className=" grid justify-items-center  col-span-12 mx-2 md:mx-0 lg:col-span-6 xl:col-span-4 my-5  ">
-                  <div className="">
-                    <Link href="#">
-                      <Image
-                        src={work.linkImg}
-                        alt={`Image ${work.id}`}
-                        height={480}
-                        width={401}
-                        className="duration-300 hover:scale-95 object-fill  "
-                      />
-                    </Link>
+                <div className=" relative  hover:drop-shadow-xl   group  grid justify-items-center  col-span-12   md:mx-0 lg:col-span-6 xl:col-span-4 my-5  ">
+                  <div className="  ">
+                    <Image
+                      src={work.linkImg}
+                      alt={`Image ${work.id}`}
+                      height={480}
+                      width={401}
+                      className=" object-cover  "
+                    />
+                  </div>
+                  <div className=" absolute  flex justify-between bg-white  inset-x-0 bottom-0 rounded-b-lg    opacity-0 transition-opacity group-hover:opacity-100  ">
+                    <div className=" flex items-center">
+                      <div className="mx-5 ">
+                        <p className=" font-bold text-lg ">{work.version}</p>
+                        <p className=" text-base text-gray-400 ">{work.type}</p>
+                      </div>
+                    </div>
+                    <div className="flex items-center">
+                      <button className=" bg-violet-400 p-6 text-white rounded-br-lg">
+                        <svg
+                          className="w-5 h-5  "
+                          fill="currentColor"
+                          viewBox="0 0 20 20"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            fillRule="evenodd"
+                            d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
+                            clipRule="evenodd"
+                          ></path>
+                        </svg>
+                      </button>
+                    </div>
                   </div>
                 </div>
               ))}

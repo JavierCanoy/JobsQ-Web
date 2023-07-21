@@ -6,7 +6,6 @@ import Contact from "../components/Contact";
 import AboutUs from "../components/AboutUs";
 import Services from "../components/Services";
 import Main from "../components/Main";
-import Try from "@/components/Try";
 export default function Home() {
   return (
     <div className="homage-page">
@@ -21,7 +20,6 @@ export default function Home() {
       <OurWork />
       <Contact />
       <OurWork />
-      {/* <Try /> */}
     </div>
   );
 }
