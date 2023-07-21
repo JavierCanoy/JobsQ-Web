@@ -64,7 +64,7 @@ export default function OurWork() {
             <Link href="# " aria-label="kwowmore">
               <button
                 aria-label="kwowmore"
-                className=" flex items-center text-white   hover:text-red-700 text-xl bg-red-500  py-4 rounded-r-full hover:bg-white hover:border-red-500 border-2   "
+                className=" flex items-center text-white   hover:text-red-700 text-xl bg-red-600 py-4 rounded-r-full hover:bg-white hover:border-red-600border-2   "
               >
                 <p className="text-base font-semibold">KNOW MORE</p>
                 <div className="px-8">
@@ -182,7 +182,7 @@ export default function OurWork() {
             <Link href="/" aria-label="submit">
               <button
                 aria-label="submit"
-                className=" text-sm text-white bg-transparent hover:bg-red-500 text-black-700 font-semibold hover:text-white border-2 px-12 p-3 border-white hover:border-transparent rounded-full"
+                className=" text-sm text-white bg-transparent hover:bg-red-600text-black-700 font-semibold hover:text-white border-2 px-12 p-3 border-white hover:border-transparent rounded-full"
               >
                 SUBMIT
               </button>

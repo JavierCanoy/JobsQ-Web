@@ -33,12 +33,14 @@ export default function Footer() {
             <h1 className="font-Poppins font-bold text-xl text-red-700  ">
               Services
             </h1>
-            <ul className="text-base text-gray-600">
-              <li className="mt-4">Development</li>
-              <li className="mt-3">Design Sprint</li>
-              <li className="mt-3">UX Design</li>
-              <li className="mt-3">Online Marketing</li>
-              <li className="mt-3">Content</li>
+            <ul>
+              <li className=" text-base text-gray-600 mt-4">Development</li>
+              <li className=" text-base text-gray-600 mt-3">Design Sprint</li>
+              <li className="text-base text-gray-600 mt-3">UX Design</li>
+              <li className=" text-base text-gray-600 mt-3">
+                Online Marketing
+              </li>
+              <li className="text-base text-gray-600 mt-3">Content</li>
             </ul>
           </div>
           {/* end-services */}
@@ -48,12 +50,12 @@ export default function Footer() {
             <h1 className="font-Poppins font-bold text-xl text-red-700">
               About us
             </h1>
-            <ul className="text-base text-gray-600">
-              <li className="mt-3"> About us</li>
-              <li className="mt-3">Team</li>
-              <li className="mt-3">Portfolio</li>
-              <li className="mt-3">News & Article</li>
-              <li className="mt-3">Career</li>
+            <ul>
+              <li className=" text-base text-gray-600 mt-3"> About us</li>
+              <li className=" text-base text-gray-600 mt-3">Team</li>
+              <li className=" text-base text-gray-600 mt-3">Portfolio</li>
+              <li className=" text-base text-gray-600 mt-3">News & Article</li>
+              <li className=" text-base text-gray-600 mt-3">Career</li>
             </ul>
           </div>
           {/* end-about */}
@@ -63,8 +65,8 @@ export default function Footer() {
             <h1 className="font-Poppins font-bold text-xl text-red-700">
               Get in touch
             </h1>
-            <ul className="text-base text-gray-600">
-              <li className="mt-3">
+            <ul className="">
+              <li className="mt-3 text-base text-gray-600">
                 99 Wall Street <br /> New York, NY 10005
               </li>
               <div>
@@ -115,7 +117,12 @@ export default function Footer() {
                     </Link>
                   </li>
                   <li>
-                    <Link href="#"   aria-label="insta-logo" target="_blank" title="insta">
+                    <Link
+                      href="#"
+                      aria-label="insta-logo"
+                      target="_blank"
+                      title="insta"
+                    >
                       <Image
                         src="/iconfooter/instagram.svg"
                         alt="Instagram"

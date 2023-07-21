@@ -119,7 +119,7 @@ export default function ProjectWeLove() {
             <Link href="/viewall" aria-label="viewl-all">
               <button
                 aria-label="viewl-all"
-                className=" text-red-500  font-OpenSans  text-sm sm:text-base font-semibold"
+                className=" text-red-600  font-OpenSans  text-sm sm:text-base font-semibold"
               >
                 View all
               </button>

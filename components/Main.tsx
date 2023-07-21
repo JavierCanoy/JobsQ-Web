@@ -72,7 +72,7 @@ export default function Main() {
           <Image
             src="/images/home1/hero.png"
             alt="hero"
-            className="object-cover w-full h-full"
+            className="object-cover w-full "
             width={788}
             height={957}
           />
@@ -91,7 +91,7 @@ export default function Main() {
           <Link href="/" aria-label="OurServices">
             <button
               aria-label="OurServices"
-              className=" flex text-base font-semibold uppercase  p-3  items-center  bg-transparent text-white hover:text-red-500 hover:bg-white text-black-700    border-2   border-white hover:border-transparent rounded-full"
+              className=" flex text-base font-semibold uppercase  p-3  items-center  bg-transparent text-white hover:text-red-600 hover:bg-white text-black-700    border-2   border-white hover:border-transparent rounded-full"
             >
               <p className="px-5"> Our Services </p>
               <svg
@@ -119,7 +119,7 @@ export default function Main() {
               alt="Myimage"
               className=" pb-3"
             />
-            <h3 className=" font-Poppins font-bold text-xl">Design</h3>
+            <h1 className=" font-Poppins font-bold text-xl">Design</h1>
             <p className=" text-base pt-3">
               Lorem ipsum dolor amet, an ipsum dore <br /> dusino sinto. Ipsum
               dolor amet lorem.
@@ -134,7 +134,7 @@ export default function Main() {
               alt="Myimage"
               className=" pb-2"
             />
-            <h3 className="font-Poppins font-bold text-xl">Development</h3>
+            <h1 className="font-Poppins font-bold text-xl">Development</h1>
             <p className=" text-base pt-2">
               Lorem ipsum dolor amet, an ipsum dore <br /> dusino sinto. Ipsum
               dolor amet lorem.
@@ -142,9 +142,9 @@ export default function Main() {
           </div>
 
           <div className="  order-4 xl:order-none  my-5  mx-4 p-8 h-231 md:w-361 rounded-lg  bg-gradient-to-r from-costumeBrnBg to-costumeRedBg  hover:from-costumeRedBg hover:to-costumeRedBg  ">
-            <h3 className=" font-Poppins font-bold text-xl ">
+            <h1 className=" font-Poppins font-bold text-xl ">
               Project management
-            </h3>
+            </h1>
             <p className=" text-base pt-2 pb-5 md:pb-10">
               Lorem ipsum dolor amet, an ipsum dore <br /> dusino sinto. Ipsum
               dolor amet lorem.
@@ -171,7 +171,7 @@ export default function Main() {
             </Link>
           </div>
 
-          <div className="my-5 mx-4   p-8  h-231 md:w-[361px]  rounded-lg  hover:bg-gradient-to-r from-costumeBrnBg to-costumeRedBg bg-costumeRedBg">
+          <div className="my-5 mx-4   p-8  h-231 md:w-361  rounded-lg  hover:bg-gradient-to-r from-costumeBrnBg to-costumeRedBg bg-costumeRedBg">
             <Image
               src="/images/icon/third.png"
               width={40}
@@ -179,7 +179,7 @@ export default function Main() {
               alt="Myimage"
               className=" pb-2"
             />
-            <h3 className="font-Poppins font-bold text-xl">Testing & QA</h3>
+            <h1 className="font-Poppins font-bold text-xl">Testing & QA</h1>
             <p className=" text-base pt-2">
               Lorem ipsum dolor amet, an ipsum dore <br /> dusino sinto. Ipsum
               dolor amet lorem.
@@ -340,7 +340,7 @@ export default function Main() {
             <Link href="/" aria-label="Knowmore">
               <button
                 aria-label="submit"
-                className=" text-sm text-red-500 bg-transparent hover:bg-red-500 text-black-700 font-semibold hover:text-white border-2 px-12 p-3 border-red-500 hover:border-transparent rounded-full"
+                className=" text-sm text-red-600 bg-transparent hover:bg-red-600 text-black-700 font-semibold hover:text-white border-2 px-12 p-3 border-red-600 hover:border-transparent rounded-full"
               >
                 SUBMIT
               </button>
@@ -376,7 +376,7 @@ export default function Main() {
                   </h2>
                   <p className="text-sm pt-4 font-OpenSans mx-2 ">
                     27 feb, 2023
-                    <span className=" text-red-500  pl-2   ">by John Doe</span>
+                    <span className=" text-red-600  pl-2   ">by John Doe</span>
                   </p>
                 </div>
               </div>
@@ -400,7 +400,7 @@ export default function Main() {
                   </h2>
                   <p className="text-sm pt-4 font-OpenSans mx-2 ">
                     27 feb, 2023
-                    <span className=" text-red-500 pl-2">by John Doe</span>
+                    <span className=" text-red-600 pl-2">by John Doe</span>
                   </p>
                 </div>
               </div>
@@ -424,7 +424,7 @@ export default function Main() {
                   </h2>
                   <p className="text-sm pt-4 font-OpenSans mx-2 ">
                     27 feb, 2023
-                    <span className=" text-red-500  pl-2">by John Doe</span>
+                    <span className=" text-red-600  pl-2">by John Doe</span>
                   </p>
                 </div>
               </div>
@@ -459,10 +459,10 @@ export default function Main() {
               placeholder="Email"
             />
             <div className="py-10 xl:flex xl:items-end  xl:py-0  ">
-              <Link href="/"    aria-label="submit">
+              <Link href="/" aria-label="submit">
                 <button
                   aria-label="submit"
-                  className="  text-sm text-white bg-transparent hover:border-costumeOrange hover:bg-white text-black-700 font-semibold hover:text-red-500 border-2 px-12 p-3 border-white hover:border-transparent rounded-full"
+                  className="  text-sm text-white bg-transparent hover:border-costumeOrange hover:bg-white text-black-700 font-semibold hover:text-red-600 border-2 px-12 p-3 border-white hover:border-transparent rounded-full"
                 >
                   SUBMIT
                 </button>

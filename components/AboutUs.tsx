@@ -230,7 +230,7 @@ export default function AboutUs() {
             />
             <div className=" pt-4">
               <p className="text-3xl font-Poppins font-bold">John S. Doe</p>
-              <p className="text-lg text-red-500 font-OpenSans font-semibold">
+              <p className="text-lg text-red-600 font-OpenSans font-semibold">
                 CoFounder
               </p>
             </div>
@@ -244,7 +244,7 @@ export default function AboutUs() {
             />
             <div className=" pt-4">
               <p className="text-3xl font-Poppins font-bold ">Lisa S. Shawn</p>
-              <p className="text-lg text-red-500 font-OpenSans font-semibold">
+              <p className="text-lg text-red-600 font-OpenSans font-semibold">
                 Writer
               </p>
             </div>
@@ -258,7 +258,7 @@ export default function AboutUs() {
             />
             <div className=" pt-4">
               <p className="text-3xl font-Poppins font-bold ">Johny P. Sin</p>
-              <p className="text-lg text-red-500 font-OpenSans font-semibold">
+              <p className="text-lg text-red-600 font-OpenSans font-semibold">
                 Software Engineer
               </p>
             </div>
@@ -272,7 +272,7 @@ export default function AboutUs() {
             />
             <div className=" pt-4">
               <p className="text-3xl  font-Poppins font-bold">Sofia L. Hour</p>
-              <p className="text-lg text-red-500  font-OpenSans font-semibold">
+              <p className="text-lg text-red-600  font-OpenSans font-semibold">
                 Creative Designer
               </p>
             </div>
@@ -326,7 +326,7 @@ export default function AboutUs() {
             <Link href="/" aria-label="Submit Button">
               <button
                 aria-label="Submit Button"
-                className=" text-sm text-red-500 bg-transparent hover:bg-red-500 text-black-700 font-semibold hover:text-white border-2 px-12 p-3 border-red-500 hover:border-transparent rounded-full"
+                className=" text-sm text-red-600 bg-transparent hover:bg-red-600 text-black-700 font-semibold hover:text-white border-2 px-12 p-3 border-red-600 hover:border-transparent rounded-full"
               >
                 SUBMIT
               </button>
@@ -340,9 +340,9 @@ export default function AboutUs() {
       <div className=" h-screen  grid grid-cols-12   px-6 w-full   bg-costumeOrange">
         <div className="   m-auto col-span-12 ">
           <div className="">
-            <h5 className=" py-5 text-center text-xl font-OpenSans font-light text-white     ">
+            <h1 className=" py-5 text-center text-xl font-OpenSans font-light text-white     ">
               NEWSLETTER
-            </h5>
+            </h1>
             <h2 className="md:pb-10 text-center text-5xl font-Poppins font-bold text-white">
               Subscribe Company newsletter
             </h2>
@@ -364,7 +364,7 @@ export default function AboutUs() {
               <Link href="/" aria-label="submit">
                 <button
                   aria-label="submit"
-                  className="  text-sm text-white bg-transparent hover:border-costumeOrange hover:bg-white text-black-700 font-semibold hover:text-red-500 border-2 px-12 p-3 border-white hover:border-transparent rounded-full"
+                  className="  text-sm text-white bg-transparent hover:border-costumeOrange hover:bg-white text-black-700 font-semibold hover:text-red-600 border-2 px-12 p-3 border-white hover:border-transparent rounded-full"
                 >
                   SUBMIT
                 </button>

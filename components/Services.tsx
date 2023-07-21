@@ -229,7 +229,7 @@ export default function Services() {
             <Link href="#" aria-label="contact-us">
               <button
                 aria-label="contact-us"
-                className="flex text-lg uppercase   items-center   text-red-500 hover:bg-gradient-to-t from-[#F35A43] to-[#C1272D]  hover:text-white   border-2 p-4  border-red-500  rounded-full"
+                className="flex text-lg uppercase   items-center   text-red-600 hover:bg-gradient-to-t from-[#F35A43] to-[#C1272D]  hover:text-white   border-2 p-4  border-red-600  rounded-full"
               >
                 <p className="px-10 text-sm font-semibold"> Contact US</p>
                 <svg
@@ -290,7 +290,7 @@ export default function Services() {
             <Link href="/" aria-label="contact-us">
               <button
                 aria-label="submit"
-                className=" text-sm text-white bg-transparent hover:bg-red-500 text-black-700 font-semibold hover:text-white border-2 px-12 p-3 border-white hover:border-transparent rounded-full"
+                className=" text-sm text-white bg-transparent hover:bg-red-600 text-black-700 font-semibold hover:text-white border-2 px-12 p-3 border-white hover:border-transparent rounded-full"
               >
                 SUBMIT
               </button>
