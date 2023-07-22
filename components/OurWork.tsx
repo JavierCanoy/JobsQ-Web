@@ -64,7 +64,7 @@ export default function OurWork() {
             <Link href="# " aria-label="kwowmore">
               <button
                 aria-label="kwowmore"
-                className=" flex items-center text-white   hover:text-red-700 text-xl bg-red-600 py-4 rounded-r-full hover:bg-white hover:border-red-600border-2   "
+                className=" flex items-center text-white border-y-2 hover:border-red-700   hover:text-red-700 text-xl bg-red-600 py-4 rounded-r-full hover:bg-white hover:border-red-600border-2   "
               >
                 <p className="text-base font-semibold">KNOW MORE</p>
                 <div className="px-8">
