@@ -130,7 +130,7 @@ export default function ProjectWeLove() {
       <div className=" mb-10  ">
         <Slider ref={sliderRef} {...settings} className="  ">
           {projects.map((project) => (
-            <div key={project.id} className="px-2   ">
+            <div key={project.id} className="px-2   " aria-hidden="true">
               <Link href="/" aria-label="projects">
                 <Image
                   src={project.linkImg}
