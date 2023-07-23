@@ -76,7 +76,7 @@ export default function Clients() {
 
         {/* buttons */}
         <div className="flex p-4   justify-center font-semibold lg:py-10 ">
-          <div className="prev-button  ">
+          <div className="prev-button  " aria-hidden="true">
             <button
               aria-label="prev"
               className={
@@ -104,7 +104,7 @@ export default function Clients() {
             </div>
           </div>
 
-          <div className=" button-next">
+          <div className=" button-next" aria-hidden="true">
             <button
               aria-label="next"
               className={
