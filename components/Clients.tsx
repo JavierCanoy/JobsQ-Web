@@ -35,15 +35,14 @@ export default function Clients() {
     slidesToShow: 1,
   };
   return (
-    <div className=" grid grid-cols-12   bg-gradient-to-t from-costumeOrange to-costumeRed h-auto w-screen ">
+    <div
+      className=" grid grid-cols-12   bg-gradient-to-t from-costumeOrange to-costumeRed h-auto w-screen "
+      aria-hidden="true"
+    >
       <div className="content col-span-12 my-auto  ">
         <Slider ref={sliderRef} {...settings} className="  ">
           {clientdata.map((clientdata: any) => (
-            <div
-              key={clientdata.id}
-              className=" md:mt-28  "
-              aria-hidden="false"
-            >
+            <div key={clientdata.id} className=" md:mt-28  ">
               <div
                 className=" w-screen p-2 pt-10 md:pt-2 text-center md:px-4 "
                 aria-hidden="false"
@@ -52,7 +51,7 @@ export default function Clients() {
                   {clientdata.say}
                 </h1>
               </div>
-              <div className="flex justify-center  " aria-hidden="false">
+              <div className="flex justify-center  ">
                 <Link href="/" aria-label="images">
                   <Image
                     src={clientdata.linkImg}
