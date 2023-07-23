@@ -34,6 +34,7 @@ export default function viewall() {
                 alt={`Image ${project.id}`}
                 height={480}
                 width={401}
+                aria-hidden="true"
                 className="duration-300 hover:scale-95   "
               />
             </Link>

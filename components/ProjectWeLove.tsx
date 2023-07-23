@@ -131,13 +131,14 @@ export default function ProjectWeLove() {
         <Slider ref={sliderRef} {...settings} className="  ">
           {projects.map((project) => (
             <div key={project.id} className="px-2   ">
-              <Link href="/" aria-label="projects" aria-hidden="true">
+              <Link href="/" aria-label="projects">
                 <Image
                   src={project.linkImg}
                   alt={`Image ${project.id}`}
                   height={480}
                   width={401}
                   className=" object-fill  "
+                  aria-hidden="true"
                 />
               </Link>
             </div>

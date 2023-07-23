@@ -58,6 +58,7 @@ export default function Clients() {
                     alt={`Image ${clientdata.id}`}
                     width={200}
                     height={200}
+                    aria-hidden="true"
                   />
                 </Link>
               </div>
@@ -85,6 +86,7 @@ export default function Clients() {
                   : " text-lg  font-OpenSans  font-semibold    text-red-700"
               }
               onClick={previousButton}
+              aria-hidden="true"
             >
               PREV
             </button>
@@ -100,6 +102,7 @@ export default function Clients() {
                     ? " bg-red-700 rounded-full p-1 w-10   ml-10 "
                     : " bg-red-700 rounded-full p-1 w-10   mr-10"
                 }
+                aria-hidden="true"
               ></div>
             </div>
           </div>
@@ -112,6 +115,7 @@ export default function Clients() {
                   ? " text-lg  font-OpenSans  font-semibold   text-gray-700 "
                   : "   text-lg  font-OpenSans  font-semibold   text-red-700"
               }
+              aria-hidden="true"
               onClick={nextButton}
             >
               NEXT
