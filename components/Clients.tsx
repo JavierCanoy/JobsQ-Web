@@ -39,13 +39,20 @@ export default function Clients() {
       <div className="content col-span-12 my-auto  ">
         <Slider ref={sliderRef} {...settings} className="  ">
           {clientdata.map((clientdata: any) => (
-            <div key={clientdata.id} className=" md:mt-28  " aria-hidden="true">
-              <div className=" w-screen p-2 pt-10 md:pt-2 text-center md:px-4 ">
+            <div
+              key={clientdata.id}
+              className=" md:mt-28  "
+              aria-hidden="false"
+            >
+              <div
+                className=" w-screen p-2 pt-10 md:pt-2 text-center md:px-4 "
+                aria-hidden="false"
+              >
                 <h1 className="  text-3xl  md:text-5xl   font-Poppins font-bold text-white ">
                   {clientdata.say}
                 </h1>
               </div>
-              <div className="flex justify-center ">
+              <div className="flex justify-center  " aria-hidden="false">
                 <Link href="/" aria-label="images">
                   <Image
                     src={clientdata.linkImg}

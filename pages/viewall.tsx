@@ -23,7 +23,11 @@ export default function viewall() {
       </div>
       <div className=" grid grid-cols-2 lg:grid-cols-4">
         {projects.map((project: any) => (
-          <div key={project.id} className="  mx-10 pt-2 mb-10 ">
+          <div
+            key={project.id}
+            className="  mx-10 pt-2 mb-10  "
+            aria-hidden="true"
+          >
             <Link href="/" aria-label="projects">
               <Image
                 src={project.linkImg}
