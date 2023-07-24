@@ -6,8 +6,11 @@ export default function NavBar() {
   const [navbar, setNavbar] = useState(false);
   // backdrop-blur-lg   bg-white/90
   return (
-    <div className="nav">
-      <nav className="  w-full fixed   z-50  shadow-md  backdrop-blur-lg   bg-white/90    ">
+    <div className="nav  ">
+      <nav
+        className="  w-full  fixed z-50    shadow-md   backdrop-blur-lg   bg-white/90
+  return ( "
+      >
         <div className="grid grid-cols-12  justify-items-center m-2 my-4 md:my-6 2xl:ml-10      ">
           <div className=" col-span-10 xl:col-span-4 ">
             <div className=" flex  ">
