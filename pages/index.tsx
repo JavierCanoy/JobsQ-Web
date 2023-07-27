@@ -1,6 +1,5 @@
 import React from "react";
 import Head from "next/head";
-
 import OurWork from "../components/OurWork";
 import Contact from "../components/Contact";
 import AboutUs from "../components/AboutUs";

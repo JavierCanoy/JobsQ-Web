@@ -6,7 +6,6 @@ import Clients from "@/components/Clients";
 import ProjectWeLove from "./ProjectWeLove";
 
 export default function Main() {
-  // pt-[9rem] md:pt-120
   return (
     <div id="home" className="main pt-[9rem] md:pt-120  ">
       <div className="  grid grid-cols-12 lg:h-screen      ">
