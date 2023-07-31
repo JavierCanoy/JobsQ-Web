@@ -74,14 +74,13 @@ export default function ServicesComp() {
             <div
               key={servicescontent.id}
               className=" gap-52 my-10  mx-auto  lg:grid lg:grid-cols-2  xl:max-w-8xl  xl:mx-20  "
-              aria-hidden="false"
             >
-              <div className=" mx-4 " aria-hidden="false">
+              <div className=" mx-4 ">
                 <p className=" text-3xl md:text-5xl md:text-center lg:text-left md:mb-10 lg:mx-10  font-Poppins font-bold">
                   {servicescontent.services}
                 </p>
               </div>
-              <div className=" mx-4 my-4   " aria-hidden="false">
+              <div className=" mx-4 my-4   ">
                 <p className=" text-base md:text-xl md:text-center lg:text-left  font-OpenSans">
                   {servicescontent.content}
                 </p>

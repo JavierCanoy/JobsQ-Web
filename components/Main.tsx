@@ -4,8 +4,15 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Clients from "@/components/Clients";
 import ProjectWeLove from "./ProjectWeLove";
+import { useEffect } from "react";
+
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 export default function Main() {
+  useEffect(() => {
+    AOS.init({ duration: 1000 });
+  }, []);
   return (
     <div id="home" className="main pt-[9rem] md:pt-120  ">
       <div className="  grid grid-cols-12 lg:h-screen      ">
@@ -82,7 +89,10 @@ export default function Main() {
 
       {/* we-help-with */}
       <div className="  2xl:h-screen  grid grid-cols-12   justify-center  w-full  bg-gradient-to-t  from-costumeOrange to-costumeRed text-white ">
-        <div className="first xl:my-auto 2xl:mx-40     p-4 col-span-12 md:mx-auto 2xl:col-span-6 ">
+        <div
+          data-aos="fade-right"
+          className="first xl:my-auto 2xl:mx-40     p-4 col-span-12 md:mx-auto 2xl:col-span-6 "
+        >
           <h1 className="text-2xl font-OpenSans font-light ">WE HELP WITH</h1>
           <p className="md:text-7xl  text-5xl font-Poppins font-bold pb-10 pt-2">
             Building <br /> better
@@ -110,7 +120,10 @@ export default function Main() {
           </Link>
         </div>
 
-        <div className="second content-center grid  col-span-12 md:mx-auto   xl:grid xl:grid-cols-2  2xl:col-span-6  ">
+        <div
+          data-aos="fade-left"
+          className=" second content-center grid  col-span-12 md:mx-auto   xl:grid xl:grid-cols-2  2xl:col-span-6  "
+        >
           <div className="  my-5 mx-4  p-8 h-231 md:w-361 hover:bg-gradient-to-r from-costumeBrnBg to-costumeRedBg   rounded-lg  bg-costumeRedBg">
             <Image
               src="/images/icon/first.png"

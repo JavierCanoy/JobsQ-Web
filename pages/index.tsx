@@ -12,6 +12,7 @@ export default function Home() {
         <title>Mabolotecth-Solution</title>
         <link rel="icon" href="/logo-web.png" />
       </Head>
+
       <Main />
       <AboutUs />
       <Services />
