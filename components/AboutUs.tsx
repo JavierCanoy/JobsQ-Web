@@ -3,22 +3,22 @@ import Link from "next/link";
 import Clients from "./Clients";
 import { useEffect } from "react";
 
-import AOS from "aos";
-import "aos/dist/aos.css";
+// import AOS from "aos";
+// import "aos/dist/aos.css";
 
 export default function AboutUs() {
-  useEffect(() => {
-    AOS.init({
-      offset: 200,
-      duration: 500,
-      easing: "ease-in-sine",
-      delay: 100,
-      disable: function () {
-        var maxWidth = 1024;
-        return window.innerWidth < maxWidth;
-      },
-    });
-  }, []);
+  // useEffect(() => {
+  //   AOS.init({
+  //     offset: 200,
+  //     duration: 500,
+  //     easing: "ease-in-sine",
+  //     delay: 100,
+  //     disable: function () {
+  //       var maxWidth = 1024;
+  //       return window.innerWidth < maxWidth;
+  //     },
+  //   });
+  // }, []);
 
   return (
     <div id="about-us" className="main-about pt-20   md:pt-120  ">

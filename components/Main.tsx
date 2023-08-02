@@ -6,22 +6,22 @@ import Clients from "@/components/Clients";
 import ProjectWeLove from "./ProjectWeLove";
 import { useEffect } from "react";
 
-import AOS from "aos";
-import "aos/dist/aos.css";
+// import AOS from "aos";
+// import "aos/dist/aos.css";
 
 export default function Main() {
-  useEffect(() => {
-    AOS.init({
-      offset: 200,
-      duration: 600,
-      easing: "ease-in-sine",
-      delay: 100,
-      disable: function () {
-        var maxWidth = 1024;
-        return window.innerWidth < maxWidth;
-      },
-    });
-  }, []);
+  // useEffect(() => {
+  //   AOS.init({
+  //     offset: 200,
+  //     duration: 600,
+  //     easing: "ease-in-sine",
+  //     delay: 100,
+  //     disable: function () {
+  //       var maxWidth = 1024;
+  //       return window.innerWidth < maxWidth;
+  //     },
+  //   });
+  // }, []);
 
   return (
     <div id="home" className="main pt-[9rem] md:pt-120  ">
