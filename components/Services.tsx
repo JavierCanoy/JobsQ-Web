@@ -36,7 +36,7 @@ export default function Services() {
       {/*end-Services */}
 
       {/*what-we-offer */}
-      <div className=" mx-4 xl:h-screen grid  ">
+      <div className=" mx-4 h-auto grid  ">
         <div className=" flex justify-center ">
           <h1 className=" my-auto py-4 text-4xl md:text-5xl font-Poppins font-bold text-red-600">
             What we offer:

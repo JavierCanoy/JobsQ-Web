@@ -14,11 +14,10 @@ export default function Home() {
       </Head>
 
       <Main />
-
-      {/* <AboutUs />
+      <AboutUs />
       <Services />
       <OurWork />
-      <Contact /> */}
+      <Contact />
     </div>
   );
 }

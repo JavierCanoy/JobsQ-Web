@@ -36,7 +36,7 @@ export default function Clients() {
   };
   return (
     <div
-      className=" grid grid-cols-12   bg-gradient-to-t from-costumeOrange to-costumeRed h-auto w-screen "
+      className=" grid grid-cols-12   bg-gradient-to-t from-costumeOrange to-costumeRed h-auto w-full "
       aria-hidden="true"
     >
       <div className="content col-span-12 my-auto  ">

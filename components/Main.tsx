@@ -11,8 +11,18 @@ import "aos/dist/aos.css";
 
 export default function Main() {
   useEffect(() => {
-    AOS.init({ duration: 1000 });
+    AOS.init({
+      offset: 200,
+      duration: 600,
+      easing: "ease-in-sine",
+      delay: 100,
+      disable: function () {
+        var maxWidth = 1024;
+        return window.innerWidth < maxWidth;
+      },
+    });
   }, []);
+
   return (
     <div id="home" className="main pt-[9rem] md:pt-120  ">
       <div className="  grid grid-cols-12 lg:h-screen      ">

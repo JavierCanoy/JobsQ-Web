@@ -1,10 +1,27 @@
 import Image from "next/image";
 import Link from "next/link";
 import Clients from "./Clients";
+import { useEffect } from "react";
+
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 export default function AboutUs() {
+  useEffect(() => {
+    AOS.init({
+      offset: 200,
+      duration: 500,
+      easing: "ease-in-sine",
+      delay: 100,
+      disable: function () {
+        var maxWidth = 1024;
+        return window.innerWidth < maxWidth;
+      },
+    });
+  }, []);
+
   return (
-    <div id="about-us" className="main-about   pt-120  ">
+    <div id="about-us" className="main-about pt-20   md:pt-120  ">
       <div className="  w-full ">
         <div className="relative ">
           <div className="image">
@@ -32,7 +49,7 @@ export default function AboutUs() {
       </div>
       {/* end-about-us */}
       {/* we do great things together */}
-      <div className=" p-4  md:p-8 xl:max-w-2xl xl:mx-80  ">
+      <div data-aos="zoom-in" className=" p-4  md:p-8 xl:max-w-2xl xl:mx-80  ">
         <div>
           <h1 className="  font-Poppins font-bold   text-4xl md:text-5xl xl:py-10  ">
             We do great things together
@@ -59,7 +76,7 @@ export default function AboutUs() {
       </div>
       {/* end-we do great things together */}
       {/* founded */}
-      <div className=" w-full px-4 lg:px-8">
+      <div data-aos="fade-up" className=" w-full px-4 lg:px-8">
         <h1 className=" py-4 text-3xl md:text-5xl  xl:max-w-4xl xl:mx-auto xl:text-center font-Poppins font-bold  ">
           Founded on trust. Focused on relationships with client.
         </h1>
@@ -77,7 +94,10 @@ export default function AboutUs() {
           </p>
         </div>
         <div className="image lg:grid lg:grid-cols-12 lg:justify-items-center xl:gap-4 xl:mx-5  ">
-          <div className=" lg:col-span-12 xl:col-span-6 lg:py-8 py-2">
+          <div
+            data-aos="fade-right"
+            className=" lg:col-span-12 xl:col-span-6 lg:py-8 py-2"
+          >
             <Image
               src="/images/home/group.png"
               alt="Myimage"
@@ -86,7 +106,10 @@ export default function AboutUs() {
               width={726}
             />
           </div>
-          <div className="lg:col-span-12 lg:py-8  xl:col-span-6  py-2 xl:mt-32">
+          <div
+            data-aos="fade-left"
+            className="lg:col-span-12 lg:py-8  xl:col-span-6  py-2 xl:mt-32"
+          >
             <Image
               src="/images/home/group1.png"
               alt="Myimage"
@@ -206,7 +229,7 @@ export default function AboutUs() {
       </div>
       {/* end What clients value most */}
       {/* meet-the-team */}
-      <div className="meet-the-team grid-cols-12 px-4 pt-4 md:px-8 grid   lg:h-screen">
+      <div className="meet-the-team grid-cols-12 px-4 pt-4 md:px-8 grid h-auto">
         <div className="  col-span-12   lg:flex lg:justify-center lg:items-center ">
           <div>
             <h1 className=" text-center text-5xl font-Poppins font-bold">
@@ -322,7 +345,7 @@ export default function AboutUs() {
             aria-label="Message"
             placeholder="Message"
           />
-          <div className="pt-4 ">
+          <div className="pt-4 mb-4 md:mb-0 ">
             <Link href="/" aria-label="Submit Button">
               <button
                 aria-label="Submit Button"
