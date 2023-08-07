@@ -4,7 +4,7 @@ import { works } from "@/data/ourworks";
 import { useState } from "react";
 
 export default function OurWork() {
-  const [search, setSearch] = useState("");
+  const [search, setSearch] = useState("all");
 
   const value = (type: String) => {
     if (type === "Branding") {
@@ -14,7 +14,7 @@ export default function OurWork() {
     } else if (type === "Marketing") {
       setSearch("Marketing");
     } else if (type === "all") {
-      setSearch("");
+      setSearch("all");
     }
   };
   return (
@@ -89,7 +89,7 @@ export default function OurWork() {
             <div className=" grid grid-cols-12  ">
               {works
                 .filter((work) => {
-                  return search === "" ? work : work.type.includes(search);
+                  return search === "all" ? work : work.type.includes(search);
                 })
                 .map((work) => (
                   <div
