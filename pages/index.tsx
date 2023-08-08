@@ -8,6 +8,7 @@ import Main from "../components/Main";
 export default function Home() {
   return (
     <div className="homage-page">
+      <h1>javier bernadas canoy ! </h1>
       <Head>
         <title>Mabolotecth-Solution</title>
         <link rel="icon" href="/logo-web.png" />
