@@ -19,7 +19,7 @@ export default function OurWork() {
   };
   return (
     <div id="ourwork" className="main pt-120 ">
-      <div className="porttolfio">
+      <div className="portfolio">
         <div className="first text-center  m-4 md:py-8 lg:max-w-2xl lg:mx-auto ">
           <h1 className="text-xl text-gray-600 font-OpenSans font-light py-4 ">
             PORTFOLIO
