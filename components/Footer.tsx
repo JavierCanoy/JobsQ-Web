@@ -5,7 +5,7 @@ import Link from "next/link";
 
 export default function Footer() {
   return (
-    <div className="main-footer py-10 w-full ">
+    <div className="footer-main py-10 w-full ">
       <div className=" flex flex-wrap  justify-center gap-10 mx-10">
         <div>
           <ul>
@@ -136,7 +136,7 @@ export default function Footer() {
       </div>
 
       {/* Copyrighted  */}
-      <div className=" mt-20 mx-2">
+      <div className="  mt-20 mx-2">
         <p className=" text-center  text-gray-600 text-base">
           Copyrighted © 2023 Mabolotech IT Solution
         </p>

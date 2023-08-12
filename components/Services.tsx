@@ -5,7 +5,7 @@ import ServicesComp from "./ServicesComp";
 
 export default function Services() {
   return (
-    <div id="services" className="main-services pt-[5rem] md:pt-[7.5rem] ">
+    <div id="services" className="services pt-[5rem] md:pt-[7.5rem] ">
       <div className="  w-full ">
         <div className="relative ">
           <div className="image">
@@ -31,12 +31,12 @@ export default function Services() {
           </div>
         </div>
       </div>
-      {/* end-about-us */}
+      {/* Services*/}
       <ServicesComp />
       {/*end-Services */}
 
       {/*what-we-offer */}
-      <div className=" mx-4 h-auto grid  ">
+      <div className="services-what-we-offer mx-4 h-auto grid  ">
         <div className=" flex justify-center ">
           <h1 className=" my-auto py-4 text-4xl md:text-5xl font-Poppins font-bold text-red-600">
             What we offer:
@@ -114,7 +114,7 @@ export default function Services() {
       {/*end-what-we-offer */}
 
       {/*why-clients-choose-us */}
-      <div className="bg-gradient-to-t from-costumeOrange to-costumeRed py-10    ">
+      <div className="services-clients-choose-us bg-gradient-to-t from-costumeOrange to-costumeRed py-10    ">
         <div className=" text-center p-4">
           <h1 className=" text-4xl md:text-5xl text-white font-Poppins  font-bold">
             Why clients choose us
@@ -213,7 +213,7 @@ export default function Services() {
       {/*end-why-clients-choose-us */}
 
       {/*contact-us-today */}
-      <div className=" ">
+      <div className="services-contact-us-today ">
         <div className=" p-5 md:p-10 lg:grid lg:grid-cols-12 lg:max-w-5xl lg:mx-auto lg:my-10">
           <div className="first col-span-6">
             <h1 className=" text-4xl md:text-5xl font-Poppins font-bold">
@@ -252,7 +252,7 @@ export default function Services() {
       {/*end-contact-us-today */}
 
       {/* get-in-touch */}
-      <div className="main py-4 grid grid-cols-12 md:h-screen  md:content-center  bg-gradient-to-t from-costumeOrange to-costumeRed">
+      <div className="services-get-in-touch py-4 grid grid-cols-12 md:h-screen  md:content-center  bg-gradient-to-t from-costumeOrange to-costumeRed">
         <div className="first col-span-12 w-full p-4 md:col-span-6  md:my-auto xl:mx-auto xl:max-w-lg  ">
           <h1 className="text-xl  text-white font-OpenSans font-light">
             GET IN TOUCH

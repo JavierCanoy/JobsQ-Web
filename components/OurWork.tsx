@@ -19,7 +19,7 @@ export default function OurWork() {
   };
   return (
     <div id="ourwork" className="main pt-120 ">
-      <div className="portfolio">
+      <div className="ourwork-portfolio">
         <div className="first text-center  m-4 md:py-8 lg:max-w-2xl lg:mx-auto ">
           <h1 className="text-xl text-gray-600 font-OpenSans font-light py-4 ">
             PORTFOLIO
@@ -144,7 +144,7 @@ export default function OurWork() {
       {/* end-Portfolio */}
 
       {/* get-in-touch */}
-      <div className="main py-4 grid grid-cols-12 md:h-screen  md:content-center  bg-gradient-to-t from-costumeOrange to-costumeRed">
+      <div className="ourwork-get-in-touch py-4 grid grid-cols-12 md:h-screen  md:content-center  bg-gradient-to-t from-costumeOrange to-costumeRed">
         <div className="first col-span-12 w-full p-4 md:col-span-6  md:my-auto xl:mx-auto xl:max-w-lg  ">
           <h1 className="text-xl  text-white font-OpenSans font-light">
             GET IN TOUCH

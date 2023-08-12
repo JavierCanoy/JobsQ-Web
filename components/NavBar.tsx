@@ -6,7 +6,7 @@ export default function NavBar() {
   const [navbar, setNavbar] = useState(false);
   return (
     <div
-      className="  w-full  fixed z-50    shadow-md   backdrop-blur-lg   bg-white/90
+      className="navbar  w-full  fixed z-50    shadow-md   backdrop-blur-lg   bg-white/90
     return ( "
     >
       <div className="grid grid-cols-12  justify-items-center m-2 my-4 md:my-6 2xl:ml-10      ">

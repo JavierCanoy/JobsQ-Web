@@ -21,7 +21,7 @@ export default function AboutUs() {
   // }, []);
 
   return (
-    <div id="about-us" className="main-about pt-20   md:pt-120  ">
+    <div id="about-us-main" className="main-about pt-20   md:pt-120  ">
       <div className="  w-full ">
         <div className="relative ">
           <div className="image">
@@ -49,7 +49,10 @@ export default function AboutUs() {
       </div>
       {/* end-about-us */}
       {/* we do great things together */}
-      <div data-aos="zoom-in" className=" p-4  md:p-8 xl:max-w-2xl xl:mx-80  ">
+      <div
+        data-aos="zoom-in"
+        className="about-us-do-great-things p-4  md:p-8 xl:max-w-2xl xl:mx-80  "
+      >
         <div>
           <h1 className="  font-Poppins font-bold   text-4xl md:text-5xl xl:py-10  ">
             We do great things together
@@ -121,7 +124,7 @@ export default function AboutUs() {
         </div>
       </div>
       {/* What clients value most */}
-      <div className="main  grid grid-cols-12 lg:h-screen  bg-gradient-to-t from-costumeOrange to-costumeRed">
+      <div className="about-us-clients  grid grid-cols-12 lg:h-screen  bg-gradient-to-t from-costumeOrange to-costumeRed">
         <div className=" col-span-12 m-auto">
           <div className=" py-10   px-4   flex justify-center items-center lg:py-0  ">
             <div>
@@ -229,7 +232,7 @@ export default function AboutUs() {
       </div>
       {/* end What clients value most */}
       {/* meet-the-team */}
-      <div className="meet-the-team grid-cols-12 px-4 pt-4 md:px-8 grid h-auto">
+      <div className="about-us-meet-the-team grid-cols-12 px-4 pt-4 md:px-8 grid h-auto">
         <div className="  col-span-12   lg:flex lg:justify-center lg:items-center ">
           <div>
             <h1 className=" text-center text-5xl font-Poppins font-bold">
@@ -309,7 +312,7 @@ export default function AboutUs() {
       {/* end What do our clients   */}
 
       {/* Let’s start withyour dreamproject */}
-      <div className="main grid grid-cols-12 md:h-screen  md:content-center md:mx-4">
+      <div className="about-us-dreamproject  grid grid-cols-12 md:h-screen  md:content-center md:mx-4">
         <div className="first col-span-12 w-full p-4 md:col-span-6  md:my-auto  xl:mx-auto xl:max-w-lg  ">
           <h1 className="text-xl  text-gray-600 font-OpenSans font-light">
             GET IN TOUCH
@@ -360,7 +363,7 @@ export default function AboutUs() {
       {/*end Let’s start withyour dreamproject */}
 
       {/* subscribes-laters */}
-      <div className=" h-screen  grid grid-cols-12   px-6 w-full   bg-costumeOrange">
+      <div className=" about-us-subscribes-laters h-screen  grid grid-cols-12   px-6 w-full   bg-costumeOrange">
         <div className="   m-auto col-span-12 ">
           <div className="">
             <h1 className=" py-5 text-center text-xl font-OpenSans font-light text-white     ">

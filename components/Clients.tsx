@@ -36,10 +36,10 @@ export default function Clients() {
   };
   return (
     <div
-      className=" grid grid-cols-12   bg-gradient-to-t from-costumeOrange to-costumeRed h-auto w-full "
+      className="clients-main grid grid-cols-12   bg-gradient-to-t from-costumeOrange to-costumeRed h-auto w-full "
       aria-hidden="true"
     >
-      <div className="content col-span-12 my-auto  ">
+      <div className="clients-content col-span-12 my-auto  ">
         <Slider ref={sliderRef} {...settings} className="  ">
           {clientdata.map((clientdata: any) => (
             <div key={clientdata.id} className=" md:mt-28  ">
@@ -76,7 +76,7 @@ export default function Clients() {
         </Slider>
 
         {/* buttons */}
-        <div className="flex p-4   justify-center font-semibold lg:py-10 ">
+        <div className="clients-buttons flex p-4   justify-center font-semibold lg:py-10 ">
           <div className="prev-button  " aria-hidden="true">
             <button
               aria-label="prev"

@@ -3,7 +3,7 @@ import Link from "next/link";
 
 export default function Contact() {
   return (
-    <div id="contact" className="main-contact   pt-[7.5rem]  ">
+    <div id="contact" className="contact-main   pt-[7.5rem]  ">
       <div className="  m-4">
         <div className="py-4 w-full ">
           <p className="  text-center  font-Poppins font-bold text-4xl md:text-5xl  md:pt-20  lg:max-w-xl lg:mx-auto      dark:text-gray-600">
@@ -95,7 +95,7 @@ export default function Contact() {
       {/* end- Let’s build your dream  */}
 
       {/* minimap */}
-      <div className="   grid grid-cols-12 justify-items-center  2xl:gap-20 md:h-screen   md:justify-items-start   ">
+      <div className="contact-minimap   grid grid-cols-12 justify-items-center  2xl:gap-20 md:h-screen   md:justify-items-start   ">
         <div className=" col-span-12 md:col-span-6 md:w-full ">
           <Image
             src="/images/contact/map.png"
@@ -106,7 +106,7 @@ export default function Contact() {
           />
         </div>
 
-        <div className="second my-auto col-span-12 px-4 w-full md:col-span-6 xl:max-w-lg">
+        <div className="contact-form my-auto col-span-12 px-4 w-full md:col-span-6 xl:max-w-lg">
           <form className="  ">
             <p className=" text-center text-base text-gray-600 py-10">
               look forward from you,

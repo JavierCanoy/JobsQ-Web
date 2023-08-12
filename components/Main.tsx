@@ -335,7 +335,7 @@ export default function Main() {
       {/* end-What do our clients   */}
 
       {/* Let’s start withyour dreamproject */}
-      <div className="main grid grid-cols-12 md:h-screen  md:content-center md:mx-4">
+      <div className="main-dreamproject grid grid-cols-12 md:h-screen  md:content-center md:mx-4">
         <div
           data-aos="fade-up"
           className="first col-span-12 w-full p-4 md:col-span-6  md:my-auto  xl:mx-auto xl:max-w-lg  "
@@ -392,7 +392,7 @@ export default function Main() {
       {/*end Let’s start withyour dreamproject */}
 
       {/* read-what-team */}
-      <div className=" lg:h-screen w-full grid grid-cols-12">
+      <div className="main-read-what-team lg:h-screen w-full grid grid-cols-12">
         <div
           data-aos="zoom-in-down"
           className=" col-span-12 p-4 md:p-8 md:flex md:justify-center md:text-center md:items-center"
@@ -479,7 +479,7 @@ export default function Main() {
       {/*end read-what-team */}
 
       {/* subscribes-laters */}
-      <div className=" h-screen  grid grid-cols-12   px-6 w-full   bg-costumeOrange">
+      <div className="main-subscribes h-screen  grid grid-cols-12   px-6 w-full   bg-costumeOrange">
         <div className="   m-auto col-span-12 ">
           <div className="">
             <h5 className=" py-5 text-center text-xl font-OpenSans font-light text-white     ">

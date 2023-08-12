@@ -5,7 +5,7 @@ import Head from "next/head";
 import { projects } from "@/data/projects";
 export default function viewall() {
   return (
-    <div>
+    <div className=" view-all">
       <Head>
         <title>Projects we love</title>
         <link rel="icon" href="/logo-web.png" />
