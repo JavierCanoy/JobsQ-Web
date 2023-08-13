@@ -2,8 +2,18 @@ import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 import ServicesComp from "./ServicesComp";
+import Form from "./Form";
 
 export default function Services() {
+  const formClass = "second col-span-12 px-4 w-full xl:max-w-lg md:col-span-6";
+  const emailClass =
+    "py-4  text-base leading-tight focus:outline-none border-b-2 pt-10  w-full bg-transparent  placeholder:text-white  text-white";
+  const fullNameClass =
+    "py-6 text-base  leading-tight focus:outline-none border-b-2   pt-14 w-full bg-transparent  placeholder:text-white  text-white ";
+  const messageClass =
+    "py-10  text-base leading-tight focus:outline-none border-b-2 w-full bg-transparent placeholder:text-white text-white ";
+  const buttonClass =
+    " text-sm text-white bg-transparent hover:bg-red-600 text-black-700 font-semibold hover:text-white border-2 px-12 p-3 border-white hover:border-transparent rounded-full";
   return (
     <div id="services" className="services pt-[5rem] md:pt-[7.5rem] ">
       <div className="  w-full ">
@@ -267,36 +277,13 @@ export default function Services() {
             +1 123 456 7890
           </p>
         </div>
-        <form className="second col-span-12 px-4 w-full xl:max-w-lg md:col-span-6">
-          <input
-            className="py-4  text-base leading-tight focus:outline-none border-b-2 pt-10  w-full bg-transparent  placeholder:text-white "
-            type="text"
-            aria-label="Email"
-            placeholder="Email "
-          />
-          <input
-            className="py-6 text-base  leading-tight focus:outline-none border-b-2   pt-14 w-full bg-transparent  placeholder:text-white  "
-            type="text"
-            aria-label="Full name"
-            placeholder="Full name"
-          />
-          <input
-            className="py-10  text-base leading-tight focus:outline-none border-b-2 w-full bg-transparent placeholder:text-white "
-            type="text"
-            aria-label="Message"
-            placeholder="Message"
-          />
-          <div className="pt-4 ">
-            <Link href="/" aria-label="contact-us">
-              <button
-                aria-label="submit"
-                className=" text-sm text-white bg-transparent hover:bg-red-600 text-black-700 font-semibold hover:text-white border-2 px-12 p-3 border-white hover:border-transparent rounded-full"
-              >
-                SUBMIT
-              </button>
-            </Link>
-          </div>
-        </form>
+        <Form
+          formClass={formClass}
+          emailClass={emailClass}
+          fullNameClass={fullNameClass}
+          messageClass={messageClass}
+          buttonClass={buttonClass}
+        />
       </div>
       {/* end-get-in-touch */}
     </div>

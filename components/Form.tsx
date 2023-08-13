@@ -1,7 +1,7 @@
 import { useState } from "react";
 import Link from "next/link";
 
-export default function Form() {
+export default function Form(props: any) {
   console.log("javierForm");
   const [email, setEmail] = useState("");
   const [fullname, setFullName] = useState("");
@@ -41,69 +41,46 @@ export default function Form() {
   };
 
   return (
-    <div className="main-dreamproject grid grid-cols-12 md:h-screen  md:content-center md:mx-4">
-      <div
-        data-aos="fade-up"
-        className="first col-span-12 w-full p-4 md:col-span-6  md:my-auto  xl:mx-auto xl:max-w-lg  "
-      >
-        <h1 className="text-xl  text-gray-600 font-OpenSans font-light">
-          GET IN TOUCH
-        </h1>
-        <p className="text-5xl font-Poppins font-bold py-4 ">
-          Let’s start with
-          <br /> your dream <br />
-          project
-        </p>
-        <p className="  text-xl font-OpenSans py-2	">
-          We help our clients make realize their most
-        </p>
-        <p className="text-xl font-bold font-OpenSans  py-2">+1 123 456 7890</p>
+    <form
+      data-aos="fade-down"
+      className={props.formClass}
+      onSubmit={submitHandler}
+    >
+      <input
+        className={props.emailClass}
+        type="text"
+        aria-label="Email"
+        placeholder="Email "
+        value={email}
+        onChange={(event) => {
+          inputChanger("email", event.target.value);
+        }}
+      />
+      <input
+        className={props.fullNameClass}
+        type="text"
+        aria-label="Full name"
+        placeholder="Full name"
+        value={fullname}
+        onChange={(event) => {
+          inputChanger("fullname", event.target.value);
+        }}
+      />
+      <input
+        className={props.messageClass}
+        type="text"
+        aria-label="Message"
+        placeholder="Message"
+        value={message}
+        onChange={(event) => {
+          inputChanger("message", event.target.value);
+        }}
+      />
+      <div className="pt-4 ">
+        <button aria-label="submit" className={props.buttonClass}>
+          SUBMIT
+        </button>
       </div>
-      {/* form */}
-      <form
-        data-aos="fade-down"
-        className="second col-span-12 px-4 w-full xl:max-w-lg md:col-span-6"
-        onSubmit={submitHandler}
-      >
-        <input
-          className="py-4  text-base leading-tight focus:outline-none border-b-2 pt-10  w-full "
-          type="text"
-          aria-label="Email"
-          placeholder="Email "
-          value={email}
-          onChange={(event) => {
-            inputChanger("email", event.target.value);
-          }}
-        />
-        <input
-          className="py-6 text-base  leading-tight focus:outline-none border-b-2   pt-14 w-full  "
-          type="text"
-          aria-label="Full name"
-          placeholder="Full name"
-          value={fullname}
-          onChange={(event) => {
-            inputChanger("fullname", event.target.value);
-          }}
-        />
-        <input
-          className="py-10  text-base leading-tight focus:outline-none border-b-2 w-full  "
-          type="text"
-          aria-label="Message"
-          placeholder="Message"
-          value={message}
-          onChange={(event) => {
-            inputChanger("message", event.target.value);
-          }}
-        />
-        <div className="pt-4 ">
-          <button
-            aria-label="submit"
-            className=" text-sm text-red-600 bg-transparent hover:bg-red-600 text-black-700 font-semibold hover:text-white border-2 px-12 p-3 border-red-600 hover:border-transparent rounded-full"
-          >
-            SUBMIT
-          </button>
-        </div>
-      </form>
-    </div>
+    </form>
   );
 }

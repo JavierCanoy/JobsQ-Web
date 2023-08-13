@@ -20,6 +20,15 @@ export default function AboutUs() {
   //     },
   //   });
   // }, []);
+  const formClass = "second  col-span-12 px-4 w-full xl:max-w-lg md:col-span-6";
+  const emailClass =
+    "py-4  text-base leading-tight focus:outline-none border-b-2 pt-10  w-full ";
+  const fullNameClass =
+    "py-6 text-base  leading-tight focus:outline-none border-b-2   pt-14 w-full  ";
+  const messageClass =
+    "py-10  text-base leading-tight focus:outline-none border-b-2 w-full  ";
+  const buttonClass =
+    " text-sm text-red-600 bg-transparent hover:bg-red-600 text-black-700 font-semibold hover:text-white border-2 px-12 p-3 border-red-600 hover:border-transparent rounded-full";
 
   return (
     <div id="about-us" className=" pt-20   md:pt-120  ">
@@ -313,7 +322,35 @@ export default function AboutUs() {
       {/* end What do our clients   */}
 
       {/* Let’s start withyour dreamproject */}
-      <Form />
+      <div className="main-dreamproject grid grid-cols-12 md:h-screen  md:content-center md:mx-4">
+        <div
+          data-aos="fade-up"
+          className="first col-span-12 w-full p-4 md:col-span-6  md:my-auto  xl:mx-auto xl:max-w-lg  "
+        >
+          <h1 className="text-xl  text-gray-600 font-OpenSans font-light">
+            GET IN TOUCH
+          </h1>
+          <p className="text-5xl font-Poppins font-bold py-4 ">
+            Let’s start with
+            <br /> your dream <br />
+            project
+          </p>
+          <p className="  text-xl font-OpenSans py-2	">
+            We help our clients make realize their most
+          </p>
+          <p className="text-xl font-bold font-OpenSans  py-2">
+            +1 123 456 7890
+          </p>
+        </div>
+        {/* form */}
+        <Form
+          formClass={formClass}
+          emailClass={emailClass}
+          fullNameClass={fullNameClass}
+          messageClass={messageClass}
+          buttonClass={buttonClass}
+        />
+      </div>
       {/*end Let’s start withyour dreamproject */}
 
       {/* subscribes-laters */}

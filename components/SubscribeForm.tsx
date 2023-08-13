@@ -45,6 +45,7 @@ export default function SubscribeForm() {
               type="text"
               aria-label="Your-name"
               placeholder="Your name "
+              value={name}
               onChange={(event: any) => {
                 inputChanger("name", event.target.value);
               }}
@@ -54,6 +55,7 @@ export default function SubscribeForm() {
               type="text"
               aria-label="Email"
               placeholder="Email"
+              value={email}
               onChange={(event: any) => {
                 inputChanger("email", event.target.value);
               }}
