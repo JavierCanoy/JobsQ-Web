@@ -1,7 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import Clients from "./Clients";
-import { useEffect } from "react";
+import Form from "./Form";
 
 // import AOS from "aos";
 // import "aos/dist/aos.css";
@@ -21,7 +21,7 @@ export default function AboutUs() {
   // }, []);
 
   return (
-    <div id="about-us-main" className="main-about pt-20   md:pt-120  ">
+    <div id="about-us" className=" pt-20   md:pt-120  ">
       <div className="  w-full ">
         <div className="relative ">
           <div className="image">
@@ -312,54 +312,7 @@ export default function AboutUs() {
       {/* end What do our clients   */}
 
       {/* Let’s start withyour dreamproject */}
-      <div className="about-us-dreamproject  grid grid-cols-12 md:h-screen  md:content-center md:mx-4">
-        <div className="first col-span-12 w-full p-4 md:col-span-6  md:my-auto  xl:mx-auto xl:max-w-lg  ">
-          <h1 className="text-xl  text-gray-600 font-OpenSans font-light">
-            GET IN TOUCH
-          </h1>
-          <p className="text-5xl font-Poppins font-bold py-4 ">
-            Let’s start with
-            <br /> your dream <br />
-            project
-          </p>
-          <p className="  text-xl font-OpenSans py-2	">
-            We help our clients make realize their most
-          </p>
-          <p className="text-xl font-bold font-OpenSans  py-2">
-            +1 123 456 7890
-          </p>
-        </div>
-        <form className="second col-span-12 px-4 w-full xl:max-w-lg md:col-span-6">
-          <input
-            className="py-4  text-base leading-tight focus:outline-none border-b-2 pt-10  w-full "
-            type="text"
-            aria-label="Email"
-            placeholder="Email "
-          />
-          <input
-            className="py-6 text-base  leading-tight focus:outline-none border-b-2   pt-14 w-full  "
-            type="text"
-            aria-label="Full name"
-            placeholder="Full name"
-          />
-          <input
-            className="py-10  text-base leading-tight focus:outline-none border-b-2 w-full  "
-            type="text"
-            aria-label="Message"
-            placeholder="Message"
-          />
-          <div className="pt-4 mb-4 md:mb-0 ">
-            <Link href="/" aria-label="Submit Button">
-              <button
-                aria-label="Submit Button"
-                className=" text-sm text-red-600 bg-transparent hover:bg-red-600 text-black-700 font-semibold hover:text-white border-2 px-12 p-3 border-red-600 hover:border-transparent rounded-full"
-              >
-                SUBMIT
-              </button>
-            </Link>
-          </div>
-        </form>
-      </div>
+      <Form />
       {/*end Let’s start withyour dreamproject */}
 
       {/* subscribes-laters */}

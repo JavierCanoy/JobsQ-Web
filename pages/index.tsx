@@ -6,6 +6,8 @@ import AboutUs from "../components/AboutUs";
 import Services from "../components/Services";
 import Main from "../components/Main";
 export default function Home() {
+  console.log("index");
+
   return (
     <div className="homage-page">
       <Head>
