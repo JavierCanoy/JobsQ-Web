@@ -7,23 +7,11 @@ import ProjectWeLove from "./ProjectWeLove";
 import Form from "./Form";
 import SubscribeForm from "./SubscribeForm";
 
-// import AOS from "aos";
-// import "aos/dist/aos.css";
+aos/dist/aos.css";
 
 function Main() {
   console.log("main");
-  // useEffect(() => {
-  //   AOS.init({
-  //     offset: 200,
-  //     duration: 600,
-  //     easing: "ease-in-sine",
-  //     delay: 100,
-  //     disable: function () {
-  //       var maxWidth = 1024;
-  //       return window.innerWidth < maxWidth;
-  //     },
-  //   });
-  // }, []);
+ 
   const formClass = "second  col-span-12 px-4 w-full xl:max-w-lg md:col-span-6";
   const emailClass =
     "py-4  text-base leading-tight focus:outline-none border-b-2 pt-10  w-full ";
@@ -110,7 +98,6 @@ function Main() {
       {/* we-help-with */}
       <div className="  2xl:h-screen  grid grid-cols-12   justify-center  w-full  bg-gradient-to-t  from-costumeOrange to-costumeRed text-white ">
         <div
-          data-aos="fade-right"
           className="first xl:my-auto 2xl:mx-40     p-4 col-span-12 md:mx-auto 2xl:col-span-6 "
         >
           <h1 className="text-2xl font-OpenSans font-light ">WE HELP WITH</h1>
@@ -141,7 +128,6 @@ function Main() {
         </div>
 
         <div
-          data-aos="fade-left"
           className=" second content-center grid  col-span-12 md:mx-auto   xl:grid xl:grid-cols-2  2xl:col-span-6  "
         >
           <div className="  my-5 mx-4  p-8 h-231 md:w-361 hover:bg-gradient-to-r from-costumeBrnBg to-costumeRedBg   rounded-lg  bg-costumeRedBg">
@@ -225,7 +211,6 @@ function Main() {
       {/* design1  */}
       <div className="design  grid grid-cols-12 lg:h-screen  lg:content-center xl:mt-10    ">
         <div
-          data-aos="fade-right"
           className="first-image col-span-12 lg:col-span-6 "
         >
           <div>
@@ -239,7 +224,6 @@ function Main() {
           </div>
         </div>
         <div
-          data-aos="zoom-in"
           className="first-content m-4 col-span-12 lg:col-span-6  xl:my-auto 2xl:w-4/6 2xl:mx-28 "
         >
           <div className="  ">
@@ -282,7 +266,6 @@ function Main() {
       {/* design2  */}
       <div className="design  grid grid-cols-12 lg:h-screen lg:content-center    ">
         <div
-          data-aos="fade-left"
           className="first-image col-span-12 lg:col-span-6  lg:order-2"
         >
           <div className=" flex justify-end">
@@ -296,7 +279,6 @@ function Main() {
           </div>
         </div>
         <div
-          data-aos="zoom-in"
           className="first-content m-4 col-span-12 lg:col-span-6  xl:my-auto 2xl:w-4/6 2xl:mx-52 "
         >
           <div className="  ">
@@ -347,7 +329,6 @@ function Main() {
       {/* Let’s start withyour dreamproject */}
       <div className="main-dreamproject grid grid-cols-12 md:h-screen  md:content-center md:mx-4">
         <div
-          data-aos="fade-up"
           className="first col-span-12 w-full p-4 md:col-span-6  md:my-auto  xl:mx-auto xl:max-w-lg  "
         >
           <h1 className="text-xl  text-gray-600 font-OpenSans font-light">
@@ -379,7 +360,6 @@ function Main() {
       {/* read-what-team */}
       <div className="main-read-what-team lg:h-screen w-full grid grid-cols-12">
         <div
-          data-aos="zoom-in-down"
           className=" col-span-12 p-4 md:p-8 md:flex md:justify-center md:text-center md:items-center"
         >
           <h1 className="text-5xl font-Poppins font-bold ">
@@ -388,7 +368,7 @@ function Main() {
         </div>
 
         <div className=" col-span-12 lg:columns-3 lg:max-w-5xl lg:mx-auto  ">
-          <div data-aos="fade-right" className="1  flex mx-4 md:mx-0 ">
+          <div className="1  flex mx-4 md:mx-0 ">
             <div className=" w-370 h-395 mb-4 border mx-auto   rounded-lg shadow-lg duration-200 hover:scale-95 ">
               <Link href="/" aria-label="images">
                 <Image
@@ -411,7 +391,7 @@ function Main() {
               </div>
             </div>
           </div>
-          <div data-aos="fade-up" className="2 flex mx-4 md:mx-0  ">
+          <div  className="2 flex mx-4 md:mx-0  ">
             <div className=" w-370 h-395   mb-4 mx-auto   border rounded-lg shadow-lg duration-200 hover:scale-95">
               <Link href="/ " aria-label="images">
                 <Image
@@ -436,7 +416,7 @@ function Main() {
             </div>
           </div>
 
-          <div data-aos="fade-left" className="3  flex mx-4 md:mx-0 ">
+          <div  className="3  flex mx-4 md:mx-0 ">
             <div className=" w-370 h-395   mb-4  mx-auto  border rounded-lg shadow-lg duration-200 hover:scale-95">
               <Link href="/" aria-label="images">
                 <Image

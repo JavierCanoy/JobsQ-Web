@@ -42,7 +42,6 @@ export default function Form(props: any) {
 
   return (
     <form
-      data-aos="fade-down"
       className={props.formClass}
       onSubmit={submitHandler}
     >
