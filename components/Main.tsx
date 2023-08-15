@@ -7,11 +7,9 @@ import ProjectWeLove from "./ProjectWeLove";
 import Form from "./Form";
 import SubscribeForm from "./SubscribeForm";
 
-aos/dist/aos.css";
-
 function Main() {
   console.log("main");
- 
+
   const formClass = "second  col-span-12 px-4 w-full xl:max-w-lg md:col-span-6";
   const emailClass =
     "py-4  text-base leading-tight focus:outline-none border-b-2 pt-10  w-full ";
@@ -97,9 +95,7 @@ function Main() {
 
       {/* we-help-with */}
       <div className="  2xl:h-screen  grid grid-cols-12   justify-center  w-full  bg-gradient-to-t  from-costumeOrange to-costumeRed text-white ">
-        <div
-          className="first xl:my-auto 2xl:mx-40     p-4 col-span-12 md:mx-auto 2xl:col-span-6 "
-        >
+        <div className="first xl:my-auto 2xl:mx-40     p-4 col-span-12 md:mx-auto 2xl:col-span-6 ">
           <h1 className="text-2xl font-OpenSans font-light ">WE HELP WITH</h1>
           <p className="md:text-7xl  text-5xl font-Poppins font-bold pb-10 pt-2">
             Building <br /> better
@@ -127,9 +123,7 @@ function Main() {
           </Link>
         </div>
 
-        <div
-          className=" second content-center grid  col-span-12 md:mx-auto   xl:grid xl:grid-cols-2  2xl:col-span-6  "
-        >
+        <div className=" second content-center grid  col-span-12 md:mx-auto   xl:grid xl:grid-cols-2  2xl:col-span-6  ">
           <div className="  my-5 mx-4  p-8 h-231 md:w-361 hover:bg-gradient-to-r from-costumeBrnBg to-costumeRedBg   rounded-lg  bg-costumeRedBg">
             <Image
               src="/images/icon/first.png"
@@ -210,9 +204,7 @@ function Main() {
 
       {/* design1  */}
       <div className="design  grid grid-cols-12 lg:h-screen  lg:content-center xl:mt-10    ">
-        <div
-          className="first-image col-span-12 lg:col-span-6 "
-        >
+        <div className="first-image col-span-12 lg:col-span-6 ">
           <div>
             <Image
               className=" rounded-r-lg shadow-lg object-cover xl:h-screen "
@@ -223,9 +215,7 @@ function Main() {
             />
           </div>
         </div>
-        <div
-          className="first-content m-4 col-span-12 lg:col-span-6  xl:my-auto 2xl:w-4/6 2xl:mx-28 "
-        >
+        <div className="first-content m-4 col-span-12 lg:col-span-6  xl:my-auto 2xl:w-4/6 2xl:mx-28 ">
           <div className="  ">
             <h2 className="text-5xl font-Poppins font-bold">
               Design solutions to improve products
@@ -265,9 +255,7 @@ function Main() {
 
       {/* design2  */}
       <div className="design  grid grid-cols-12 lg:h-screen lg:content-center    ">
-        <div
-          className="first-image col-span-12 lg:col-span-6  lg:order-2"
-        >
+        <div className="first-image col-span-12 lg:col-span-6  lg:order-2">
           <div className=" flex justify-end">
             <Image
               className=" rounded-r-lg shadow-lg object-cover "
@@ -278,9 +266,7 @@ function Main() {
             />
           </div>
         </div>
-        <div
-          className="first-content m-4 col-span-12 lg:col-span-6  xl:my-auto 2xl:w-4/6 2xl:mx-52 "
-        >
+        <div className="first-content m-4 col-span-12 lg:col-span-6  xl:my-auto 2xl:w-4/6 2xl:mx-52 ">
           <div className="  ">
             <h2 className="text-5xl font-Poppins font-bold">
               Design solutions to improve products
@@ -328,9 +314,7 @@ function Main() {
 
       {/* Let’s start withyour dreamproject */}
       <div className="main-dreamproject grid grid-cols-12 md:h-screen  md:content-center md:mx-4">
-        <div
-          className="first col-span-12 w-full p-4 md:col-span-6  md:my-auto  xl:mx-auto xl:max-w-lg  "
-        >
+        <div className="first col-span-12 w-full p-4 md:col-span-6  md:my-auto  xl:mx-auto xl:max-w-lg  ">
           <h1 className="text-xl  text-gray-600 font-OpenSans font-light">
             GET IN TOUCH
           </h1>
@@ -359,9 +343,7 @@ function Main() {
 
       {/* read-what-team */}
       <div className="main-read-what-team lg:h-screen w-full grid grid-cols-12">
-        <div
-          className=" col-span-12 p-4 md:p-8 md:flex md:justify-center md:text-center md:items-center"
-        >
+        <div className=" col-span-12 p-4 md:p-8 md:flex md:justify-center md:text-center md:items-center">
           <h1 className="text-5xl font-Poppins font-bold ">
             Read what our team has published on the internet
           </h1>
@@ -391,7 +373,7 @@ function Main() {
               </div>
             </div>
           </div>
-          <div  className="2 flex mx-4 md:mx-0  ">
+          <div className="2 flex mx-4 md:mx-0  ">
             <div className=" w-370 h-395   mb-4 mx-auto   border rounded-lg shadow-lg duration-200 hover:scale-95">
               <Link href="/ " aria-label="images">
                 <Image
@@ -416,7 +398,7 @@ function Main() {
             </div>
           </div>
 
-          <div  className="3  flex mx-4 md:mx-0 ">
+          <div className="3  flex mx-4 md:mx-0 ">
             <div className=" w-370 h-395   mb-4  mx-auto  border rounded-lg shadow-lg duration-200 hover:scale-95">
               <Link href="/" aria-label="images">
                 <Image

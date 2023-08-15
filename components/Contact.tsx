@@ -1,7 +1,33 @@
 import Image from "next/image";
-import Link from "next/link";
-
+import { useState } from "react";
 export default function Contact() {
+  const [email, setEmail] = useState("");
+  const [websiteLink, setWebsiteLink] = useState("");
+  const [message, setMessage] = useState("");
+
+  const inputHandler = (identifier: any, value: any) => {
+    if (identifier === "email") {
+      setEmail(value);
+    } else if (identifier === "websiteLink") {
+      setWebsiteLink(value);
+    } else if (identifier === "message") {
+      setMessage(value);
+    }
+  };
+
+  const handleSubmit = (event: any) => {
+    event.preventDefault();
+    const data = {
+      email: email,
+      websiteLink: websiteLink,
+      message: message,
+    };
+    console.log(data);
+    setEmail("");
+    setWebsiteLink("");
+    setMessage("");
+  };
+
   return (
     <div id="contact" className="contact-main   pt-[7.5rem]  ">
       <div className="  m-4">
@@ -107,7 +133,7 @@ export default function Contact() {
         </div>
 
         <div className="contact-form my-auto col-span-12 px-4 w-full md:col-span-6 xl:max-w-lg">
-          <form className="  ">
+          <form onSubmit={handleSubmit}>
             <p className=" text-center text-base text-gray-600 py-10">
               look forward from you,
             </p>
@@ -116,28 +142,35 @@ export default function Contact() {
               type="text"
               aria-label="Email"
               placeholder="Email "
+              value={email}
+              onChange={(event) => inputHandler("email", event.target.value)}
             />
             <input
               className="py-6 text-base  leading-tight focus:outline-none border-b-2   pt-14 w-full  "
               type="text"
-              aria-label="Website"
+              aria-label="Website Link"
               placeholder="Website Link"
+              value={websiteLink}
+              onChange={(event) =>
+                inputHandler("websiteLink", event.target.value)
+              }
             />
             <input
               className="py-10  text-base leading-tight focus:outline-none border-b-2 w-full  "
               type="text"
               aria-label="Message"
               placeholder="Message"
+              value={message}
+              onChange={(event) => inputHandler("message", event.target.value)}
             />
             <div className="pt-4 ">
-              <Link href="/" aria-label="submit-button">
-                <button
-                  aria-label="submit-button"
-                  className=" text-sm text-red-600 bg-transparent hover:bg-red-600 text-black-700 font-semibold hover:text-white border-2 px-12 p-3 border-red-600 hover:border-transparent rounded-full"
-                >
-                  SUBMIT
-                </button>
-              </Link>
+              <button
+                aria-label="submit-button"
+                type="submit"
+                className=" text-sm text-red-600 bg-transparent hover:bg-red-600 text-black-700 font-semibold hover:text-white border-2 px-12 p-3 border-red-600 hover:border-transparent rounded-full"
+              >
+                SUBMIT
+              </button>
             </div>
           </form>
         </div>
