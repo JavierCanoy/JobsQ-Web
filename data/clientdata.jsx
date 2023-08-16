@@ -1,4 +1,4 @@
-export const clientdata = [
+export const clientData = [
   {
     id: 1,
     say: "What do our clients sayabout us one?",

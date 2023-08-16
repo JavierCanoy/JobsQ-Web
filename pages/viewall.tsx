@@ -3,7 +3,7 @@ import Image from "next/image";
 import Link from "next/link";
 import Head from "next/head";
 import { projects } from "@/data/projects";
-export default function viewall() {
+export default function ViewAll() {
   return (
     <div className=" view-all">
       <Head>

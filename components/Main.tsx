@@ -22,7 +22,7 @@ function Main() {
   return (
     <div id="home" className="main pt-[9rem] md:pt-120  ">
       <div className="  grid grid-cols-12 lg:h-auto     ">
-        <div className="   col-span-12 mx-2 my-auto  md:col-span-6  lg:pt-20  xl:grid xl:justify-items-end ">
+        <div className="   col-span-12 mx-2 my-auto  lg:pt-20 xl:pt-0 md:col-span-6    xl:grid xl:justify-items-end ">
           <div className=" px-4 md:w-2/3 xl:mx-20 ">
             <p className="text-xl uppercase py-2 text-gray-600 font-OpenSans font-light">
               Our Goal
@@ -77,7 +77,7 @@ function Main() {
             </div>
           </div>
         </div>
-        <div className=" h-screen  col-span-12 md:h-screen  md:col-span-6 2xl:overflow-y-hidden ">
+        <div className=" h-screen  col-span-12 md:h-auto  md:col-span-6 overflow-y-hidden ">
           <Image
             src="/images/home1/hero.png"
             alt="hero"
@@ -88,7 +88,7 @@ function Main() {
         </div>
       </div>
       {/* we-help-with */}
-      <div className="  2xl:h-screen  grid grid-cols-12   justify-center  w-full  bg-gradient-to-t  from-costumeOrange to-costumeRed text-white ">
+      <div className="  2xl:h-screen  grid grid-cols-12   justify-center  w-full  bg-gradient-to-t   from-costumeOrange to-costumeRed text-white ">
         <div className="first xl:my-auto 2xl:mx-40     p-4 col-span-12 md:mx-auto 2xl:col-span-6 ">
           <h1 className="text-2xl font-OpenSans font-light ">WE HELP WITH</h1>
           <p className="md:text-7xl  text-5xl font-Poppins font-bold pb-10 pt-2">

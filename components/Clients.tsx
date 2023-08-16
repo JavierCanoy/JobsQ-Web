@@ -4,7 +4,7 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import React, { useState, useRef } from "react";
-import { clientdata } from "../data/clientdata";
+import { clientData } from "../data/clientData";
 
 export default function Clients() {
   const sliderRef = useRef(null);
@@ -41,21 +41,21 @@ export default function Clients() {
     >
       <div className="clients-content col-span-12 my-auto  ">
         <Slider ref={sliderRef} {...settings} className="  ">
-          {clientdata.map((clientdata: any) => (
-            <div key={clientdata.id} className=" md:mt-28  ">
+          {clientData.map((clientData: any) => (
+            <div key={clientData.id} className=" md:mt-28  ">
               <div
                 className=" w-screen p-2 pt-10 md:pt-2 text-center md:px-4 "
                 aria-hidden="false"
               >
                 <h1 className="  text-3xl  md:text-5xl   font-Poppins font-bold text-white ">
-                  {clientdata.say}
+                  {clientData.say}
                 </h1>
               </div>
               <div className="flex justify-center  ">
                 <Link href="/" aria-label="images">
                   <Image
-                    src={clientdata.linkImg}
-                    alt={`Image ${clientdata.id}`}
+                    src={clientData.linkImg}
+                    alt={`Image ${clientData.id}`}
                     width={200}
                     height={200}
                     aria-hidden="true"
@@ -63,13 +63,13 @@ export default function Clients() {
                 </Link>
               </div>
               <p className=" px-2 text-white text-base   text-center md:px-10 md:max-w-xl md:m-auto  md:text-2xl font-OpenSans ">
-                {clientdata.message}
+                {clientData.message}
               </p>
               <p className="text-white text-center pt-5 font-bold text-lg font-OpenSans ">
-                {clientdata.name}
+                {clientData.name}
               </p>
               <p className="text-white text-center text-sm font-OpenSans">
-                {clientdata.possition}
+                {clientData.possition}
               </p>
             </div>
           ))}
