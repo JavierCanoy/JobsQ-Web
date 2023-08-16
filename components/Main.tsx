@@ -21,8 +21,8 @@ function Main() {
     " text-sm text-red-600 bg-transparent hover:bg-red-600 text-black-700 font-semibold hover:text-white border-2 px-12 p-3 border-red-600 hover:border-transparent rounded-full";
   return (
     <div id="home" className="main pt-[9rem] md:pt-120  ">
-      <div className="  grid grid-cols-12 lg:h-screen      ">
-        <div className="   col-span-12 mx-2 my-auto  md:col-span-6  xl:grid xl:justify-items-end ">
+      <div className="  grid grid-cols-12 lg:h-auto     ">
+        <div className="   col-span-12 mx-2 my-auto  md:col-span-6  lg:pt-20  xl:grid xl:justify-items-end ">
           <div className=" px-4 md:w-2/3 xl:mx-20 ">
             <p className="text-xl uppercase py-2 text-gray-600 font-OpenSans font-light">
               Our Goal
@@ -34,17 +34,15 @@ function Main() {
               We help our clients realize their most important business goals.
             </p>
           </div>
-          <div className="gap-16 xl:flex xl:w-full xl:justify-center  py-2       ">
+          <div className="gap-16 xl:flex xl:w-full xl:justify-center   lg:py-2 xl:mt-14       ">
             <div className=" flex justify-center py-2">
-              <Link href="#" aria-label="GETINTOUCH">
-                <button
-                  aria-label="GETINTOUCH"
-                  type="button"
-                  className="place-self-center px-11 p-3  text-white bg-gradient-to-t from-costumeOrange to-costumeRed hover:from-white hover:to-white hover:text-red-700 hover:border-red-700 border-2 text-xl rounded-full font-semibold text-center   "
-                >
-                  GET IN TOUCH
-                </button>
-              </Link>
+              <button
+                aria-label="GETINTOUCH"
+                type="button"
+                className="place-self-center px-11 p-3  text-white bg-gradient-to-t from-costumeOrange to-costumeRed hover:from-white hover:to-white hover:text-red-700 hover:border-red-700 border-2 text-xl rounded-full font-semibold text-center   "
+              >
+                GET IN TOUCH
+              </button>
             </div>
             <div>
               <div className=" flex  justify-center py-2 ">
@@ -54,34 +52,32 @@ function Main() {
                   </p>
                 </div>
                 <div>
-                  <Link href="#" aria-label="icon">
-                    <button
-                      aria-label="icon"
-                      type="button"
-                      className=" text-white  bg-red-700  border-2 hover:bg-white hover:text-red-700 hover:border-red-700  rounded-full text-sm px-3 py-3 "
+                  <button
+                    aria-label="icon"
+                    type="button"
+                    className=" text-white  bg-red-700  border-2 hover:bg-white hover:text-red-700 hover:border-red-700  rounded-full text-sm px-3 py-3 "
+                  >
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      strokeWidth="1.5"
+                      stroke="currentColor"
+                      className="w-6 h-6  "
                     >
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        fill="none"
-                        viewBox="0 0 24 24"
-                        strokeWidth="1.5"
-                        stroke="currentColor"
-                        className="w-6 h-6  "
-                      >
-                        <path
-                          strokeLinecap="round"
-                          strokeLinejoin="round"
-                          d="M5.25 5.653c0-.856.917-1.398 1.667-.986l11.54 6.348a1.125 1.125 0 010 1.971l-11.54 6.347a1.125 1.125 0 01-1.667-.985V5.653z"
-                        />
-                      </svg>
-                    </button>
-                  </Link>
+                      <path
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        d="M5.25 5.653c0-.856.917-1.398 1.667-.986l11.54 6.348a1.125 1.125 0 010 1.971l-11.54 6.347a1.125 1.125 0 01-1.667-.985V5.653z"
+                      />
+                    </svg>
+                  </button>
                 </div>
               </div>
             </div>
           </div>
         </div>
-        <div className=" h-screen  col-span-12  overflow-y-hidden md:col-span-6  ">
+        <div className=" h-screen  col-span-12 md:h-screen  md:col-span-6 2xl:overflow-y-hidden ">
           <Image
             src="/images/home1/hero.png"
             alt="hero"
@@ -91,8 +87,6 @@ function Main() {
           />
         </div>
       </div>
-      {/* end */}
-
       {/* we-help-with */}
       <div className="  2xl:h-screen  grid grid-cols-12   justify-center  w-full  bg-gradient-to-t  from-costumeOrange to-costumeRed text-white ">
         <div className="first xl:my-auto 2xl:mx-40     p-4 col-span-12 md:mx-auto 2xl:col-span-6 ">

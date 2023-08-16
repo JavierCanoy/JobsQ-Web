@@ -5,7 +5,9 @@ export default function Contact() {
   const [websiteLink, setWebsiteLink] = useState("");
   const [message, setMessage] = useState("");
 
-  const inputHandler = (identifier: any, value: any) => {
+  //shared function
+
+  const inputChanger = (identifier: any, value: any) => {
     if (identifier === "email") {
       setEmail(value);
     } else if (identifier === "websiteLink") {
@@ -15,14 +17,14 @@ export default function Contact() {
     }
   };
 
-  const handleSubmit = (event: any) => {
+  const submitHandler = (event: any) => {
     event.preventDefault();
     const data = {
       email: email,
       websiteLink: websiteLink,
       message: message,
     };
-    console.log(data);
+    console.log(data, "contact-form-data");
     setEmail("");
     setWebsiteLink("");
     setMessage("");
@@ -133,7 +135,7 @@ export default function Contact() {
         </div>
 
         <div className="contact-form my-auto col-span-12 px-4 w-full md:col-span-6 xl:max-w-lg">
-          <form onSubmit={handleSubmit}>
+          <form onSubmit={submitHandler}>
             <p className=" text-center text-base text-gray-600 py-10">
               look forward from you,
             </p>
@@ -143,7 +145,7 @@ export default function Contact() {
               aria-label="Email"
               placeholder="Email "
               value={email}
-              onChange={(event) => inputHandler("email", event.target.value)}
+              onChange={(event) => inputChanger("email", event.target.value)}
             />
             <input
               className="py-6 text-base  leading-tight focus:outline-none border-b-2   pt-14 w-full  "
@@ -152,7 +154,7 @@ export default function Contact() {
               placeholder="Website Link"
               value={websiteLink}
               onChange={(event) =>
-                inputHandler("websiteLink", event.target.value)
+                inputChanger("websiteLink", event.target.value)
               }
             />
             <input
@@ -161,7 +163,7 @@ export default function Contact() {
               aria-label="Message"
               placeholder="Message"
               value={message}
-              onChange={(event) => inputHandler("message", event.target.value)}
+              onChange={(event) => inputChanger("message", event.target.value)}
             />
             <div className="pt-4 ">
               <button

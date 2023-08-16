@@ -11,7 +11,6 @@ export default function SubscribeForm() {
       setEmail(value);
     }
   };
-  console.log("name : ", name, " ,email : ", email);
 
   const handleSubmit = (event: any) => {
     event.preventDefault();

@@ -1,8 +1,6 @@
 import { useState } from "react";
-import Link from "next/link";
 
 export default function Form(props: any) {
-  console.log("javierForm");
   const [email, setEmail] = useState("");
   const [fullname, setFullName] = useState("");
   const [message, setMessage] = useState("");
@@ -18,15 +16,6 @@ export default function Form(props: any) {
     }
   };
 
-  console.log(
-    "email : ",
-    email,
-    "full name : ",
-    fullname,
-    "message : ",
-    message
-  );
-
   const submitHandler = (event: any) => {
     event.preventDefault();
     const inputData = {
@@ -41,10 +30,7 @@ export default function Form(props: any) {
   };
 
   return (
-    <form
-      className={props.formClass}
-      onSubmit={submitHandler}
-    >
+    <form className={props.formClass} onSubmit={submitHandler}>
       <input
         className={props.emailClass}
         type="text"
