@@ -5,6 +5,7 @@ import Contact from "../components/Contact";
 import AboutUs from "../components/AboutUs";
 import Services from "../components/Services";
 import Main from "../components/Main";
+import Footer from "@/components/Footer";
 export default function Home() {
   console.log("index");
 
@@ -19,6 +20,7 @@ export default function Home() {
       <Services />
       <OurWork />
       <Contact />
+
     </div>
   );
 }
