@@ -25,7 +25,7 @@
     "pages/test.tsx",
     "data/canmoy",
     "data/clientdata.tsx",
-    "data/servicesContent.jsx",
+    "data/servicescontent.jsx",
     "data/projects.jsx"
   ],
   "exclude": ["node_modules"]

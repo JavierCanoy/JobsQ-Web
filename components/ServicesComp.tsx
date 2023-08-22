@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { servicesContent } from "../data/servicesContent";
+import { servicesContent } from "../data/servicescontent";
 
 export default function ServicesComp() {
   const [selectedButton, setSelectedButton] = useState(1);
