@@ -20,9 +20,9 @@ function Main() {
   const buttonClass =
     " text-sm text-red-600 bg-transparent hover:bg-red-600 text-black-700 font-semibold hover:text-white border-2 px-12 p-3 border-red-600 hover:border-transparent rounded-full";
   return (
-    <div id="home" className="main pt-[9rem] md:pt-120  ">
-      <div className="  grid grid-cols-12 lg:h-auto     ">
-        <div className="   col-span-12 mx-2 my-auto  lg:pt-20 xl:pt-0 md:col-span-6    xl:grid xl:justify-items-end ">
+    <div id="home" className="main   ">
+      <div className="  grid grid-cols-12 md:h-screen lg:h-auto     ">
+        <div className=" pt-28 lg:pt-32    col-span-12 mx-2 my-auto   xl:pt-0 md:col-span-6    xl:grid xl:justify-items-end ">
           <div className=" px-4 md:w-2/3 xl:mx-20 ">
             <p className="text-xl uppercase py-2 text-gray-600 font-OpenSans font-light">
               Our Goal
@@ -77,11 +77,11 @@ function Main() {
             </div>
           </div>
         </div>
-        <div className=" h-screen  col-span-12 md:h-auto  md:col-span-6 overflow-y-hidden ">
+        <div className=" h-auto   col-span-12 md:h-screen lg:h-full   md:col-span-6 overflow-y-hidden ">
           <Image
             src="/images/home1/hero.png"
             alt="hero"
-            className="object-cover w-full "
+            className="object-cover md:h-screen lg:h-full   w-full "
             width={788}
             height={957}
           />
