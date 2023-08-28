@@ -8,8 +8,6 @@ import Form from "./Form";
 import SubscribeForm from "./SubscribeForm";
 
 function Main() {
-  console.log("main");
-
   const formClass = "second  col-span-12 px-4 w-full xl:max-w-lg md:col-span-6";
   const emailClass =
     "py-4  text-base leading-tight focus:outline-none border-b-2 pt-10  w-full ";
@@ -35,7 +33,7 @@ function Main() {
             </p>
           </div>
           <div className="gap-16 xl:flex xl:w-full xl:justify-center   lg:py-2 xl:mt-14       ">
-            <div className=" flex justify-center py-2">
+            <div className=" flex justify-center ">
               <button
                 aria-label="GETINTOUCH"
                 type="button"
@@ -81,7 +79,7 @@ function Main() {
           <Image
             src="/images/home1/hero.png"
             alt="hero"
-            className="object-cover md:h-screen lg:h-full   w-full "
+            className="object-cover md:h-screen lg:h-auto   w-full "
             width={788}
             height={957}
           />
