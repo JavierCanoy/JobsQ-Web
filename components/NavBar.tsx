@@ -102,13 +102,11 @@ export default function NavBar() {
                   href="/#contact"
                   aria-label="contact"
                   onClick={() => setNavbar(!navbar)}
+                  className="  hover:text-red-700 px-10 p-3  border-2 border-red-700  rounded-full"
+
                 >
-                  <button
-                    aria-label="Contactus"
-                    className="  hover:text-red-700 px-10 p-3  border-2 border-red-700  rounded-full"
-                  >
+                 
                     Contact us
-                  </button>
                 </Link>
               </li>
             </ul>

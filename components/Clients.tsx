@@ -53,7 +53,6 @@ export default function Clients() {
                 </h1>
               </div>
               <div className="flex justify-center  ">
-                <Link href="/" aria-label="images">
                   <Image
                     src={clientData.linkImg}
                     alt={`Image ${clientData.id}`}
@@ -61,7 +60,6 @@ export default function Clients() {
                     height={200}
                     aria-hidden="true"
                   />
-                </Link>
               </div>
               <p className=" px-2 text-white text-base   text-center md:px-10 md:max-w-xl md:m-auto  md:text-2xl font-OpenSans ">
                 {clientData.message}

@@ -70,7 +70,6 @@ export default function OurWork() {
             </button>
           </div>
           <div className=" pt-10 2xl:pt-80 float-left  ">
-            <Link href="# " aria-label="kwowmore">
               <button
                 aria-label="kwowmore"
                 className=" flex items-center text-white border-y-2 hover:border-red-700   hover:text-red-700 text-xl bg-red-600 py-4 rounded-r-full hover:bg-white hover:border-red-600border-2   "
@@ -91,7 +90,6 @@ export default function OurWork() {
                   </svg>
                 </div>
               </button>
-            </Link>
           </div>
 
           <div className=" mt-28 mx-2 flex  md:grid md:justify-items-center justify-center ">

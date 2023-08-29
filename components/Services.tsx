@@ -46,7 +46,7 @@ export default function Services() {
       {/*end-Services */}
 
       {/*what-we-offer */}
-      <div className="services-what-we-offer mx-4 h-auto grid  ">
+      <div className="services-what-we-offer mx-4 h-auto grid sm:my-0 md:my-32 ">
         <div className=" flex justify-center ">
           <h1 className=" my-auto py-4 text-4xl md:text-5xl font-Poppins font-bold text-red-600">
             What we offer:
@@ -236,8 +236,8 @@ export default function Services() {
             </p>
           </div>
           <div className="2nd-button col-span-6 py-10 flex justify-center self-center ">
-            <Link href="#" aria-label="contact-us">
-              <button
+           
+              <Link href="#" 
                 aria-label="contact-us"
                 className="flex text-lg uppercase   items-center   text-red-600 hover:bg-gradient-to-t from-[#F35A43] to-[#C1272D]  hover:text-white   border-2 p-4  border-red-600  rounded-full"
               >
@@ -254,8 +254,8 @@ export default function Services() {
                     clipRule="evenodd"
                   ></path>
                 </svg>
-              </button>
-            </Link>
+              </Link>
+          
           </div>
         </div>
       </div>

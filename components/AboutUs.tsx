@@ -130,7 +130,6 @@ export default function AboutUs() {
                 Lorem ipsum dolor amet, an ipsum dore dusino sinto. Ipsum dolor
                 amet lorem.
               </p>
-              <Link href="#" aria-label="Know more">
                 <button
                   aria-label="Know more"
                   className=" flex items-center hover:text-costumeRed "
@@ -151,7 +150,6 @@ export default function AboutUs() {
                     ></path>
                   </svg>
                 </button>
-              </Link>
             </div>
             <div className="2 lg:max-h-56 my-4  bg-gradient-to-r from-costumeBrnBg to-costumeRedBg p-4 rounded-lg">
               <h1 className=" font-Poppins font-bold text-2xl">
@@ -161,7 +159,6 @@ export default function AboutUs() {
                 Lorem ipsum dolor amet, an ipsum dore dusino sinto. Ipsum dolor
                 amet lorem.
               </p>
-              <Link href="#" aria-label="Know more">
                 <button
                   aria-label="Know more"
                   className=" flex items-center  hover:text-costumeRed"
@@ -180,7 +177,6 @@ export default function AboutUs() {
                     ></path>
                   </svg>
                 </button>
-              </Link>
             </div>
             <div className="3 lg:max-h-56    my-4  bg-gradient-to-r from-costumeBrnBg to-costumeRedBg p-4 rounded-lg">
               <h1 className=" font-Poppins font-bold text-2xl">
@@ -190,7 +186,6 @@ export default function AboutUs() {
                 Lorem ipsum dolor amet, an ipsum dore dusino sinto. Ipsum dolor
                 amet lorem.
               </p>
-              <Link href="#" aria-label="Know more">
                 <button
                   aria-label="Know more"
                   className=" flex items-center hover:text-costumeRed"
@@ -211,7 +206,6 @@ export default function AboutUs() {
                     ></path>
                   </svg>
                 </button>
-              </Link>
             </div>
           </div>
         </div>
@@ -219,12 +213,12 @@ export default function AboutUs() {
       {/* end What clients value most */}
       {/* meet-the-team */}
       <div className="about-us-meet-the-team grid-cols-12 px-4 pt-4 md:px-8 grid h-auto">
-        <div className="  col-span-12   lg:flex lg:justify-center lg:items-center ">
+        <div className="  col-span-12 lg:my-20  lg:flex lg:justify-center lg:items-center ">
           <div>
             <h1 className=" text-center text-5xl font-Poppins font-bold">
               Meet the team
             </h1>
-            <p className="text-xl py-4  text-gray-600 pb-4 font-OpenSans lg:pt-10">
+            <p className="text-xl py-4 lg:max-w-7xl   text-gray-600 pb-4 font-OpenSans lg:pt-10">
               We’re a diverse team that works as fancies attention to details,
               enjoys beers on Friday nights and aspires to design the dent in
               the universe.

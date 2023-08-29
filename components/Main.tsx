@@ -93,8 +93,7 @@ function Main() {
             Building <br /> better
             <br /> solutions
           </p>
-          <Link href="/" aria-label="OurServices">
-            <button
+            <button 
               aria-label="OurServices"
               className=" flex text-base font-semibold uppercase  p-3  items-center  bg-transparent text-white hover:text-red-600 hover:bg-white text-black-700    border-2   border-white hover:border-transparent rounded-full"
             >
@@ -112,7 +111,6 @@ function Main() {
                 ></path>
               </svg>
             </button>
-          </Link>
         </div>
 
         <div className=" second content-center grid  col-span-12 md:mx-auto   xl:grid xl:grid-cols-2  2xl:col-span-6  ">
@@ -154,8 +152,7 @@ function Main() {
               Lorem ipsum dolor amet, an ipsum dore <br /> dusino sinto. Ipsum
               dolor amet lorem.
             </p>
-            <Link href="/" aria-label="Knowmore">
-              <button
+              <Link href="/"
                 aria-label="Knowmore"
                 className="flex  items-center    font-semibold  gap-10 hover:text-red-700"
               >
@@ -172,8 +169,7 @@ function Main() {
                     clipRule="evenodd"
                   ></path>
                 </svg>
-              </button>
-            </Link>
+              </Link>
           </div>
 
           <div className="my-5 mx-4   p-8  h-231 md:w-361  rounded-lg  hover:bg-gradient-to-r from-costumeBrnBg to-costumeRedBg bg-costumeRedBg">
@@ -220,7 +216,6 @@ function Main() {
             </p>
           </div>
           <div className=" flex justify-center md:justify-start">
-            <Link href="/" aria-label="Knowmore">
               <button
                 aria-label="Knowmore"
                 className="flex text-lg  p-3 uppercase items-center text-white bg-gradient-to-r from-costumeOrange to-costumeRed hover:from-white hover:to-white hover:text-red-600 border-2  border-costumeOrange hover:border-costume rounded-full"
@@ -239,7 +234,6 @@ function Main() {
                   ></path>
                 </svg>
               </button>
-            </Link>
           </div>
         </div>
       </div>
@@ -271,7 +265,6 @@ function Main() {
             </p>
           </div>
           <div className=" flex justify-center md:justify-start">
-            <Link href="/" aria-label="Knowmore">
               <button
                 aria-label="Knowmore"
                 className="flex text-lg  p-3 uppercase items-center text-white bg-gradient-to-r from-costumeOrange to-costumeRed hover:from-white hover:to-white hover:text-red-600 border-2  border-costumeOrange hover:border-costume rounded-full"
@@ -290,7 +283,6 @@ function Main() {
                   ></path>
                 </svg>
               </button>
-            </Link>
           </div>
         </div>
       </div>
@@ -344,14 +336,12 @@ function Main() {
         <div className=" col-span-12 lg:columns-3 lg:max-w-5xl lg:mx-auto  ">
           <div className="1  flex mx-4 md:mx-0 ">
             <div className=" w-370 h-395 mb-4 border mx-auto   rounded-lg shadow-lg duration-200 hover:scale-95 ">
-              <Link href="/" aria-label="images">
                 <Image
                   src="/images/home1/mom.png"
                   alt="Myimage"
                   height={266}
                   width={370}
                 />
-              </Link>
               <div className="flex justify-center ">
                 <div>
                   <h2 className=" text-left pt-4 mx-2 text-xl font-Poppins font-bold">
@@ -367,14 +357,12 @@ function Main() {
           </div>
           <div className="2 flex mx-4 md:mx-0  ">
             <div className=" w-370 h-395   mb-4 mx-auto   border rounded-lg shadow-lg duration-200 hover:scale-95">
-              <Link href="/ " aria-label="images">
                 <Image
                   src="/images/home1/mom1.png"
                   alt="Myimage"
                   height={266}
                   width={370}
                 />
-              </Link>
 
               <div className="flex justify-center ">
                 <div>
@@ -392,14 +380,12 @@ function Main() {
 
           <div className="3  flex mx-4 md:mx-0 ">
             <div className=" w-370 h-395   mb-4  mx-auto  border rounded-lg shadow-lg duration-200 hover:scale-95">
-              <Link href="/" aria-label="images">
                 <Image
                   src="/images/home1/mom.png"
                   alt="Myimage"
                   height={266}
                   width={370}
                 />
-              </Link>
               <div className="flex justify-center ">
                 <div>
                   <h2 className=" text-left pt-4 mx-2 text-xl font-Poppins font-bold">
